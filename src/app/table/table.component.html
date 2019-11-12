@@ -1,9 +1,9 @@
-<h1 routerLink={{item.title}}>{{item.title}}</h1>
+<h1 routerLink={{path}}>{{item.title}}</h1>
 
 <div *ngFor="let subitem of item.subItems">
     <ul>
         <li>
-          <app-table [item]="subitem" *ngIf="subitem"></app-table>
+          <app-table [item]="subitem" [path]="path + '/' + subitem.title" *ngIf="subitem"></app-table>
         </li>
     </ul>
 </div>
