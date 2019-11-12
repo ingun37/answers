@@ -15,7 +15,9 @@ export class ItemComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.item = this.answerService.getItem(['category', 'chap 1']);
+    this.route.url.subscribe((segments) => {
+      this.item = this.answerService.getItem(segments.map(x => x.path));
+    });
   }
 
 }
