@@ -30,7 +30,6 @@ export class AnswerService {
               id: 'iiiii',
               title: `${name}_1_1`,
               questionId: 'poiuuu',
-              answerId: 'uioppp'
             },
           ]
         },

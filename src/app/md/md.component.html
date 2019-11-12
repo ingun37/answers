@@ -3,6 +3,6 @@
 <markdown [data]="questionMD" *ngIf="questionMD"></markdown>
 <markdown [data]="answerMD" *ngIf="answerMD"></markdown>
 
-<div *ngFor="let subitem of item.subItems">
-    <app-md [item]="subitem" *ngIf="subitem"></app-md>
+<div *ngFor="let tree of item.trees">
+    <app-md [item]="tree" *ngIf="tree"></app-md>
 </div>
