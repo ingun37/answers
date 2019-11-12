@@ -7,27 +7,33 @@ import { ItemComponent } from './item/item.component';
 import { RouterModule } from '@angular/router';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
 import { TableComponent } from './table/table.component';
+import { MdComponent } from './md/md.component';
+import { MarkdownModule } from 'ngx-markdown';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     ItemComponent,
     HomeComponent,
-    TableComponent
+    TableComponent,
+    MdComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: '**', component: ItemComponent }
+      { path: ':treeId', component: ItemComponent }
     ]),
     NoopAnimationsModule,
     MatSliderModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule,
+    MarkdownModule.forRoot({ loader: HttpClient })
   ],
   providers: [],
   bootstrap: [AppComponent]

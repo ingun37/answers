@@ -4,21 +4,42 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AnswerService {
-  getItem(routes: string[]) {
-    const name = ['.'].concat(routes).pop();
+  getMDContent(blobID: string) {
+    return `
+    MD Sample of ${blobID}
+    `;
+  }
+  getRootId() {
+    return 'rrrrr';
+  }
+  getItem(treeID: string) {
+    const name = treeID.substr(0, 5);
     return {
+      id: 'qqqqq',
       title: name,
-      subItems: [
+      questionId: 'asdfff',
+      answerId: 'fdsaaa',
+      trees: [
         {
-          title: `${name} 1`,
-          subItems: [
+          id: 'wwwww',
+          title: `${name}_1`,
+          questionId: 'qwerrr',
+          answerId: 'rewqqq',
+          trees: [
             {
-              title: `${name} 1 1`
-            }
+              id: 'iiiii',
+              title: `${name}_1_1`,
+              questionId: 'poiuuu',
+              answerId: 'uioppp'
+            },
           ]
-        }, {
-          title: `${name} 2`
-        }
+        },
+        {
+          id: 'ooooo',
+          title: `${name}_2`,
+          questionId: 'ZXCVvv',
+          answerId: 'vcxzzz'
+        },
       ]
     };
   }

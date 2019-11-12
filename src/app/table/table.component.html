@@ -1,9 +1,9 @@
-<h1 routerLink={{path}}>{{item.title}}</h1>
+<h1 routerLink="/{{item.id}}">{{item.title}}</h1>
 
-<div *ngFor="let subitem of item.subItems">
+<div *ngFor="let tree of item.trees">
     <ul>
         <li>
-          <app-table [item]="subitem" [path]="path + '/' + subitem.title" *ngIf="subitem"></app-table>
+          <app-table [item]="tree" *ngIf="tree"></app-table>
         </li>
     </ul>
 </div>
