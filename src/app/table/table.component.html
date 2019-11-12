@@ -1,0 +1,9 @@
+<h1>{{item.title}}</h1>
+
+<div *ngFor="let subitem of item.subItems">
+    <ul>
+        <li>
+          <app-table [item]="subitem" *ngIf="subitem"></app-table>
+        </li>
+    </ul>
+</div>
