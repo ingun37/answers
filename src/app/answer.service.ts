@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class AnswerService {
   getItem(routes: string[]) {
-    const name = ['root'].concat(routes).pop();
+    const name = ['.'].concat(routes).pop();
     return {
       title: name,
       subItems: [
