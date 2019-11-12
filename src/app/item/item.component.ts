@@ -15,9 +15,7 @@ export class ItemComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.route.paramMap.subscribe(params => {
-      this.item = this.answerService.getItem(params.get('itemId'));
-    });
+    this.item = this.answerService.getItem(['category', 'chap 1']);
   }
 
 }

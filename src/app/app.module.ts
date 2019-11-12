@@ -8,18 +8,20 @@ import { RouterModule } from '@angular/router';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatButtonModule} from '@angular/material/button';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ItemComponent
+    ItemComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      { path: '', component: AppComponent },
-      { path: ':itemId', component: ItemComponent }
+      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: '**', component: ItemComponent }
     ]),
     NoopAnimationsModule,
     MatSliderModule,

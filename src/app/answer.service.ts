@@ -4,9 +4,17 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AnswerService {
-  getItem(itemId) {
+  getItem(routes: string[]) {
+    const name = routes.join('.');
     return {
-      title: 'fuck'
+      title: name,
+      subItems: [
+        {
+          title: `${name}-fuck 1`
+        }, {
+          title: `${name}-fuck 2`
+        }
+      ]
     };
   }
   constructor() { }
