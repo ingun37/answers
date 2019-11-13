@@ -26,27 +26,27 @@ export class AnswerService {
       title: name,
       questionId: 'asdfff',
       answerId: 'fdsaaa',
-      trees: [
-        {
+      trees: {
+        wwwww: {
           id: 'wwwww',
           title: `${name}_1`,
           questionId: 'qwerrr',
           answerId: 'rewqqq',
-          trees: [
-            {
+          trees: {
+            iiiii: {
               id: 'iiiii',
               title: `${name}_1_1`,
               questionId: 'poiuuu',
             },
-          ]
+          }
         },
-        {
+        ooooo: {
           id: 'ooooo',
           title: `${name}_2`,
           questionId: 'ZXCVvv',
           answerId: 'vcxzzz'
         },
-      ]
+      }
     };
   }
   constructor(
