@@ -13,41 +13,21 @@ export class AnswerService {
     `;
   }
   getRootId(): Observable<string> {
-    // this.http.get(this.url + '/branches/master').subscribe(x=>{
-    //   console.log(x);
-    // });
     const f = map((m: Master) => m.commit.commit.tree.sha);
     return this.http.get<Master>(this.url + '/branches/master').pipe(f);
   }
   getItem(treeID: string) {
-    const name = treeID.substr(0, 5);
-    return {
-      id: 'qqqqq',
-      title: name,
-      questionId: 'asdfff',
-      answerId: 'fdsaaa',
-      trees: {
-        wwwww: {
-          id: 'wwwww',
-          title: `${name}_1`,
-          questionId: 'qwerrr',
-          answerId: 'rewqqq',
-          trees: {
-            iiiii: {
-              id: 'iiiii',
-              title: `${name}_1_1`,
-              questionId: 'poiuuu',
-            },
-          }
-        },
-        ooooo: {
-          id: 'ooooo',
-          title: `${name}_2`,
-          questionId: 'ZXCVvv',
-          answerId: 'vcxzzz'
-        },
+    const f = map((t: Tree) => {
+      let v = {};
+      for (let sub of t.tree) {
+        addTreeToItem(v, sub.path.split('/'), sub);
       }
-    };
+      console.log(v)
+      return v;
+    });
+    const requesturl = this.url + '/git/trees/' + treeID + '?recursive=1';
+    console.log(`requesturl : ${requesturl}`);
+    return this.http.get<Tree>(requesturl).pipe(f);
   }
   constructor(
     private http: HttpClient
@@ -67,33 +47,44 @@ enum NestedType {
   tree = 'tree',
   blob = 'blob'
 }
-interface Tree {
+class NestedTree {
+  type: NestedType;
+  path: string;
   sha: string;
-  tree: {
-    type: NestedType,
-    path: string,
-    sha: string
-  }[];
+}
+class Tree {
+  sha: string;
+  tree: NestedTree[];
 }
 
-function buildMap(m: any, pathElements: string[], blobSha: string): {} {
+function addTreeToItem(item: any, pathElements: string[], tree: NestedTree) {
   const p = pathElements.shift();
-  if (pathElements.length == 0) {
-    if (p === 'q.md') {
-      m.questionId = blobSha;
-      return m;
-    } else if (p === 'a.md') {
-      m.answerId = blobSha;
-      return m;
-    } else {
-      return m;
+  if (pathElements.length === 0) {
+    switch (tree.type) {
+      case NestedType.tree:
+        if (!item.trees) {
+          item.trees = {};
+        }
+        item.trees[p] = {
+          id: tree.sha,
+          title: p
+        };
+        break;
+      case NestedType.blob:
+        if (p === 'q.md') {
+          item.questionId = tree.sha;
+        } else if (p === 'a.md') {
+          item.answerId = tree.sha;
+        }
+        break;
     }
+  } else {
+    if (!item.trees) {
+      item.trees = {};
+    }
+    if (!item.trees[p]) {
+      item.trees[p] = {};
+    }
+    addTreeToItem(item.trees[p], pathElements, tree);
   }
-  if (!m.hasOwnProperty(p)) {
-    m[p] = {
-      title: p
-    };
-  }
-  m[p] = buildMap(m[p], pathElements, blobSha);
-  
 }
