@@ -1,4 +1,9 @@
-<h3>Raised Buttons</h3>
-<div class="example-button-row">
-  <button mat-raised-button color="primary" routerLink="/{{rootId}}">Category</button>
+<div *ngIf="topItem && topItem.trees">
+  <div *ngFor="let tree of topItem.trees | keyvalue">
+    <ul>
+        <li>
+          <app-table [item]="tree.value"></app-table>
+        </li>
+    </ul>
+  </div>
 </div>

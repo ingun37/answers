@@ -1,4 +1,4 @@
-<h1 routerLink="/{{item.id}}" *ngIf="item.title">{{item.title}}</h1>
+<a routerLink="/{{item.id}}" *ngIf="item.title">{{item.title}}</a>
 
 <div *ngFor="let tree of item.trees | keyvalue">
     <ul>

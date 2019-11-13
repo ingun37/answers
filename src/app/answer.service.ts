@@ -16,17 +16,16 @@ export class AnswerService {
     const f = map((m: Master) => m.commit.commit.tree.sha);
     return this.http.get<Master>(this.url + '/branches/master').pipe(f);
   }
-  getItem(treeID: string) {
+
+  getItem(recursive: boolean, treeID: string) {
     const f = map((t: Tree) => {
       let v = {};
-      for (let sub of t.tree) {
+      for (const sub of t.tree) {
         addTreeToItem(v, sub.path.split('/'), sub);
       }
-      console.log(v)
       return v;
     });
-    const requesturl = this.url + '/git/trees/' + treeID + '?recursive=1';
-    console.log(`requesturl : ${requesturl}`);
+    const requesturl = this.url + '/git/trees/' + treeID + (recursive ? '?recursive=1' : '');
     return this.http.get<Tree>(requesturl).pipe(f);
   }
   constructor(
