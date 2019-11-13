@@ -13,7 +13,10 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.rootId = this.answerService.getRootId();
+    this.answerService.getRootId().subscribe(id => {
+      console.log(`root id : ${id}`);
+      this.rootId = id;
+    })
   }
 
 }
