@@ -1,8 +1,9 @@
-<div *ngIf="topItem && topItem.trees">
-  <div *ngFor="let tree of topItem.trees | keyvalue">
+This is home. It only shows table.
+<div *ngIf="topItem">
+  <div *ngFor="let sub of topItem.subs">
     <ul>
         <li>
-          <app-table [item]="tree.value"></app-table>
+          <app-table [item]="sub"></app-table>
         </li>
     </ul>
   </div>

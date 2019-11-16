@@ -1,9 +1,9 @@
 <a routerLink="/{{item.id}}" *ngIf="item.title">{{item.title}}</a>
 
-<div *ngFor="let tree of item.trees | keyvalue">
+<div *ngFor="let sub of item.subs">
     <ul>
         <li>
-          <app-table [item]="tree.value" *ngIf="item.trees"></app-table>
+          <app-table [item]="sub"></app-table>
         </li>
     </ul>
 </div>

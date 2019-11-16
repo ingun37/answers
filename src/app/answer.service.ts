@@ -1,89 +1,32 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { map } from "rxjs/operators";
+import { of } from "rxjs";
+
 @Injectable({
   providedIn: 'root'
 })
 export class AnswerService {
-  url = 'https://api.github.com/repos/ingun37/answers-db';
-  getMDContent(blobID: string) {
-    return `
-    MD Sample of ${blobID}
-    `;
-  }
-  getRootId(): Observable<string> {
-    const f = map((m: Master) => m.commit.commit.tree.sha);
-    return this.http.get<Master>(this.url + '/branches/master').pipe(f);
+  getRootId(): Promise<string> {
+    return Promise.resolve('0');
   }
 
-  getItem(recursive: boolean, treeID: string) {
-    const f = map((t: Tree) => {
-      let v = {};
-      for (const sub of t.tree) {
-        addTreeToItem(v, sub.path.split('/'), sub);
-      }
-      return v;
-    });
-    const requesturl = this.url + '/git/trees/' + treeID + (recursive ? '?recursive=1' : '');
-    return this.http.get<Tree>(requesturl).pipe(f);
+  getItem(treeID: string): Promise<Item> {
+    return Promise.resolve(new Item(treeID, 't:' + treeID, 'question of ' + treeID, 'answer of' + treeID, [
+      new Item(treeID + '-1', 't:' + treeID + '-1', 'question', 'answer', [])
+    ]));
   }
   constructor(
     private http: HttpClient
   ) { }
 }
-class Master {
-  commit: {
-    commit: {
-      tree: {
-        sha: string
-      }
-    }
-  };
-}
 
-enum NestedType {
-  tree = 'tree',
-  blob = 'blob'
-}
-class NestedTree {
-  type: NestedType;
-  path: string;
-  sha: string;
-}
-class Tree {
-  sha: string;
-  tree: NestedTree[];
-}
-
-function addTreeToItem(item: any, pathElements: string[], tree: NestedTree) {
-  const p = pathElements.shift();
-  if (pathElements.length === 0) {
-    switch (tree.type) {
-      case NestedType.tree:
-        if (!item.trees) {
-          item.trees = {};
-        }
-        item.trees[p] = {
-          id: tree.sha,
-          title: p
-        };
-        break;
-      case NestedType.blob:
-        if (p === 'q.md') {
-          item.questionId = tree.sha;
-        } else if (p === 'a.md') {
-          item.answerId = tree.sha;
-        }
-        break;
-    }
-  } else {
-    if (!item.trees) {
-      item.trees = {};
-    }
-    if (!item.trees[p]) {
-      item.trees[p] = {};
-    }
-    addTreeToItem(item.trees[p], pathElements, tree);
-  }
+export class Item {
+  constructor(
+    public id: string,
+    public title: string,
+    public questionMD: string,
+    public answerMD: string,
+    public subs: Item[]
+  ) {}
 }

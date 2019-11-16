@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AnswerService } from '../answer.service';
+import { AnswerService, Item } from '../answer.service';
 import { mergeMap } from "rxjs/operators";
 @Component({
   selector: 'app-home',
@@ -7,16 +7,15 @@ import { mergeMap } from "rxjs/operators";
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent implements OnInit {
-  topItem;
+  topItem: Item;
   constructor(
     private answerService: AnswerService
   ) { }
 
   ngOnInit() {
-    this.answerService.getRootId().pipe(mergeMap(rid => this.answerService.getItem(false, rid))).subscribe(topItem => {
-      console.log(topItem)
-      this.topItem = topItem;
+    this.answerService.getRootId().then(rid => this.answerService.getItem(rid)).then(item => {
+      console.log(item.title);
+      this.topItem = item;
     });
   }
-
 }
