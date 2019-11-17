@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AnswerService, Item } from '../answer.service';
+import { AnswerService, Item, Home } from '../answer.service';
 import { mergeMap } from "rxjs/operators";
 @Component({
   selector: 'app-home',
@@ -7,15 +7,12 @@ import { mergeMap } from "rxjs/operators";
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent implements OnInit {
-  topItem: Item;
+  home: Home;
   constructor(
     private answerService: AnswerService
   ) { }
 
   ngOnInit() {
-    this.answerService.getRootId().then(rid => this.answerService.getItem(rid)).then(item => {
-      console.log(item.title);
-      this.topItem = item;
-    });
+    this.answerService.getHome().then(home => this.home = home);
   }
 }

@@ -8,11 +8,15 @@ import { AnswerService, Item } from '../answer.service';
 })
 export class MdComponent implements OnInit {
   @Input() item: Item;
+  questionMD: string;
+  answerMD: string;
   constructor(
     private answerService: AnswerService
   ) { }
 
   ngOnInit() {
+    this.questionMD = this.item.questionMD;
+    this.answerMD = this.item.answerMD;
   }
 
 }

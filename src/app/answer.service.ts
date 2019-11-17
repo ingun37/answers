@@ -1,24 +1,23 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { of } from "rxjs";
+import { stringify } from 'querystring';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AnswerService {
-  getRootId(): Promise<string> {
-    return Promise.resolve('0');
+  url = 'https://ingun37.github.io/answers-json/';
+
+  getHome(): Promise<Home> {
+    return this.http.get<Home>(this.url).toPromise();
   }
 
   getItem(treeID: string): Promise<Item> {
-    return Promise.resolve(new Item(treeID, 't:' + treeID, 'question of ' + treeID, 'answer of' + treeID, [
-      new Item(treeID + '-1', 't:' + treeID + '-1', 'question', 'answer', [])
-    ]));
+    return this.http.get<Item>(this.url + treeID).toPromise();
   }
   constructor(
     private http: HttpClient
-  ) { }
+  ) {}
 }
 
 export class Item {
@@ -28,5 +27,19 @@ export class Item {
     public questionMD: string,
     public answerMD: string,
     public subs: Item[]
+  ) {}
+}
+
+export class Book {
+  constructor(
+      public id: string,
+      public title: string
+  ) {}
+}
+
+export class Home {
+  constructor(
+      public rootId: string,
+      public books: Book[]
   ) {}
 }

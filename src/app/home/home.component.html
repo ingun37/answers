@@ -1,10 +1,12 @@
 This is home. It only shows table.
-<div *ngIf="topItem">
-  <div *ngFor="let sub of topItem.subs">
+<div *ngIf="home">
+  <div *ngFor="let book of home.books">
     <ul>
         <li>
-          <app-table [item]="sub"></app-table>
+          <a routerLink="/{{book.id}}">{{book.title}}</a>
         </li>
     </ul>
   </div>
 </div>
+
+<markdown katex>$   b$</markdown>

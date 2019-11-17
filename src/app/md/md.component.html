@@ -1,8 +1,8 @@
 {{item.title}}
 
-<markdown [data]="item.questionMD" *ngIf="item.questionMD"></markdown>
-<markdown [data]="item.answerMD" *ngIf="item.answerMD"></markdown>
+<markdown [data]="questionMD" *ngIf="questionMD" katex></markdown>
+<markdown [data]="answerMD" *ngIf="answerMD" katex></markdown>
 
 <div *ngFor="let sub of item.subs">
-    <app-md [item]="sub" ></app-md>
+    <app-md [item]="sub"></app-md>
 </div>
