@@ -6,7 +6,7 @@ import { stringify } from 'querystring';
   providedIn: 'root'
 })
 export class AnswerService {
-  url = 'https://ingun37.github.io/answers-json/';
+  url = 'http://192.168.35.5:8000/';
 
   getHome(): Promise<Home> {
     return this.http.get<Home>(this.url).toPromise();
