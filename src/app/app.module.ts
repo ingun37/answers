@@ -11,7 +11,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
 import { TableComponent } from './table/table.component';
 import { MdComponent } from './md/md.component';
-import { MarkdownModule } from 'ngx-markdown';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 @NgModule({
@@ -33,7 +32,6 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     MatSliderModule,
     MatButtonModule,
     HttpClientModule,
-    MarkdownModule.forRoot({ loader: HttpClient })
   ],
   providers: [],
   bootstrap: [AppComponent]
