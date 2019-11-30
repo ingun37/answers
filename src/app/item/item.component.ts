@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
 import { AnswerService } from '../answer.service';
 import { ActivatedRoute } from '@angular/router';
-import { map } from "rxjs/operators";
-import { zip } from "rxjs";
+
+declare var MathJax: any;
+
 @Component({
   selector: 'app-item',
   templateUrl: './item.component.html',
@@ -16,12 +17,10 @@ export class ItemComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
     this.route.paramMap.subscribe(params => {
       this.answerService.getItem(params.get('treeId')).then(item => {
         this.item = item;
       });
     });
   }
-
 }

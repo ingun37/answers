@@ -1,7 +1,7 @@
 {{item.title}}
 
-<p [innerHTML]="questionHTML"></p>
-<p [innerHTML]="answerHTML"></p>
+<div [innerHTML]="questionHTML"></div>
+<div [innerHTML]="answerHTML"></div>
 
 <div *ngFor="let sub of item.subs">
     <app-md [item]="sub"></app-md>

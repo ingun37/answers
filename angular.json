@@ -32,6 +32,7 @@
               "src/styles.sass"
             ],
             "scripts": [
+              "node_modules/marked/lib/marked.js"
             ]
           },
           "configurations": {
@@ -99,6 +100,7 @@
               "src/styles.sass"
             ],
             "scripts": [
+              "node_modules/marked/lib/marked.js"
             ]
           }
         },

@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { TableComponent } from './table/table.component';
 import { MdComponent } from './md/md.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { MarkdownModule } from 'ngx-markdown';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     MatSliderModule,
     MatButtonModule,
     HttpClientModule,
+    MarkdownModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
