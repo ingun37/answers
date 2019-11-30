@@ -34,7 +34,7 @@ export class MdComponent implements OnInit {
 function md2HTML(mdservice: MarkdownService, mdStr: string): string {
   var displayTable = {};
   var table = {};
-  const replacedMD = mdStr.replace(/\$\$(.+?)\$\$/g, (match, group) => {
+  const replacedMD = mdStr.replace(/\$\$(.+?)\$\$/gm, (match, group) => {
     const randomID = makeid(16);
     displayTable[randomID] = group;
     return randomID;
