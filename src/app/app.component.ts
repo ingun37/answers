@@ -8,7 +8,19 @@ import { FireService } from './fire.service';
 })
 export class AppComponent {
   title = 'answers-front';
-  constructor (
+  userName: string = null;
+  loaded = false;
+  constructor(
     private fire: FireService
   ) {}
+  ngOnInit() {
+    this.fire.loginState.subscribe(user => {
+      this.loaded = true;
+      if (user) {
+        this.userName = user.name;
+      } else {
+        this.userName = null;
+      }
+    });
+  }
 }
