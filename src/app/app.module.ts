@@ -14,6 +14,7 @@ import { MdComponent } from './md/md.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { MarkdownModule } from 'ngx-markdown';
 import { LoginComponent } from './login/login.component';
+import { WriteComponent } from './write/write.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LoginComponent } from './login/login.component';
     HomeComponent,
     TableComponent,
     MdComponent,
-    LoginComponent
+    LoginComponent,
+    WriteComponent
   ],
   imports: [
     BrowserModule,
