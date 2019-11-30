@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { Subscriber, Observable, merge, Subject } from 'rxjs';
 import { sampleTime } from 'rxjs/operators';
 
-declare var MathJax: any;
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +17,6 @@ export class MathService {
     this.subject.pipe(sampleTime(1000)).subscribe({
       next(x) {
         console.log('type set - ' + x);
-        MathJax.typeset();
       }
     });
   }

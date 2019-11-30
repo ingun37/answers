@@ -5,7 +5,7 @@ import { MarkdownService } from 'ngx-markdown';
 import { MathService } from '../math.service';
 import { Observable } from 'rxjs';
 
-declare var MathJax: any;
+declare var katex: any;
 
 @Component({
   selector: 'app-md',
@@ -16,25 +16,55 @@ declare var MathJax: any;
 
 export class MdComponent implements OnInit {
   @Input() item: Item;
-  questionHTML: string;
-  answerHTML: string;
+  questionHTML: SafeHtml;
+  answerHTML: SafeHtml;
   constructor(
-    private answerService: AnswerService,
     private markdownService: MarkdownService,
     private sanitizer: DomSanitizer,
-    private mathService: MathService
   ) { }
 
 
   ngOnInit() {
-    this.questionHTML = latex(this.markdownService.compile(this.item.questionMD));
-    this.answerHTML = this.markdownService.compile(this.item.answerMD);
-    this.mathService.aaa(this.item.title);
+    this.questionHTML = this.sanitizer.bypassSecurityTrustHtml(md2HTML(this.markdownService, this.item.questionMD));
+    this.answerHTML = this.sanitizer.bypassSecurityTrustHtml(md2HTML(this.markdownService, this.item.answerMD));
+    console.log('md init');
   }
 
 }
-
-function latex(html: string): string {
+function md2HTML(mdservice: MarkdownService, mdStr: string): string {
+  var displayTable = {};
+  var table = {};
+  const replacedMD = mdStr.replace(/\$\$(.+?)\$\$/g, (match, group) => {
+    const randomID = makeid(16);
+    displayTable[randomID] = group;
+    return randomID;
+  }).replace(/\$(.+?)\$/g, (match, group) => {
+    const randomID = makeid(16);
+    table[randomID] = group;
+    return randomID;
+  });
+  var html = mdservice.compile(replacedMD);
+  for (const key in displayTable) {
+    if (displayTable.hasOwnProperty(key)) {
+      const tex = displayTable[key];
+      html = html.replace(key, katex.renderToString(tex, {displayMode: true}));
+    }
+  }
+  for (const key in table) {
+    if (table.hasOwnProperty(key)) {
+      const tex = table[key];
+      html = html.replace(key, katex.renderToString(tex));
+    }
+  }
   return html;
-  // return html.replace(/\$(.+?)\$/g, (match, group) => MathJax.tex2chtml(group).outerHTML);
+}
+
+function makeid(length) {
+  var result           = '';
+  var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  var charactersLength = characters.length;
+  for ( var i = 0; i < length; i++ ) {
+     result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return result;
 }
