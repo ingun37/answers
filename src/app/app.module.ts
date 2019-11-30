@@ -13,6 +13,7 @@ import { TableComponent } from './table/table.component';
 import { MdComponent } from './md/md.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { MarkdownModule } from 'ngx-markdown';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,14 +21,16 @@ import { MarkdownModule } from 'ngx-markdown';
     ItemComponent,
     HomeComponent,
     TableComponent,
-    MdComponent
+    MdComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: ':treeId', component: ItemComponent }
+      { path: 'doc/:treeId', component: ItemComponent },
+      { path: 'login', component: LoginComponent }
     ]),
     NoopAnimationsModule,
     MatSliderModule,

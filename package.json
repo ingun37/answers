@@ -24,6 +24,8 @@
     "@types/cheerio": "^0.22.14",
     "@types/jsdom": "^12.2.4",
     "@types/markdown-it": "0.0.9",
+    "firebase": "^7.5.0",
+    "firebaseui": "^4.3.0",
     "hammerjs": "^2.0.8",
     "marked": "^0.7.0",
     "ngx-markdown": "^8.2.1",
