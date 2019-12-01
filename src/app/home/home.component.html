@@ -3,7 +3,7 @@ This is home. It only shows table.
   <div *ngFor="let book of home.books">
     <ul>
         <li>
-          <a routerLink="/doc/{{book.id}}">{{book.title}}</a>
+          <a routerLink="/books/{{book.path}}">{{book.title}}</a>
         </li>
     </ul>
   </div>

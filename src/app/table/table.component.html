@@ -1,4 +1,4 @@
-<a routerLink="/doc/{{item.id}}" *ngIf="item.title">{{item.title}}</a>
+<a routerLink="/{{item.path}}" *ngIf="item.title">{{item.title}}</a>
 
 <div *ngFor="let sub of item.subs">
     <ul>

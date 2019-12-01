@@ -31,8 +31,8 @@ import { WriteComponent } from './write/write.component';
     AppRoutingModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'doc/:treeId', component: ItemComponent },
-      { path: 'login', component: LoginComponent }
+      { path: 'login', component: LoginComponent },
+      { path: '**', component: ItemComponent, pathMatch: 'prefix' },
     ]),
     NoopAnimationsModule,
     MatSliderModule,
