@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { HomeComponent } from './home/home.component';
 import { TableComponent } from './table/table.component';
 import { MdComponent } from './md/md.component';
@@ -42,6 +43,7 @@ import { SectionComponent } from './section/section.component';
     NoopAnimationsModule,
     MatSliderModule,
     MatButtonModule,
+    MatButtonToggleModule,
     HttpClientModule,
     MarkdownModule.forRoot(),
   ],

@@ -17,25 +17,30 @@ export class AnswerService {
     });
   }
 
-  private snap2Item(depth: number, snap: firebase.firestore.DocumentSnapshot): Promise<Item> {
+  private snap2Item(snap: firebase.firestore.DocumentSnapshot): Item {
     const data = snap.data();
     const title = data.title as string;
     const question = data.q as string;
     const answer = data.a as string;
-    if (depth > 0) {
-      return snap.ref.collection('subs').get().then(collectionSnap => {
-        return Promise.all(collectionSnap.docs.map(x => this.snap2Item(depth - 1, x))).then(subItems => {
-          return new Item(snap.ref.path, title, question, answer, subItems);
-        });
-      });
-    }
-    return Promise.resolve(new Item(snap.ref.path, title, question, answer, []));
+    return new Item(snap.ref.path, title, question, answer);
+    // if (depth > 0) {
+    //   return snap.ref.collection('subs').get().then(collectionSnap => {
+    //     return Promise.all(collectionSnap.docs.map(x => this.snap2Item(depth - 1, x))).then(subItems => {
+    //       return new Item(snap.ref.path, title, question, answer, subItems);
+    //     });
+    //   });
+    // }
   }
   getItem(path: string): Promise<Item> {
     console.log('getting item at physical ' + path);
     return this.fire.db.doc(path).get().then(snap => {
-      return this.snap2Item(1, snap);
+      return this.snap2Item(snap);
     });
+  }
+  getChildren(path: string): Promise<Item[]> {
+      return this.fire.db.collection(path + '/subs').get().then(collectionSnap => {
+        return collectionSnap.docs.map(x => this.snap2Item(x));
+      });
   }
   constructor(
     private http: HttpClient,
@@ -49,7 +54,6 @@ export class Item {
     public title: string,
     public questionMD: string,
     public answerMD: string,
-    public subs: Item[]
   ) {}
 }
 

@@ -1,6 +1,15 @@
 <div [innerHTML]="questionHTML"></div>
 <div [innerHTML]="answerHTML"></div>
 
-<div *ngFor="let sub of item.subs">
-    <button mat-button>{{sub.title}}</button>
+<div *ngIf="children">
+    <div *ngFor="let sub of children">
+        <mat-button-toggle-group #group="matButtonToggleGroup" multiple="true">
+            <mat-button-toggle value="fold" aria-label="fold/unfold" (change)="onChange(sub.path, $event)">
+                {{sub.title}}
+            </mat-button-toggle>
+        </mat-button-toggle-group>
+        <div *ngIf="unfolds.has(sub.path)">
+            <app-section [item]="sub"></app-section>
+        </div>
+    </div>
 </div>
