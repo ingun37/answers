@@ -17,6 +17,7 @@ export class ItemComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    console.log('item init!');
     this.route.url.subscribe(segments => {
       this.answerService.getItem(segments.join('/')).then(item => {
         this.item = item;

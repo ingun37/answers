@@ -15,6 +15,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { MarkdownModule } from 'ngx-markdown';
 import { LoginComponent } from './login/login.component';
 import { WriteComponent } from './write/write.component';
+import { BookComponent } from './book/book.component';
+import { SectionComponent } from './section/section.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { WriteComponent } from './write/write.component';
     TableComponent,
     MdComponent,
     LoginComponent,
-    WriteComponent
+    WriteComponent,
+    BookComponent,
+    SectionComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +36,7 @@ import { WriteComponent } from './write/write.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'login', component: LoginComponent },
+      { path: 'books/:id', component: BookComponent },
       { path: '**', component: ItemComponent, pathMatch: 'prefix' },
     ]),
     NoopAnimationsModule,
