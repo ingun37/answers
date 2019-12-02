@@ -1,5 +1,5 @@
-<h1>{{item.title}}</h1>
+<div *ngIf="item">
+    <h1>{{item.title}}</h1>
+</div>
 
-<div [innerHTML]="questionHTML"></div>
-<div [innerHTML]="answerHTML"></div>
-
+<app-section [item]="item" *ngIf="item"></app-section>

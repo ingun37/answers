@@ -1,1 +1,6 @@
-<p>section works!</p>
+<div [innerHTML]="questionHTML"></div>
+<div [innerHTML]="answerHTML"></div>
+
+<div *ngFor="let sub of item.subs">
+    <button mat-button>{{sub.title}}</button>
+</div>
