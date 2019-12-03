@@ -18,6 +18,7 @@ import { LoginComponent } from './login/login.component';
 import { WriteComponent } from './write/write.component';
 import { BookComponent } from './book/book.component';
 import { SectionComponent } from './section/section.component';
+import { ExcerptComponent } from './excerpt/excerpt.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SectionComponent } from './section/section.component';
     LoginComponent,
     WriteComponent,
     BookComponent,
-    SectionComponent
+    SectionComponent,
+    ExcerptComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +40,7 @@ import { SectionComponent } from './section/section.component';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'login', component: LoginComponent },
       { path: 'books/:id', component: BookComponent },
+      { path: 'write/:path', component: WriteComponent },
       { path: '**', component: ItemComponent, pathMatch: 'prefix' },
     ]),
     NoopAnimationsModule,

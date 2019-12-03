@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-write',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WriteComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute
+  ) { }
 
   ngOnInit() {
+    this.route.paramMap.subscribe(params => {
+      const path = decodeURIComponent(params.get('path'));
+      console.log(path);
+    });
   }
 
 }
