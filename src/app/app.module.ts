@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ItemComponent } from './item/item.component';
@@ -19,6 +18,7 @@ import { WriteComponent } from './write/write.component';
 import { BookComponent } from './book/book.component';
 import { SectionComponent } from './section/section.component';
 import { ExcerptComponent } from './excerpt/excerpt.component';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -47,6 +47,7 @@ import { ExcerptComponent } from './excerpt/excerpt.component';
     MatSliderModule,
     MatButtonModule,
     MatButtonToggleModule,
+    MatInputModule,
     HttpClientModule,
     MarkdownModule.forRoot(),
   ],
