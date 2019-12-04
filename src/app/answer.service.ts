@@ -19,10 +19,7 @@ export class AnswerService {
 
   private snap2Item(snap: firebase.firestore.DocumentSnapshot): Item {
     const data = snap.data();
-    const title = data.title as string;
-    const question = data.q as string;
-    const answer = data.a as string;
-    return new Item(snap.ref.path, title, question, answer);
+    return new Item(snap.ref.path, data);
     // if (depth > 0) {
     //   return snap.ref.collection('subs').get().then(collectionSnap => {
     //     return Promise.all(collectionSnap.docs.map(x => this.snap2Item(depth - 1, x))).then(subItems => {
@@ -37,6 +34,9 @@ export class AnswerService {
       return this.snap2Item(snap);
     });
   }
+  mergeToItem(path: string, data: any): Promise<void> {
+    return this.fire.db.doc(path).set(data, {merge: true});
+  }
   getChildren(path: string): Promise<Item[]> {
       return this.fire.db.collection(path + '/subs').get().then(collectionSnap => {
         return collectionSnap.docs.map(x => this.snap2Item(x));
@@ -49,11 +49,18 @@ export class AnswerService {
 }
 
 export class Item {
+  get title(): string {
+    return this.data.title;
+  }
+  get questionMD(): string {
+    return this.data.question;
+  }
+  get answerMD(): string {
+    return this.data.answer;
+  }
   constructor(
     public path: string,//URIComponent safe, delimited by '/'
-    public title: string,
-    public questionMD: string,
-    public answerMD: string,
+    public data: any,
   ) {}
 }
 

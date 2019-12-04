@@ -1,7 +1,12 @@
 <div class="sectionbox">
-    <button mat-button [routerLink]="[editLink]">Edit section</button>
-    <app-excerpt [name]="'Question'" [mdstr]="item.questionMD"></app-excerpt>
-    <app-excerpt [name]="'Answer'" [mdstr]="item.answerMD"></app-excerpt>
+    <div *ngIf="item.questionMD">
+        Question <button mat-button [routerLink]="[editLink, 'question']">Edit section</button>
+        <app-excerpt [mdstr]="item.questionMD"></app-excerpt>
+    </div>
+    <div *ngIf="item.answerMD">
+        Answer <button mat-button [routerLink]="[editLink, 'answer']">Edit section</button>
+        <app-excerpt [mdstr]="item.answerMD"></app-excerpt>
+    </div>
     
     <div *ngIf="children">
         <div *ngFor="let sub of children">

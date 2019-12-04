@@ -11,7 +11,6 @@ declare var katex: any;
 })
 export class ExcerptComponent implements OnInit {
   @Input() mdstr: string;
-  @Input() name: string;
   
   htmlstr: SafeHtml;
 

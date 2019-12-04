@@ -18,7 +18,9 @@ import { WriteComponent } from './write/write.component';
 import { BookComponent } from './book/book.component';
 import { SectionComponent } from './section/section.component';
 import { ExcerptComponent } from './excerpt/excerpt.component';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
+import { TextFieldModule } from '@angular/cdk/text-field';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,7 @@ import {MatInputModule} from '@angular/material/input';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'login', component: LoginComponent },
       { path: 'books/:id', component: BookComponent },
-      { path: 'write/:path', component: WriteComponent },
+      { path: 'write/:path/:att', component: WriteComponent },
       { path: '**', component: ItemComponent, pathMatch: 'prefix' },
     ]),
     NoopAnimationsModule,
@@ -48,8 +50,10 @@ import {MatInputModule} from '@angular/material/input';
     MatButtonModule,
     MatButtonToggleModule,
     MatInputModule,
+    TextFieldModule,
     HttpClientModule,
     MarkdownModule.forRoot(),
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

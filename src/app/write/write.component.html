@@ -1,8 +1,20 @@
 <div *ngIf="item">
-    <form class="example-form">
-        <mat-form-field class="example-full-width">
-            <input matInput placeholder="Title" value={{item.title}}>
-        </mat-form-field>
-    </form>
-    <button mat-button>Cancel</button>
+    <mat-button-toggle-group #group="matButtonToggleGroup">
+        <mat-button-toggle value="editor" aria-label="editor">
+            Editor
+        </mat-button-toggle>
+        <mat-button-toggle value="preview" aria-label="preview">
+            Preview
+        </mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <br/>
+    <mat-form-field>
+        <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5" [(ngModel)]="md"></textarea>
+    </mat-form-field>
+    <br/>
+    <button mat-button (click)="publish();">Publish</button><button mat-button>Cancel</button>
 </div>
+
+
+<!-- {{item.data[attribute]}} -->
