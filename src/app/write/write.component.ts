@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Item, AnswerService } from '../answer.service';
 import { CdkTextareaAutosize } from '@angular/cdk/text-field';
 
@@ -15,10 +15,15 @@ export class WriteComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private answer: AnswerService
   ) { }
   publish() {
-    console.log(this.md);
+    const data = {};
+    data[this.attribute] = this.md;
+    this.answer.mergeToItem(this.item.path, data).then(() => {
+      this.router.navigate(['books', this.item.path]);
+    });
   }
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
