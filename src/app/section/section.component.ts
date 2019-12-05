@@ -23,7 +23,7 @@ export class SectionComponent implements OnInit {
 
   addClick(): void {
     const dialogRef = this.dialog.open(NewItemDialogComponent, {
-      width: '250px',
+      width: '80%',
       data: {name: ''}
     });
 
