@@ -1,9 +1,10 @@
 import { Component, OnInit, Input, Inject } from '@angular/core';
-import { Item, AnswerService } from '../answer.service';
+import { AnswerService } from '../answer.service';
 import { MatButtonToggleChange } from '@angular/material/button-toggle';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { NewItemDialogComponent } from '../new-item-dialog/new-item-dialog.component';
 import { Router } from '@angular/router';
+import { Item } from '../item';
 
 @Component({
   selector: 'app-section',

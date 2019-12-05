@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AnswerService, Item, Home } from '../answer.service';
+import { AnswerService, Home } from '../answer.service';
 import { mergeMap } from "rxjs/operators";
+import { Item } from '../item';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

@@ -1,9 +1,10 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Item, AnswerService, md2HTML } from '../answer.service';
+import { AnswerService, md2HTML } from '../answer.service';
 import { CdkTextareaAutosize } from '@angular/cdk/text-field';
 import { MatButtonToggleChange } from '@angular/material/button-toggle';
 import { MarkdownService } from 'ngx-markdown';
+import { Item } from '../item';
 
 @Component({
   selector: 'app-write',

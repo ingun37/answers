@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Item, AnswerService } from '../answer.service';
+import { AnswerService } from '../answer.service';
 import { ActivatedRoute } from '@angular/router';
+import { Item } from '../item';
 
 @Component({
   selector: 'app-book',

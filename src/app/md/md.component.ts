@@ -1,9 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { DomSanitizer, SafeHtml } from "@angular/platform-browser";
-import { AnswerService, Item } from '../answer.service';
+import { AnswerService } from '../answer.service';
 import { MarkdownService } from 'ngx-markdown';
 import { MathService } from '../math.service';
 import { Observable } from 'rxjs';
+import { Item } from '../item';
 
 declare var katex: any;
 
