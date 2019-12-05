@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   ) { }
 
   signOut() {
-    this.fire.signOut().then(()=> {
+    this.fire.signOut().then(() => {
       this.router.navigate([]);
     });
   }

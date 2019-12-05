@@ -1,23 +1,21 @@
-<div class="sectionbox">
-    <div *ngIf="item.questionMD">
-        Question <button mat-button [routerLink]="[editLink, 'question']">Edit section</button>
-        <app-excerpt [mdstr]="item.questionMD"></app-excerpt>
-    </div>
-    <div *ngIf="item.answerMD">
-        Answer <button mat-button [routerLink]="[editLink, 'answer']">Edit section</button>
-        <app-excerpt [mdstr]="item.answerMD"></app-excerpt>
-    </div>
-    
-    <div *ngIf="children">
-        <div *ngFor="let sub of children">
-            <mat-button-toggle-group #group="matButtonToggleGroup" multiple="true">
-                <mat-button-toggle value="fold" aria-label="fold/unfold" (change)="onChange(sub.path, $event)">
-                    {{sub.title}}
-                </mat-button-toggle>
-            </mat-button-toggle-group>
-            <div *ngIf="unfolds.has(sub.path)">
-                <app-section [item]="sub"></app-section>
-            </div>
+<div *ngIf="item.questionMD">
+    Question <button mat-button [routerLink]="[editLink, 'question']">Edit section</button>
+    <app-excerpt [mdstr]="item.questionMD"></app-excerpt>
+</div>
+<div *ngIf="item.answerMD">
+    Answer <button mat-button [routerLink]="[editLink, 'answer']">Edit section</button>
+    <app-excerpt [mdstr]="item.answerMD"></app-excerpt>
+</div>
+
+<div *ngIf="children">
+    <div *ngFor="let sub of children">
+        <mat-button-toggle-group #group="matButtonToggleGroup" multiple="true">
+            <mat-button-toggle value="fold" aria-label="fold/unfold" (change)="onChange(sub.path, $event)">
+                {{sub.title}}
+            </mat-button-toggle>
+        </mat-button-toggle-group>
+        <div class="sectionbox" *ngIf="unfolds.has(sub.path)">
+            <app-section [item]="sub"></app-section>
         </div>
     </div>
 </div>
