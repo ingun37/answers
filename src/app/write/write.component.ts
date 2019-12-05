@@ -1,7 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Item, AnswerService } from '../answer.service';
+import { Item, AnswerService, md2HTML } from '../answer.service';
 import { CdkTextareaAutosize } from '@angular/cdk/text-field';
+import { MatButtonToggleChange } from '@angular/material/button-toggle';
+import { MarkdownService } from 'ngx-markdown';
 
 @Component({
   selector: 'app-write',
@@ -13,12 +15,21 @@ export class WriteComponent implements OnInit {
   attribute: string;
   md: string;
   previewHTML: string;
-  
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private answer: AnswerService
+    private answer: AnswerService,
+    private mdservice: MarkdownService
   ) { }
+  changed(change: MatButtonToggleChange) {
+    console.log(change);
+    if (change.value === 'preview') {
+      this.previewHTML = md2HTML(this.mdservice, this.md);
+    } else if (change.value === 'editor') {
+      this.previewHTML = '';
+    }
+  }
   publish() {
     const data = {};
     data[this.attribute] = this.md;

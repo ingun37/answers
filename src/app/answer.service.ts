@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FireService } from './fire.service';
+import { MarkdownService } from 'ngx-markdown';
+
+declare var katex: any;
 
 @Injectable({
   providedIn: 'root'
@@ -65,4 +68,42 @@ export class Home {
   constructor(
     public books: Item[]
   ) {}
+}
+
+export function md2HTML(mdservice: MarkdownService, mdStr: string): string {
+  var displayTable = {};
+  var table = {};
+  const replacedMD = mdStr.replace(/\$\$(.+?)\$\$/gm, (match, group) => {
+    const randomID = makeid(16);
+    displayTable[randomID] = group;
+    return randomID;
+  }).replace(/\$(.+?)\$/g, (match, group) => {
+    const randomID = makeid(16);
+    table[randomID] = group;
+    return randomID;
+  });
+  var html = mdservice.compile(replacedMD);
+  for (const key in displayTable) {
+    if (displayTable.hasOwnProperty(key)) {
+      const tex = displayTable[key];
+      html = html.replace(key, katex.renderToString(tex, {displayMode: true}));
+    }
+  }
+  for (const key in table) {
+    if (table.hasOwnProperty(key)) {
+      const tex = table[key];
+      html = html.replace(key, katex.renderToString(tex));
+    }
+  }
+  return html;
+}
+
+function makeid(length) {
+  let result           = '';
+  const characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  const charactersLength = characters.length;
+  for ( let i = 0; i < length; i++ ) {
+     result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return result;
 }
