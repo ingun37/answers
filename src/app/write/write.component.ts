@@ -11,8 +11,9 @@ import { CdkTextareaAutosize } from '@angular/cdk/text-field';
 export class WriteComponent implements OnInit {
   item: Item;
   attribute: string;
-  md:string;
-
+  md: string;
+  previewHTML: string;
+  
   constructor(
     private route: ActivatedRoute,
     private router: Router,
