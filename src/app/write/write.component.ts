@@ -37,6 +37,9 @@ export class WriteComponent implements OnInit {
       this.router.navigate(['books', this.item.path]);
     });
   }
+  cancel() {
+    this.router.navigate(['books', this.item.path]);
+  }
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
       const path = decodeURIComponent(params.get('path'));

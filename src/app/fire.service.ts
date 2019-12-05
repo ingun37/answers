@@ -1,16 +1,20 @@
 import { Injectable } from '@angular/core';
 import * as firebase from 'firebase/app';
-import { Subject } from 'rxjs';
+import { Subject, BehaviorSubject } from 'rxjs';
 import * as firebaseForStore from 'firebase';
 import * as firebaseui from 'firebaseui';
 import {} from 'firebase/firestore';
+import { User } from './user';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FireService {
-  loginState = new Subject<User>();
+  loginState = new BehaviorSubject<User>(null);
   db:firebase.firestore.Firestore;
+  signOut(): Promise<void> {
+    return firebase.auth().signOut();
+  }
   loginUI(element: string | Element) {
     var uiConfig = {
       signInSuccessUrl: window.location.href,
@@ -92,9 +96,3 @@ export class FireService {
     this.db = firebaseForStore.firestore();
   }
 }
-
-class User {
-  constructor(
-    public name: string
-  ) {}
-};

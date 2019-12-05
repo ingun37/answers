@@ -21,6 +21,9 @@ import { ExcerptComponent } from './excerpt/excerpt.component';
 import { MatInputModule } from '@angular/material/input';
 import { TextFieldModule } from '@angular/cdk/text-field';
 import { FormsModule } from '@angular/forms';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { LoginUIDirective } from './login-ui.directive';
+import { AuthUIComponent } from './auth-ui/auth-ui.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,9 @@ import { FormsModule } from '@angular/forms';
     WriteComponent,
     BookComponent,
     SectionComponent,
-    ExcerptComponent
+    ExcerptComponent,
+    LoginUIDirective,
+    AuthUIComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +59,7 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     MarkdownModule.forRoot(),
     FormsModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
