@@ -34,6 +34,11 @@ export class AnswerService {
       return this.snap2Item(snap);
     });
   }
+  newItem(parentPath: string, title: string): Promise<void> {
+    return this.fire.db.doc(parentPath + '/subs/' + encodeURIComponent(title)).set({
+      title
+    });
+  }
   mergeToItem(path: string, data: any): Promise<void> {
     return this.fire.db.doc(path).set(data, {merge: true});
   }

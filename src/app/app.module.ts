@@ -24,6 +24,8 @@ import { FormsModule } from '@angular/forms';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { LoginUIDirective } from './login-ui.directive';
 import { AuthUIComponent } from './auth-ui/auth-ui.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { NewItemDialogComponent } from './new-item-dialog/new-item-dialog.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,8 @@ import { AuthUIComponent } from './auth-ui/auth-ui.component';
     SectionComponent,
     ExcerptComponent,
     LoginUIDirective,
-    AuthUIComponent
+    AuthUIComponent,
+    NewItemDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +51,7 @@ import { AuthUIComponent } from './auth-ui/auth-ui.component';
       { path: 'login', component: LoginComponent },
       { path: 'books/:path', component: BookComponent },
       { path: 'write/:path/:att', component: WriteComponent },
+      { path: 'whateverrrrrrrrr', component: NewItemDialogComponent },
       { path: '**', component: ItemComponent, pathMatch: 'prefix' },
     ]),
     NoopAnimationsModule,
@@ -60,6 +64,7 @@ import { AuthUIComponent } from './auth-ui/auth-ui.component';
     MarkdownModule.forRoot(),
     FormsModule,
     MatToolbarModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
