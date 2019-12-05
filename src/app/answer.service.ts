@@ -10,10 +10,7 @@ export class AnswerService {
 
   getHome(): Promise<Home> {
     return this.fire.db.collection('books').get().then(snap => {
-      const entries = snap.docs.map(x => x.data().title as string).filter(x => x).map(x => new Book(x));
-      console.log('book entries:');
-      console.log(entries);
-      return new Home(entries);
+      return new Home(snap.docs.map(x => this.snap2Item(x)));
     });
   }
 
@@ -64,17 +61,8 @@ export class Item {
   ) {}
 }
 
-export class Book {
-  get path(): string {
-    return encodeURIComponent(this.title);
-  }
-  constructor(
-    public title: string
-  ) {}
-}
-
 export class Home {
   constructor(
-    public books: Book[]
+    public books: Item[]
   ) {}
 }

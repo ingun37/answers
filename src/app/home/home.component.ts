@@ -8,6 +8,9 @@ import { mergeMap } from "rxjs/operators";
 })
 export class HomeComponent implements OnInit {
   home: Home;
+  makeURI(item: Item): string {
+    return 'books/' + encodeURIComponent(item.path);
+  }
   constructor(
     private answerService: AnswerService
   ) { }

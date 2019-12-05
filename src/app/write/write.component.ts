@@ -26,6 +26,7 @@ export class WriteComponent implements OnInit {
       this.attribute = params.get('att');
       this.answer.getItem(path).then(item => {
         this.item = item;
+        this.md = item.data[this.attribute];
       });
     });
   }

@@ -41,7 +41,7 @@ import { FormsModule } from '@angular/forms';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'login', component: LoginComponent },
-      { path: 'books/:id', component: BookComponent },
+      { path: 'books/:path', component: BookComponent },
       { path: 'write/:path/:att', component: WriteComponent },
       { path: '**', component: ItemComponent, pathMatch: 'prefix' },
     ]),

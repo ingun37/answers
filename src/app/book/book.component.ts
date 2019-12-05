@@ -17,8 +17,8 @@ export class BookComponent implements OnInit {
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
-      const bookId = params.get('id');
-      this.answers.getItem('books/' + bookId).then(item => {
+      const path = decodeURIComponent(params.get('path'));
+      this.answers.getItem(path).then(item => {
         this.item = item;
       });
     });
