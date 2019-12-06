@@ -57,7 +57,7 @@ export class FireService {
     firebase.initializeApp(firebaseConfig);
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
-        this.loginState.next(new User(user.displayName));
+        this.loginState.next(new User(user.uid, user.displayName));
       } else {
         this.loginState.next(null);
       }

@@ -6,6 +6,7 @@ import { MatButtonToggleChange } from '@angular/material/button-toggle';
 import { MarkdownService } from 'ngx-markdown';
 import { Item } from '../item';
 import { Account } from '../account';
+import { FireService } from '../fire.service';
 
 @Component({
   selector: 'app-write',
@@ -23,7 +24,8 @@ export class WriteComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private answer: AnswerService,
-    private mdservice: MarkdownService
+    private mdservice: MarkdownService,
+    private fire: FireService
   ) { }
   changed(change: MatButtonToggleChange) {
     console.log(change);
@@ -34,7 +36,12 @@ export class WriteComponent implements OnInit {
     }
   }
   publish() {
-    this.answer.newAccount(this.item.path, this.attribute, new Account('author', this.md, this.parentAccountId))
+    this.fire.loginState.subscribe(user => {
+      console.log(user);
+      this.answer.newAccount(this.item.path, this.attribute, new Account(user.uid, this.md, this.parentAccountId)).then(x => {
+        this.router.navigate(['books', this.item.path]);
+      });
+    }).unsubscribe();
     // this.answer.mergeToItem(this.item.path, data).then(() => {
     //   this.router.navigate(['books', this.item.path]);
     // });
@@ -50,8 +57,8 @@ export class WriteComponent implements OnInit {
         this.item = item;
         this.answer.getAccountsOfItem(item.path, this.attribute).then(accounts => {
           if (accounts.length > 0) {
-            const parentAccount = accounts[accounts.length - 1].account;
-            this.parentAccountId = accounts[accounts.length - 1].id;
+            const parentAccount = accounts[0].account;
+            this.parentAccountId = accounts[0].id;
             this.md = parentAccount.value;
           }
         });

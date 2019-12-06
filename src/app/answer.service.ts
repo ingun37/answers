@@ -72,7 +72,7 @@ export class AnswerService {
   }
 
   newAccount(path: string, attr: string, account: Account): Promise<void> {
-    return this.accountsOf(path, attr).add(account).then(ref => {
+    return this.accountsOf(path, attr).add(Object.assign({}, account)).then(ref => {
       return Promise.resolve();
     });
   }
@@ -141,7 +141,7 @@ function makeid(length) {
   return result;
 }
 
-enum ItemAttribute {
+export enum ItemAttribute {
   QUESTION = 'question',
   ANSWER = 'answer'
-};
+}

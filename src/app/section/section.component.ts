@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Inject } from '@angular/core';
-import { AnswerService } from '../answer.service';
+import { AnswerService, ItemAttribute } from '../answer.service';
 import { MatButtonToggleChange } from '@angular/material/button-toggle';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { NewItemDialogComponent } from '../new-item-dialog/new-item-dialog.component';
@@ -50,12 +50,12 @@ export class SectionComponent implements OnInit {
   ngOnInit() {
     this.editLink = '/write/' + encodeURIComponent(this.item.path);
     this.reloadChildren();
-    this.answer.getAccountsOfItem(this.item.path, 'question').then(accounts => {
+    this.answer.getAccountsOfItem(this.item.path, ItemAttribute.QUESTION).then(accounts => {
       if (accounts.length > 0) {
         this.questionMD = accounts[0].account.value;
       }
     });
-    this.answer.getAccountsOfItem(this.item.path, 'answer').then(accounts => {
+    this.answer.getAccountsOfItem(this.item.path, ItemAttribute.ANSWER).then(accounts => {
       if (accounts.length > 0) {
         this.answerMD = accounts[0].account.value;
       }
