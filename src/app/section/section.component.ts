@@ -16,6 +16,8 @@ export class SectionComponent implements OnInit {
   children: Item[];
   unfolds = new Set<string>();
   editLink = '';
+  questionMD = '';
+  answerMD = '';
   constructor(
     private answer: AnswerService,
     public dialog: MatDialog,
@@ -48,6 +50,16 @@ export class SectionComponent implements OnInit {
   ngOnInit() {
     this.editLink = '/write/' + encodeURIComponent(this.item.path);
     this.reloadChildren();
+    this.answer.getAccountsOfItem(this.item.path, 'question').then(accounts => {
+      if (accounts.length > 0) {
+        this.questionMD = accounts[0].account.value;
+      }
+    });
+    this.answer.getAccountsOfItem(this.item.path, 'answer').then(accounts => {
+      if (accounts.length > 0) {
+        this.answerMD = accounts[0].account.value;
+      }
+    });
   }
 
   unfold(item: Item) {

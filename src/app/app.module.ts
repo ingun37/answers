@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ItemComponent } from './item/item.component';
 import { RouterModule } from '@angular/router';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
@@ -10,7 +9,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { HomeComponent } from './home/home.component';
 import { TableComponent } from './table/table.component';
-import { MdComponent } from './md/md.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { MarkdownModule } from 'ngx-markdown';
 import { LoginComponent } from './login/login.component';
@@ -30,10 +28,8 @@ import { NewItemDialogComponent } from './new-item-dialog/new-item-dialog.compon
 @NgModule({
   declarations: [
     AppComponent,
-    ItemComponent,
     HomeComponent,
     TableComponent,
-    MdComponent,
     LoginComponent,
     WriteComponent,
     BookComponent,
@@ -52,7 +48,7 @@ import { NewItemDialogComponent } from './new-item-dialog/new-item-dialog.compon
       { path: 'books/:path', component: BookComponent },
       { path: 'write/:path/:att', component: WriteComponent },
       { path: 'whateverrrrrrrrr', component: NewItemDialogComponent },
-      { path: '**', component: ItemComponent, pathMatch: 'prefix' },
+      // { path: '**', component:  pathMatch: 'prefix' },
     ]),
     NoopAnimationsModule,
     MatSliderModule,

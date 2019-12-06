@@ -3,7 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { FireService } from './fire.service';
 import { MarkdownService } from 'ngx-markdown';
 import { Item } from './item';
-
+import { Account } from './account';
+import * as firebase from 'firebase/app';
 declare var katex: any;
 
 @Injectable({
@@ -20,29 +21,64 @@ export class AnswerService {
 
   private snap2Item(snap: firebase.firestore.DocumentSnapshot): Item {
     const data = snap.data();
-    return new Item(snap.ref.path, data);
-    // if (depth > 0) {
-    //   return snap.ref.collection('subs').get().then(collectionSnap => {
-    //     return Promise.all(collectionSnap.docs.map(x => this.snap2Item(depth - 1, x))).then(subItems => {
-    //       return new Item(snap.ref.path, title, question, answer, subItems);
-    //     });
-    //   });
-    // }
+    return new Item(snap.ref.path, data.title);
   }
+
+  private makeChain(startId: string, accountRefs: AccountRef[]): AccountRef[] {
+    const dic = new Map<string, AccountRef>(accountRefs.map(x => [x.id, x]));
+    const current = dic.get(startId);
+    const chain = [current];
+    while (chain[chain.length - 1].account.parent) {
+      chain.push(dic.get(chain[chain.length - 1].account.parent));
+    }
+    return chain;
+  }
+
+  getAccountsOfItem(path: string, attr: string): Promise<AccountRef[]> {
+    return this.accountsOf(path, attr).get().then(snap => {
+      const accountRefs = snap.docs.map(doc => {
+        return new AccountRef(doc.id, Object.assign(new Account('','',''), doc.data()));
+      });
+      
+      const ids = accountRefs.map(x => x.id);
+      const parentIds = new Set(accountRefs.map(x => x.account.parent));
+      const leafs = ids.filter(x => !parentIds.has(x));
+      
+      const chains = leafs.map(x => this.makeChain(x, accountRefs));
+      if (chains.length > 1) {
+        return chains.reduce((prev, curr) => prev.length < curr.length ? curr : prev);
+      } else if (chains.length === 1) {
+        return chains[0];
+      } else {
+        return [];
+      }
+    });
+  }
+
   getItem(path: string): Promise<Item> {
-    console.log('getting item at physical ' + path);
     return this.fire.db.doc(path).get().then(snap => {
       return this.snap2Item(snap);
     });
   }
+
   newItem(parentPath: string, title: string): Promise<void> {
     return this.fire.db.doc(parentPath + '/subs/' + encodeURIComponent(title)).set({
       title
     });
   }
-  mergeToItem(path: string, data: any): Promise<void> {
-    return this.fire.db.doc(path).set(data, {merge: true});
+
+  private accountsOf(path: string, attr: string): firebase.firestore.CollectionReference {
+    return this.fire.db.collection(path + '/attributes/' + encodeURIComponent(attr) + '/accounts');
   }
+
+  newAccount(path: string, attr: string, account: Account): Promise<void> {
+    return this.accountsOf(path, attr).add(account).then(ref => {
+      return Promise.resolve();
+    });
+  }
+  // mergeToItem(path: string, data: any): Promise<void> {
+  //   return this.fire.db.doc(path).set(data, {merge: true});
+  // }
   getChildren(path: string): Promise<Item[]> {
       return this.fire.db.collection(path + '/subs').get().then(collectionSnap => {
         return collectionSnap.docs.map(x => this.snap2Item(x));
@@ -53,7 +89,12 @@ export class AnswerService {
     private fire: FireService,
   ) {}
 }
-
+export class AccountRef {
+  constructor(
+    public id: string,
+    public account: Account
+  ) {}
+}
 export class Home {
   constructor(
     public books: Item[]
@@ -63,6 +104,7 @@ export class Home {
 export function md2HTML(mdservice: MarkdownService, mdStr: string): string {
   var displayTable = {};
   var table = {};
+
   const replacedMD = mdStr.replace(/\$\$(.+?)\$\$/gm, (match, group) => {
     const randomID = makeid(16);
     displayTable[randomID] = group;
@@ -72,6 +114,7 @@ export function md2HTML(mdservice: MarkdownService, mdStr: string): string {
     table[randomID] = group;
     return randomID;
   });
+
   var html = mdservice.compile(replacedMD);
   for (const key in displayTable) {
     if (displayTable.hasOwnProperty(key)) {
@@ -97,3 +140,8 @@ function makeid(length) {
   }
   return result;
 }
+
+enum ItemAttribute {
+  QUESTION = 'question',
+  ANSWER = 'answer'
+};

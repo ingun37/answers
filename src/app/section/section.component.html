@@ -1,10 +1,10 @@
-<div *ngIf="item.questionMD">
+<div *ngIf="questionMD">
     Question <button mat-button [routerLink]="[editLink, 'question']">Edit section</button>
-    <app-excerpt [mdstr]="item.questionMD"></app-excerpt>
+    <app-excerpt [mdstr]="questionMD"></app-excerpt>
 </div>
-<div *ngIf="item.answerMD">
+<div *ngIf="answerMD">
     Answer <button mat-button [routerLink]="[editLink, 'answer']">Edit section</button>
-    <app-excerpt [mdstr]="item.answerMD"></app-excerpt>
+    <app-excerpt [mdstr]="answerMD"></app-excerpt>
 </div>
 
 <div *ngIf="children">

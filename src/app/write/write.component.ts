@@ -5,6 +5,7 @@ import { CdkTextareaAutosize } from '@angular/cdk/text-field';
 import { MatButtonToggleChange } from '@angular/material/button-toggle';
 import { MarkdownService } from 'ngx-markdown';
 import { Item } from '../item';
+import { Account } from '../account';
 
 @Component({
   selector: 'app-write',
@@ -15,6 +16,7 @@ export class WriteComponent implements OnInit {
   item: Item;
   attribute: string;
   md: string;
+  parentAccountId: string = null;
   previewHTML: string;
 
   constructor(
@@ -32,11 +34,10 @@ export class WriteComponent implements OnInit {
     }
   }
   publish() {
-    const data = {};
-    data[this.attribute] = this.md;
-    this.answer.mergeToItem(this.item.path, data).then(() => {
-      this.router.navigate(['books', this.item.path]);
-    });
+    this.answer.newAccount(this.item.path, this.attribute, new Account('author', this.md, this.parentAccountId))
+    // this.answer.mergeToItem(this.item.path, data).then(() => {
+    //   this.router.navigate(['books', this.item.path]);
+    // });
   }
   cancel() {
     this.router.navigate(['books', this.item.path]);
@@ -47,7 +48,13 @@ export class WriteComponent implements OnInit {
       this.attribute = params.get('att');
       this.answer.getItem(path).then(item => {
         this.item = item;
-        this.md = item.data[this.attribute];
+        this.answer.getAccountsOfItem(item.path, this.attribute).then(accounts => {
+          if (accounts.length > 0) {
+            const parentAccount = accounts[accounts.length - 1].account;
+            this.parentAccountId = accounts[accounts.length - 1].id;
+            this.md = parentAccount.value;
+          }
+        });
       });
     });
   }
