@@ -16,8 +16,8 @@ export class SectionComponent implements OnInit {
   children: Item[];
   unfolds = new Set<string>();
   editLink = '';
-  questionMD = '';
-  answerMD = '';
+  questionMD = null;
+  answerMD = null;
   constructor(
     private answer: AnswerService,
     public dialog: MatDialog,
@@ -53,11 +53,15 @@ export class SectionComponent implements OnInit {
     this.answer.getAccountsOfItem(this.item.path, ItemAttribute.QUESTION).then(accounts => {
       if (accounts.length > 0) {
         this.questionMD = accounts[0].account.value;
+      } else {
+        this.questionMD = '';
       }
     });
     this.answer.getAccountsOfItem(this.item.path, ItemAttribute.ANSWER).then(accounts => {
       if (accounts.length > 0) {
         this.answerMD = accounts[0].account.value;
+      } else {
+        this.answerMD = '';
       }
     });
   }

@@ -1,22 +1,42 @@
-<div *ngIf="questionMD">
-    Question <button mat-button [routerLink]="[editLink, 'question']">Edit section</button>
+<div *ngIf="questionMD; else questionElseBlock">
+    Question <button mat-raised-button [routerLink]="[editLink, 'question']">Edit  <mat-icon>edit</mat-icon></button>
     <app-excerpt [mdstr]="questionMD"></app-excerpt>
 </div>
-<div *ngIf="answerMD">
-    Answer <button mat-button [routerLink]="[editLink, 'answer']">Edit section</button>
+<ng-template #questionElseBlock>
+    <div *ngIf="questionMD == null; else questionEmptyBlock">
+        loading...
+    </div>
+    <ng-template #questionEmptyBlock>
+        <button mat-raised-button [routerLink]="[editLink, 'question']">Write Question <mat-icon>edit</mat-icon></button>
+    </ng-template>
+</ng-template>
+
+<div *ngIf="answerMD; else answerElseBlock">
+    Answer <button mat-raised-button [routerLink]="[editLink, 'answer']">Edit  <mat-icon>edit</mat-icon></button>
     <app-excerpt [mdstr]="answerMD"></app-excerpt>
 </div>
+<ng-template #answerElseBlock>
+    <div *ngIf="answerMD == null; else answerEmptyBlock">
+        loading...
+    </div>
+    <ng-template #answerEmptyBlock>
+        <button mat-raised-button [routerLink]="[editLink, 'answer']">Write Answer <mat-icon>edit</mat-icon></button>
+    </ng-template>
+</ng-template>
 
-<div *ngIf="children">
-    <div *ngFor="let sub of children">
-        <mat-button-toggle-group #group="matButtonToggleGroup" multiple="true">
-            <mat-button-toggle value="fold" aria-label="fold/unfold" (change)="onChange(sub.path, $event)">
-                {{sub.title}}
-            </mat-button-toggle>
-        </mat-button-toggle-group>
-        <div class="sectionbox" *ngIf="unfolds.has(sub.path)">
-            <app-section [item]="sub"></app-section>
+<div class="sectionbox">
+    <div *ngIf="children">
+        <div *ngFor="let sub of children">
+            <mat-button-toggle-group #group="matButtonToggleGroup" multiple="true">
+                <mat-button-toggle value="fold" aria-label="fold/unfold" (change)="onChange(sub.path, $event)">
+                    <mat-icon>expand_more</mat-icon>
+                    {{sub.title}}
+                </mat-button-toggle>
+            </mat-button-toggle-group>
+            <div *ngIf="unfolds.has(sub.path)">
+                <app-section [item]="sub"></app-section>
+            </div>
         </div>
     </div>
+    <button mat-raised-button (click)="addClick();">Add Section <mat-icon>add</mat-icon></button>
 </div>
-<button mat-button (click)="addClick();">Add</button>
