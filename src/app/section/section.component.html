@@ -1,5 +1,4 @@
 <div *ngIf="questionMD; else questionElseBlock">
-    <span class="big">Question</span>
     <button *ngIf="edit" mat-icon-button [routerLink]="[editLink, 'question']">
         <mat-icon>edit</mat-icon>
     </button>
@@ -10,12 +9,14 @@
         loading...
     </div>
     <ng-template #questionEmptyBlock>
-        <button *ngIf="edit" mat-raised-button [routerLink]="[editLink, 'question']">Write Question <mat-icon>edit</mat-icon></button>
+        <button *ngIf="edit" mat-raised-button [routerLink]="[editLink, 'question']">Write Question <mat-icon>edit
+            </mat-icon></button>
     </ng-template>
 </ng-template>
 
 <div *ngIf="answerMD; else answerElseBlock">
-    <span class="big">Answer</span>
+    <mat-divider></mat-divider>
+
     <button *ngIf="edit" mat-icon-button [routerLink]="[editLink, 'answer']">
         <mat-icon>edit</mat-icon>
     </button>
@@ -26,7 +27,8 @@
         loading...
     </div>
     <ng-template #answerEmptyBlock>
-        <button *ngIf="edit" mat-raised-button [routerLink]="[editLink, 'answer']">Write Answer <mat-icon>edit</mat-icon></button>
+        <button *ngIf="edit" mat-raised-button [routerLink]="[editLink, 'answer']">Write Answer <mat-icon>edit
+            </mat-icon></button>
     </ng-template>
 </ng-template>
 

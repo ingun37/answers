@@ -27,6 +27,7 @@ import { NewItemDialogComponent } from './new-item-dialog/new-item-dialog.compon
 import { MatIconModule } from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -67,6 +68,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     MatIconModule,
     MatCardModule,
     MatSlideToggleModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
