@@ -13,6 +13,7 @@ import { Item } from '../item';
 })
 export class SectionComponent implements OnInit {
   @Input() item: Item;
+  @Input() edit: boolean;
   children: Item[];
   unfolds = new Set<string>();
   editLink = '';

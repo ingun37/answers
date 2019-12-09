@@ -1,5 +1,8 @@
 <div *ngIf="questionMD; else questionElseBlock">
-    Question <button mat-raised-button [routerLink]="[editLink, 'question']">Edit  <mat-icon>edit</mat-icon></button>
+    <span class="big">Question</span>
+    <button *ngIf="edit" mat-icon-button [routerLink]="[editLink, 'question']">
+        <mat-icon>edit</mat-icon>
+    </button>
     <app-excerpt [mdstr]="questionMD"></app-excerpt>
 </div>
 <ng-template #questionElseBlock>
@@ -7,12 +10,15 @@
         loading...
     </div>
     <ng-template #questionEmptyBlock>
-        <button mat-raised-button [routerLink]="[editLink, 'question']">Write Question <mat-icon>edit</mat-icon></button>
+        <button *ngIf="edit" mat-raised-button [routerLink]="[editLink, 'question']">Write Question <mat-icon>edit</mat-icon></button>
     </ng-template>
 </ng-template>
 
 <div *ngIf="answerMD; else answerElseBlock">
-    Answer <button mat-raised-button [routerLink]="[editLink, 'answer']">Edit  <mat-icon>edit</mat-icon></button>
+    <span class="big">Answer</span>
+    <button *ngIf="edit" mat-icon-button [routerLink]="[editLink, 'answer']">
+        <mat-icon>edit</mat-icon>
+    </button>
     <app-excerpt [mdstr]="answerMD"></app-excerpt>
 </div>
 <ng-template #answerElseBlock>
@@ -20,7 +26,7 @@
         loading...
     </div>
     <ng-template #answerEmptyBlock>
-        <button mat-raised-button [routerLink]="[editLink, 'answer']">Write Answer <mat-icon>edit</mat-icon></button>
+        <button *ngIf="edit" mat-raised-button [routerLink]="[editLink, 'answer']">Write Answer <mat-icon>edit</mat-icon></button>
     </ng-template>
 </ng-template>
 
@@ -34,9 +40,9 @@
                 </mat-button-toggle>
             </mat-button-toggle-group>
             <div *ngIf="unfolds.has(sub.path)">
-                <app-section [item]="sub"></app-section>
+                <app-section [edit]="edit" [item]="sub"></app-section>
             </div>
         </div>
     </div>
-    <button mat-raised-button (click)="addClick();">Add Section <mat-icon>add</mat-icon></button>
+    <button *ngIf="edit" mat-raised-button (click)="addClick();">Add Section <mat-icon>add</mat-icon></button>
 </div>

@@ -25,6 +25,8 @@ import { AuthUIComponent } from './auth-ui/auth-ui.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { NewItemDialogComponent } from './new-item-dialog/new-item-dialog.component';
 import { MatIconModule } from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -63,6 +65,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatToolbarModule,
     MatDialogModule,
     MatIconModule,
+    MatCardModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

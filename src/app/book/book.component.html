@@ -1,5 +1,8 @@
 <div *ngIf="item">
-    <h1>{{item.title}}</h1>
+    <span class="title">{{item.title}}</span>
+    <mat-slide-toggle class="example-margin" [checked]="edit" (change)="change($event);">
+        Edit
+    </mat-slide-toggle>
 </div>
 
-<app-section [item]="item" *ngIf="item"></app-section>
+<app-section [edit]="edit" [item]="item" *ngIf="item"></app-section>
