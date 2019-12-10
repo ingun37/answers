@@ -34,16 +34,20 @@
 
 <div class="sectionbox">
     <div *ngIf="children">
-        <div *ngFor="let sub of children">
-            <button mat-button (click)="onChange(sub.path);">
-                <mat-icon *ngIf="unfolds.has(sub.path); else moreBlock">expand_less</mat-icon>
-                <ng-template #moreBlock><mat-icon>expand_more</mat-icon></ng-template>
-                {{sub.title}}
-            </button>
-            <div *ngIf="unfolds.has(sub.path)">
-                <app-section [edit]="edit" [item]="sub"></app-section>
+        <mat-accordion [multi]="true">
+            <div *ngFor="let sub of children">
+                <mat-expansion-panel (opened)="panelOpened(sub.path);" (closed)="panelClosed(sub.path);">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>{{sub.title}}</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <ng-template matExpansionPanelContent>
+                        <div *ngIf="unfolds.has(sub.path)">
+                            <app-section [edit]="edit" [item]="sub"></app-section>
+                        </div>
+                    </ng-template>
+                </mat-expansion-panel>
             </div>
-        </div>
+        </mat-accordion>
     </div>
     <button *ngIf="edit" mat-raised-button (click)="addClick();">Add Section <mat-icon>add</mat-icon></button>
 </div>

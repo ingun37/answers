@@ -66,16 +66,11 @@ export class SectionComponent implements OnInit {
       }
     });
   }
-
-  unfold(item: Item) {
-    this.unfolds = this.unfolds.add(item.path);
+  panelOpened(path: string) {
+    console.log(path);
+    this.unfolds.add(path);
   }
-
-  onChange(path: string) {
-    if (this.unfolds.has(path)) {
-      this.unfolds.delete(path);
-    } else {
-      this.unfolds.add(path);
-    }
+  panelClosed(path: string) {
+    this.unfolds.delete(path);
   }
 }
