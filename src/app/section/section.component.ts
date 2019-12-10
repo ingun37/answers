@@ -5,6 +5,8 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dial
 import { NewItemDialogComponent } from '../new-item-dialog/new-item-dialog.component';
 import { Router } from '@angular/router';
 import { Item } from '../item';
+import {MatBottomSheet} from '@angular/material/bottom-sheet';
+import { RemoveBottomSheetComponent } from '../remove-bottom-sheet/remove-bottom-sheet.component';
 
 @Component({
   selector: 'app-section',
@@ -22,7 +24,7 @@ export class SectionComponent implements OnInit {
   constructor(
     private answer: AnswerService,
     public dialog: MatDialog,
-    private router: Router
+    private bottomSheet: MatBottomSheet
   ) { }
 
   addClick(): void {
@@ -72,5 +74,8 @@ export class SectionComponent implements OnInit {
   }
   panelClosed(path: string) {
     this.unfolds.delete(path);
+  }
+  openBottomSheet(): void {
+    this.bottomSheet.open(RemoveBottomSheetComponent);
   }
 }

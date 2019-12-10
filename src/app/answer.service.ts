@@ -63,7 +63,10 @@ export class AnswerService {
 
   newItem(parentPath: string, title: string): Promise<void> {
     return this.fire.db.doc(parentPath + '/subs/' + encodeURIComponent(title)).set({
-      title
+      title,
+      author: this.fire.loginState.value.uid
+    }).catch(reason => {
+      console.log(reason);
     });
   }
 

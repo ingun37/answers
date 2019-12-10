@@ -30,6 +30,9 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import { RemoveBottomSheetComponent } from './remove-bottom-sheet/remove-bottom-sheet.component';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -43,7 +46,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     ExcerptComponent,
     LoginUIDirective,
     AuthUIComponent,
-    NewItemDialogComponent
+    NewItemDialogComponent,
+    RemoveBottomSheetComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +57,6 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
       { path: 'login', component: LoginComponent },
       { path: 'books/:path', component: BookComponent },
       { path: 'write/:path/:att', component: WriteComponent },
-      { path: 'whateverrrrrrrrr', component: NewItemDialogComponent },
       // { path: '**', component:  pathMatch: 'prefix' },
     ]),
     NoopAnimationsModule,
@@ -73,8 +76,14 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     MatDividerModule,
     MatExpansionModule,
     MatProgressSpinnerModule,
+    MatBottomSheetModule,
+    MatListModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    RemoveBottomSheetComponent,
+    NewItemDialogComponent
+  ],
 })
 export class AppModule { }
