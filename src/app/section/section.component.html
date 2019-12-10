@@ -35,12 +35,11 @@
 <div class="sectionbox">
     <div *ngIf="children">
         <div *ngFor="let sub of children">
-            <mat-button-toggle-group #group="matButtonToggleGroup" multiple="true">
-                <mat-button-toggle value="fold" aria-label="fold/unfold" (change)="onChange(sub.path, $event)">
-                    <mat-icon>expand_more</mat-icon>
-                    {{sub.title}}
-                </mat-button-toggle>
-            </mat-button-toggle-group>
+            <button mat-button (click)="onChange(sub.path);">
+                <mat-icon *ngIf="unfolds.has(sub.path); else moreBlock">expand_less</mat-icon>
+                <ng-template #moreBlock><mat-icon>expand_more</mat-icon></ng-template>
+                {{sub.title}}
+            </button>
             <div *ngIf="unfolds.has(sub.path)">
                 <app-section [edit]="edit" [item]="sub"></app-section>
             </div>

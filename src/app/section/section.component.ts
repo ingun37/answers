@@ -71,11 +71,11 @@ export class SectionComponent implements OnInit {
     this.unfolds = this.unfolds.add(item.path);
   }
 
-  onChange(path: string, event: MatButtonToggleChange) {
-    if (event.source.checked) {
-      this.unfolds.add(path);
-    } else {
+  onChange(path: string) {
+    if (this.unfolds.has(path)) {
       this.unfolds.delete(path);
+    } else {
+      this.unfolds.add(path);
     }
   }
 }
