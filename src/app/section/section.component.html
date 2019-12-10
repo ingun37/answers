@@ -1,35 +1,24 @@
+<div *ngIf="edit">
+    <button *ngIf="edit" color="primary" mat-button [routerLink]="[editLink, 'question']">Question <mat-icon>edit</mat-icon></button>
+    <button *ngIf="edit" color="primary" mat-button [routerLink]="[editLink, 'answer']">Answer <mat-icon>edit</mat-icon></button>
+</div>
 <div *ngIf="questionMD; else questionElseBlock">
-    <button *ngIf="edit" mat-icon-button [routerLink]="[editLink, 'question']">
-        <mat-icon>edit</mat-icon>
-    </button>
     <app-excerpt [mdstr]="questionMD"></app-excerpt>
 </div>
 <ng-template #questionElseBlock>
-    <div *ngIf="questionMD == null; else questionEmptyBlock">
+    <div *ngIf="questionMD == null">
         loading...
     </div>
-    <ng-template #questionEmptyBlock>
-        <button *ngIf="edit" mat-raised-button [routerLink]="[editLink, 'question']">Write Question <mat-icon>edit
-            </mat-icon></button>
-    </ng-template>
 </ng-template>
 
 <div *ngIf="answerMD; else answerElseBlock">
     <mat-divider></mat-divider>
-
-    <button *ngIf="edit" mat-icon-button [routerLink]="[editLink, 'answer']">
-        <mat-icon>edit</mat-icon>
-    </button>
     <app-excerpt [mdstr]="answerMD"></app-excerpt>
 </div>
 <ng-template #answerElseBlock>
-    <div *ngIf="answerMD == null; else answerEmptyBlock">
+    <div *ngIf="answerMD == null">
         loading...
     </div>
-    <ng-template #answerEmptyBlock>
-        <button *ngIf="edit" mat-raised-button [routerLink]="[editLink, 'answer']">Write Answer <mat-icon>edit
-            </mat-icon></button>
-    </ng-template>
 </ng-template>
 
 <div class="sectionbox">
@@ -49,5 +38,5 @@
             </div>
         </mat-accordion>
     </div>
-    <button *ngIf="edit" mat-raised-button (click)="addClick();">Add Section <mat-icon>add</mat-icon></button>
+    <button *ngIf="edit" color="primary" mat-button (click)="addClick();">Add Section <mat-icon>add</mat-icon></button>
 </div>
