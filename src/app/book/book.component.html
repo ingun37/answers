@@ -4,7 +4,7 @@
         Edit
     </mat-slide-toggle>
     <ng-template #elseBlock>
-        <span *ngIf="uid == null; else signInBlock">loading...</span>
+        <span *ngIf="uid == null; else signInBlock"><mat-spinner [diameter]="20" [strokeWidth]="5"></mat-spinner></span>
         <ng-template #signInBlock>
             <button mat-button color="primary" routerLink="/login">Sign in to edit</button>
         </ng-template>
