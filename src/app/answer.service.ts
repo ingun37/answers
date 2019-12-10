@@ -21,7 +21,7 @@ export class AnswerService {
 
   private snap2Item(snap: firebase.firestore.DocumentSnapshot): Item {
     const data = snap.data();
-    return new Item(snap.ref.path, data.title);
+    return new Item(snap.ref.path, data.author, data.title);
   }
 
   private makeChain(startId: string, accountRefs: AccountRef[]): AccountRef[] {
@@ -70,6 +70,9 @@ export class AnswerService {
     });
   }
 
+  deleteItem(path: string): Promise<void> {
+    return this.fire.db.doc(path).delete();
+  }
   private accountsOf(path: string, attr: string): firebase.firestore.CollectionReference {
     return this.fire.db.collection(path + '/attributes/' + encodeURIComponent(attr) + '/accounts');
   }

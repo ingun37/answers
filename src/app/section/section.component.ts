@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
 import { Item } from '../item';
 import {MatBottomSheet} from '@angular/material/bottom-sheet';
 import { RemoveBottomSheetComponent } from '../remove-bottom-sheet/remove-bottom-sheet.component';
+import { FireService } from '../fire.service';
 
 @Component({
   selector: 'app-section',
@@ -21,10 +22,12 @@ export class SectionComponent implements OnInit {
   editLink = '';
   questionMD = null;
   answerMD = null;
+  removable = false;
   constructor(
     private answer: AnswerService,
     public dialog: MatDialog,
-    private bottomSheet: MatBottomSheet
+    private bottomSheet: MatBottomSheet,
+    private fire: FireService
   ) { }
 
   addClick(): void {
@@ -67,6 +70,9 @@ export class SectionComponent implements OnInit {
         this.answerMD = '';
       }
     });
+    this.fire.loginState.subscribe(user => {
+      this.removable = user.uid === this.item.author;
+    });
   }
   panelOpened(path: string) {
     console.log(path);
@@ -76,6 +82,17 @@ export class SectionComponent implements OnInit {
     this.unfolds.delete(path);
   }
   openBottomSheet(): void {
-    this.bottomSheet.open(RemoveBottomSheetComponent);
+    const ref = this.bottomSheet.open(RemoveBottomSheetComponent);
+    ref.afterDismissed().subscribe(result => {
+      if (result) {
+        this.answer.deleteItem(this.item.path).then(() => {
+          this.reloadChildren();
+        }).catch(reason => {
+          console.log(reason);
+        });
+      } else {
+
+      }
+    });
   }
 }

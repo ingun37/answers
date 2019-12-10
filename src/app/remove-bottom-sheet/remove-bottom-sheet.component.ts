@@ -1,5 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import {MatBottomSheet, MatBottomSheetRef} from '@angular/material/bottom-sheet';
+import { Component, OnInit, Inject } from '@angular/core';
+import {MatBottomSheet, MatBottomSheetRef, MAT_BOTTOM_SHEET_DATA} from '@angular/material/bottom-sheet';
+
+export interface BottomSheetData {
+  permit: boolean;
+}
 
 @Component({
   selector: 'app-remove-bottom-sheet',
@@ -7,7 +11,9 @@ import {MatBottomSheet, MatBottomSheetRef} from '@angular/material/bottom-sheet'
   styleUrls: ['./remove-bottom-sheet.component.sass']
 })
 export class RemoveBottomSheetComponent implements OnInit {
-  constructor(private bottomSheetRef: MatBottomSheetRef<RemoveBottomSheetComponent>) { }
+  constructor(
+    private bottomSheetRef: MatBottomSheetRef<RemoveBottomSheetComponent>,
+    ) { }
 
   ngOnInit() {
   }
@@ -15,5 +21,13 @@ export class RemoveBottomSheetComponent implements OnInit {
   openLink(event: MouseEvent): void {
     this.bottomSheetRef.dismiss();
     event.preventDefault();
+  }
+
+  yes() {
+    this.bottomSheetRef.dismiss(true);
+  }
+
+  no() {
+    this.bottomSheetRef.dismiss(false);
   }
 }
