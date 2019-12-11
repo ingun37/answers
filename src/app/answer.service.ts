@@ -20,8 +20,13 @@ export class AnswerService {
   }
 
   private snap2Item(snap: firebase.firestore.DocumentSnapshot): Item {
-    const data = snap.data();
-    return new Item(snap.ref.path, data.author, data.cover, data.title);
+    if (snap.exists) {
+      const data = snap.data();
+      return new Item(snap.ref.path, getSafe(() => data.author, null), getSafe(() => data.cover, null), data.title);
+    } else {
+      console.log('failed to get data from :' + snap.ref.path);
+      return null;
+    }
   }
 
   private makeChain(startId: string, accountRefs: AccountRef[]): AccountRef[] {
@@ -56,6 +61,7 @@ export class AnswerService {
   }
 
   getItem(path: string): Promise<Item> {
+    console.log('getting item from: ' + path);
     return this.fire.db.doc(path).get().then(snap => {
       return this.snap2Item(snap);
     });
@@ -150,4 +156,12 @@ function makeid(length) {
 export enum ItemAttribute {
   QUESTION = 'question',
   ANSWER = 'answer'
+}
+
+function getSafe(fn, defaultVal) {
+  try {
+      return fn();
+  } catch (e) {
+      return defaultVal;
+  }
 }

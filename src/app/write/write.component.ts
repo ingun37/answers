@@ -36,12 +36,14 @@ export class WriteComponent implements OnInit {
     }
   }
   publish() {
-    this.fire.loginState.subscribe(user => {
+    const user = this.fire.loginState.value;
+    if (user) {
       console.log(user);
       this.answer.newAccount(this.item.path, this.attribute, new Account(user.uid, this.md, this.parentAccountId)).then(x => {
-        this.router.navigate(['books', this.item.path]);
+        this.router.navigate(['books', encodeURIComponent(this.item.path)]);
       });
-    }).unsubscribe();
+    }
+    
     // this.answer.mergeToItem(this.item.path, data).then(() => {
     //   this.router.navigate(['books', this.item.path]);
     // });
