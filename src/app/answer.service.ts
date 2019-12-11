@@ -61,7 +61,6 @@ export class AnswerService {
   }
 
   getItem(path: string): Promise<Item> {
-    console.log('getting item from: ' + path);
     return this.fire.db.doc(path).get().then(snap => {
       return this.snap2Item(snap);
     });
