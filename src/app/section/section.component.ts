@@ -75,7 +75,6 @@ export class SectionComponent implements OnInit {
     });
   }
   panelOpened(path: string) {
-    console.log(path);
     this.unfolds.add(path);
   }
   panelClosed(path: string) {

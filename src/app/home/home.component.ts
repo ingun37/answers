@@ -23,7 +23,6 @@ export class HomeComponent implements OnInit {
     if (toCols !== this.cols) {
       this.cols = toCols;
     }
-    console.log(this.cols);
   }
 
   @HostListener('window:resize', ['$event'])
