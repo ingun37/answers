@@ -33,6 +33,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import { RemoveBottomSheetComponent } from './remove-bottom-sheet/remove-bottom-sheet.component';
 import {MatListModule} from '@angular/material/list';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import {MatListModule} from '@angular/material/list';
     MatExpansionModule,
     MatProgressSpinnerModule,
     MatBottomSheetModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent],

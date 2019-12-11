@@ -21,7 +21,7 @@ export class AnswerService {
 
   private snap2Item(snap: firebase.firestore.DocumentSnapshot): Item {
     const data = snap.data();
-    return new Item(snap.ref.path, data.author, data.title);
+    return new Item(snap.ref.path, data.author, data.cover, data.title);
   }
 
   private makeChain(startId: string, accountRefs: AccountRef[]): AccountRef[] {

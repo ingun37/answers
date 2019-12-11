@@ -1,9 +1,16 @@
 <div *ngIf="home">
-  <div *ngFor="let book of home.books">
-    <ul>
-        <li>
-          <a routerLink="{{makeURI(book)}}">{{book.title}}</a>
-        </li>
-    </ul>
-  </div>
+  <mat-grid-list cols="{{cols}}">
+    <mat-grid-tile *ngFor="let book of home.books" routerLink="{{makeURI(book)}}">
+      <mat-card>{{book.title}}</mat-card>
+      
+    </mat-grid-tile>
+  </mat-grid-list>
+  <!-- <div *ngFor="let book of home.books">
+    <mat-card routerLink="{{makeURI(book)}}" class="example-card">
+      <mat-card-header>
+        <mat-card-title>{{book.title}}</mat-card-title>
+        <mat-card-subtitle>Bartosz Milewski</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+  </div> -->
 </div>

@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import * as firebase from 'firebase/app';
 import { Subject, BehaviorSubject } from 'rxjs';
-import * as firebaseForStore from 'firebase';
+// import * as firebaseForStore from 'firebase';
 import * as firebaseui from 'firebaseui';
-import {} from 'firebase/firestore';
+import 'firebase/firestore';
 import { User } from './user';
 
 @Injectable({
@@ -93,6 +93,6 @@ export class FireService {
     }, function(error) {
       console.log(error);
     });
-    this.db = firebaseForStore.firestore();
+    this.db = firebase.firestore();
   }
 }
