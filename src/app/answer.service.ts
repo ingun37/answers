@@ -22,7 +22,7 @@ export class AnswerService {
   private snap2Item(snap: firebase.firestore.DocumentSnapshot): Item {
     if (snap.exists) {
       const data = snap.data();
-      return new Item(snap.ref.path, getSafe(() => data.author, null), getSafe(() => data.cover, null), data.title);
+      return new Item(snap.ref.path, getSafe(() => data.cover, null), data.title);
     } else {
       console.log('failed to get data from :' + snap.ref.path);
       return null;

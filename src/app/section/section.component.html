@@ -1,7 +1,7 @@
 <div *ngIf="edit">
     <button color="primary" mat-button [routerLink]="[editLink, 'question']">Question <mat-icon>edit</mat-icon></button>
     <button color="primary" mat-button [routerLink]="[editLink, 'answer']">Answer <mat-icon>edit</mat-icon></button>
-    <button *ngIf="removable" color="warn" mat-button (click)="openBottomSheet()">Delete <mat-icon>delete</mat-icon></button>
+    <button color="warn" mat-button (click)="openBottomSheet()">Delete <mat-icon>delete</mat-icon></button>
 </div>
 <div *ngIf="questionMD; else questionElseBlock">
     <app-excerpt [mdstr]="questionMD"></app-excerpt>

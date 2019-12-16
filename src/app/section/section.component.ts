@@ -21,12 +21,10 @@ export class SectionComponent implements OnInit {
   editLink = '';
   questionMD = null;
   answerMD = null;
-  removable = false;
   constructor(
     private answer: AnswerService,
     public dialog: MatDialog,
     private bottomSheet: MatBottomSheet,
-    private fire: FireService
   ) { }
 
   addClick(): void {
@@ -68,9 +66,6 @@ export class SectionComponent implements OnInit {
       } else {
         this.answerMD = '';
       }
-    });
-    this.fire.loginState.subscribe(user => {
-      this.removable = user.uid === this.item.author;
     });
   }
   
