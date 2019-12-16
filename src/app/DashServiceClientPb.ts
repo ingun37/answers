@@ -10,6 +10,7 @@
 import * as grpcWeb from 'grpc-web';
 
 import {
+  DeleteInfo,
   NewInfo,
   Void,
   WriteInfo} from './dash_pb';
@@ -74,6 +75,28 @@ export class DashClient {
       request,
       metadata || {},
       this.methodInfoNewItem,
+      callback);
+  }
+
+  methodInfoDelete = new grpcWeb.AbstractClientBase.MethodInfo(
+    Void,
+    (request: DeleteInfo) => {
+      return request.serializeBinary();
+    },
+    Void.deserializeBinary
+  );
+
+  delete(
+    request: DeleteInfo,
+    metadata: grpcWeb.Metadata | null,
+    callback: (err: grpcWeb.Error,
+               response: Void) => void) {
+    return this.client_.rpcCall(
+      this.hostname_ +
+        '/dash.Dash/Delete',
+      request,
+      metadata || {},
+      this.methodInfoDelete,
       callback);
   }
 

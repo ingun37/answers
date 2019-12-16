@@ -78,11 +78,9 @@ export class SectionComponent implements OnInit {
     const ref = this.bottomSheet.open(RemoveBottomSheetComponent);
     ref.afterDismissed().subscribe(result => {
       if (result) {
-        this.answer.deleteItem(this.item.path).then(() => {
+        this.admin.delete(this.item.path).then(() => {
           this.reloadChildren();
-        }).catch(reason => {
-          console.log(reason);
-        });
+        })
       } else {
 
       }

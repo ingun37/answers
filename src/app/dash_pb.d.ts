@@ -1,5 +1,23 @@
 import * as jspb from "google-protobuf"
 
+export class DeleteInfo extends jspb.Message {
+  getPath(): string;
+  setPath(value: string): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): DeleteInfo.AsObject;
+  static toObject(includeInstance: boolean, msg: DeleteInfo): DeleteInfo.AsObject;
+  static serializeBinaryToWriter(message: DeleteInfo, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): DeleteInfo;
+  static deserializeBinaryFromReader(message: DeleteInfo, reader: jspb.BinaryReader): DeleteInfo;
+}
+
+export namespace DeleteInfo {
+  export type AsObject = {
+    path: string,
+  }
+}
+
 export class WriteInfo extends jspb.Message {
   getPath(): string;
   setPath(value: string): void;

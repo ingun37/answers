@@ -8,6 +8,19 @@ import * as grpcTypes from './dash_pb';
 })
 export class AdminService {
   client: grpc.DashClient;
+  public delete(path: string): Promise<void> {
+    const request = new grpcTypes.DeleteInfo();
+    request.setPath(path);
+    return new Promise((resolve, reject) => {
+      const call = this.client.delete(request, null, (err, _) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve();
+        }
+      });
+    });
+  }
   public newItem(path: string, title: string): Promise<void> {
     const request = new grpcTypes.NewInfo();
     request.setPath(path);
