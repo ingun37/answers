@@ -18,7 +18,6 @@ export class SectionComponent implements OnInit {
   @Input() item: Item;
   @Input() edit: boolean;
   children: Item[];
-  unfolds = new Set<string>();
   editLink = '';
   questionMD = null;
   answerMD = null;
@@ -74,12 +73,7 @@ export class SectionComponent implements OnInit {
       this.removable = user.uid === this.item.author;
     });
   }
-  panelOpened(path: string) {
-    this.unfolds.add(path);
-  }
-  panelClosed(path: string) {
-    this.unfolds.delete(path);
-  }
+  
   openBottomSheet(): void {
     const ref = this.bottomSheet.open(RemoveBottomSheetComponent);
     ref.afterDismissed().subscribe(result => {

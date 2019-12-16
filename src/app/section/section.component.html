@@ -27,14 +27,14 @@
     <div *ngIf="children">
         <mat-accordion [multi]="true">
             <div *ngFor="let sub of children">
-                <mat-expansion-panel (opened)="panelOpened(sub.path);" (closed)="panelClosed(sub.path);">
+                <mat-expansion-panel>
                     <mat-expansion-panel-header>
                         <mat-panel-title>{{sub.title}}</mat-panel-title>
                     </mat-expansion-panel-header>
                     <ng-template matExpansionPanelContent>
-                        <div *ngIf="unfolds.has(sub.path)">
+
                             <app-section [edit]="edit" [item]="sub"></app-section>
-                        </div>
+
                     </ng-template>
                 </mat-expansion-panel>
             </div>
