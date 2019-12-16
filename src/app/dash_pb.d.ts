@@ -50,24 +50,44 @@ export namespace Account {
   }
 }
 
-export class ItemInfo extends jspb.Message {
+export class NewInfo extends jspb.Message {
   getPath(): string;
   setPath(value: string): void;
 
+  getItem(): Item | undefined;
+  setItem(value?: Item): void;
+  hasItem(): boolean;
+  clearItem(): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): NewInfo.AsObject;
+  static toObject(includeInstance: boolean, msg: NewInfo): NewInfo.AsObject;
+  static serializeBinaryToWriter(message: NewInfo, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): NewInfo;
+  static deserializeBinaryFromReader(message: NewInfo, reader: jspb.BinaryReader): NewInfo;
+}
+
+export namespace NewInfo {
+  export type AsObject = {
+    path: string,
+    item?: Item.AsObject,
+  }
+}
+
+export class Item extends jspb.Message {
   getTitle(): string;
   setTitle(value: string): void;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): ItemInfo.AsObject;
-  static toObject(includeInstance: boolean, msg: ItemInfo): ItemInfo.AsObject;
-  static serializeBinaryToWriter(message: ItemInfo, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): ItemInfo;
-  static deserializeBinaryFromReader(message: ItemInfo, reader: jspb.BinaryReader): ItemInfo;
+  toObject(includeInstance?: boolean): Item.AsObject;
+  static toObject(includeInstance: boolean, msg: Item): Item.AsObject;
+  static serializeBinaryToWriter(message: Item, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Item;
+  static deserializeBinaryFromReader(message: Item, reader: jspb.BinaryReader): Item;
 }
 
-export namespace ItemInfo {
+export namespace Item {
   export type AsObject = {
-    path: string,
     title: string,
   }
 }

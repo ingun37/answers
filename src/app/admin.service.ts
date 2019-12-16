@@ -8,6 +8,24 @@ import * as grpcTypes from './dash_pb';
 })
 export class AdminService {
   client: grpc.DashClient;
+  public newItem(path: string, title: string): Promise<void> {
+    const request = new grpcTypes.NewInfo();
+    request.setPath(path);
+
+    const item = new grpcTypes.Item();
+    item.setTitle(title);
+
+    request.setItem(item);
+    return new Promise((resolve, reject) => {
+      const call = this.client.newItem(request, null, (err, _) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve();
+        }
+      });
+    });
+  }
   public save(path: string, attr: string, parentAccount: string, content: string): Promise<void> {
     const request = new grpcTypes.WriteInfo();
     request.setPath(path);

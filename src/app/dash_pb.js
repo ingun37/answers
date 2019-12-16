@@ -12,7 +12,8 @@ var goog = jspb;
 var global = Function('return this')();
 
 goog.exportSymbol('proto.dash.Account', null, global);
-goog.exportSymbol('proto.dash.ItemInfo', null, global);
+goog.exportSymbol('proto.dash.Item', null, global);
+goog.exportSymbol('proto.dash.NewInfo', null, global);
 goog.exportSymbol('proto.dash.RouteSummary', null, global);
 goog.exportSymbol('proto.dash.Void', null, global);
 goog.exportSymbol('proto.dash.WriteInfo', null, global);
@@ -409,12 +410,12 @@ proto.dash.Account.prototype.setParent = function(value) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.dash.ItemInfo = function(opt_data) {
+proto.dash.NewInfo = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.dash.ItemInfo, jspb.Message);
+goog.inherits(proto.dash.NewInfo, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.dash.ItemInfo.displayName = 'proto.dash.ItemInfo';
+  proto.dash.NewInfo.displayName = 'proto.dash.NewInfo';
 }
 
 
@@ -429,8 +430,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.dash.ItemInfo.prototype.toObject = function(opt_includeInstance) {
-  return proto.dash.ItemInfo.toObject(opt_includeInstance, this);
+proto.dash.NewInfo.prototype.toObject = function(opt_includeInstance) {
+  return proto.dash.NewInfo.toObject(opt_includeInstance, this);
 };
 
 
@@ -439,14 +440,14 @@ proto.dash.ItemInfo.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.dash.ItemInfo} msg The msg instance to transform.
+ * @param {!proto.dash.NewInfo} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.dash.ItemInfo.toObject = function(includeInstance, msg) {
+proto.dash.NewInfo.toObject = function(includeInstance, msg) {
   var f, obj = {
     path: jspb.Message.getFieldWithDefault(msg, 1, ""),
-    title: jspb.Message.getFieldWithDefault(msg, 2, "")
+    item: (f = msg.getItem()) && proto.dash.Item.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -460,23 +461,23 @@ proto.dash.ItemInfo.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.dash.ItemInfo}
+ * @return {!proto.dash.NewInfo}
  */
-proto.dash.ItemInfo.deserializeBinary = function(bytes) {
+proto.dash.NewInfo.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.dash.ItemInfo;
-  return proto.dash.ItemInfo.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.dash.NewInfo;
+  return proto.dash.NewInfo.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.dash.ItemInfo} msg The message object to deserialize into.
+ * @param {!proto.dash.NewInfo} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.dash.ItemInfo}
+ * @return {!proto.dash.NewInfo}
  */
-proto.dash.ItemInfo.deserializeBinaryFromReader = function(msg, reader) {
+proto.dash.NewInfo.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -488,6 +489,187 @@ proto.dash.ItemInfo.deserializeBinaryFromReader = function(msg, reader) {
       msg.setPath(value);
       break;
     case 2:
+      var value = new proto.dash.Item;
+      reader.readMessage(value,proto.dash.Item.deserializeBinaryFromReader);
+      msg.setItem(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.dash.NewInfo.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.dash.NewInfo.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.dash.NewInfo} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.dash.NewInfo.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getPath();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getItem();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      proto.dash.Item.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional string path = 1;
+ * @return {string}
+ */
+proto.dash.NewInfo.prototype.getPath = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.dash.NewInfo.prototype.setPath = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional Item item = 2;
+ * @return {?proto.dash.Item}
+ */
+proto.dash.NewInfo.prototype.getItem = function() {
+  return /** @type{?proto.dash.Item} */ (
+    jspb.Message.getWrapperField(this, proto.dash.Item, 2));
+};
+
+
+/** @param {?proto.dash.Item|undefined} value */
+proto.dash.NewInfo.prototype.setItem = function(value) {
+  jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+proto.dash.NewInfo.prototype.clearItem = function() {
+  this.setItem(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {!boolean}
+ */
+proto.dash.NewInfo.prototype.hasItem = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.dash.Item = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.dash.Item, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  proto.dash.Item.displayName = 'proto.dash.Item';
+}
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto suitable for use in Soy templates.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
+ * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
+ *     for transitional soy proto support: http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.dash.Item.prototype.toObject = function(opt_includeInstance) {
+  return proto.dash.Item.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Whether to include the JSPB
+ *     instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.dash.Item} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.dash.Item.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    title: jspb.Message.getFieldWithDefault(msg, 1, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.dash.Item}
+ */
+proto.dash.Item.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.dash.Item;
+  return proto.dash.Item.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.dash.Item} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.dash.Item}
+ */
+proto.dash.Item.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
       var value = /** @type {string} */ (reader.readString());
       msg.setTitle(value);
       break;
@@ -504,9 +686,9 @@ proto.dash.ItemInfo.deserializeBinaryFromReader = function(msg, reader) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.dash.ItemInfo.prototype.serializeBinary = function() {
+proto.dash.Item.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.dash.ItemInfo.serializeBinaryToWriter(this, writer);
+  proto.dash.Item.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -514,56 +696,34 @@ proto.dash.ItemInfo.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.dash.ItemInfo} message
+ * @param {!proto.dash.Item} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.dash.ItemInfo.serializeBinaryToWriter = function(message, writer) {
+proto.dash.Item.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
-  f = message.getPath();
+  f = message.getTitle();
   if (f.length > 0) {
     writer.writeString(
       1,
       f
     );
   }
-  f = message.getTitle();
-  if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
-  }
 };
 
 
 /**
- * optional string path = 1;
+ * optional string title = 1;
  * @return {string}
  */
-proto.dash.ItemInfo.prototype.getPath = function() {
+proto.dash.Item.prototype.getTitle = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
 
 /** @param {string} value */
-proto.dash.ItemInfo.prototype.setPath = function(value) {
+proto.dash.Item.prototype.setTitle = function(value) {
   jspb.Message.setProto3StringField(this, 1, value);
-};
-
-
-/**
- * optional string title = 2;
- * @return {string}
- */
-proto.dash.ItemInfo.prototype.getTitle = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
-};
-
-
-/** @param {string} value */
-proto.dash.ItemInfo.prototype.setTitle = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
 };
 
 

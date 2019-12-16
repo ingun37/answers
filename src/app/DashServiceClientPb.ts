@@ -10,7 +10,7 @@
 import * as grpcWeb from 'grpc-web';
 
 import {
-  ItemInfo,
+  NewInfo,
   Void,
   WriteInfo} from './dash_pb';
 
@@ -57,14 +57,14 @@ export class DashClient {
 
   methodInfoNewItem = new grpcWeb.AbstractClientBase.MethodInfo(
     Void,
-    (request: ItemInfo) => {
+    (request: NewInfo) => {
       return request.serializeBinary();
     },
     Void.deserializeBinary
   );
 
   newItem(
-    request: ItemInfo,
+    request: NewInfo,
     metadata: grpcWeb.Metadata | null,
     callback: (err: grpcWeb.Error,
                response: Void) => void) {

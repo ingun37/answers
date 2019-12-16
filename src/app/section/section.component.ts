@@ -8,6 +8,7 @@ import { Item } from '../item';
 import {MatBottomSheet} from '@angular/material/bottom-sheet';
 import { RemoveBottomSheetComponent } from '../remove-bottom-sheet/remove-bottom-sheet.component';
 import { FireService } from '../fire.service';
+import { AdminService } from '../admin.service';
 
 @Component({
   selector: 'app-section',
@@ -25,6 +26,7 @@ export class SectionComponent implements OnInit {
     private answer: AnswerService,
     public dialog: MatDialog,
     private bottomSheet: MatBottomSheet,
+    private admin: AdminService
   ) { }
 
   addClick(): void {
@@ -36,9 +38,12 @@ export class SectionComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       const title: string = result;
       if (title) {
-        this.answer.newItem(this.item.path, title).then(() => {
+        this.admin.newItem(this.item.path, title).then(() => {
           this.reloadChildren();
-        });
+        })
+        // this.answer.newItem(this.item.path, title).then(() => {
+        //   this.reloadChildren();
+        // });
       } else {
 
       }
