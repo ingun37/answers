@@ -7,6 +7,7 @@ import { MarkdownService } from 'ngx-markdown';
 import { Item } from '../item';
 import { Account } from '../account';
 import { FireService } from '../fire.service';
+import { AdminService } from '../admin.service';
 
 @Component({
   selector: 'app-write',
@@ -25,7 +26,8 @@ export class WriteComponent implements OnInit {
     private router: Router,
     private answer: AnswerService,
     private mdservice: MarkdownService,
-    private fire: FireService
+    private fire: FireService,
+    private admin: AdminService
   ) { }
   changed(change: MatButtonToggleChange) {
     console.log(change);
@@ -36,17 +38,16 @@ export class WriteComponent implements OnInit {
     }
   }
   publish() {
-    const user = this.fire.loginState.value;
-    if (user) {
-      console.log(user);
-      this.answer.newAccount(this.item.path, this.attribute, new Account(user.uid, this.md, this.parentAccountId)).then(x => {
-        this.router.navigate(['books', encodeURIComponent(this.item.path)]);
-      });
-    }
-    
-    // this.answer.mergeToItem(this.item.path, data).then(() => {
-    //   this.router.navigate(['books', this.item.path]);
-    // });
+    this.admin.save(this.item.path, this.attribute, this.parentAccountId, this.md).then(() => {
+      this.router.navigate(['books', encodeURIComponent(this.item.path)]);
+    });
+    // const user = this.fire.loginState.value;
+    // if (user) {
+    //   console.log(user);
+    //   this.answer.newAccount(this.item.path, this.attribute, new Account(user.uid, this.md, this.parentAccountId)).then(x => {
+    //     this.router.navigate(['books', encodeURIComponent(this.item.path)]);
+    //   });
+    // }
   }
   cancel() {
     this.router.navigate(['books', this.item.path]);
