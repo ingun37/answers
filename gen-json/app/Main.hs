@@ -4,14 +4,20 @@ import Lib
 import System.Environment
 import System.Exit
 import System.Directory.Tree
+import Data.Aeson
 
 main = getArgs >>= parse
 
+writeJson :: [Node] -> IO ()
+writeJson [] = return ()
+writeJson (x:xs) = do 
+    _ <- print (encode x)
+    writeJson xs
 
 parse :: [String] -> IO ()
-parse (x:(y:[])) = do
-    (a :/ (Dir name contents)) <- readDirectory x
-    print $ makeNodes name contents
+parse (src:(dst:[])) = do
+    (a :/ (Dir name contents)) <- readDirectory src
+    writeJson (makeNodes name contents)
 parse ["-h"] = usage   >> exit
 parse ["-v"] = version >> exit
 parse _     = usage >> exit
