@@ -26,7 +26,7 @@
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
                         <mat-panel-title>{{sub.title}}</mat-panel-title>
-                        <button mat-button [routerLink]="['/books', sub.sha1]" (click)="$event.stopPropagation();">
+                        <button mat-icon-button [routerLink]="['/books', sub.sha1]" (click)="$event.stopPropagation();">
                             <mat-icon>launch</mat-icon>
                         </button>
                     </mat-expansion-panel-header>
