@@ -19,6 +19,7 @@ import qualified Data.ByteString.Base16 as B16
 
 data Item = Item {
     title :: String,
+    sha1 :: String,
     attr :: (Map String String)} deriving (Generic, Show)
 
 data Node = Node {
@@ -26,14 +27,14 @@ path :: String,
 item :: Item,
 kids :: [Item]} deriving (Generic, Show)
 
-makeItem :: String -> [DirTree String] -> Item
-makeItem name contents = Item (Path.takeFileName name) (fromList [(Path.takeBaseName name', file) | File name' file <- contents])
-
-makeNode :: String -> [DirTree String] -> Node
-makeNode name contents = Node name (makeItem name contents) [(makeItem title conts) | Dir title conts <- contents]
+sha1InHex = B.unpack . B16.encode . SHA.hash . B.pack
 
 makeNodes :: String -> [DirTree String] -> [Node]
-makeNodes name contents = [makeNode name contents] ++ (join ([makeNodes (name ++ "/" ++ name') contents' | Dir name' contents' <- contents]))
+makeNodes name contents =
+    let kidNodes = join ([makeNodes (name ++ "/" ++ title) contents' | Dir title contents' <- contents])
+        kidItems = Prelude.map item kidNodes
+        thisItem = Item (Path.takeFileName name) (sha1InHex name) (fromList [(Path.takeBaseName name', file) | File name' file <- contents])
+    in kidNodes ++ [Node name thisItem kidItems]
 makeNodes _ _ = []
 
 instance ToJSON Item
@@ -44,7 +45,7 @@ main = getArgs >>= parse
 writeJson :: String -> [Node] -> IO ()
 writeJson _ [] = return ()
 writeJson dst (x:xs) = do 
-    let jsonFileName = (B.unpack . B16.encode . SHA.hash . B.pack . path) x ++ ".json"
+    let jsonFileName = (sha1 $ item x) ++ ".json"
         jsonPath = Path.joinPath [dst, jsonFileName]
     _ <- writeFile jsonPath (Bz.unpack (encode x))
     writeJson dst xs
