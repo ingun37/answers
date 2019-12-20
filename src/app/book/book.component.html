@@ -1,8 +1,22 @@
 <div *ngIf="node">
-    <button mat-icon-button *ngIf="node.parentSha1" [routerLink]="['/books', node.parentSha1]">
-        <mat-icon>navigate_before</mat-icon>
-    </button>
-    <span class="title">{{node.item.title}}</span>
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+            <button mat-icon-button *ngIf="node.parentSha1" [routerLink]="['/books', node.parentSha1]">
+                <mat-icon>navigate_before</mat-icon>
+            </button>
+            <span>{{node.item.title}}</span>
+            <span class="example-spacer"></span>
+            
+            <button mat-icon-button (click)="shareClick(node.item)">
+                <mat-icon>share</mat-icon>
+            </button>
+            <button mat-icon-button [routerLink]="['/books', node.item.sha1]">
+                <mat-icon>launch</mat-icon>
+            </button>
+        </mat-toolbar-row>
+    </mat-toolbar>
+
+
 </div>
 
 <app-section *ngIf="sha1" [sha1]="sha1"></app-section>
