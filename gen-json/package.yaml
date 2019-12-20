@@ -25,6 +25,11 @@ dependencies:
 - split
 - containers
 - aeson
+- cryptohash-sha1
+- bytestring
+- utf8-string
+- filepath
+
 library:
   source-dirs: src
 
