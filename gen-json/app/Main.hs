@@ -21,12 +21,15 @@ import qualified Data.ByteString.Base16 as B16
 data Item = Item {
     title :: String,
     sha1 :: String,
-    attr :: (Map String String)} deriving (Generic, Show)
+    attr :: (Map String String)
+    } deriving (Generic, Show)
 
 data Node = Node {
 path :: String,
 item :: Item,
-kids :: [Item]} deriving (Generic, Show)
+kids :: [Item],
+parentSha1 :: String
+} deriving (Generic, Show)
 
 data Tr = Tr {
     node :: Node,
@@ -35,12 +38,13 @@ data Tr = Tr {
 
 sha1InHex = B.unpack . B16.encode . SHA.hash . B.pack
 
-makeTr :: String -> [DirTree String] -> Tr
-makeTr name contents =
-    let kidTrs = [makeTr (name ++ "/" ++ title) contents' | Dir title contents' <- contents]
+makeTr :: String -> String -> [DirTree String] -> Tr
+makeTr name parentSha1 contents =
+    let sha1 = sha1InHex name
+        kidTrs = [makeTr (name ++ "/" ++ title) sha1 contents' | Dir title contents' <- contents]
         kidItems = Prelude.map (item . node) kidTrs
-        thisItem = Item (Path.takeFileName name) (sha1InHex name) (fromList [(Path.takeBaseName name', file) | File name' file <- contents])
-        thisNode = Node name thisItem kidItems
+        thisItem = Item (Path.takeFileName name) sha1 (fromList [(Path.takeBaseName name', file) | File name' file <- contents])
+        thisNode = Node name thisItem kidItems parentSha1
     in Tr thisNode kidTrs
 
 makeNodes :: Tr -> [Node]
@@ -62,7 +66,7 @@ writeJson dst (x:xs) = do
 parse :: [String] -> IO ()
 parse (src:(dst:[])) = do
     (a :/ (Dir name contents)) <- readDirectory src
-    writeJson dst (makeNodes (makeTr name contents))
+    writeJson dst (makeNodes (makeTr name "" contents))
 parse _     = usage >> exit
 
 usage   = putStrLn "Usage: gen-json src dst"

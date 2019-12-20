@@ -1,4 +1,7 @@
 <div *ngIf="node">
+    <button mat-icon-button *ngIf="node.parentSha1" [routerLink]="['/books', node.parentSha1]">
+        <mat-icon>navigate_before</mat-icon>
+    </button>
     <span class="title">{{node.item.title}}</span>
 </div>
 

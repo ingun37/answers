@@ -28,6 +28,7 @@ export class _Item {
 }
 export class _Node {
   public path: string;
+  public parentSha1: string;
   public item: _Item;
   public kids: _Item[];
 }

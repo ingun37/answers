@@ -1,1 +1,1 @@
-{"path":"books/Category Theory For Programmers/14. Representable Functors/3","kids":[],"item":{"attr":{"a":"Yes. `Reader a` is `Hom(a, -)`\n","q":"Is the `Reader` functor representable?\n"},"sha1":"0e2049eb22ff1c98bdbc9c1cd680e0d0ab8a7d9b","title":"3"}}
+{"parentSha1":"38d95f07ad37d192d49da15e4bd4d0901bd311b5","path":"books/Category Theory For Programmers/14. Representable Functors/3","kids":[],"item":{"attr":{"a":"Yes. `Reader a` is `Hom(a, -)`\n","q":"Is the `Reader` functor representable?\n"},"sha1":"0e2049eb22ff1c98bdbc9c1cd680e0d0ab8a7d9b","title":"3"}}
