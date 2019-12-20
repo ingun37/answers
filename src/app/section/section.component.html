@@ -1,4 +1,3 @@
-
 <div *ngIf="questionMD; else questionElseBlock">
     <app-excerpt [mdstr]="questionMD"></app-excerpt>
 </div>
@@ -25,14 +24,19 @@
             <div *ngFor="let sub of node.kids">
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
-                        <mat-panel-title>{{sub.title}}</mat-panel-title>
-                        <button mat-icon-button [routerLink]="['/books', sub.sha1]" (click)="$event.stopPropagation();">
-                            <mat-icon>launch</mat-icon>
-                        </button>
+                        <mat-panel-title>
+                            {{sub.title}}
+                        </mat-panel-title>
+                        <mat-panel-description *ngIf="headlineOf(sub)" class="item-headline">
+                            {{headlineOf(sub)}}
+                        </mat-panel-description>
+
+                        <mat-icon class="panel-icon" [routerLink]="['/books', sub.sha1]" (click)="$event.stopPropagation();">launch</mat-icon>
+                        
                     </mat-expansion-panel-header>
                     <ng-template matExpansionPanelContent>
 
-                            <app-section [sha1]="sub.sha1"></app-section>
+                        <app-section [sha1]="sub.sha1"></app-section>
 
                     </ng-template>
                 </mat-expansion-panel>

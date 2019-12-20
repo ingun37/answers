@@ -56,15 +56,31 @@ export class SectionComponent implements OnInit {
     //   this.children = children;
     // });
   }
+  answerOf(item: _Item): string {
+    return item.attr['a'] || '';
+  }
+  questionOf(item: _Item): string {
+    return item.attr['q'] || '';
+  }
+
+  headlineOf(item: _Item): string {
+    if (this.questionOf(item)) {
+      return this.questionOf(item).split('\n')[0];
+    } else if (this.answerOf(item)) {
+      return this.answerOf(item).split('\n')[0];
+    } else {
+      return '';
+    }
+  }
   ngOnInit() {
     console.log('section init!');
     this.db.getItem(this.sha1).then(node => {
       this.node = node;
       this.editLink = '/write/' + this.node.item.sha1;
       this.reloadChildren();
-      console.log(this.node.item)
-      this.questionMD = this.node.item.attr['q'] || '';
-      this.answerMD = this.node.item.attr['a'] || '';
+
+      this.questionMD = this.questionOf(node.item) || '';
+      this.answerMD = this.answerOf(node.item) || '';
     });
   }
   

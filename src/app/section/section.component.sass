@@ -1,10 +1,19 @@
-.sectionbox
-    // padding-left: 25px
-
-span.big
-    font-size: 130%
-    font-weight: bold
-
-span.section
-    font-size: 120%
-    font-weight: bold
+.item-headline
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    // background-image: linear-gradient(to right, rgba(255, 255, 255, 255), rgba(255, 255, 255, 0))
+    -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0,1) 80%, rgba(0,0,0,0))
+$btn-coefficient: 1.8
+$icon-coefficient: 2
+.panel-btn
+    // height: $btn-coefficient * 1em
+    // width: $btn-coefficient * 1em
+    // margin: -5em
+.panel-icon
+    margin-right: 0.4em
+    margin-bottom: -0.1em
+        // font-size: 1em
+        // height: $icon-coefficient * 1em
+        // width: $icon-coefficient * 1em
+        // line-height: $icon-coefficient

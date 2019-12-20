@@ -21,6 +21,8 @@
     "@angular/platform-browser": "~8.2.13",
     "@angular/platform-browser-dynamic": "~8.2.13",
     "@angular/router": "~8.2.13",
+    "@material/button": "^4.0.0",
+    "@material/elevation": "^4.0.0",
     "@types/cheerio": "^0.22.14",
     "@types/jsdom": "^12.2.4",
     "@types/markdown-it": "0.0.9",
