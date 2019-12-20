@@ -9,6 +9,9 @@ import {MatBottomSheet} from '@angular/material/bottom-sheet';
 import { RemoveBottomSheetComponent } from '../remove-bottom-sheet/remove-bottom-sheet.component';
 import { AdminService } from '../admin.service';
 import { _Node, _Item, StaticDBService } from '../static-db.service';
+import { ClipboardService } from 'ngx-clipboard'
+import {MatSnackBar} from '@angular/material/snack-bar';
+import { ClipboardSnackbarComponent } from '../clipboard-snackbar/clipboard-snackbar.component';
 
 @Component({
   selector: 'app-section',
@@ -22,11 +25,12 @@ export class SectionComponent implements OnInit {
   questionMD = null;
   answerMD = null;
   constructor(
-    private answer: AnswerService,
     public dialog: MatDialog,
     private bottomSheet: MatBottomSheet,
-    private admin: AdminService,
-    private db: StaticDBService
+    private db: StaticDBService,
+    private clipboard: ClipboardService,
+    private router: Router,
+    private _snackBar: MatSnackBar
   ) { }
 
   addClick(): void {
@@ -36,17 +40,6 @@ export class SectionComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      // const title: string = result;
-      // if (title) {
-      //   this.admin.newItem(this.item.path, title).then(() => {
-      //     this.reloadChildren();
-      //   })
-      //   // this.answer.newItem(this.item.path, title).then(() => {
-      //   //   this.reloadChildren();
-      //   // });
-      // } else {
-
-      // }
     });
   }
 
@@ -83,7 +76,12 @@ export class SectionComponent implements OnInit {
       this.answerMD = this.answerOf(node.item) || '';
     });
   }
-  
+  shareClick(item: _Item) {
+    this.clipboard.copyFromContent(location.origin + '/books/' + item.sha1);
+    this._snackBar.openFromComponent(ClipboardSnackbarComponent, {
+      duration: 4 * 1000,
+    });
+  }
   openBottomSheet(): void {
     const ref = this.bottomSheet.open(RemoveBottomSheetComponent);
     ref.afterDismissed().subscribe(result => {

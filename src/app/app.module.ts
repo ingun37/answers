@@ -34,6 +34,9 @@ import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import { RemoveBottomSheetComponent } from './remove-bottom-sheet/remove-bottom-sheet.component';
 import {MatListModule} from '@angular/material/list';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { ClipboardModule } from 'ngx-clipboard';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { ClipboardSnackbarComponent } from './clipboard-snackbar/clipboard-snackbar.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +51,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     LoginUIDirective,
     AuthUIComponent,
     NewItemDialogComponent,
-    RemoveBottomSheetComponent
+    RemoveBottomSheetComponent,
+    ClipboardSnackbarComponent
   ],
   imports: [
     BrowserModule,
@@ -79,13 +83,16 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatProgressSpinnerModule,
     MatBottomSheetModule,
     MatListModule,
-    MatGridListModule
+    MatGridListModule,
+    ClipboardModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent],
   entryComponents: [
     RemoveBottomSheetComponent,
-    NewItemDialogComponent
+    NewItemDialogComponent,
+    ClipboardSnackbarComponent
   ],
 })
 export class AppModule { }
