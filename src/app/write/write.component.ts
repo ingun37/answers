@@ -6,7 +6,6 @@ import { MatButtonToggleChange } from '@angular/material/button-toggle';
 import { MarkdownService } from 'ngx-markdown';
 import { Item } from '../item';
 import { Account } from '../account';
-import { FireService } from '../fire.service';
 import { AdminService } from '../admin.service';
 
 @Component({
@@ -26,7 +25,6 @@ export class WriteComponent implements OnInit {
     private router: Router,
     private answer: AnswerService,
     private mdservice: MarkdownService,
-    private fire: FireService,
     private admin: AdminService
   ) { }
   changed(change: MatButtonToggleChange) {
@@ -53,20 +51,7 @@ export class WriteComponent implements OnInit {
     this.router.navigate(['books', this.item.path]);
   }
   ngOnInit() {
-    this.route.paramMap.subscribe(params => {
-      const path = decodeURIComponent(params.get('path'));
-      this.attribute = params.get('att');
-      this.answer.getItem(path).then(item => {
-        this.item = item;
-        this.answer.getAccountsOfItem(item.path, this.attribute).then(accounts => {
-          if (accounts.length > 0) {
-            const parentAccount = accounts[0].account;
-            this.parentAccountId = accounts[0].id;
-            this.md = parentAccount.value;
-          }
-        });
-      });
-    });
+    
   }
 
 }

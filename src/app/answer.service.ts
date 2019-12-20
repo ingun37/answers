@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { FireService } from './fire.service';
 import { MarkdownService } from 'ngx-markdown';
 import { Item } from './item';
 import { Account } from './account';
@@ -13,74 +12,13 @@ declare var katex: any;
 })
 export class AnswerService {
   rootSha1 = '2aed5404c83f7a46aa249e0a6328af756b19d513'
-  getHome(): Promise<Home> {
-    return this.fire.db.collection('books').get().then(snap => {
-      return new Home(snap.docs.map(x => this.snap2Item(x)));
-    });
-  }
-
-  private snap2Item(snap: firebase.firestore.DocumentSnapshot): Item {
-    if (snap.exists) {
-      const data = snap.data();
-      return new Item(snap.ref.path, getSafe(() => data.cover, null), data.title);
-    } else {
-      console.log('failed to get data from :' + snap.ref.path);
-      return null;
-    }
-  }
-
-  private makeChain(startId: string, accountRefs: AccountRef[]): AccountRef[] {
-    const dic = new Map<string, AccountRef>(accountRefs.map(x => [x.id, x]));
-    const current = dic.get(startId);
-    const chain = [current];
-    while (chain[chain.length - 1].account.parent) {
-      chain.push(dic.get(chain[chain.length - 1].account.parent));
-    }
-    return chain;
-  }
-
-  getAccountsOfItem(path: string, attr: string): Promise<AccountRef[]> {
-    return this.accountsOf(path, attr).get().then(snap => {
-      const accountRefs = snap.docs.map(doc => {
-        return new AccountRef(doc.id, Object.assign(new Account('','',''), doc.data()));
-      });
-      
-      const ids = accountRefs.map(x => x.id);
-      const parentIds = new Set(accountRefs.map(x => x.account.parent));
-      const leafs = ids.filter(x => !parentIds.has(x));
-      
-      const chains = leafs.map(x => this.makeChain(x, accountRefs));
-      if (chains.length > 1) {
-        return chains.reduce((prev, curr) => prev.length < curr.length ? curr : prev);
-      } else if (chains.length === 1) {
-        return chains[0];
-      } else {
-        return [];
-      }
-    });
-  }
-
-  getItem(path: string): Promise<Item> {
-    return this.fire.db.doc(path).get().then(snap => {
-      return this.snap2Item(snap);
-    });
-  }
-
-  private accountsOf(path: string, attr: string): firebase.firestore.CollectionReference {
-    return this.fire.db.collection(path + '/attributes/' + encodeURIComponent(attr) + '/accounts');
-  }
-
-  // mergeToItem(path: string, data: any): Promise<void> {
-  //   return this.fire.db.doc(path).set(data, {merge: true});
-  // }
-  getChildren(path: string): Promise<Item[]> {
-      return this.fire.db.collection(path + '/subs').get().then(collectionSnap => {
-        return collectionSnap.docs.map(x => this.snap2Item(x));
-      });
-  }
+  
+  
+  
+  
+  
   constructor(
     private http: HttpClient,
-    private fire: FireService,
   ) {}
 }
 export class AccountRef {

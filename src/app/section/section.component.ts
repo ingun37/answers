@@ -7,7 +7,6 @@ import { Router } from '@angular/router';
 import { Item } from '../item';
 import {MatBottomSheet} from '@angular/material/bottom-sheet';
 import { RemoveBottomSheetComponent } from '../remove-bottom-sheet/remove-bottom-sheet.component';
-import { FireService } from '../fire.service';
 import { AdminService } from '../admin.service';
 import { _Node, _Item, StaticDBService } from '../static-db.service';
 
@@ -64,8 +63,8 @@ export class SectionComponent implements OnInit {
       this.editLink = '/write/' + this.node.item.sha1;
       this.reloadChildren();
       console.log(this.node.item)
-      this.questionMD = this.node.item.attr['q'];
-      this.answerMD = this.node.item.attr['a'];
+      this.questionMD = this.node.item.attr['q'] || '';
+      this.answerMD = this.node.item.attr['a'] || '';
     });
   }
   

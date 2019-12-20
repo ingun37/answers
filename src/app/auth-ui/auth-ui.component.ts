@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FireService } from '../fire.service';
 
 @Component({
   selector: 'app-auth-ui',
@@ -9,11 +8,9 @@ import { FireService } from '../fire.service';
 export class AuthUIComponent implements OnInit {
 
   constructor(
-    private fire: FireService
   ) { }
 
   ngOnInit() {
-    this.fire.loginUI('#firebaseui-auth-container');
   }
 
 }

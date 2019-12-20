@@ -1,14 +1,6 @@
 <mat-toolbar>
     <span [routerLink]="['/']">MathBookAnswers</span>
     <span class="example-space"></span>
-    <div *ngIf="loaded">
-        <div *ngIf="userName; else elseBlock">
-            <button mat-button routerLink="/login">{{userName}}</button>
-        </div>
-        <ng-template #elseBlock>
-            <button mat-button routerLink="/login">Login</button>
-        </ng-template>
-    </div>
 </mat-toolbar>
 
 

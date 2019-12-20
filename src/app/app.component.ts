@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FireService } from './fire.service';
 
 @Component({
   selector: 'app-root',
@@ -11,16 +10,7 @@ export class AppComponent {
   userName: string = null;
   loaded = false;
   constructor(
-    private fire: FireService
   ) {}
   ngOnInit() {
-    this.fire.loginState.subscribe(user => {
-      this.loaded = true;
-      if (user) {
-        this.userName = user.name;
-      } else {
-        this.userName = null;
-      }
-    });
   }
 }

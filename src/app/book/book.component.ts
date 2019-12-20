@@ -3,7 +3,6 @@ import { AnswerService } from '../answer.service';
 import { ActivatedRoute } from '@angular/router';
 import { Item } from '../item';
 import { MatButtonToggleChange } from '@angular/material/button-toggle';
-import { FireService } from '../fire.service';
 import { _Node, StaticDBService, _Item } from '../static-db.service';
 
 @Component({
@@ -18,7 +17,6 @@ export class BookComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private answers: AnswerService,
-    private fire: FireService,
     private db: StaticDBService,
     ) { }
 
@@ -29,14 +27,6 @@ export class BookComponent implements OnInit {
     const sha1 = this.route.snapshot.paramMap.get('sha1');
     this.db.getItem(sha1).then(node => {
       this.node = node;
-    });
-    
-    this.fire.loginState.subscribe(user => {
-      if(user) {
-        this.uid = user.uid;
-      } else {
-        this.uid = "";
-      }
     });
   }
 }
