@@ -1,14 +1,5 @@
 <div *ngIf="node">
     <span class="title">{{node.item.title}}</span>
-    <mat-slide-toggle *ngIf="uid; else elseBlock" class="example-margin" [checked]="edit" (change)="change($event);">
-        Edit
-    </mat-slide-toggle>
-    <ng-template #elseBlock>
-        <span *ngIf="uid == null; else signInBlock"><mat-spinner [diameter]="20" [strokeWidth]="5"></mat-spinner></span>
-        <ng-template #signInBlock>
-            <button mat-button color="primary" routerLink="/login">Sign in to edit</button>
-        </ng-template>
-    </ng-template>
 </div>
 
 <app-section [edit]="edit" [sha1]="node.item.sha1" *ngIf="node"></app-section>
