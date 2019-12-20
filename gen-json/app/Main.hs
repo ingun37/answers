@@ -27,15 +27,23 @@ path :: String,
 item :: Item,
 kids :: [Item]} deriving (Generic, Show)
 
+data Tr = Tr {
+    node :: Node,
+    children :: [Tr]
+    }
+
 sha1InHex = B.unpack . B16.encode . SHA.hash . B.pack
 
-makeNodes :: String -> [DirTree String] -> [Node]
-makeNodes name contents =
-    let kidNodes = join ([makeNodes (name ++ "/" ++ title) contents' | Dir title contents' <- contents])
-        kidItems = Prelude.map item kidNodes
+makeTr :: String -> [DirTree String] -> Tr
+makeTr name contents =
+    let kidTrs = [makeTr (name ++ "/" ++ title) contents' | Dir title contents' <- contents]
+        kidItems = Prelude.map (item . node) kidTrs
         thisItem = Item (Path.takeFileName name) (sha1InHex name) (fromList [(Path.takeBaseName name', file) | File name' file <- contents])
-    in kidNodes ++ [Node name thisItem kidItems]
-makeNodes _ _ = []
+        thisNode = Node name thisItem kidItems
+    in Tr thisNode kidTrs
+
+makeNodes :: Tr -> [Node]
+makeNodes (Tr node children) = join (Prelude.map makeNodes children) ++ [node]
 
 instance ToJSON Item
 instance ToJSON Node
@@ -53,7 +61,7 @@ writeJson dst (x:xs) = do
 parse :: [String] -> IO ()
 parse (src:(dst:[])) = do
     (a :/ (Dir name contents)) <- readDirectory src
-    writeJson dst (makeNodes name contents)
+    writeJson dst (makeNodes (makeTr name contents))
 parse _     = usage >> exit
 
 usage   = putStrLn "Usage: gen-json src dst"
