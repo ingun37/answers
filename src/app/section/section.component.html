@@ -30,7 +30,7 @@
                         <mat-panel-description *ngIf="headlineOf(sub)" class="item-headline">
                             {{headlineOf(sub)}}
                         </mat-panel-description>
-
+                        <mat-icon class="panel-icon" (click)="$event.stopPropagation();">share</mat-icon>
                         <mat-icon class="panel-icon" [routerLink]="['/books', sub.sha1]" (click)="$event.stopPropagation();">launch</mat-icon>
                         
                     </mat-expansion-panel-header>

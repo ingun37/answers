@@ -18,6 +18,9 @@ export class HomeComponent implements OnInit {
     private db: StaticDBService
   ) { }
 
+  authorOf(item: _Item): string {
+    return item.attr['author'] || '';
+  }
   ngOnInit() {
     this.db.getHome().then(home => this.home = home);
     // this.answerService.getHome().then(home => this.home = home);
