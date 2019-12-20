@@ -5,15 +5,20 @@ import { MarkdownService } from 'ngx-markdown';
 import { Item } from './item';
 import { Account } from './account';
 import * as firebase from 'firebase/app';
+
 declare var katex: any;
 
 @Injectable({
   providedIn: 'root'
 })
 export class AnswerService {
-  url = 'http://192.168.35.5:8000/';
-
+  rootSha1 = '2aed5404c83f7a46aa249e0a6328af756b19d513'
   getHome(): Promise<Home> {
+    this.http.get('assets/db/' + this.rootSha1 + '.json').toPromise().then(obj => {
+      const instance:_Node = Object.assign(new _Node(), obj);
+      console.log('books obj:');
+      console.log(instance);
+    })
     return this.fire.db.collection('books').get().then(snap => {
       return new Home(snap.docs.map(x => this.snap2Item(x)));
     });
@@ -66,27 +71,10 @@ export class AnswerService {
     });
   }
 
-  newItem(parentPath: string, title: string): Promise<void> {
-    return this.fire.db.doc(parentPath + '/subs/' + encodeURIComponent(title)).set({
-      title,
-      author: this.fire.loginState.value.uid
-    }).catch(reason => {
-      console.log(reason);
-    });
-  }
-
-  deleteItem(path: string): Promise<void> {
-    return this.fire.db.doc(path).delete();
-  }
   private accountsOf(path: string, attr: string): firebase.firestore.CollectionReference {
     return this.fire.db.collection(path + '/attributes/' + encodeURIComponent(attr) + '/accounts');
   }
 
-  newAccount(path: string, attr: string, account: Account): Promise<void> {
-    return this.accountsOf(path, attr).add(Object.assign({}, account)).then(ref => {
-      return Promise.resolve();
-    });
-  }
   // mergeToItem(path: string, data: any): Promise<void> {
   //   return this.fire.db.doc(path).set(data, {merge: true});
   // }
@@ -163,4 +151,15 @@ function getSafe(fn, defaultVal) {
   } catch (e) {
       return defaultVal;
   }
+}
+
+class _Item {
+  public title: string;
+  public sha1: string;
+  public attr: Map<string, string>;
+}
+class _Node {
+  public path: string;
+  public item: _Item;
+  public kids: _Item[];
 }
