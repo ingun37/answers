@@ -1,13 +1,10 @@
 import { Component, OnInit, Input, Inject } from '@angular/core';
-import { AnswerService, ItemAttribute } from '../answer.service';
 import { MatButtonToggleChange } from '@angular/material/button-toggle';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { NewItemDialogComponent } from '../new-item-dialog/new-item-dialog.component';
 import { Router } from '@angular/router';
-import { Item } from '../item';
 import {MatBottomSheet} from '@angular/material/bottom-sheet';
 import { RemoveBottomSheetComponent } from '../remove-bottom-sheet/remove-bottom-sheet.component';
-import { AdminService } from '../admin.service';
 import { _Node, _Item, StaticDBService } from '../static-db.service';
 import { ClipboardService } from 'ngx-clipboard'
 import {MatSnackBar} from '@angular/material/snack-bar';

@@ -1,6 +1,4 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { AnswerService, Home } from '../answer.service';
-import { Item } from '../item';
 import { _Node, StaticDBService, _Item } from '../static-db.service';
 @Component({
   selector: 'app-home',

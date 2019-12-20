@@ -1,7 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { AnswerService } from '../answer.service';
 import { ActivatedRoute } from '@angular/router';
-import { Item } from '../item';
 import { MatButtonToggleChange } from '@angular/material/button-toggle';
 import { _Node, StaticDBService, _Item } from '../static-db.service';
 
@@ -16,7 +14,6 @@ export class BookComponent implements OnInit {
   uid: string = null;
   constructor(
     private route: ActivatedRoute,
-    private answers: AnswerService,
     private db: StaticDBService,
     ) { }
 
