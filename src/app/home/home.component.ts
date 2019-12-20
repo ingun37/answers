@@ -1,24 +1,26 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { AnswerService, Home } from '../answer.service';
-import { mergeMap } from "rxjs/operators";
 import { Item } from '../item';
+import { _Node, StaticDBService, _Item } from '../static-db.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent implements OnInit {
-  home: Home;
+  home: _Node;
   cols = 4;
-  makeURI(item: Item): string {
-    return 'books/' + encodeURIComponent(item.path);
+  makeURI(item: _Item): string {
+    return 'books/' + item.sha1;
   }
   constructor(
-    private answerService: AnswerService
+    // private answerService: AnswerService,
+    private db: StaticDBService
   ) { }
 
   ngOnInit() {
-    this.answerService.getHome().then(home => this.home = home);
+    this.db.getHome().then(home => this.home = home);
+    // this.answerService.getHome().then(home => this.home = home);
     const toCols = Math.min(Math.floor(window.innerWidth / 200), 4);
     if (toCols !== this.cols) {
       this.cols = toCols;

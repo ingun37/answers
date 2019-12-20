@@ -24,16 +24,16 @@
 </ng-template>
 
 <div class="sectionbox">
-    <div *ngIf="children">
+    <div *ngIf="node">
         <mat-accordion [multi]="true">
-            <div *ngFor="let sub of children">
+            <div *ngFor="let sub of node.kids">
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
                         <mat-panel-title>{{sub.title}}</mat-panel-title>
                     </mat-expansion-panel-header>
                     <ng-template matExpansionPanelContent>
 
-                            <app-section [edit]="edit" [item]="sub"></app-section>
+                            <app-section [edit]="edit" [sha1]="sub.sha1"></app-section>
 
                     </ng-template>
                 </mat-expansion-panel>

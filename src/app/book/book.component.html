@@ -1,5 +1,5 @@
-<div *ngIf="item">
-    <span class="title">{{item.title}}</span>
+<div *ngIf="node">
+    <span class="title">{{node.item.title}}</span>
     <mat-slide-toggle *ngIf="uid; else elseBlock" class="example-margin" [checked]="edit" (change)="change($event);">
         Edit
     </mat-slide-toggle>
@@ -11,4 +11,4 @@
     </ng-template>
 </div>
 
-<app-section [edit]="edit" [item]="item" *ngIf="item"></app-section>
+<app-section [edit]="edit" [sha1]="node.item.sha1" *ngIf="node"></app-section>

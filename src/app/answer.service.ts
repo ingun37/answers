@@ -14,11 +14,6 @@ declare var katex: any;
 export class AnswerService {
   rootSha1 = '2aed5404c83f7a46aa249e0a6328af756b19d513'
   getHome(): Promise<Home> {
-    this.http.get('assets/db/' + this.rootSha1 + '.json').toPromise().then(obj => {
-      const instance:_Node = Object.assign(new _Node(), obj);
-      console.log('books obj:');
-      console.log(instance);
-    })
     return this.fire.db.collection('books').get().then(snap => {
       return new Home(snap.docs.map(x => this.snap2Item(x)));
     });
@@ -153,13 +148,3 @@ function getSafe(fn, defaultVal) {
   }
 }
 
-class _Item {
-  public title: string;
-  public sha1: string;
-  public attr: Map<string, string>;
-}
-class _Node {
-  public path: string;
-  public item: _Item;
-  public kids: _Item[];
-}

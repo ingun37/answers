@@ -9,6 +9,7 @@ import {MatBottomSheet} from '@angular/material/bottom-sheet';
 import { RemoveBottomSheetComponent } from '../remove-bottom-sheet/remove-bottom-sheet.component';
 import { FireService } from '../fire.service';
 import { AdminService } from '../admin.service';
+import { _Node, _Item, StaticDBService } from '../static-db.service';
 
 @Component({
   selector: 'app-section',
@@ -16,9 +17,9 @@ import { AdminService } from '../admin.service';
   styleUrls: ['./section.component.sass']
 })
 export class SectionComponent implements OnInit {
-  @Input() item: Item;
+  @Input() sha1: string;
+  node: _Node;
   @Input() edit: boolean;
-  children: Item[];
   editLink = '';
   questionMD = null;
   answerMD = null;
@@ -26,7 +27,8 @@ export class SectionComponent implements OnInit {
     private answer: AnswerService,
     public dialog: MatDialog,
     private bottomSheet: MatBottomSheet,
-    private admin: AdminService
+    private admin: AdminService,
+    private db: StaticDBService
   ) { }
 
   addClick(): void {
@@ -36,41 +38,34 @@ export class SectionComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      const title: string = result;
-      if (title) {
-        this.admin.newItem(this.item.path, title).then(() => {
-          this.reloadChildren();
-        })
-        // this.answer.newItem(this.item.path, title).then(() => {
-        //   this.reloadChildren();
-        // });
-      } else {
+      // const title: string = result;
+      // if (title) {
+      //   this.admin.newItem(this.item.path, title).then(() => {
+      //     this.reloadChildren();
+      //   })
+      //   // this.answer.newItem(this.item.path, title).then(() => {
+      //   //   this.reloadChildren();
+      //   // });
+      // } else {
 
-      }
+      // }
     });
   }
 
   reloadChildren() {
-    this.answer.getChildren(this.item.path).then(children => {
-      this.children = children;
-    });
+    // this.answer
+    // this.answer.getChildren(this.item.path).then(children => {
+    //   this.children = children;
+    // });
   }
   ngOnInit() {
-    this.editLink = '/write/' + encodeURIComponent(this.item.path);
-    this.reloadChildren();
-    this.answer.getAccountsOfItem(this.item.path, ItemAttribute.QUESTION).then(accounts => {
-      if (accounts.length > 0) {
-        this.questionMD = accounts[0].account.value;
-      } else {
-        this.questionMD = '';
-      }
-    });
-    this.answer.getAccountsOfItem(this.item.path, ItemAttribute.ANSWER).then(accounts => {
-      if (accounts.length > 0) {
-        this.answerMD = accounts[0].account.value;
-      } else {
-        this.answerMD = '';
-      }
+    this.db.getItem(this.sha1).then(node => {
+      this.node = node;
+      this.editLink = '/write/' + this.node.item.sha1;
+      this.reloadChildren();
+      console.log(this.node.item)
+      this.questionMD = this.node.item.attr['q'];
+      this.answerMD = this.node.item.attr['a'];
     });
   }
   
@@ -78,9 +73,9 @@ export class SectionComponent implements OnInit {
     const ref = this.bottomSheet.open(RemoveBottomSheetComponent);
     ref.afterDismissed().subscribe(result => {
       if (result) {
-        this.admin.delete(this.item.path).then(() => {
-          this.reloadChildren();
-        })
+        // this.admin.delete(this.item.path).then(() => {
+        //   this.reloadChildren();
+        // })
       } else {
 
       }

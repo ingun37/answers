@@ -56,7 +56,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'login', component: LoginComponent },
-      { path: 'books/:path', component: BookComponent },
+      { path: 'books/:sha1', component: BookComponent },
       { path: 'write/:path/:att', component: WriteComponent },
       // { path: '**', component:  pathMatch: 'prefix' },
     ]),
