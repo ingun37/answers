@@ -2,4 +2,4 @@
     <span class="title">{{node.item.title}}</span>
 </div>
 
-<app-section [edit]="edit" [sha1]="node.item.sha1" *ngIf="node"></app-section>
+<app-section *ngIf="sha1" [sha1]="sha1"></app-section>

@@ -18,7 +18,6 @@ import { _Node, _Item, StaticDBService } from '../static-db.service';
 export class SectionComponent implements OnInit {
   @Input() sha1: string;
   node: _Node;
-  @Input() edit: boolean;
   editLink = '';
   questionMD = null;
   answerMD = null;
@@ -58,6 +57,7 @@ export class SectionComponent implements OnInit {
     // });
   }
   ngOnInit() {
+    console.log('section init!');
     this.db.getItem(this.sha1).then(node => {
       this.node = node;
       this.editLink = '/write/' + this.node.item.sha1;

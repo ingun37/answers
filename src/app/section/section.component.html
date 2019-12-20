@@ -1,8 +1,4 @@
-<div *ngIf="edit">
-    <button color="primary" mat-button [routerLink]="[editLink, 'question']">Question <mat-icon>edit</mat-icon></button>
-    <button color="primary" mat-button [routerLink]="[editLink, 'answer']">Answer <mat-icon>edit</mat-icon></button>
-    <button color="warn" mat-button (click)="openBottomSheet()">Delete <mat-icon>delete</mat-icon></button>
-</div>
+
 <div *ngIf="questionMD; else questionElseBlock">
     <app-excerpt [mdstr]="questionMD"></app-excerpt>
 </div>
@@ -30,15 +26,17 @@
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
                         <mat-panel-title>{{sub.title}}</mat-panel-title>
+                        <button mat-button [routerLink]="['/books', sub.sha1]" (click)="$event.stopPropagation();">
+                            <mat-icon>launch</mat-icon>
+                        </button>
                     </mat-expansion-panel-header>
                     <ng-template matExpansionPanelContent>
 
-                            <app-section [edit]="edit" [sha1]="sub.sha1"></app-section>
+                            <app-section [sha1]="sub.sha1"></app-section>
 
                     </ng-template>
                 </mat-expansion-panel>
             </div>
         </mat-accordion>
     </div>
-    <button *ngIf="edit" color="primary" mat-button (click)="addClick();">Add Section <mat-icon>add</mat-icon></button>
 </div>

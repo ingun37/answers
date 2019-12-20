@@ -12,7 +12,7 @@ import { _Node, StaticDBService, _Item } from '../static-db.service';
 })
 export class BookComponent implements OnInit {
   node: _Node;
-  @Input() edit = false;
+  sha1: string;
   uid: string = null;
   constructor(
     private route: ActivatedRoute,
@@ -21,12 +21,15 @@ export class BookComponent implements OnInit {
     ) { }
 
   change(event: MatButtonToggleChange) {
-    this.edit = event.source.checked;
   }
   ngOnInit() {
-    const sha1 = this.route.snapshot.paramMap.get('sha1');
-    this.db.getItem(sha1).then(node => {
-      this.node = node;
+    this.route.paramMap.subscribe(params => {
+      this.sha1 = null;
+      const sha1 = params.get('sha1');
+      this.db.getItem(sha1).then(node => {
+        this.node = node;
+        this.sha1 = node.item.sha1;
+      });
     });
   }
 }
