@@ -29,6 +29,7 @@ dependencies:
 - bytestring
 - utf8-string
 - filepath
+- base16-bytestring
 
 library:
   source-dirs: src

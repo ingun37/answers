@@ -12,8 +12,12 @@ import Data.List.Split
 import Data.Map
 import Data.Aeson
 import GHC.Generics
-import qualified Data.ByteString.UTF8 as B      -- from utf8-string
+import qualified Data.ByteString as Strict
+import qualified Data.ByteString.Char8 as B
+import qualified Data.ByteString.Lazy.Char8 as Bz
 import qualified System.FilePath.Posix as Path
+import qualified Data.ByteString.Base16 as B16
+import Text.Printf (printf)
 
 data Item = Item {
     title :: String,
@@ -34,7 +38,6 @@ makeNodes :: String -> [DirTree String] -> [Node]
 makeNodes name contents = [makeNode name contents] ++ (join ([makeNodes (name ++ "/" ++ name') contents' | Dir name' contents' <- contents]))
 makeNodes _ _ = []
 
-
 instance ToJSON Item
 instance ToJSON Node
 
@@ -43,22 +46,17 @@ main = getArgs >>= parse
 writeJson :: String -> [Node] -> IO ()
 writeJson _ [] = return ()
 writeJson dst (x:xs) = do 
-    -- _ <- print (encode x)
-    -- _ <- print $ (SHA.hash . B.fromString . path) x
-    let jsonFileName = (B.toString . SHA.hash . B.fromString . path) x
+    let jsonFileName = (B.unpack . B16.encode . SHA.hash . B.pack . path) x ++ ".json"
         jsonPath = Path.joinPath [dst, jsonFileName]
-    _ <- print jsonPath
+    _ <- writeFile jsonPath (Bz.unpack (encode x))
     writeJson dst xs
 
 parse :: [String] -> IO ()
 parse (src:(dst:[])) = do
     (a :/ (Dir name contents)) <- readDirectory src
     writeJson dst (makeNodes name contents)
-parse ["-h"] = usage   >> exit
-parse ["-v"] = version >> exit
 parse _     = usage >> exit
 
 usage   = putStrLn "Usage: gen-json [-vh] src dst"
-version = putStrLn "Haskell tac 0.1"
 exit    = exitWith ExitSuccess
 die     = exitWith (ExitFailure 1)
