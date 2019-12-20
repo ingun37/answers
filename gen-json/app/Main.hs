@@ -12,12 +12,10 @@ import Data.List.Split
 import Data.Map
 import Data.Aeson
 import GHC.Generics
-import qualified Data.ByteString as Strict
 import qualified Data.ByteString.Char8 as B
 import qualified Data.ByteString.Lazy.Char8 as Bz
 import qualified System.FilePath.Posix as Path
 import qualified Data.ByteString.Base16 as B16
-import Text.Printf (printf)
 
 data Item = Item {
     title :: String,
@@ -29,7 +27,7 @@ item :: Item,
 kids :: [Item]} deriving (Generic, Show)
 
 makeItem :: String -> [DirTree String] -> Item
-makeItem name contents = Item (last (splitOn "/" name)) (fromList [(head (splitOn "." name'), file) | File name' file <- contents])
+makeItem name contents = Item (Path.takeFileName name) (fromList [(Path.takeBaseName name', file) | File name' file <- contents])
 
 makeNode :: String -> [DirTree String] -> Node
 makeNode name contents = Node name (makeItem name contents) [(makeItem title conts) | Dir title conts <- contents]
@@ -57,6 +55,6 @@ parse (src:(dst:[])) = do
     writeJson dst (makeNodes name contents)
 parse _     = usage >> exit
 
-usage   = putStrLn "Usage: gen-json [-vh] src dst"
+usage   = putStrLn "Usage: gen-json src dst"
 exit    = exitWith ExitSuccess
 die     = exitWith (ExitFailure 1)
