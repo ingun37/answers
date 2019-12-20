@@ -14,6 +14,7 @@ import Data.Aeson
 import GHC.Generics
 import qualified Data.ByteString.Char8 as B
 import qualified Data.ByteString.Lazy.Char8 as Bz
+import qualified Data.ByteString.Lazy.UTF8 as BzUTF8
 import qualified System.FilePath.Posix as Path
 import qualified Data.ByteString.Base16 as B16
 
@@ -55,7 +56,7 @@ writeJson _ [] = return ()
 writeJson dst (x:xs) = do 
     let jsonFileName = (sha1 $ item x) ++ ".json"
         jsonPath = Path.joinPath [dst, jsonFileName]
-    _ <- writeFile jsonPath (Bz.unpack (encode x))
+    _ <- writeFile jsonPath (BzUTF8.toString (encode x))
     writeJson dst xs
 
 parse :: [String] -> IO ()
