@@ -16,7 +16,6 @@ export class MathService {
   constructor() {
     this.subject.pipe(sampleTime(1000)).subscribe({
       next(x) {
-        console.log('type set - ' + x);
       }
     });
   }

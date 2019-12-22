@@ -19,7 +19,6 @@ export class WriteComponent implements OnInit {
     private router: Router,
   ) { }
   changed(change: MatButtonToggleChange) {
-    console.log(change);
     // if (change.value === 'preview') {
     //   this.previewHTML = md2HTML(this.mdservice, this.md);
     // } else if (change.value === 'editor') {

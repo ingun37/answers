@@ -59,7 +59,6 @@ export class SectionComponent implements OnInit {
     }
   }
   ngOnInit() {
-    console.log('section init!');
     this.db.getItem(this.sha1).then(node => {
       this.node = node;
       this.reloadChildren();
