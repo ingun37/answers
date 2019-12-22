@@ -12,7 +12,7 @@ import { ClipboardSnackbarComponent } from '../clipboard-snackbar/clipboard-snac
   styleUrls: ['./book.component.sass']
 })
 export class BookComponent implements OnInit {
-  node: _Node;
+  @Input() node: _Node;
   constructor(
     private route: ActivatedRoute,
     private db: StaticDBService,
@@ -22,7 +22,7 @@ export class BookComponent implements OnInit {
   ) { }
 
   shareClick(item: _Item) {
-    this.clipboard.copyFromContent(location.origin + '/books/' + item.sha1);
+    this.clipboard.copyFromContent(document.getElementsByTagName('base')[0].href + '?sha1=' + item.sha1);
     this.snackBar.openFromComponent(ClipboardSnackbarComponent, {
       duration: 4 * 1000,
     });
@@ -30,12 +30,6 @@ export class BookComponent implements OnInit {
   change(event: MatButtonToggleChange) {
   }
   ngOnInit() {
-    this.route.queryParamMap.subscribe(params => {
-      this.node = null;
-      const sha1 = params.get('sha1');
-      this.db.getItem(sha1).then(node => {
-        this.node = node;
-      });
-    });
+    
   }
 }

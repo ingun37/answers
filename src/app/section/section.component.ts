@@ -16,7 +16,6 @@ import { ClipboardSnackbarComponent } from '../clipboard-snackbar/clipboard-snac
 export class SectionComponent implements OnInit {
   @Input() sha1: string;
   node: _Node;
-  editLink = '';
   questionMD = null;
   answerMD = null;
   constructor(
@@ -63,7 +62,6 @@ export class SectionComponent implements OnInit {
     console.log('section init!');
     this.db.getItem(this.sha1).then(node => {
       this.node = node;
-      this.editLink = '/write/' + this.node.item.sha1;
       this.reloadChildren();
 
       this.questionMD = this.questionOf(node.item) || '';
@@ -71,7 +69,7 @@ export class SectionComponent implements OnInit {
     });
   }
   shareClick(item: _Item) {
-    this.clipboard.copyFromContent(document.getElementsByTagName('base')[0].href + 'books?sha1=' + item.sha1);
+    this.clipboard.copyFromContent(document.getElementsByTagName('base')[0].href + '?sha1=' + item.sha1);
     this._snackBar.openFromComponent(ClipboardSnackbarComponent, {
       duration: 4 * 1000,
     });
