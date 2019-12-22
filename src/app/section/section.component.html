@@ -31,7 +31,8 @@
                             {{headlineOf(sub)}}
                         </mat-panel-description>
                         <mat-icon class="panel-icon" (click)="shareClick(sub);$event.stopPropagation();">share</mat-icon>
-                        <mat-icon class="panel-icon" [routerLink]="['/books', sub.sha1]" (click)="$event.stopPropagation();">launch</mat-icon>
+                        <mat-icon class="panel-icon" routerLink="/books" [queryParams]="{sha1: sub.sha1}"
+                        (click)="$event.stopPropagation();">launch</mat-icon>
                         
                     </mat-expansion-panel-header>
                     <ng-template matExpansionPanelContent>

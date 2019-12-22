@@ -8,9 +8,6 @@ import { _Node, StaticDBService, _Item } from '../static-db.service';
 export class HomeComponent implements OnInit {
   home: _Node;
   cols = 4;
-  makeURI(item: _Item): string {
-    return 'books/' + item.sha1;
-  }
   constructor(
     // private answerService: AnswerService,
     private db: StaticDBService

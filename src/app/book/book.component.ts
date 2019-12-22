@@ -32,7 +32,7 @@ export class BookComponent implements OnInit {
   change(event: MatButtonToggleChange) {
   }
   ngOnInit() {
-    this.route.paramMap.subscribe(params => {
+    this.route.queryParamMap.subscribe(params => {
       this.sha1 = null;
       const sha1 = params.get('sha1');
       this.db.getItem(sha1).then(node => {

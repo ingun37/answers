@@ -56,8 +56,7 @@ import { ClipboardSnackbarComponent } from './clipboard-snackbar/clipboard-snack
     AppRoutingModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'books/:sha1', component: BookComponent },
-      { path: 'write/:path/:att', component: WriteComponent },
+      { path: 'books', component: BookComponent },
       // { path: '**', component:  pathMatch: 'prefix' },
     ]),
     NoopAnimationsModule,

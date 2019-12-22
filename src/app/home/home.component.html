@@ -1,6 +1,6 @@
 <div *ngIf="home">
   <mat-grid-list cols="{{cols}}">
-    <mat-grid-tile *ngFor="let book of home.kids" routerLink="{{makeURI(book)}}">
+    <mat-grid-tile *ngFor="let book of home.kids" routerLink="/books" [queryParams]="{sha1: book.sha1}">
       <mat-card class="book-card">
         <mat-card-header>
           <mat-card-title>{{book.title}}</mat-card-title>
