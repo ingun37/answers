@@ -9,6 +9,7 @@ import { _Node, _Item, StaticDBService } from '../static-db.service';
 import { ClipboardService } from 'ngx-clipboard'
 import {MatSnackBar} from '@angular/material/snack-bar';
 import { ClipboardSnackbarComponent } from '../clipboard-snackbar/clipboard-snackbar.component';
+import {Location, APP_BASE_HREF} from "@angular/common";
 
 @Component({
   selector: 'app-section',
@@ -27,7 +28,8 @@ export class SectionComponent implements OnInit {
     private db: StaticDBService,
     private clipboard: ClipboardService,
     private router: Router,
-    private _snackBar: MatSnackBar
+    private _snackBar: MatSnackBar,
+    private location: Location
   ) { }
 
   addClick(): void {
@@ -74,7 +76,7 @@ export class SectionComponent implements OnInit {
     });
   }
   shareClick(item: _Item) {
-    this.clipboard.copyFromContent(location.origin + '/books/' + item.sha1);
+    this.clipboard.copyFromContent(document.getElementsByTagName('base')[0].href + 'books/' + item.sha1);
     this._snackBar.openFromComponent(ClipboardSnackbarComponent, {
       duration: 4 * 1000,
     });
