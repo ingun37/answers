@@ -1,20 +1,12 @@
-<div *ngIf="loading; else notLoadingBlock">
-  loading...
+<div *ngIf="home">
+  <mat-grid-list cols="{{cols}}">
+    <mat-grid-tile *ngFor="let book of home.kids" [routerLink]="['/books', book.sha1]">
+      <mat-card class="book-card">
+        <mat-card-header>
+          <mat-card-title>{{book.title}}</mat-card-title>
+          <mat-card-subtitle *ngIf="authorOf(book)">{{authorOf(book)}}</mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
 </div>
-<ng-template #notLoadingBlock>
-  <app-book [node]="node" *ngIf="node; else elseBlock" ></app-book>
-  <ng-template #elseBlock>
-    <div *ngIf="home">
-      <mat-grid-list cols="{{cols}}">
-        <mat-grid-tile *ngFor="let book of home.kids" routerLink="/" [queryParams]="{sha1: book.sha1}">
-          <mat-card class="book-card">
-            <mat-card-header>
-              <mat-card-title>{{book.title}}</mat-card-title>
-              <mat-card-subtitle *ngIf="authorOf(book)">{{authorOf(book)}}</mat-card-subtitle>
-            </mat-card-header>
-          </mat-card>
-        </mat-grid-tile>
-      </mat-grid-list>
-    </div>
-  </ng-template>
-</ng-template>

@@ -1,6 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { _Node, StaticDBService, _Item } from '../static-db.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -8,13 +8,12 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   home: _Node;
-  loading: boolean = false;
-  node: _Node;
   cols = 4;
   constructor(
     // private answerService: AnswerService,
     private db: StaticDBService,
     private route: ActivatedRoute,
+    private router: Router,
   ) { }
 
   authorOf(item: _Item): string {
@@ -29,17 +28,9 @@ export class HomeComponent implements OnInit {
     }
     this.route.queryParamMap.subscribe(params => {
       const sha1 = params.get('sha1');
-      this.node = null;
-      this.loading = true;
-      if (sha1) {
-        this.db.getItem(sha1).then(node => {
-          this.node = node;
-          this.loading = false;
-        });
-      } else {
-        this.loading = false;
+      if(sha1) {
+        this.router.navigate(['books', sha1]);
       }
-      
     });
   }
 

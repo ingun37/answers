@@ -12,7 +12,8 @@ import { ClipboardSnackbarComponent } from '../clipboard-snackbar/clipboard-snac
   styleUrls: ['./book.component.sass']
 })
 export class BookComponent implements OnInit {
-  @Input() node: _Node;
+  node: _Node;
+  loading = false;
   constructor(
     private route: ActivatedRoute,
     private db: StaticDBService,
@@ -30,6 +31,12 @@ export class BookComponent implements OnInit {
   change(event: MatButtonToggleChange) {
   }
   ngOnInit() {
-    
+    this.route.paramMap.subscribe(params=>{
+      this.loading = true;
+      this.db.getItem(params.get('sha1')).then(node => {
+        this.node = node;
+        this.loading = false;
+      });
+    });
   }
 }
