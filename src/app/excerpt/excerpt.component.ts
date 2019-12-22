@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { MarkdownService, MarkedOptions } from 'ngx-markdown';
 import { MDService } from '../md.service';
 
 

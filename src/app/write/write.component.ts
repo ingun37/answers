@@ -2,7 +2,6 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CdkTextareaAutosize } from '@angular/cdk/text-field';
 import { MatButtonToggleChange } from '@angular/material/button-toggle';
-import { MarkdownService } from 'ngx-markdown';
 
 @Component({
   selector: 'app-write',
@@ -18,7 +17,6 @@ export class WriteComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private mdservice: MarkdownService,
   ) { }
   changed(change: MatButtonToggleChange) {
     console.log(change);

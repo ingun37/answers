@@ -10,7 +10,6 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { HomeComponent } from './home/home.component';
 import { TableComponent } from './table/table.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { MarkdownModule } from 'ngx-markdown';
 import { WriteComponent } from './write/write.component';
 import { BookComponent } from './book/book.component';
 import { SectionComponent } from './section/section.component';
@@ -68,7 +67,6 @@ import { ClipboardSnackbarComponent } from './clipboard-snackbar/clipboard-snack
     MatInputModule,
     TextFieldModule,
     HttpClientModule,
-    MarkdownModule.forRoot(),
     FormsModule,
     MatToolbarModule,
     MatDialogModule,
