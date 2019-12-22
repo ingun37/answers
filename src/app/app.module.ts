@@ -9,7 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { HomeComponent } from './home/home.component';
 import { TableComponent } from './table/table.component';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { WriteComponent } from './write/write.component';
 import { BookComponent } from './book/book.component';
 import { SectionComponent } from './section/section.component';
@@ -35,6 +35,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { ClipboardModule } from 'ngx-clipboard';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { ClipboardSnackbarComponent } from './clipboard-snackbar/clipboard-snackbar.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { ClipboardSnackbarComponent } from './clipboard-snackbar/clipboard-snack
     AuthUIComponent,
     NewItemDialogComponent,
     RemoveBottomSheetComponent,
-    ClipboardSnackbarComponent
+    ClipboardSnackbarComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -57,6 +59,7 @@ import { ClipboardSnackbarComponent } from './clipboard-snackbar/clipboard-snack
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'books/:sha1', component: BookComponent },
+      { path: 'about', component: AboutComponent },
       // { path: '**', component:  pathMatch: 'prefix' },
     ]),
     NoopAnimationsModule,

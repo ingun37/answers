@@ -10,7 +10,7 @@ import { MDService } from '../md.service';
 })
 export class ExcerptComponent implements OnInit {
   @Input() mdstr: string;
-  mdstr2: string
+  mdstr2: string;
   htmlstr: SafeHtml;
 
   constructor(
