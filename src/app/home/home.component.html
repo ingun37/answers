@@ -1,7 +1,7 @@
 <div *ngIf="home">
   <mat-grid-list cols="{{cols}}">
-    <mat-grid-tile *ngFor="let book of home.kids" [routerLink]="['/books', book.sha1]">
-      <mat-card class="book-card">
+    <mat-grid-tile *ngFor="let book of home.kids">
+      <mat-card class="book-card" routerLink="/" [queryParams]="{sha1: book.sha1}">
         <mat-card-header>
           <mat-card-title>{{book.title}}</mat-card-title>
           <mat-card-subtitle *ngIf="authorOf(book)">{{authorOf(book)}}</mat-card-subtitle>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { MDService } from '../md.service';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { HttpClient } from '@angular/common/http';
@@ -9,18 +9,17 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./about.component.sass']
 })
 export class AboutComponent implements OnInit {
+  @Input() mdstr: string;
   constructor(
     private sanitizer: DomSanitizer,
     private md: MDService,
-    private http: HttpClient
   ) { }
   htmlstr: SafeHtml;
 
   ngOnInit() {
 
-    this.http.get('assets/about.md', {responseType: 'text'}).subscribe(mdstr => {
-      this.htmlstr = this.sanitizer.bypassSecurityTrustHtml(this.md.md2HTML(mdstr));
-    })
+    this.htmlstr = this.sanitizer.bypassSecurityTrustHtml(this.md.md2HTML(this.mdstr));
+    
   }
 
 }

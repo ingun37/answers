@@ -56,12 +56,12 @@ import { AboutComponent } from './about/about.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'books/:sha1', component: BookComponent },
-      { path: 'about', component: AboutComponent },
-      // { path: '**', component:  pathMatch: 'prefix' },
-    ]),
+    // RouterModule.forRoot([
+    //   { path: '', component: HomeComponent, pathMatch: 'full' },
+    //   { path: 'books/:sha1', component: BookComponent },
+    //   { path: 'about', component: AboutComponent },
+    //   // { path: '**', component:  pathMatch: 'prefix' },
+    // ]),
     NoopAnimationsModule,
     MatSliderModule,
     MatButtonModule,

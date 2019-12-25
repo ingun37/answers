@@ -1,8 +1,12 @@
 <mat-toolbar>
     <span [routerLink]="['/']">MathBookAnswers</span>
     <span class="example-space"></span>
-    <button mat-button routerLink="/about">About</button>
+    <button mat-button routerLink="/" [queryParams]="{page: 'about'}">About</button>
 </mat-toolbar>
 
-
-<router-outlet></router-outlet>
+<mat-spinner *ngIf="loading; else elseBlock;" [diameter]="20" [strokeWidth]="5"></mat-spinner>
+<ng-template #elseBlock>
+    <app-about *ngIf="pageMDStr" [mdstr]="pageMDStr"></app-about>
+    <app-book *ngIf="node" [node]="node"></app-book>
+    <app-home *ngIf="home" [home]="home"></app-home>
+</ng-template>

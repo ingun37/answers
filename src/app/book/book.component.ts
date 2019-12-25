@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MatButtonToggleChange } from '@angular/material/button-toggle';
 import { _Node, StaticDBService, _Item } from '../static-db.service';
@@ -12,7 +12,7 @@ import { ClipboardSnackbarComponent } from '../clipboard-snackbar/clipboard-snac
   styleUrls: ['./book.component.sass']
 })
 export class BookComponent implements OnInit {
-  node: _Node;
+  @Input() node: _Node;
   loading = false;
   constructor(
     private route: ActivatedRoute,
@@ -31,12 +31,12 @@ export class BookComponent implements OnInit {
   change(event: MatButtonToggleChange) {
   }
   ngOnInit() {
-    this.route.paramMap.subscribe(params=>{
-      this.loading = true;
-      this.db.getItem(params.get('sha1')).then(node => {
-        this.node = node;
-        this.loading = false;
-      });
-    });
+    // this.route.paramMap.subscribe(params=>{
+    //   this.loading = true;
+    //   this.db.getItem(params.get('sha1')).then(node => {
+    //     this.node = node;
+    //     this.loading = false;
+    //   });
+    // });
   }
 }
