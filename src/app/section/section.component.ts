@@ -26,6 +26,16 @@ export class SectionComponent implements OnInit {
     private _snackBar: MatSnackBar,
   ) { }
 
+  orderedKids(): _Item[] {
+    return this.node.kids.sort((item1, item2): number => {
+      const a = item1.title;
+      const b = item2.title;
+      const s1 = [a, b].map(x => x.match(/^[\.\d]+/) || []);
+      const s2 = s1.map(x => x.pop() || '0');
+      const s3 = s2.map(x => parseFloat(x));
+      return s3[0] < s3[1] ? -1 : 1;
+    });
+  }
   addClick(): void {
     const dialogRef = this.dialog.open(NewItemDialogComponent, {
       width: '80%',

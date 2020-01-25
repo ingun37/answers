@@ -21,7 +21,7 @@
 <div class="sectionbox">
     <div *ngIf="node">
         <mat-accordion [multi]="true">
-            <div *ngFor="let sub of node.kids">
+            <div *ngFor="let sub of orderedKids()">
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
                         <mat-panel-title>
