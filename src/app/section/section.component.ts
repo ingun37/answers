@@ -28,12 +28,14 @@ export class SectionComponent implements OnInit {
 
   orderedKids(): _Item[] {
     return this.node.kids.sort((item1, item2): number => {
-      const a = item1.title;
-      const b = item2.title;
-      const s1 = [a, b].map(x => x.match(/^[\.\d]+/) || []);
-      const s2 = s1.map(x => x.pop() || '0');
-      const s3 = s2.map(x => parseFloat(x));
-      return s3[0] < s3[1] ? -1 : 1;
+      const FFa = [item1.title, item2.title].map(x => ((x.match(/^[\.\d]+/) || []).slice(0, 1)));
+      const empty: string[] = [];
+      const Fa = empty.concat(...FFa);
+      if (Fa.length === 2) {
+        return parseFloat(Fa[0]) < parseFloat(Fa[1]) ? -1 : 1;
+      } else {
+        return item1.title < item2.title ? -1 : 1;
+      }
     });
   }
   addClick(): void {
