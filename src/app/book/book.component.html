@@ -4,7 +4,7 @@
             <button mat-icon-button *ngIf="node.parentSha1" routerLink="/" [queryParams]="{sha1: node.parentSha1}">
                 <mat-icon>navigate_before</mat-icon>
             </button>
-            <span>{{node.item.title}}</span>
+            <span class="title">{{showPath()}}</span>
             <span class="example-spacer"></span>
             
             <button mat-icon-button (click)="shareClick(node.item)">

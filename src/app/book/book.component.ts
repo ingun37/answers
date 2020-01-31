@@ -22,6 +22,12 @@ export class BookComponent implements OnInit {
 
   ) { }
 
+  showPath(): string {
+    if (this.node.path.startsWith('books/')) {
+      return this.node.path.substring(6);
+    }
+    return this.node.path;
+  }
   shareClick(item: _Item) {
     this.clipboard.copyFromContent(document.getElementsByTagName('base')[0].href + '?sha1=' + item.sha1);
     this.snackBar.openFromComponent(ClipboardSnackbarComponent, {
