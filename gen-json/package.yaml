@@ -20,16 +20,17 @@ extra-source-files:
 description:         Please see the README on GitHub at <https://github.com/githubuser/gen-json#readme>
 
 dependencies:
-- base >= 4.7 && < 5
-- directory-tree
-- split
+- base
 - containers
-- aeson
-- cryptohash-sha1
 - bytestring
 - utf8-string
 - filepath
+- aeson
 - base16-bytestring
+- cryptohash-sha1
+- directory-tree
+- split
+- utf8-string
 
 library:
   source-dirs: src
