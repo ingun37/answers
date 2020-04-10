@@ -18,7 +18,7 @@ export class MDService {
     var displayTable = {};
     var table = {};
   
-    const replacedMD = mdStr.replace(/```math(.+?)```/gm, (match, group) => {
+    const replacedMD = mdStr.replace(/^```math$([\s\S\n\r]+?)^```$/gm, (match, group) => {
       const randomID = makeid(16);
       displayTable[randomID] = group;
       return randomID;
