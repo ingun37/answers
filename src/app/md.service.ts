@@ -18,11 +18,11 @@ export class MDService {
     var displayTable = {};
     var table = {};
   
-    const replacedMD = mdStr.replace(/\$\$(.+?)\$\$/gm, (match, group) => {
+    const replacedMD = mdStr.replace(/```math(.+?)```/gm, (match, group) => {
       const randomID = makeid(16);
       displayTable[randomID] = group;
       return randomID;
-    }).replace(/\$(.+?)\$/g, (match, group) => {
+    }).replace(/\$`(.+?)`\$/g, (match, group) => {
       const randomID = makeid(16);
       table[randomID] = group;
       return randomID;
