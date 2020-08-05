@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-gen-json/.stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/gen-json-exe/gen-json-exe ../answers-db/books/ src/assets/db/
+/nix/store/j2afrzqzwglsjhin0z7d8ydx0fp3l6s6-json-generator-0.1.0.0/bin/json-generator ../answers-db/books/ src/assets/db/
