@@ -3,13 +3,14 @@
 module Lib (parse) where
 
 import System.Exit ( exitWith, ExitCode(ExitFailure, ExitSuccess) )
-import Crypto.Hash.SHA1 as SHA
+import Crypto.Hash.SHA1 as SHA ( hash )
 import System.Directory.Tree
-import Control.Monad
-import Data.List.Split
-import Data.Map
-import Data.Aeson
-import GHC.Generics
+    ( readDirectoryWithL, AnchoredDirTree((:/)), DirTree(Dir, File), filterDir )
+import Control.Monad ( join )
+import Data.List.Split ()
+import Data.Map ( fromList, Map )
+import Data.Aeson ( encode, ToJSON )
+import GHC.Generics ( Generic )
 import qualified Data.ByteString.Char8 as B
 import qualified Data.ByteString.Lazy.Char8 as Bz
 import qualified Data.ByteString.Lazy.UTF8 as BzUTF8
@@ -59,9 +60,14 @@ writeJson dst (x:xs) = do
     _ <- writeFile jsonPath (BzUTF8.toString (encode x))
     writeJson dst xs
 
+dirFilter :: DirTree a -> Bool
+dirFilter (File name _) = ".md" == (reverse . take 3 . reverse) name
+dirFilter _ = True
+
 parse :: [String] -> IO ()
 parse (src:(dst:[])) = do
-    (a :/ (Dir name contents)) <- readDirectory src
+    (a :/ dirobj) <- readDirectoryWithL readFile src
+    let (Dir name contents) = filterDir dirFilter dirobj
     writeJson dst (makeNodes (makeTr name "" contents))
 parse _     = usage >> exit
 
