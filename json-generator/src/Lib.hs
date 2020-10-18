@@ -36,7 +36,7 @@ data Tr = Tr {
     }
 
 sha1InHex = B.unpack . B16.encode . SHA.hash . B.pack
-
+--it generates tree from bottom-up (dynamic programming)
 makeTr :: String -> String -> [DirTree String] -> Tr
 makeTr name parentSha1 contents =
     let sha1 = sha1InHex name
