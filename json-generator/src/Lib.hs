@@ -14,7 +14,7 @@ import GHC.Generics ( Generic )
 import qualified Data.ByteString.Char8 as B
 import qualified Data.ByteString.Lazy.Char8 as Bz
 import qualified Data.ByteString.Lazy.UTF8 as BzUTF8
-import qualified System.FilePath.Posix as Path
+import System.FilePath.Posix (takeFileName, takeBaseName, joinPath, (</>))
 import qualified Data.ByteString.Base16 as B16
 
 data Item = Item {
@@ -38,12 +38,12 @@ data Tr = Tr {
 sha1InHex = B.unpack . B16.encode . SHA.hash . B.pack
 --it generates tree from bottom-up (dynamic programming)
 makeTr :: String -> String -> [DirTree String] -> Tr
-makeTr name parentSha1 contents =
-    let sha1 = sha1InHex name
-        kidTrs = [makeTr (name ++ "/" ++ title) sha1 contents' | Dir title contents' <- contents]
+makeTr path parentSha1 entries =
+    let sha1 = sha1InHex path
+        kidTrs = [makeTr (path </> title) sha1 entries' | Dir title entries' <- entries]
         kidItems = Prelude.map (item . node) kidTrs
-        thisItem = Item (Path.takeFileName name) sha1 (fromList [(Path.takeBaseName name', file) | File name' file <- contents])
-        thisNode = Node name thisItem kidItems parentSha1
+        thisItem = Item (takeFileName path) sha1 (fromList [(takeBaseName name', file) | File name' file <- entries])
+        thisNode = Node path thisItem kidItems parentSha1
     in Tr thisNode kidTrs
 
 makeNodes :: Tr -> [Node]
@@ -56,7 +56,7 @@ writeJson :: String -> [Node] -> IO ()
 writeJson _ [] = return ()
 writeJson dst (x:xs) = do 
     let jsonFileName = (sha1 $ item x) ++ ".json"
-        jsonPath = Path.joinPath [dst, jsonFileName]
+        jsonPath = joinPath [dst, jsonFileName]
     _ <- writeFile jsonPath (BzUTF8.toString (encode x))
     writeJson dst xs
 
