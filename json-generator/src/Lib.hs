@@ -43,7 +43,7 @@ makeTr path parentSha1 entries =
     let sha1 = sha1InHex path
         kidTrs = [makeTr (path </> title) sha1 entries' | Dir title entries' <- entries]
         kidItems = Prelude.map (item . node) kidTrs
-        thisItem = Item (takeFileName path) sha1 (fromList [(takeBaseName name', jsonPipe file) | File name' file <- entries])
+        thisItem = Item (takeFileName path) sha1 (fromList [(takeBaseName name', mdPipe file) | File name' file <- entries])
         thisNode = Node path thisItem kidItems parentSha1
     in Tr thisNode kidTrs
 
@@ -76,5 +76,5 @@ usage   = putStrLn "Usage: gen-json src dst"
 exit    = exitWith ExitSuccess
 die     = exitWith (ExitFailure 1)
 
-jsonPipe :: String -> String
-jsonPipe = R.gsubRegexPR "!\\[\\]\\((?!http)(.+?)\\)" "![](assets/db-imgs/\\1)"
+mdPipe :: String -> String
+mdPipe = R.gsubRegexPR "!\\[\\]\\((?!http)(.+?)\\)" "![](assets/db-imgs/\\1)"
