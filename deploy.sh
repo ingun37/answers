@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-ng deploy --base-href=/answers/
+npx ng deploy --base-href=/answers/
