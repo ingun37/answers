@@ -56,3 +56,11 @@ test-suite json-generator-test
   main-is:             Test.hs
   -- other-modules:       Lib
   build-depends:       Lib, hspec, QuickCheck
+
+executable image-copier
+  import: deps
+  main-is: Img.hs
+  other-extensions:    DeriveGeneric
+  build-depends:       Lib, regexpr
+  hs-source-dirs:      img-exe
+  default-language:    Haskell2010
