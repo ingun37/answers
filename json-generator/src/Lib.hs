@@ -99,4 +99,4 @@ mdTraverse assetsPath relTo (path, content) = do
     mapM_ (\m -> D.copyFile (mdDir </> m) (assetsPath </> m)) matches
     let rel = P.makeRelative relTo assetsPath
     putStrLn $ "relpath" ++ rel
-    return $ R.gsubRegexPR "!\\[\\]\\((?!http)(.+?)\\)" ("![]("++rel++"/\\1)") content
+    return $ R.gsubRegexPR "!\\[\\]\\((?!http)(.+?)\\)" ("![](assets/"++rel++"/\\1)") content
