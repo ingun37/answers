@@ -30,7 +30,16 @@ common deps
                  split,
                  utf8-string,
                  directory,
-                 regexpr
+                 regexpr,
+                 cond
+
+library Util
+  import:              deps
+  exposed-modules:     Util
+  -- other-modules:
+  other-extensions:    DeriveGeneric
+  hs-source-dirs:      util
+  default-language:    Haskell2010
 
 library Lib
   import:              deps
@@ -39,6 +48,7 @@ library Lib
   other-extensions:    DeriveGeneric
   hs-source-dirs:      src
   default-language:    Haskell2010
+  build-depends:       Util
 
 executable json-generator
   import:              deps

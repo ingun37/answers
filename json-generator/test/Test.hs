@@ -6,6 +6,5 @@ import System.Directory (listDirectory, removeDirectoryRecursive, createDirector
 main :: IO ()
 main = do
   removeDirectoryRecursive "test/data/to"
-  createDirectoryIfMissing True "test/data/to/db"
-  createDirectoryIfMissing True "test/data/to/assets"
-  parse ["test/data/from", "test/data/to/db"]
+  createDirectoryIfMissing True "test/data/to"
+  parse ["test/data/from", "test/data/to"]
