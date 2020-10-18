@@ -16,6 +16,7 @@ import qualified Data.ByteString.Lazy.Char8 as Bz
 import qualified Data.ByteString.Lazy.UTF8 as BzUTF8
 import System.FilePath.Posix (takeFileName, takeBaseName, joinPath, (</>))
 import qualified Data.ByteString.Base16 as B16
+import qualified Text.RegexPR as R
 
 data Item = Item {
     title :: String,
@@ -42,7 +43,7 @@ makeTr path parentSha1 entries =
     let sha1 = sha1InHex path
         kidTrs = [makeTr (path </> title) sha1 entries' | Dir title entries' <- entries]
         kidItems = Prelude.map (item . node) kidTrs
-        thisItem = Item (takeFileName path) sha1 (fromList [(takeBaseName name', file) | File name' file <- entries])
+        thisItem = Item (takeFileName path) sha1 (fromList [(takeBaseName name', jsonPipe file) | File name' file <- entries])
         thisNode = Node path thisItem kidItems parentSha1
     in Tr thisNode kidTrs
 
@@ -74,3 +75,6 @@ parse _     = usage >> exit
 usage   = putStrLn "Usage: gen-json src dst"
 exit    = exitWith ExitSuccess
 die     = exitWith (ExitFailure 1)
+
+jsonPipe :: String -> String
+jsonPipe = R.gsubRegexPR "!\\[\\]\\((?!http)(.+?)\\)" "![](assets/db-imgs/\\1)"
