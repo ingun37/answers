@@ -1,6 +1,6 @@
 let git = builtins.fetchGit {
         url = https://github.com/ingun37/haskell-script.git;
-        rev = "fd66558bd6cbf8e3a793a530d6ebf56497d3dd81";
+        rev = "e96ac79d6bf338c98697bb4ba510f22cb5f502ac";
     };
     haskellScriptD = import git {};
 in  derivation {
