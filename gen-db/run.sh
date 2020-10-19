@@ -1,1 +1,0 @@
-$script/bin/json-generator "$dbPath" "$assetsPath"
