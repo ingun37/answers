@@ -1,0 +1,26 @@
+{
+  "name": "answers-to-math-books",
+  "version": "1.0.0",
+  "private": true,
+  "description": "answers to math books",
+  "author": "Ingun Jon",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^2.0.0",
+    "@mdx-js/react": "^2.0.0",
+    "gatsby": "^4.9.2",
+    "gatsby-plugin-mdx": "^3.9.1",
+    "gatsby-source-filesystem": "^4.9.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
