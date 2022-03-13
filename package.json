@@ -1,8 +1,8 @@
 {
-  "name": "answers-to-math-books",
+  "name": "math-book-answers",
   "version": "1.0.0",
   "private": true,
-  "description": "answers to math books",
+  "description": "math book answers",
   "author": "Ingun Jon",
   "keywords": [
     "gatsby"
@@ -15,11 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@mdx-js/mdx": "^2.0.0",
-    "@mdx-js/react": "^2.0.0",
     "gatsby": "^4.9.2",
-    "gatsby-plugin-mdx": "^3.9.1",
-    "gatsby-source-filesystem": "^4.9.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   }
