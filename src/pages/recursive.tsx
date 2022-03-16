@@ -22,9 +22,8 @@ export default function Recursive(props: { sha1: string }) {
     <div>loading</div>
   ) : (
     <div>
-      {treeTem.item.attr.q && <MathMD md={treeTem.item.attr.q} />}
-      {treeTem.item.attr.a && <MathMD md={treeTem.item.attr.a} />}
-      question and answer
+      {treeTem.item.attr.q && <MathMD htmlString={treeTem.item.attr.q} />}
+      {treeTem.item.attr.a && <MathMD htmlString={treeTem.item.attr.a} />}
       {treeTem.kids.map((item) => (
         <Accordion TransitionProps={{ unmountOnExit: true }} key={item.sha1}>
           <AccordionSummary

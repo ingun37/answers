@@ -1,14 +1,27 @@
 import * as React from "react";
-import { useEffect, useState } from "react";
-import { compile } from "@mdx-js/mdx";
+import { useEffect, useRef } from "react";
 
-export default function MathMD(props: { md: string }) {
-  const [module, setModule] = useState<any | null>(null);
+export default function MathMD(props: { htmlString: string }) {
+  const rr = useRef(null);
+
   useEffect(() => {
-    compile(props.md)
-      .then(String)
-      // .then((js) => import(js).default)
-      .then(setModule);
-  }, []);
-  return <div></div>;
+    if (rr.current) {
+      var mathElements = rr.current.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+          katex.render(texText.data, mathElements[i], {
+            displayMode: mathElements[i].classList.contains("display"),
+            throwOnError: false,
+            macros: macros,
+            fleqn: false,
+          });
+        }
+      }
+    }
+  }, [rr]);
+  return (
+    <div ref={rr} dangerouslySetInnerHTML={{ __html: props.htmlString }} />
+  );
 }
