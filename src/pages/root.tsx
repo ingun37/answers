@@ -14,7 +14,13 @@ export default function Root() {
     <div>
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1 }}
+            onClick={() => window.location.replace(window.location.origin)}
+            style={{ cursor: "pointer" }}
+          >
             My Answers to Math Books
           </Typography>
           <Button color="inherit">About</Button>
