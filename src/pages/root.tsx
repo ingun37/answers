@@ -6,6 +6,8 @@ import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import ShareDialogue from "./share-dialogue";
+import { ThemeProvider } from "@mui/material";
+import { commonTheme } from "../theme";
 
 export default function Root() {
   const sha1 =
@@ -42,8 +44,10 @@ export default function Root() {
           crossOrigin="anonymous"
         />
       </Helmet>
-      <Recursive sha1={sha1} />
-      <ShareDialogue />
+      <ThemeProvider theme={commonTheme}>
+        <Recursive sha1={sha1} />
+        <ShareDialogue />
+      </ThemeProvider>
     </div>
   );
 }
