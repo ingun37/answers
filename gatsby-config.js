@@ -3,4 +3,5 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [`gatsby-plugin-react-helmet`],
+  pathPrefix: `/answers`,
 };

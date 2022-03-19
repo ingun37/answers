@@ -1,12 +1,12 @@
 import * as React from "react";
+import { useEffect, useState } from "react";
 import { TreeTem, TreeTemT } from "../decoders";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { useEffect, useState } from "react";
-import { either } from "fp-ts";
+import { array, either } from "fp-ts";
 import MathMD from "./mathmd";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
@@ -14,6 +14,14 @@ import IconButton from "@mui/material/IconButton";
 import ShareIcon from "@mui/icons-material/Share";
 import { useAppDispatch } from "../state/hooks";
 import { sha1Slice } from "../state/slice";
+import Stack from "@mui/material/Stack";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import { pipe } from "fp-ts/function";
+import { pair, relPath, relURL } from "../util";
+import { fst, snd } from "fp-ts/Tuple";
+import CardActionArea from "@mui/material/CardActionArea";
+
 type State =
   | {
       type: "loading";
@@ -26,12 +34,13 @@ type State =
       type: "error";
       msg: string;
     };
+
 export default function Recursive(props: { sha1: string }) {
   const [state, setState] = useState<State>({ type: "loading" });
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    fetch("/db/" + props.sha1 + ".json")
+    fetch(relPath("db", props.sha1 + ".json"))
       .then((x) => x.json())
       .then(TreeTem.decode)
       .then(
@@ -54,12 +63,45 @@ export default function Recursive(props: { sha1: string }) {
       return <div>{state.msg}</div>;
     case "treeTem":
       const { treeTem } = state;
+      const { left: nonBooks, right: books } = pipe(
+        treeTem.kids,
+        array.map((kid) =>
+          kid.attr.author === undefined
+            ? either.left(kid)
+            : either.right(pair(kid.attr.author, kid))
+        ),
+        array.separate
+      );
       return (
         <div>
           {treeTem.item.attr.q && <MathMD htmlString={treeTem.item.attr.q} />}
           <Divider variant="middle" />
           {treeTem.item.attr.a && <MathMD htmlString={treeTem.item.attr.a} />}
-          {treeTem.kids.map((item) => (
+
+          <Stack direction="row" spacing={2} alignItems="flex-start">
+            {books.map((item) => (
+              <Card sx={{ width: 275 }}>
+                <CardActionArea
+                  onClick={() => {
+                    window.location.href =
+                      relURL() +
+                      ("?" +
+                        new URLSearchParams({
+                          sha1: snd(item).sha1,
+                        }).toString());
+                  }}
+                >
+                  <CardContent>
+                    <Typography variant="h5" component="div">
+                      {snd(item).title}
+                    </Typography>
+                    <Typography color="text.secondary">{fst(item)}</Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            ))}
+          </Stack>
+          {nonBooks.map((item) => (
             <Accordion
               TransitionProps={{ unmountOnExit: true }}
               key={item.sha1}

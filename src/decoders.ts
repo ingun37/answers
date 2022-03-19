@@ -4,6 +4,7 @@ export const Item = struct({
   attr: partial({
     q: string,
     a: string,
+    author: string,
   }),
   sha1: string,
 });

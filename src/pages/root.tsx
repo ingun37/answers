@@ -8,6 +8,7 @@ import Typography from "@mui/material/Typography";
 import ShareDialogue from "./share-dialogue";
 import { ThemeProvider } from "@mui/material";
 import { commonTheme } from "../theme";
+import { relURL } from "../util";
 
 export default function Root() {
   let sha1 = "";
@@ -25,7 +26,7 @@ export default function Root() {
             variant="h6"
             component="div"
             sx={{ flexGrow: 1 }}
-            onClick={() => window.location.replace(window.location.origin)}
+            onClick={() => (window.location.href = relURL().toString())}
             style={{ cursor: "pointer" }}
           >
             My Answers to Math Books

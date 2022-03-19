@@ -6,6 +6,7 @@ import { sha1Slice } from "../state/slice";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import { relURL } from "../util";
 
 export default function ShareDialogue() {
   const shareSha1 = useAppSelector((state) => state.sha1.sha1);
@@ -13,7 +14,7 @@ export default function ShareDialogue() {
 
   let link = "";
   if (typeof window !== "undefined") {
-    const url = new URL(window.location.href);
+    const url = relURL();
     url.searchParams.append("sha1", shareSha1);
     link = url.toString();
   }
