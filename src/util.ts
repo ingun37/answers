@@ -20,7 +20,9 @@ function joinSlashs(...xs: string[]) {
 }
 
 export function relPath(...xs: string[]) {
-  return joinSlashs(window.location.pathname, ...xs);
+  if (typeof window !== "undefined")
+    return joinSlashs(window.location.pathname, ...xs);
+  else return "";
 }
 
 export function relURL(...xs: string[]) {
