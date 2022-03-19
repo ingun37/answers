@@ -13,11 +13,12 @@ import { fetchSha1, openSha1, relURL } from "../util";
 import IconButton from "@mui/material/IconButton";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { TreeTemT } from "../decoders";
+import About from "./about";
 
 const rootSha1 = "dd8f38a85ee36fa036f3e298e265dd4bb35cad21";
 export default function Root() {
   const [rootTem, setRootTem] = useState<TreeTemT | null>(null);
-
+  const [aboutOpen, setAboutOpen] = useState(false);
   let sha1 = "";
   if (typeof window !== "undefined") {
     sha1 = new URLSearchParams(window.location.search).get("sha1") ?? rootSha1;
@@ -55,7 +56,9 @@ export default function Root() {
               ? "My Answers to Math Books"
               : rootTem?.item.title ?? ""}
           </Typography>
-          <Button color="inherit">About</Button>
+          <Button color="inherit" onClick={() => setAboutOpen(true)}>
+            About
+          </Button>
         </Toolbar>
       </AppBar>
       <Helmet defer={false}>
@@ -75,6 +78,7 @@ export default function Root() {
       <ThemeProvider theme={commonTheme}>
         <Recursive sha1={sha1} />
         <ShareDialogue />
+        <About open={aboutOpen} onClose={() => setAboutOpen(false)} />
       </ThemeProvider>
     </div>
   );
