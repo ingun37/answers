@@ -5,11 +5,15 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import ShareDialogue from "./share-dialogue";
+import { useState } from "react";
 
 export default function Root() {
   const sha1 =
     new URLSearchParams(window.location.search).get("sha1") ??
     "dd8f38a85ee36fa036f3e298e265dd4bb35cad21";
+  const [shareSha1, setShareSha1] = useState<string>("");
+
   return (
     <div>
       <AppBar position="static">
@@ -41,6 +45,11 @@ export default function Root() {
         />
       </Helmet>
       <Recursive sha1={sha1} />
+      <ShareDialogue
+        open={shareSha1 !== ""}
+        sha1={shareSha1}
+        closeHandler={() => setShareSha1("")}
+      />
     </div>
   );
 }
