@@ -8,6 +8,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useEffect, useState } from "react";
 import { either } from "fp-ts";
 import MathMD from "./mathmd";
+import Divider from "@mui/material/Divider";
 
 export default function Recursive(props: { sha1: string }) {
   const [treeTem, setTreeTem] = useState<TreeTemT | null>(null);
@@ -23,6 +24,7 @@ export default function Recursive(props: { sha1: string }) {
   ) : (
     <div>
       {treeTem.item.attr.q && <MathMD htmlString={treeTem.item.attr.q} />}
+      <Divider variant="middle" />
       {treeTem.item.attr.a && <MathMD htmlString={treeTem.item.attr.a} />}
       {treeTem.kids.map((item) => (
         <Accordion TransitionProps={{ unmountOnExit: true }} key={item.sha1}>
