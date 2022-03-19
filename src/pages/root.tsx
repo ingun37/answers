@@ -10,9 +10,12 @@ import { ThemeProvider } from "@mui/material";
 import { commonTheme } from "../theme";
 
 export default function Root() {
-  const sha1 =
-    new URLSearchParams(window.location.search).get("sha1") ??
-    "dd8f38a85ee36fa036f3e298e265dd4bb35cad21";
+  let sha1 = "";
+  if (typeof window !== "undefined") {
+    sha1 =
+      new URLSearchParams(window.location.search).get("sha1") ??
+      "dd8f38a85ee36fa036f3e298e265dd4bb35cad21";
+  }
 
   return (
     <div>

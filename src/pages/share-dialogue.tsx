@@ -11,9 +11,12 @@ export default function ShareDialogue() {
   const shareSha1 = useAppSelector((state) => state.sha1.sha1);
   const dispatch = useAppDispatch();
 
-  const url = new URL(window.location.origin);
-  url.pathname = window.location.pathname;
-  url.searchParams.append("sha1", shareSha1);
+  let link = "";
+  if (typeof window !== "undefined") {
+    const url = new URL(window.location.href);
+    url.searchParams.append("sha1", shareSha1);
+    link = url.toString();
+  }
 
   return (
     <Dialog
@@ -26,13 +29,13 @@ export default function ShareDialogue() {
             id="standard-basic"
             label="Standard"
             variant="standard"
-            value={url.toString()}
+            value={link}
             sx={{ width: 300, mx: 2 }}
           />
           <Stack direction="row" spacing={2}>
             <Button
               onClick={() => {
-                navigator.clipboard.writeText(url.toString());
+                navigator.clipboard.writeText(link);
               }}
             >
               Copy
@@ -42,7 +45,7 @@ export default function ShareDialogue() {
                 if (navigator.share)
                   navigator.share({
                     title: "My Answers to Math Books",
-                    url: url.toString(),
+                    url: link,
                   });
               }}
             >
