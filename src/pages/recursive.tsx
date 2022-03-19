@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
-import { TreeTem, TreeTemT } from "../decoders";
+import { TreeTemT } from "../decoders";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -18,7 +18,7 @@ import Stack from "@mui/material/Stack";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { pipe } from "fp-ts/function";
-import { pair, relPath, relURL } from "../util";
+import { fetchSha1, openSha1, pair } from "../util";
 import { fst, snd } from "fp-ts/Tuple";
 import CardActionArea from "@mui/material/CardActionArea";
 
@@ -35,26 +35,21 @@ type State =
       msg: string;
     };
 
-export default function Recursive(props: { sha1: string }) {
+export default function Recursive(props: { sha1: string | TreeTemT }) {
   const [state, setState] = useState<State>({ type: "loading" });
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    fetch(relPath("db", props.sha1 + ".json"))
-      .then((x) => x.json())
-      .then(TreeTem.decode)
-      .then(
-        either.match(
-          (e) => {
-            setState({
-              type: "error",
-              msg: "Decoding failed: \n" + JSON.stringify(e, undefined, 2),
-            });
-          },
-          (x) => setState({ type: "treeTem", treeTem: x })
-        )
-      )
-      .catch((e) => setState({ type: "error", msg: e.toString() }));
+    if (typeof props.sha1 === "string")
+      fetchSha1(props.sha1)
+        .then((x) => setState({ type: "treeTem", treeTem: x }))
+        .catch((e) =>
+          setState({
+            type: "error",
+            msg: "Decoding failed: \n" + JSON.stringify(e, undefined, 2),
+          })
+        );
+    else setState({ type: "treeTem", treeTem: props.sha1 });
   }, []);
   switch (state.type) {
     case "loading":
@@ -83,12 +78,7 @@ export default function Recursive(props: { sha1: string }) {
               <Card sx={{ width: 275 }}>
                 <CardActionArea
                   onClick={() => {
-                    window.location.href =
-                      relURL() +
-                      ("?" +
-                        new URLSearchParams({
-                          sha1: snd(item).sha1,
-                        }).toString());
+                    openSha1(snd(item).sha1);
                   }}
                 >
                   <CardContent>

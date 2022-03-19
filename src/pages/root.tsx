@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useEffect, useState } from "react";
 import Recursive from "./recursive";
 import { Helmet } from "react-helmet";
 import AppBar from "@mui/material/AppBar";
@@ -8,20 +9,41 @@ import Typography from "@mui/material/Typography";
 import ShareDialogue from "./share-dialogue";
 import { ThemeProvider } from "@mui/material";
 import { commonTheme } from "../theme";
-import { relURL } from "../util";
+import { fetchSha1, openSha1, relURL } from "../util";
+import IconButton from "@mui/material/IconButton";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { TreeTemT } from "../decoders";
 
+const rootSha1 = "dd8f38a85ee36fa036f3e298e265dd4bb35cad21";
 export default function Root() {
+  const [rootTem, setRootTem] = useState<TreeTemT | null>(null);
+
   let sha1 = "";
   if (typeof window !== "undefined") {
-    sha1 =
-      new URLSearchParams(window.location.search).get("sha1") ??
-      "dd8f38a85ee36fa036f3e298e265dd4bb35cad21";
+    sha1 = new URLSearchParams(window.location.search).get("sha1") ?? rootSha1;
   }
+
+  useEffect(() => {
+    fetchSha1(sha1).then(setRootTem);
+  }, []);
 
   return (
     <div>
       <AppBar position="static">
         <Toolbar>
+          {sha1 !== rootSha1 && (
+            <IconButton
+              color="inherit"
+              // variant={"outlined"}
+              component="span"
+              onClick={() => {
+                if (rootTem) openSha1(rootTem.parentSha1);
+              }}
+            >
+              <ArrowBackIcon />
+            </IconButton>
+          )}
+
           <Typography
             variant="h6"
             component="div"
@@ -29,7 +51,9 @@ export default function Root() {
             onClick={() => (window.location.href = relURL().toString())}
             style={{ cursor: "pointer" }}
           >
-            My Answers to Math Books
+            {sha1 === rootSha1
+              ? "My Answers to Math Books"
+              : rootTem?.item.title ?? ""}
           </Typography>
           <Button color="inherit">About</Button>
         </Toolbar>
