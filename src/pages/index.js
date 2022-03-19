@@ -7,7 +7,7 @@ import Root from "./root";
 // styles
 const pageStyles = {
   color: "#232129",
-  padding: 16,
+  // padding: 16,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 };
 

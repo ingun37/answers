@@ -1,10 +1,25 @@
 import * as React from "react";
 import Recursive from "./recursive";
 import { Helmet } from "react-helmet";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 
 export default function Root() {
+  const sha1 =
+    new URLSearchParams(window.location.search).get("sha1") ??
+    "dd8f38a85ee36fa036f3e298e265dd4bb35cad21";
   return (
     <div>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            My Answers to Math Books
+          </Typography>
+          <Button color="inherit">About</Button>
+        </Toolbar>
+      </AppBar>
       <Helmet defer={false}>
         <link
           rel="stylesheet"
@@ -19,7 +34,7 @@ export default function Root() {
           crossOrigin="anonymous"
         />
       </Helmet>
-      <Recursive sha1={"dd8f38a85ee36fa036f3e298e265dd4bb35cad21"} />
+      <Recursive sha1={sha1} />
     </div>
   );
 }
