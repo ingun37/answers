@@ -12,6 +12,7 @@ export default function ShareDialogue() {
   const dispatch = useAppDispatch();
 
   const url = new URL(window.location.origin);
+  url.pathname = window.location.pathname;
   url.searchParams.append("sha1", shareSha1);
 
   return (
