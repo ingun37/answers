@@ -22,13 +22,15 @@
     "@mdx-js/mdx": "^2.0.0",
     "@mui/icons-material": "^5.5.0",
     "@mui/material": "^5.5.0",
+    "@reduxjs/toolkit": "^1.8.0",
     "fp-ts": "^2.11.8",
     "gatsby": "^4.9.2",
     "gatsby-plugin-react-helmet": "^5.9.0",
     "io-ts": "^2.2.16",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-redux": "^7.2.6"
   },
   "devDependencies": {
     "prettier": "^2.5.1",

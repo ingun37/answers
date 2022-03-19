@@ -12,6 +12,8 @@ import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 
 import ShareIcon from "@mui/icons-material/Share";
+import { useAppDispatch } from "../state/hooks";
+import { sha1Slice } from "../state/slice";
 type State =
   | {
       type: "loading";
@@ -26,6 +28,7 @@ type State =
     };
 export default function Recursive(props: { sha1: string }) {
   const [state, setState] = useState<State>({ type: "loading" });
+  const dispatch = useAppDispatch();
 
   useEffect(() => {
     fetch("/db/" + props.sha1 + ".json")
@@ -71,6 +74,7 @@ export default function Recursive(props: { sha1: string }) {
                   color="primary"
                   component="span"
                   onClick={(e) => {
+                    dispatch(sha1Slice.actions.setSha1(item.sha1));
                     e.stopPropagation();
                   }}
                 >
