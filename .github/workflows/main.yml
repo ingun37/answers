@@ -43,7 +43,14 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run annswers-script
         run: ./result/bin/answers-script-exe --prefixpath answers --src answers-db/ --dst static/
-      - name: Run a multi-line script
-        run: |
-          ls static/
-          ls static/db
+      - name: setup nodejs
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - run: npm install
+      - run: npm run build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
