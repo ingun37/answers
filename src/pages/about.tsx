@@ -31,7 +31,7 @@ export default function About(props: { open: boolean; onClose: () => void }) {
           </Typography>
           <Typography variant="body2" color="text.secondary">
             I'm a developer living in Korea 🇰🇷. If you have questions please
-            contact me. I love to communicate on mathematical topics.
+            contact me. I love to discuss mathematics.
           </Typography>
         </CardContent>
         <CardActions>
