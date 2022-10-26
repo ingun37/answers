@@ -91,33 +91,35 @@ export default function Recursive(props: { sha1: string | TreeTemT }) {
               </Card>
             ))}
           </Stack>
-          {nonBooks.map((item) => (
-            <Accordion
-              TransitionProps={{ unmountOnExit: true }}
-              key={item.sha1}
-            >
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
+          {nonBooks
+            .sort((x, y) => x.title.localeCompare(y.title))
+            .map((item) => (
+              <Accordion
+                TransitionProps={{ unmountOnExit: true }}
+                key={item.sha1}
               >
-                <Typography sx={{ flex: 2 }}>{item.title}</Typography>
-                <IconButton
-                  color="primary"
-                  component="span"
-                  onClick={(e) => {
-                    dispatch(sha1Slice.actions.setSha1(item.sha1));
-                    e.stopPropagation();
-                  }}
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
                 >
-                  <ShareIcon />
-                </IconButton>
-              </AccordionSummary>
-              <AccordionDetails>
-                <Recursive sha1={item.sha1} />
-              </AccordionDetails>
-            </Accordion>
-          ))}
+                  <Typography sx={{ flex: 2 }}>{item.title}</Typography>
+                  <IconButton
+                    color="primary"
+                    component="span"
+                    onClick={(e) => {
+                      dispatch(sha1Slice.actions.setSha1(item.sha1));
+                      e.stopPropagation();
+                    }}
+                  >
+                    <ShareIcon />
+                  </IconButton>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Recursive sha1={item.sha1} />
+                </AccordionDetails>
+              </Accordion>
+            ))}
         </div>
       );
   }

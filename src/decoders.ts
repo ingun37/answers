@@ -16,3 +16,4 @@ export const TreeTem = struct({
 });
 
 export type TreeTemT = TypeOf<typeof TreeTem>;
+export type ItemT = TypeOf<typeof Item>;
