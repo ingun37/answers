@@ -1,4 +1,4 @@
-import { array, partial, string, struct, TypeOf } from "io-ts/Decoder";
+import { array, number, partial, string, struct, TypeOf } from "io-ts/Decoder";
 export const Item = struct({
   title: string,
   attr: partial({
@@ -6,6 +6,7 @@ export const Item = struct({
     a: string,
     author: string,
   }),
+  numAnswer: number,
   sha1: string,
 });
 export const TreeTem = struct({

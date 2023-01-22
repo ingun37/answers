@@ -86,6 +86,9 @@ export default function Recursive(props: { sha1: string | TreeTemT }) {
                       {snd(item).title}
                     </Typography>
                     <Typography color="text.secondary">{fst(item)}</Typography>
+                    <Typography color="text.secondary">
+                      {snd(item).numAnswer} problems solved
+                    </Typography>
                   </CardContent>
                 </CardActionArea>
               </Card>
