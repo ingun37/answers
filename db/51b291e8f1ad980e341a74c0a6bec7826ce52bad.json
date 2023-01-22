@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>Use the <em>Bayes' rule</em>.</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;P(G|E^c) \\\\\n  &amp;= \\cfrac{P(E^c|G)P(G)}{P(E^c)} \\\\\n  &amp;= \\cfrac{P(E^c|G)P(G)}{P(G \\cap E^c) + P(G^c \\cap E^c)} \\\\\n  &amp;= \\cfrac{0.72}{0.72 + 0.14} \\\\\n  &amp;\\approx 0.8372 \\\\\n\\end{aligned}</span></p>","q":"<p>Using the tree find <span class=\"math inline\">P(G|E^c)</span>.</p>"},"sha1":"51b291e8f1ad980e341a74c0a6bec7826ce52bad","title":"c"},"kids":[],"parentSha1":"66d872dfe86007557da9b74c5e246b92a3279a79","path":"answers-db/books/Introduction to Probability, Statistics, and Random Processes/1.5.0/27/c"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>Use the <em>Bayes' rule</em>.</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;P(G|E^c) \\\\\n  &amp;= \\cfrac{P(E^c|G)P(G)}{P(E^c)} \\\\\n  &amp;= \\cfrac{P(E^c|G)P(G)}{P(G \\cap E^c) + P(G^c \\cap E^c)} \\\\\n  &amp;= \\cfrac{0.72}{0.72 + 0.14} \\\\\n  &amp;\\approx 0.8372 \\\\\n\\end{aligned}</span></p>",
+            "q": "<p>Using the tree find <span class=\"math inline\">P(G|E^c)</span>.</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "51b291e8f1ad980e341a74c0a6bec7826ce52bad",
+        "title": "c"
+    },
+    "kids": [],
+    "parentSha1": "66d872dfe86007557da9b74c5e246b92a3279a79",
+    "path": "answers-db/books/Introduction to Probability, Statistics, and Random Processes/1.5.0/27/c"
+}

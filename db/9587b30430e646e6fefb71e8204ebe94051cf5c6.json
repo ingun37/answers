@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>Shown in 4.</p>","q":"<p>Show that the coproduct is the left adjoint of the diagonal\nfunctor.</p>"},"sha1":"9587b30430e646e6fefb71e8204ebe94051cf5c6","title":"5"},"kids":[],"parentSha1":"7fe3168e57a9da2b597e912557c872cd0303917e","path":"answers-db/books/Category Theory For Programmers/18. Adjunctions/5"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>Shown in 4.</p>",
+            "q": "<p>Show that the coproduct is the left adjoint of the diagonal\nfunctor.</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "9587b30430e646e6fefb71e8204ebe94051cf5c6",
+        "title": "5"
+    },
+    "kids": [],
+    "parentSha1": "7fe3168e57a9da2b597e912557c872cd0303917e",
+    "path": "answers-db/books/Category Theory For Programmers/18. Adjunctions/5"
+}

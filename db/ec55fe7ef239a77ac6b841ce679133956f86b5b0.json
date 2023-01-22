@@ -1,1 +1,20 @@
-{"item":{"attr":{},"sha1":"ec55fe7ef239a77ac6b841ce679133956f86b5b0","title":"4.3 Non-Homeomorphic Spaces"},"kids":[{"attr":{"q":"<p>Let <span class=\"math inline\">X</span> be the unit circle in <span\nclass=\"math inline\">\\mathbb{R}^2</span>; that is, <span\nclass=\"math inline\">X = \\{ \\lang x,y \\rang : x^2 + y^2 = 1 \\}</span> and\nhas the subspace topology.</p>"},"sha1":"a8d1ac6bf8569395c7ac25ed72e0d816af993bfc","title":"3"}],"parentSha1":"f8d0b665f1cf1dd32f41dc6b7bed9fb2cb6acdb1","path":"answers-db/books/Topology Without Tears/4. Homeomorphisms/4.3 Non-Homeomorphic Spaces"}
+{
+    "item": {
+        "attr": {},
+        "numAnswer": 4,
+        "sha1": "ec55fe7ef239a77ac6b841ce679133956f86b5b0",
+        "title": "4.3 Non-Homeomorphic Spaces"
+    },
+    "kids": [
+        {
+            "attr": {
+                "q": "<p>Let <span class=\"math inline\">X</span> be the unit circle in <span\nclass=\"math inline\">\\mathbb{R}^2</span>; that is, <span\nclass=\"math inline\">X = \\{ \\lang x,y \\rang : x^2 + y^2 = 1 \\}</span> and\nhas the subspace topology.</p>"
+            },
+            "numAnswer": 4,
+            "sha1": "a8d1ac6bf8569395c7ac25ed72e0d816af993bfc",
+            "title": "3"
+        }
+    ],
+    "parentSha1": "f8d0b665f1cf1dd32f41dc6b7bed9fb2cb6acdb1",
+    "path": "answers-db/books/Topology Without Tears/4. Homeomorphisms/4.3 Non-Homeomorphic Spaces"
+}

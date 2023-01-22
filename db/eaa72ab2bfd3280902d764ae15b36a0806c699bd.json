@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p><span class=\"math inline\">(y_n)</span> decreases. It's bounded too.\nHence converges.</p>","q":"<p>Prove that the sequence defined by <span class=\"math inline\">y_n =\n\\sup\\{ a_k : k \\geq n \\}</span> converges.</p>"},"sha1":"eaa72ab2bfd3280902d764ae15b36a0806c699bd","title":"a"},"kids":[],"parentSha1":"9d2af53619e721870d08a4faaa68e90f4af77568","path":"answers-db/books/Understanding Analysis/2. Sequences and Series/2.4 The Monotone Convergence Theorem and a First Look at Infinite Series/2.4.7/a"}
+{
+    "item": {
+        "attr": {
+            "a": "<p><span class=\"math inline\">(y_n)</span> decreases. It's bounded too.\nHence converges.</p>",
+            "q": "<p>Prove that the sequence defined by <span class=\"math inline\">y_n =\n\\sup\\{ a_k : k \\geq n \\}</span> converges.</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "eaa72ab2bfd3280902d764ae15b36a0806c699bd",
+        "title": "a"
+    },
+    "kids": [],
+    "parentSha1": "9d2af53619e721870d08a4faaa68e90f4af77568",
+    "path": "answers-db/books/Understanding Analysis/2. Sequences and Series/2.4 The Monotone Convergence Theorem and a First Look at Infinite Series/2.4.7/a"
+}

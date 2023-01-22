@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>The book already derived unit <span class=\"math inline\">\\eta</span>\nby replacing <span class=\"math inline\">c</span> with <span\nclass=\"math inline\">Ld</span>. In the same way we can derive <span\nclass=\"math inline\">\\varepsilon</span> by replacing <span\nclass=\"math inline\">d</span> with <span\nclass=\"math inline\">Rc</span>.<br />\nReplacing <span class=\"math inline\">d</span> with <span\nclass=\"math inline\">Rc</span> gives us<br />\n<span class=\"math inline\">C(LRc,c) \\cong D(Rc,Rc)</span><br />\nThere's at least one morphism (<span class=\"math inline\">id</span>) in\n<span class=\"math inline\">D(Rc, Rc)</span> so there must be a\ncorresponding morphism in <span class=\"math inline\">C(LRc,c)</span>\nwhich is the counit.</p>","q":"<p>Derive the counit <span class=\"math inline\">\\varepsilon</span>\nstarting from the hom-sets isomorphism in the second definition of the\nadjunction.</p>"},"sha1":"51720de77323032d8fef3dff7ed6d4759b361c1d","title":"2"},"kids":[],"parentSha1":"7fe3168e57a9da2b597e912557c872cd0303917e","path":"answers-db/books/Category Theory For Programmers/18. Adjunctions/2"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>The book already derived unit <span class=\"math inline\">\\eta</span>\nby replacing <span class=\"math inline\">c</span> with <span\nclass=\"math inline\">Ld</span>. In the same way we can derive <span\nclass=\"math inline\">\\varepsilon</span> by replacing <span\nclass=\"math inline\">d</span> with <span\nclass=\"math inline\">Rc</span>.<br />\nReplacing <span class=\"math inline\">d</span> with <span\nclass=\"math inline\">Rc</span> gives us<br />\n<span class=\"math inline\">C(LRc,c) \\cong D(Rc,Rc)</span><br />\nThere's at least one morphism (<span class=\"math inline\">id</span>) in\n<span class=\"math inline\">D(Rc, Rc)</span> so there must be a\ncorresponding morphism in <span class=\"math inline\">C(LRc,c)</span>\nwhich is the counit.</p>",
+            "q": "<p>Derive the counit <span class=\"math inline\">\\varepsilon</span>\nstarting from the hom-sets isomorphism in the second definition of the\nadjunction.</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "51720de77323032d8fef3dff7ed6d4759b361c1d",
+        "title": "2"
+    },
+    "kids": [],
+    "parentSha1": "7fe3168e57a9da2b597e912557c872cd0303917e",
+    "path": "answers-db/books/Category Theory For Programmers/18. Adjunctions/2"
+}

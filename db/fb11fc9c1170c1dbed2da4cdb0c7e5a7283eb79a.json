@@ -1,1 +1,26 @@
-{"item":{"attr":{"author":"Michael Nielsen"},"sha1":"fb11fc9c1170c1dbed2da4cdb0c7e5a7283eb79a","title":"Neural Networks and Deep Learning"},"kids":[{"attr":{},"sha1":"c73690766f702ac0bcd28dd2f0f00e04c1072586","title":"1. Using neural nets to recognize handwritten digits"},{"attr":{},"sha1":"b24d85c8557f440aa98acfe459d2df6a7a06ccfe","title":"2. How the backpropagation algorithm works"}],"parentSha1":"dd8f38a85ee36fa036f3e298e265dd4bb35cad21","path":"answers-db/books/Neural Networks and Deep Learning"}
+{
+    "item": {
+        "attr": {
+            "author": "Michael Nielsen"
+        },
+        "numAnswer": 10,
+        "sha1": "fb11fc9c1170c1dbed2da4cdb0c7e5a7283eb79a",
+        "title": "Neural Networks and Deep Learning"
+    },
+    "kids": [
+        {
+            "attr": {},
+            "numAnswer": 6,
+            "sha1": "c73690766f702ac0bcd28dd2f0f00e04c1072586",
+            "title": "1. Using neural nets to recognize handwritten digits"
+        },
+        {
+            "attr": {},
+            "numAnswer": 4,
+            "sha1": "b24d85c8557f440aa98acfe459d2df6a7a06ccfe",
+            "title": "2. How the backpropagation algorithm works"
+        }
+    ],
+    "parentSha1": "dd8f38a85ee36fa036f3e298e265dd4bb35cad21",
+    "path": "answers-db/books/Neural Networks and Deep Learning"
+}

@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>Yes, because we can readily observe that:</p>\n<p><span class=\"math display\">P(A,B) = P(A)P(B) = \\frac{3}{8}</span></p>\n<p>since the overlapping area is visibly the exact half of <span\nclass=\"math inline\">A</span>.</p>","q":"<p>Are <span class=\"math inline\">A</span> and <span\nclass=\"math inline\">B</span> independent?</p>"},"sha1":"b276d23e3502fc286f1242ce13ce0b37d7adaa27","title":"c"},"kids":[],"parentSha1":"219d230a9d84517c454db50dd29407c573eb350b","path":"answers-db/books/Introduction to Probability, Statistics, and Random Processes/1.5.0/30/c"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>Yes, because we can readily observe that:</p>\n<p><span class=\"math display\">P(A,B) = P(A)P(B) = \\frac{3}{8}</span></p>\n<p>since the overlapping area is visibly the exact half of <span\nclass=\"math inline\">A</span>.</p>",
+            "q": "<p>Are <span class=\"math inline\">A</span> and <span\nclass=\"math inline\">B</span> independent?</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "b276d23e3502fc286f1242ce13ce0b37d7adaa27",
+        "title": "c"
+    },
+    "kids": [],
+    "parentSha1": "219d230a9d84517c454db50dd29407c573eb350b",
+    "path": "answers-db/books/Introduction to Probability, Statistics, and Random Processes/1.5.0/30/c"
+}

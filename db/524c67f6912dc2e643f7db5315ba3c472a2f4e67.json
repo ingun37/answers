@@ -1,1 +1,21 @@
-{"item":{"attr":{},"sha1":"524c67f6912dc2e643f7db5315ba3c472a2f4e67","title":"2.5.2"},"kids":[{"attr":{"a":"<p>True. In the proof for The Bolzano-Weierstrass Theorem, everytime\nthey bisect an interval if it's only either of A or B that has infinite\nterms then it must mean the whole sequences converges. Therefore there\nmust be more than 1 sub-intervals (subsequence) that contains infinite\nterms.</p>","q":"<p>If <span class=\"math inline\">(x_n)</span> is bounded and diverges,\nthen there exist two subsequences of <span class=\"math inline\">(\nx_n)</span> that converge to different limits.</p>"},"sha1":"245fac908c1f06b6aae2017fa6ae06998889425b","title":"(c)"}],"parentSha1":"e4849720dc36754e26d3aa8f6ed5ea001e6644dc","path":"answers-db/books/Understanding Analysis/2. Sequences and Series/2.5 Subsequences and the Bolzano-Weierstrass Theorem/2.5.2"}
+{
+    "item": {
+        "attr": {},
+        "numAnswer": 1,
+        "sha1": "524c67f6912dc2e643f7db5315ba3c472a2f4e67",
+        "title": "2.5.2"
+    },
+    "kids": [
+        {
+            "attr": {
+                "a": "<p>True. In the proof for The Bolzano-Weierstrass Theorem, everytime\nthey bisect an interval if it's only either of A or B that has infinite\nterms then it must mean the whole sequences converges. Therefore there\nmust be more than 1 sub-intervals (subsequence) that contains infinite\nterms.</p>",
+                "q": "<p>If <span class=\"math inline\">(x_n)</span> is bounded and diverges,\nthen there exist two subsequences of <span class=\"math inline\">(\nx_n)</span> that converge to different limits.</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "245fac908c1f06b6aae2017fa6ae06998889425b",
+            "title": "(c)"
+        }
+    ],
+    "parentSha1": "e4849720dc36754e26d3aa8f6ed5ea001e6644dc",
+    "path": "answers-db/books/Understanding Analysis/2. Sequences and Series/2.5 Subsequences and the Bolzano-Weierstrass Theorem/2.5.2"
+}

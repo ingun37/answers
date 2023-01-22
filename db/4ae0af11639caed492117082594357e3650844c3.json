@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>A function type <code>Key -&gt; T</code> would be a profunctor. But\n<code>std::map&lt;Key, T&gt;</code> is not a function. It's very similar\nthough. If only we could set a default value for unknown key in\n<code>std::map</code> (currently it's not supported). But it's not hard\nto define a new data structure works that way. One way would be\noverriding the operator <code>[]</code> and make it return a default\nvalue of <code>T</code>.</p>","q":"<p>Should <code>std::map</code> be considered a bifunctor or a\nprofunctor in the two template arguments <code>Key</code> and\n<code>T</code>? How would you redesign this data type to make it so?</p>"},"sha1":"4ae0af11639caed492117082594357e3650844c3","title":"6"},"kids":[],"parentSha1":"e18a03b36be491917b35e3ce842e24b63f14db64","path":"answers-db/books/Category Theory For Programmers/8. Functoriality/6"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>A function type <code>Key -&gt; T</code> would be a profunctor. But\n<code>std::map&lt;Key, T&gt;</code> is not a function. It's very similar\nthough. If only we could set a default value for unknown key in\n<code>std::map</code> (currently it's not supported). But it's not hard\nto define a new data structure works that way. One way would be\noverriding the operator <code>[]</code> and make it return a default\nvalue of <code>T</code>.</p>",
+            "q": "<p>Should <code>std::map</code> be considered a bifunctor or a\nprofunctor in the two template arguments <code>Key</code> and\n<code>T</code>? How would you redesign this data type to make it so?</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "4ae0af11639caed492117082594357e3650844c3",
+        "title": "6"
+    },
+    "kids": [],
+    "parentSha1": "e18a03b36be491917b35e3ce842e24b63f14db64",
+    "path": "answers-db/books/Category Theory For Programmers/8. Functoriality/6"
+}

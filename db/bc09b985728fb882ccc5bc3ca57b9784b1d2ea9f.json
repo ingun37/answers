@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>Let <span class=\"math inline\">X</span> be the random variable of\nnumber of heads, <span class=\"math inline\">B</span> the event of\nchoosing the second coin. We are asked for this</p>\n<p><span class=\"math display\">P(B|X&gt;2)</span></p>\n<p>Using Bayes' rule</p>\n<p><span class=\"math display\">=\n\\cfrac{P(X&gt;2|B)P(B)}{P(X&gt;2)}</span></p>\n<p>We've already got the denominator <span\nclass=\"math inline\">P(X&gt;2)</span> from (a). We've also got the <span\nclass=\"math inline\">P(X&gt;2|B)</span> from the process of (a). Combine\nthem all.</p>\n<p><span class=\"math display\">\\approx \\cfrac{0.2098 * 0.5}{0.3549} \\\\\n\\approx 0.2955762</span></p>","q":"<p>You ask your friend: \"Did you observe at least three heads?\". Your\nfriend replies, \"Yes.\" What is the probability that Coin 2 had been\nchosen?</p>"},"sha1":"bc09b985728fb882ccc5bc3ca57b9784b1d2ea9f","title":"b"},"kids":[],"parentSha1":"d38e3bf562843d7ad5e87a990223b88ddae50e7c","path":"answers-db/books/Introduction to Probability, Statistics, and Random Processes/2.2.0/13/b"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>Let <span class=\"math inline\">X</span> be the random variable of\nnumber of heads, <span class=\"math inline\">B</span> the event of\nchoosing the second coin. We are asked for this</p>\n<p><span class=\"math display\">P(B|X&gt;2)</span></p>\n<p>Using Bayes' rule</p>\n<p><span class=\"math display\">=\n\\cfrac{P(X&gt;2|B)P(B)}{P(X&gt;2)}</span></p>\n<p>We've already got the denominator <span\nclass=\"math inline\">P(X&gt;2)</span> from (a). We've also got the <span\nclass=\"math inline\">P(X&gt;2|B)</span> from the process of (a). Combine\nthem all.</p>\n<p><span class=\"math display\">\\approx \\cfrac{0.2098 * 0.5}{0.3549} \\\\\n\\approx 0.2955762</span></p>",
+            "q": "<p>You ask your friend: \"Did you observe at least three heads?\". Your\nfriend replies, \"Yes.\" What is the probability that Coin 2 had been\nchosen?</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "bc09b985728fb882ccc5bc3ca57b9784b1d2ea9f",
+        "title": "b"
+    },
+    "kids": [],
+    "parentSha1": "d38e3bf562843d7ad5e87a990223b88ddae50e7c",
+    "path": "answers-db/books/Introduction to Probability, Statistics, and Random Processes/2.2.0/13/b"
+}

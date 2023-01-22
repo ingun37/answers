@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>For all open set <span class=\"math inline\">U</span> containing <span\nclass=\"math inline\">p</span>, <span class=\"math inline\">U</span>\nintersects with <span class=\"math inline\">S</span>.<br />\n<span class=\"math inline\">S</span> is subset of <span\nclass=\"math inline\">T</span> so <span class=\"math inline\">U</span>\nintersects with <span class=\"math inline\">T</span> as well.<br />\nBy definition, <span class=\"math inline\">p</span> becomes limit point of\n<span class=\"math inline\">T</span>.</p>","q":"<p>If <span class=\"math inline\">p</span> is a limit point of the set\n<span class=\"math inline\">S</span>, verify that <span\nclass=\"math inline\">p</span> is also a limit point of the set <span\nclass=\"math inline\">T</span>.</p>"},"sha1":"a7865b1395c4230fec5e72b2ce076f450061ec67","title":"(i)"},"kids":[],"parentSha1":"7e1dfafcc770d59b0570cfab20b563b2e88dd6f4","path":"answers-db/books/Topology Without Tears/3. Limit Points/3.1 Limit Points and Closure/5/(i)"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>For all open set <span class=\"math inline\">U</span> containing <span\nclass=\"math inline\">p</span>, <span class=\"math inline\">U</span>\nintersects with <span class=\"math inline\">S</span>.<br />\n<span class=\"math inline\">S</span> is subset of <span\nclass=\"math inline\">T</span> so <span class=\"math inline\">U</span>\nintersects with <span class=\"math inline\">T</span> as well.<br />\nBy definition, <span class=\"math inline\">p</span> becomes limit point of\n<span class=\"math inline\">T</span>.</p>",
+            "q": "<p>If <span class=\"math inline\">p</span> is a limit point of the set\n<span class=\"math inline\">S</span>, verify that <span\nclass=\"math inline\">p</span> is also a limit point of the set <span\nclass=\"math inline\">T</span>.</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "a7865b1395c4230fec5e72b2ce076f450061ec67",
+        "title": "(i)"
+    },
+    "kids": [],
+    "parentSha1": "7e1dfafcc770d59b0570cfab20b563b2e88dd6f4",
+    "path": "answers-db/books/Topology Without Tears/3. Limit Points/3.1 Limit Points and Closure/5/(i)"
+}

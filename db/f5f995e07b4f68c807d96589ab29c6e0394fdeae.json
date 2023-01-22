@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>For any open set <span class=\"math inline\">S \\in \\mathcal{T}</span>,\n<span class=\"math inline\">f^{-1}(S) = f(S) = S \\in\n\\mathcal{T}</span>.</p>\n<p>Hence continuous.</p>","q":"<p>Let <span class=\"math inline\">f:(X,\\mathcal{T}) \\rightarrow\n(X,\\mathcal{T})</span> be the identity function. Show that <span\nclass=\"math inline\">f</span> is continuous.</p>"},"sha1":"f5f995e07b4f68c807d96589ab29c6e0394fdeae","title":"(ii)"},"kids":[],"parentSha1":"9ee38a7c4d000b2cf8ba8e2856220afd5ab665c2","path":"answers-db/books/Topology Without Tears/5. Continuous Mappings/5.1 Continuous Mappings/1/(ii)"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>For any open set <span class=\"math inline\">S \\in \\mathcal{T}</span>,\n<span class=\"math inline\">f^{-1}(S) = f(S) = S \\in\n\\mathcal{T}</span>.</p>\n<p>Hence continuous.</p>",
+            "q": "<p>Let <span class=\"math inline\">f:(X,\\mathcal{T}) \\rightarrow\n(X,\\mathcal{T})</span> be the identity function. Show that <span\nclass=\"math inline\">f</span> is continuous.</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "f5f995e07b4f68c807d96589ab29c6e0394fdeae",
+        "title": "(ii)"
+    },
+    "kids": [],
+    "parentSha1": "9ee38a7c4d000b2cf8ba8e2856220afd5ab665c2",
+    "path": "answers-db/books/Topology Without Tears/5. Continuous Mappings/5.1 Continuous Mappings/1/(ii)"
+}

@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p><span class=\"math inline\">\\langle a,b \\rangle \\in D</span><br />\n<span class=\"math inline\">\\rightarrow \\langle a,b \\rangle \\in R_{\\langle\na,b \\rangle}</span><br />\n<span class=\"math inline\">\\rightarrow \\langle a,b \\rangle \\in\n\\cup_{\\langle a,b\\rangle \\in D}R\\langle a,b\\rangle</span></p>\n<h2 id=\"inverse\">Inverse</h2>\n<p><span class=\"math inline\">\\langle a,b \\rangle \\in \\cup_{\\langle\na,b\\rangle \\in D}R\\langle a,b\\rangle</span><br />\n<span class=\"math inline\">\\rightarrow \\langle a,b \\rangle \\in R_{\\langle\na,b \\rangle}</span><br />\nBy (i), <span class=\"math inline\">\\rightarrow \\langle a,b \\rangle \\in\nD</span></p>","q":"<p>Using (i) show that<br />\n<span class=\"math inline\">D=\\cup_{\\langle a,b\\rangle \\in D}R\\langle\na,b\\rangle</span></p>"},"sha1":"df2066bf845969f5c4a1460ac08f5aff1a05ad14","title":"(ii)"},"kids":[],"parentSha1":"e2d4cf5b9113d332ca8b80db1d7569aa0348aa18","path":"answers-db/books/Topology Without Tears/2. The Euclidean Topology/2.2 Basis for a Topology/1/(ii)"}
+{
+    "item": {
+        "attr": {
+            "a": "<p><span class=\"math inline\">\\langle a,b \\rangle \\in D</span><br />\n<span class=\"math inline\">\\rightarrow \\langle a,b \\rangle \\in R_{\\langle\na,b \\rangle}</span><br />\n<span class=\"math inline\">\\rightarrow \\langle a,b \\rangle \\in\n\\cup_{\\langle a,b\\rangle \\in D}R\\langle a,b\\rangle</span></p>\n<h2 id=\"inverse\">Inverse</h2>\n<p><span class=\"math inline\">\\langle a,b \\rangle \\in \\cup_{\\langle\na,b\\rangle \\in D}R\\langle a,b\\rangle</span><br />\n<span class=\"math inline\">\\rightarrow \\langle a,b \\rangle \\in R_{\\langle\na,b \\rangle}</span><br />\nBy (i), <span class=\"math inline\">\\rightarrow \\langle a,b \\rangle \\in\nD</span></p>",
+            "q": "<p>Using (i) show that<br />\n<span class=\"math inline\">D=\\cup_{\\langle a,b\\rangle \\in D}R\\langle\na,b\\rangle</span></p>"
+        },
+        "numAnswer": 1,
+        "sha1": "df2066bf845969f5c4a1460ac08f5aff1a05ad14",
+        "title": "(ii)"
+    },
+    "kids": [],
+    "parentSha1": "e2d4cf5b9113d332ca8b80db1d7569aa0348aa18",
+    "path": "answers-db/books/Topology Without Tears/2. The Euclidean Topology/2.2 Basis for a Topology/1/(ii)"
+}

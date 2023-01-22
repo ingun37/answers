@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>Let <span class=\"math inline\">f(x) = c</span>. Any open set <span\nclass=\"math inline\">S \\in \\tau_1</span> either contains <span\nclass=\"math inline\">c</span> or not.</p>\n<p>If <span class=\"math inline\">c \\in S</span>, then <span\nclass=\"math inline\">f^{-1}(S) = X</span>.<br />\nIf <span class=\"math inline\">c \\notin S</span>, then <span\nclass=\"math inline\">f^{-1}(S) = \\emptyset</span>.</p>\n<p>Hence continuous.</p>","q":"<p>Let <span class=\"math inline\">f:(X,\\mathcal{T}) \\rightarrow (Y,\n\\tau_1)</span> be a constant function. Show that <span\nclass=\"math inline\">f</span> is continuous.</p>"},"sha1":"b0286b109d3742c5563bfaf98ef53d5494d17e24","title":"(i)"},"kids":[],"parentSha1":"9ee38a7c4d000b2cf8ba8e2856220afd5ab665c2","path":"answers-db/books/Topology Without Tears/5. Continuous Mappings/5.1 Continuous Mappings/1/(i)"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>Let <span class=\"math inline\">f(x) = c</span>. Any open set <span\nclass=\"math inline\">S \\in \\tau_1</span> either contains <span\nclass=\"math inline\">c</span> or not.</p>\n<p>If <span class=\"math inline\">c \\in S</span>, then <span\nclass=\"math inline\">f^{-1}(S) = X</span>.<br />\nIf <span class=\"math inline\">c \\notin S</span>, then <span\nclass=\"math inline\">f^{-1}(S) = \\emptyset</span>.</p>\n<p>Hence continuous.</p>",
+            "q": "<p>Let <span class=\"math inline\">f:(X,\\mathcal{T}) \\rightarrow (Y,\n\\tau_1)</span> be a constant function. Show that <span\nclass=\"math inline\">f</span> is continuous.</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "b0286b109d3742c5563bfaf98ef53d5494d17e24",
+        "title": "(i)"
+    },
+    "kids": [],
+    "parentSha1": "9ee38a7c4d000b2cf8ba8e2856220afd5ab665c2",
+    "path": "answers-db/books/Topology Without Tears/5. Continuous Mappings/5.1 Continuous Mappings/1/(i)"
+}

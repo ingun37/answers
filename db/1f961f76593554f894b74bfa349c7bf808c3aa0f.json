@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p><span class=\"math display\">(1 - (1 - P_1)(1 - P_2))*P_3</span></p>","q":"<p><img\nsrc=\"https://www.probabilitycourse.com/images/chapter1/5c.png\" /></p>"},"sha1":"1f961f76593554f894b74bfa349c7bf808c3aa0f","title":"c"},"kids":[],"parentSha1":"e180225d4c713159e9c4471712ccbd716df3c31e","path":"answers-db/books/Introduction to Probability, Statistics, and Random Processes/1.5.0/29/c"}
+{
+    "item": {
+        "attr": {
+            "a": "<p><span class=\"math display\">(1 - (1 - P_1)(1 - P_2))*P_3</span></p>",
+            "q": "<p><img\nsrc=\"https://www.probabilitycourse.com/images/chapter1/5c.png\" /></p>"
+        },
+        "numAnswer": 1,
+        "sha1": "1f961f76593554f894b74bfa349c7bf808c3aa0f",
+        "title": "c"
+    },
+    "kids": [],
+    "parentSha1": "e180225d4c713159e9c4471712ccbd716df3c31e",
+    "path": "answers-db/books/Introduction to Probability, Statistics, and Random Processes/1.5.0/29/c"
+}

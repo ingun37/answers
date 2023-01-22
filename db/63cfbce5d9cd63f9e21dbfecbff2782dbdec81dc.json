@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>(ii) satisfies second property so we only need to proove that union\nof <span class=\"math inline\">D</span> is <span\nclass=\"math inline\">\\mathbb{R}^2</span></p>\n<p>If we deny the statement and say there is a <span\nclass=\"math inline\">\\langle a,b \\rangle \\in \\mathbb{R}^2</span> that\nisn't contained in union of all <span class=\"math inline\">D</span> then\nit contradicts the exercise-1-(iv) hence union of <span\nclass=\"math inline\">D</span> is <span\nclass=\"math inline\">\\mathbb{R}^2</span>.</p>","q":"<p>Using (ii) and Proposition 2.2.8, prove that the collection of all\nopen discs in <span class=\"math inline\">\\mathbb{R}^2</span> is a basis\nfor a topology on <span class=\"math inline\">\\mathbb{R}^2</span>.</p>"},"sha1":"63cfbce5d9cd63f9e21dbfecbff2782dbdec81dc","title":"(iii)"},"kids":[],"parentSha1":"ad5146925e4a83d39cea31fe853242586780b51f","path":"answers-db/books/Topology Without Tears/2. The Euclidean Topology/2.2 Basis for a Topology/2/(iii)"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>(ii) satisfies second property so we only need to proove that union\nof <span class=\"math inline\">D</span> is <span\nclass=\"math inline\">\\mathbb{R}^2</span></p>\n<p>If we deny the statement and say there is a <span\nclass=\"math inline\">\\langle a,b \\rangle \\in \\mathbb{R}^2</span> that\nisn't contained in union of all <span class=\"math inline\">D</span> then\nit contradicts the exercise-1-(iv) hence union of <span\nclass=\"math inline\">D</span> is <span\nclass=\"math inline\">\\mathbb{R}^2</span>.</p>",
+            "q": "<p>Using (ii) and Proposition 2.2.8, prove that the collection of all\nopen discs in <span class=\"math inline\">\\mathbb{R}^2</span> is a basis\nfor a topology on <span class=\"math inline\">\\mathbb{R}^2</span>.</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "63cfbce5d9cd63f9e21dbfecbff2782dbdec81dc",
+        "title": "(iii)"
+    },
+    "kids": [],
+    "parentSha1": "ad5146925e4a83d39cea31fe853242586780b51f",
+    "path": "answers-db/books/Topology Without Tears/2. The Euclidean Topology/2.2 Basis for a Topology/2/(iii)"
+}

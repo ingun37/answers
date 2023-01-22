@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>Let <span class=\"math inline\">U \\subset \\mathbb{R}</span> an open set\nthat contains 0. <span class=\"math inline\">f</span> is continuous\ntherefore <span class=\"math inline\">V = f^{-1}U</span> must be an open\nset. <span class=\"math inline\">V</span> also must contain all the\nrational numbers. The open set that contains all the rational numbers is\n<span class=\"math inline\">\\mathbb{R}</span>. Therefore for every <span\nclass=\"math inline\">x \\in \\mathbb{R}</span>, <span\nclass=\"math inline\">f(x) = 0</span>.</p>","q":"<p>Let <span class=\"math inline\">f:\\mathbb{R} \\rightarrow\n\\mathbb{R}</span> be a continuous function such that <span\nclass=\"math inline\">f(q)=0</span>for every rational number <span\nclass=\"math inline\">q</span>. Prove that <span\nclass=\"math inline\">f(x)</span> for every <span\nclass=\"math inline\">x\\in\\mathbb{R}</span>.</p>"},"sha1":"38dc2ab6210ce8180ea1dfbcc57579155b47fc4e","title":"11"},"kids":[],"parentSha1":"23fa51b26c3cbf394df895694152dc491472332f","path":"answers-db/books/Topology Without Tears/5. Continuous Mappings/5.1 Continuous Mappings/11"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>Let <span class=\"math inline\">U \\subset \\mathbb{R}</span> an open set\nthat contains 0. <span class=\"math inline\">f</span> is continuous\ntherefore <span class=\"math inline\">V = f^{-1}U</span> must be an open\nset. <span class=\"math inline\">V</span> also must contain all the\nrational numbers. The open set that contains all the rational numbers is\n<span class=\"math inline\">\\mathbb{R}</span>. Therefore for every <span\nclass=\"math inline\">x \\in \\mathbb{R}</span>, <span\nclass=\"math inline\">f(x) = 0</span>.</p>",
+            "q": "<p>Let <span class=\"math inline\">f:\\mathbb{R} \\rightarrow\n\\mathbb{R}</span> be a continuous function such that <span\nclass=\"math inline\">f(q)=0</span>for every rational number <span\nclass=\"math inline\">q</span>. Prove that <span\nclass=\"math inline\">f(x)</span> for every <span\nclass=\"math inline\">x\\in\\mathbb{R}</span>.</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "38dc2ab6210ce8180ea1dfbcc57579155b47fc4e",
+        "title": "11"
+    },
+    "kids": [],
+    "parentSha1": "23fa51b26c3cbf394df895694152dc491472332f",
+    "path": "answers-db/books/Topology Without Tears/5. Continuous Mappings/5.1 Continuous Mappings/11"
+}

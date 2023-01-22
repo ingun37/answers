@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>(i) basically means <span class=\"math inline\">\\{\\text{limits of } S\\}\n\\subseteq \\{\\text{limits of } T\\}</span>.<br />\n<span class=\"math inline\">\\rightarrow \\{\\text{limits of } S\\} \\cup S\n\\subseteq \\{\\text{limits of } T\\} \\cup T</span><br />\n<span class=\"math inline\">\\rightarrow \\overline{S} \\subseteq\n\\overline{T}</span>.</p>","q":"<p>Deduce from (i) that <span class=\"math inline\">\\overline{S} \\subseteq\n\\overline{T}</span>.</p>"},"sha1":"0b308d0232a762516d9eaf339d3eaeae1ccdf374","title":"(ii)"},"kids":[],"parentSha1":"7e1dfafcc770d59b0570cfab20b563b2e88dd6f4","path":"answers-db/books/Topology Without Tears/3. Limit Points/3.1 Limit Points and Closure/5/(ii)"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>(i) basically means <span class=\"math inline\">\\{\\text{limits of } S\\}\n\\subseteq \\{\\text{limits of } T\\}</span>.<br />\n<span class=\"math inline\">\\rightarrow \\{\\text{limits of } S\\} \\cup S\n\\subseteq \\{\\text{limits of } T\\} \\cup T</span><br />\n<span class=\"math inline\">\\rightarrow \\overline{S} \\subseteq\n\\overline{T}</span>.</p>",
+            "q": "<p>Deduce from (i) that <span class=\"math inline\">\\overline{S} \\subseteq\n\\overline{T}</span>.</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "0b308d0232a762516d9eaf339d3eaeae1ccdf374",
+        "title": "(ii)"
+    },
+    "kids": [],
+    "parentSha1": "7e1dfafcc770d59b0570cfab20b563b2e88dd6f4",
+    "path": "answers-db/books/Topology Without Tears/3. Limit Points/3.1 Limit Points and Closure/5/(ii)"
+}

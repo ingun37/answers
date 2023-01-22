@@ -1,1 +1,76 @@
-{"item":{"attr":{"author":"Bartosz Milewski"},"sha1":"bd467f809ce2a42bd342fce03ff7fd2bd3d8446c","title":"Category Theory For Programmers"},"kids":[{"attr":{},"sha1":"7fe3168e57a9da2b597e912557c872cd0303917e","title":"18. Adjunctions"},{"attr":{},"sha1":"67f6efd7065d9064676a04180a21d72d271e80f9","title":"19. Free Forgetful Adjunctions"},{"attr":{},"sha1":"b3de5de27a8f785bc22cf1231dd50f2d2fabf48b","title":"13. Free Monoids"},{"attr":{},"sha1":"820c27fc79eeec6c65fa4dcf06752f97997bca0a","title":"10. Natural Transformations"},{"attr":{},"sha1":"e306412da4442dee3abad0ef751250dd54290da8","title":"15. The Yoneda Lemma"},{"attr":{},"sha1":"e18a03b36be491917b35e3ce842e24b63f14db64","title":"8. Functoriality"},{"attr":{},"sha1":"fb06b58134f8a660caa1d5683f15857e2b7f20ad","title":"14. Representable Functors"},{"attr":{},"sha1":"a66800b6db7ae336b8b1d850b23e8702403e9933","title":"16. Yoneda Embedding"},{"attr":{"q":"<p>Sample project available here <a\nhref=\"https://github.com/ingun37/f-algebra-challenges\">github</a></p>"},"sha1":"147af4f213c95f39c0f6f25b2995d70b68c39f10","title":"24. F-Algebras"},{"attr":{},"sha1":"f6c638fb5a6a17e36924345d70d9a1a79be3d2b5","title":"12. Limits and Colimits"}],"parentSha1":"dd8f38a85ee36fa036f3e298e265dd4bb35cad21","path":"answers-db/books/Category Theory For Programmers"}
+{
+    "item": {
+        "attr": {
+            "author": "Bartosz Milewski"
+        },
+        "numAnswer": 47,
+        "sha1": "bd467f809ce2a42bd342fce03ff7fd2bd3d8446c",
+        "title": "Category Theory For Programmers"
+    },
+    "kids": [
+        {
+            "attr": {},
+            "numAnswer": 6,
+            "sha1": "7fe3168e57a9da2b597e912557c872cd0303917e",
+            "title": "18. Adjunctions"
+        },
+        {
+            "attr": {},
+            "numAnswer": 1,
+            "sha1": "67f6efd7065d9064676a04180a21d72d271e80f9",
+            "title": "19. Free Forgetful Adjunctions"
+        },
+        {
+            "attr": {},
+            "numAnswer": 3,
+            "sha1": "b3de5de27a8f785bc22cf1231dd50f2d2fabf48b",
+            "title": "13. Free Monoids"
+        },
+        {
+            "attr": {},
+            "numAnswer": 6,
+            "sha1": "820c27fc79eeec6c65fa4dcf06752f97997bca0a",
+            "title": "10. Natural Transformations"
+        },
+        {
+            "attr": {},
+            "numAnswer": 3,
+            "sha1": "e306412da4442dee3abad0ef751250dd54290da8",
+            "title": "15. The Yoneda Lemma"
+        },
+        {
+            "attr": {},
+            "numAnswer": 6,
+            "sha1": "e18a03b36be491917b35e3ce842e24b63f14db64",
+            "title": "8. Functoriality"
+        },
+        {
+            "attr": {},
+            "numAnswer": 6,
+            "sha1": "fb06b58134f8a660caa1d5683f15857e2b7f20ad",
+            "title": "14. Representable Functors"
+        },
+        {
+            "attr": {},
+            "numAnswer": 5,
+            "sha1": "a66800b6db7ae336b8b1d850b23e8702403e9933",
+            "title": "16. Yoneda Embedding"
+        },
+        {
+            "attr": {
+                "q": "<p>Sample project available here <a\nhref=\"https://github.com/ingun37/f-algebra-challenges\">github</a></p>"
+            },
+            "numAnswer": 5,
+            "sha1": "147af4f213c95f39c0f6f25b2995d70b68c39f10",
+            "title": "24. F-Algebras"
+        },
+        {
+            "attr": {},
+            "numAnswer": 6,
+            "sha1": "f6c638fb5a6a17e36924345d70d9a1a79be3d2b5",
+            "title": "12. Limits and Colimits"
+        }
+    ],
+    "parentSha1": "dd8f38a85ee36fa036f3e298e265dd4bb35cad21",
+    "path": "answers-db/books/Category Theory For Programmers"
+}

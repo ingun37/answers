@@ -1,1 +1,41 @@
-{"item":{"attr":{"q":"<p>You choose a point <span class=\"math inline\">(X, Y)</span> uniformly\nat random in the unit square</p>\n<p><span class=\"math display\">S=\\{(x,y) \\in \\mathbb{R}^2: 0 \\leq x \\leq\n1, 0 \\leq y \\leq 1\\}.</span></p>\n<p>Let <span class=\"math inline\">A</span> be the event <span\nclass=\"math inline\">\\{(x,y) \\in S:|x-y| \\leq \\frac{1}{2}\\}</span> and\n<span class=\"math inline\">B</span> be the event <span\nclass=\"math inline\">\\{(x,y) \\in S: y\\geq x\\}</span></p>"},"sha1":"219d230a9d84517c454db50dd29407c573eb350b","title":"30"},"kids":[{"attr":{"a":"<p>We can get the portion of the area using simple geometry.</p>\n<p><span class=\"math display\">P(A) = \\frac{3}{4} \\\\\nP(B) = \\frac{1}{2}</span></p>","q":"<p>Find <span class=\"math inline\">P(A)</span> and <span\nclass=\"math inline\">P(B)</span>.</p>"},"sha1":"cae303f64ee0cf2fc7947871330748e5ce28e2c3","title":"b"},{"attr":{"a":"<p>It's easier for an equation with absolute values to express in a\npiecewise function.</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;|x-y| \\leq \\frac{1}{2} \\\\\n  &amp;\\rightarrow \\begin{cases}\n    x - \\frac{1}{2} \\leq y &amp;\\text{if } y \\leq x \\\\\n    y \\leq \\frac{1}{2} + x &amp;\\text{if } x &lt; y\n  \\end{cases}\n\\end{aligned}</span></p>\n<p>Putting <span class=\"math inline\">A</span> onto the x-y plane:</p>\n<p><img\nsrc=\"/answers/books/Introduction%20to%20Probability,%20Statistics,%20and%20Random%20Processes/1.5.0/30/a/IMG_FBA6405D2C50-1.jpeg\" /></p>\n<p>Putting <span class=\"math inline\">B</span> onto the x-y plane:</p>\n<p><img\nsrc=\"/answers/books/Introduction%20to%20Probability,%20Statistics,%20and%20Random%20Processes/1.5.0/30/a/IMG_9E3C3EEA3B9F-1.jpeg\" /></p>","q":"<p>Show sets <span class=\"math inline\">A</span> and <span\nclass=\"math inline\">B</span> in the x-y plane.</p>"},"sha1":"d2b5e1bf9b39f99d4121e27e28643401f2512447","title":"a"},{"attr":{"a":"<p>Yes, because we can readily observe that:</p>\n<p><span class=\"math display\">P(A,B) = P(A)P(B) = \\frac{3}{8}</span></p>\n<p>since the overlapping area is visibly the exact half of <span\nclass=\"math inline\">A</span>.</p>","q":"<p>Are <span class=\"math inline\">A</span> and <span\nclass=\"math inline\">B</span> independent?</p>"},"sha1":"b276d23e3502fc286f1242ce13ce0b37d7adaa27","title":"c"}],"parentSha1":"845fbf15d0fb7458c8520721c640c46d45dc2ca8","path":"answers-db/books/Introduction to Probability, Statistics, and Random Processes/1.5.0/30"}
+{
+    "item": {
+        "attr": {
+            "q": "<p>You choose a point <span class=\"math inline\">(X, Y)</span> uniformly\nat random in the unit square</p>\n<p><span class=\"math display\">S=\\{(x,y) \\in \\mathbb{R}^2: 0 \\leq x \\leq\n1, 0 \\leq y \\leq 1\\}.</span></p>\n<p>Let <span class=\"math inline\">A</span> be the event <span\nclass=\"math inline\">\\{(x,y) \\in S:|x-y| \\leq \\frac{1}{2}\\}</span> and\n<span class=\"math inline\">B</span> be the event <span\nclass=\"math inline\">\\{(x,y) \\in S: y\\geq x\\}</span></p>"
+        },
+        "numAnswer": 3,
+        "sha1": "219d230a9d84517c454db50dd29407c573eb350b",
+        "title": "30"
+    },
+    "kids": [
+        {
+            "attr": {
+                "a": "<p>We can get the portion of the area using simple geometry.</p>\n<p><span class=\"math display\">P(A) = \\frac{3}{4} \\\\\nP(B) = \\frac{1}{2}</span></p>",
+                "q": "<p>Find <span class=\"math inline\">P(A)</span> and <span\nclass=\"math inline\">P(B)</span>.</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "cae303f64ee0cf2fc7947871330748e5ce28e2c3",
+            "title": "b"
+        },
+        {
+            "attr": {
+                "a": "<p>It's easier for an equation with absolute values to express in a\npiecewise function.</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;|x-y| \\leq \\frac{1}{2} \\\\\n  &amp;\\rightarrow \\begin{cases}\n    x - \\frac{1}{2} \\leq y &amp;\\text{if } y \\leq x \\\\\n    y \\leq \\frac{1}{2} + x &amp;\\text{if } x &lt; y\n  \\end{cases}\n\\end{aligned}</span></p>\n<p>Putting <span class=\"math inline\">A</span> onto the x-y plane:</p>\n<p><img\nsrc=\"/answers/books/Introduction%20to%20Probability,%20Statistics,%20and%20Random%20Processes/1.5.0/30/a/IMG_FBA6405D2C50-1.jpeg\" /></p>\n<p>Putting <span class=\"math inline\">B</span> onto the x-y plane:</p>\n<p><img\nsrc=\"/answers/books/Introduction%20to%20Probability,%20Statistics,%20and%20Random%20Processes/1.5.0/30/a/IMG_9E3C3EEA3B9F-1.jpeg\" /></p>",
+                "q": "<p>Show sets <span class=\"math inline\">A</span> and <span\nclass=\"math inline\">B</span> in the x-y plane.</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "d2b5e1bf9b39f99d4121e27e28643401f2512447",
+            "title": "a"
+        },
+        {
+            "attr": {
+                "a": "<p>Yes, because we can readily observe that:</p>\n<p><span class=\"math display\">P(A,B) = P(A)P(B) = \\frac{3}{8}</span></p>\n<p>since the overlapping area is visibly the exact half of <span\nclass=\"math inline\">A</span>.</p>",
+                "q": "<p>Are <span class=\"math inline\">A</span> and <span\nclass=\"math inline\">B</span> independent?</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "b276d23e3502fc286f1242ce13ce0b37d7adaa27",
+            "title": "c"
+        }
+    ],
+    "parentSha1": "845fbf15d0fb7458c8520721c640c46d45dc2ca8",
+    "path": "answers-db/books/Introduction to Probability, Statistics, and Random Processes/1.5.0/30"
+}

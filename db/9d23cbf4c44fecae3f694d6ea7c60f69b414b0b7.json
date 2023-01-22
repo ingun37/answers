@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>Because <span class=\"math inline\">X</span> and <span\nclass=\"math inline\">Y</span> are independent</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;P(X\\leq 2 \\textrm{  and   } Y\\leq 2) \\\\\n  &amp;=P(X\\leq 2)P(Y\\leq 2) \\\\\n  &amp;=(P_X(1) + P_X(2))(P_Y(1) + P_Y(2)) \\\\\n  &amp;=({1 \\over 4} + {1 \\over 8})({1 \\over 6} + {1 \\over 6}) \\\\\n  &amp;=({3 \\over 8})({1 \\over 3}) \\\\\n  &amp;={17 \\over 24} \\\\\n\\end{aligned}</span></p>","q":"<p>Find <span class=\"math inline\">P(X\\leq 2 \\textrm{ and } Y\\leq\n2)</span>.</p>"},"sha1":"9d23cbf4c44fecae3f694d6ea7c60f69b414b0b7","title":"a"},"kids":[],"parentSha1":"f3e54143e3bc62dec548f52d7e13651ef423a68c","path":"answers-db/books/Introduction to Probability, Statistics, and Random Processes/3.3.0/4/a"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>Because <span class=\"math inline\">X</span> and <span\nclass=\"math inline\">Y</span> are independent</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;P(X\\leq 2 \\textrm{  and   } Y\\leq 2) \\\\\n  &amp;=P(X\\leq 2)P(Y\\leq 2) \\\\\n  &amp;=(P_X(1) + P_X(2))(P_Y(1) + P_Y(2)) \\\\\n  &amp;=({1 \\over 4} + {1 \\over 8})({1 \\over 6} + {1 \\over 6}) \\\\\n  &amp;=({3 \\over 8})({1 \\over 3}) \\\\\n  &amp;={17 \\over 24} \\\\\n\\end{aligned}</span></p>",
+            "q": "<p>Find <span class=\"math inline\">P(X\\leq 2 \\textrm{ and } Y\\leq\n2)</span>.</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "9d23cbf4c44fecae3f694d6ea7c60f69b414b0b7",
+        "title": "a"
+    },
+    "kids": [],
+    "parentSha1": "f3e54143e3bc62dec548f52d7e13651ef423a68c",
+    "path": "answers-db/books/Introduction to Probability, Statistics, and Random Processes/3.3.0/4/a"
+}

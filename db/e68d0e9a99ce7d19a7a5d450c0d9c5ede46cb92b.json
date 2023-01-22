@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>This Affin Transformation<br />\n<span class=\"math inline\">\\begin{pmatrix} 1 &amp; 0 &amp; a \\\\ 0 &amp; 1\n&amp; b \\\\ 0 &amp; 0 &amp; 1 \\end{pmatrix}</span><br />\nis continuous and can move disc's origin.</p>","q":"<p>Show that every disc <span class=\"math inline\">\\{\\langle x,y \\rangle\n: (x-a)^2 + (y-b)^2 &lt; c^2, a,b,c \\in \\mathbb{R}\\}</span> is open in\n<span class=\"math inline\">\\mathbb{R}^2</span></p>"},"sha1":"e68d0e9a99ce7d19a7a5d450c0d9c5ede46cb92b","title":"(iv)"},"kids":[],"parentSha1":"e2d4cf5b9113d332ca8b80db1d7569aa0348aa18","path":"answers-db/books/Topology Without Tears/2. The Euclidean Topology/2.2 Basis for a Topology/1/(iv)"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>This Affin Transformation<br />\n<span class=\"math inline\">\\begin{pmatrix} 1 &amp; 0 &amp; a \\\\ 0 &amp; 1\n&amp; b \\\\ 0 &amp; 0 &amp; 1 \\end{pmatrix}</span><br />\nis continuous and can move disc's origin.</p>",
+            "q": "<p>Show that every disc <span class=\"math inline\">\\{\\langle x,y \\rangle\n: (x-a)^2 + (y-b)^2 &lt; c^2, a,b,c \\in \\mathbb{R}\\}</span> is open in\n<span class=\"math inline\">\\mathbb{R}^2</span></p>"
+        },
+        "numAnswer": 1,
+        "sha1": "e68d0e9a99ce7d19a7a5d450c0d9c5ede46cb92b",
+        "title": "(iv)"
+    },
+    "kids": [],
+    "parentSha1": "e2d4cf5b9113d332ca8b80db1d7569aa0348aa18",
+    "path": "answers-db/books/Topology Without Tears/2. The Euclidean Topology/2.2 Basis for a Topology/1/(iv)"
+}

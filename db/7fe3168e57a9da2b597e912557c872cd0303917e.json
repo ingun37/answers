@@ -1,1 +1,66 @@
-{"item":{"attr":{},"sha1":"7fe3168e57a9da2b597e912557c872cd0303917e","title":"18. Adjunctions"},"kids":[{"attr":{"a":"<p>Shown in 4.</p>","q":"<p>Show that the coproduct is the left adjoint of the diagonal\nfunctor.</p>"},"sha1":"9587b30430e646e6fefb71e8204ebe94051cf5c6","title":"5"},{"attr":{"a":"<p>We are asked to define Exponential in Haskell.<br />\nFYI, it's not mentioned in the book but the Exponential that is\ndescribed in the book is basically currying.</p>\n<div class=\"sourceCode\" id=\"cb1\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb1-1\"><a href=\"#cb1-1\" aria-hidden=\"true\" tabindex=\"-1\"></a>unit z a <span class=\"ot\">=</span> (z, a)</span>\n<span id=\"cb1-2\"><a href=\"#cb1-2\" aria-hidden=\"true\" tabindex=\"-1\"></a>counit (f, a) <span class=\"ot\">=</span> f a</span></code></pre></div>","q":"<p>Define the adjunction between a product and a function object in\nHaskell.</p>"},"sha1":"5d84908466c4564550ad5440e3c4bd9f58135b2c","title":"6"},{"attr":{"a":"<p>We are asked to make the red morphisms from given a random morphism\n<span class=\"math inline\">f : a \\rightarrow a&#39;</span></p>\n<p><img\nsrc=\"/answers/books/Category%20Theory%20For%20Programmers/18.%20Adjunctions/1/IMG_05FBAC45DBBD-1.jpeg\" /></p>\n<p>We can make <span class=\"math inline\">m</span> by composing <span\nclass=\"math inline\">\\psi \\cdot g \\cdot Lf</span> where <span\nclass=\"math inline\">g \\in C(La&#39;, b)</span><br />\nand <span class=\"math inline\">n</span> by composing <span\nclass=\"math inline\">\\psi \\cdot f \\cdot h</span> where <span\nclass=\"math inline\">h \\in D(a&#39;,Rb)</span></p>","q":"<p>Derive the naturality square for <span\nclass=\"math inline\">\\psi</span>, the transformation between the two\n(contravariant) functors:</p>\n<div class=\"sourceCode\" id=\"cb1\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb1-1\"><a href=\"#cb1-1\" aria-hidden=\"true\" tabindex=\"-1\"></a>a <span class=\"ot\">-&gt;</span> <span class=\"dt\">C</span>(<span class=\"dt\">L</span> a, b)</span>\n<span id=\"cb1-2\"><a href=\"#cb1-2\" aria-hidden=\"true\" tabindex=\"-1\"></a>b <span class=\"ot\">-&gt;</span> <span class=\"dt\">D</span>(a, <span class=\"dt\">R</span> b)</span></code></pre></div>"},"sha1":"a0b4d68585c916b84d810f1231b7b0f4e0d740b5","title":"1"},{"attr":{"a":"<p>So far we have derived unit and counit from hom-sets isomorphism and\ninjectivity <span class=\"math inline\">C(Ld,c) \\rightarrow D(d,Rc)</span>\nfrom unit and counit. The only thing left to proove the equivalence is\ninjectivity in the other way.<br />\nIn the book we derived injection <span class=\"math inline\">C(Ld,c)\n\\rightarrow D(d,Rc)</span> by lifting <span class=\"math inline\">f:Ld\n\\rightarrow c</span> with <span class=\"math inline\">R</span>. In the\nsame way we can derive the other way injection <span\nclass=\"math inline\">D(d,Rc) \\rightarrow C(Ld,c)</span> by lifting <span\nclass=\"math inline\">g:d \\rightarrow Rc</span> with <span\nclass=\"math inline\">L</span>.<br />\nLifted <span class=\"math inline\">Lg</span> can be composed with unit\n<span class=\"math inline\">\\eta</span> and make a morphism <span\nclass=\"math inline\">Lg \\cdot \\eta: Ld \\rightarrow c</span>.</p>","q":"<p>Complete the proof of equivalence of the two definitions of the\nadjunction.</p>"},"sha1":"9120f6abd026909cb9cd565495abbffee7f20bd8","title":"3"},{"attr":{"a":"<p>Coproduct functor as Left adjoint and square functor as right\nadjoint, we can build an adjunction like this.<br />\n<img\nsrc=\"/answers/books/Category%20Theory%20For%20Programmers/18.%20Adjunctions/4/IMG_4745A389AF18-1.jpeg\" /><br />\nBy definition of coproduct, <span class=\"math inline\">m</span> and pair\nof <span class=\"math inline\">&lt;p,q&gt;</span> must be\nisomorphic.<br />\nWe can define factorizer by composing counit <span\nclass=\"math inline\">\\varepsilon</span> and <span\nclass=\"math inline\">L&lt;p,q&gt;</span> and the inverse by composing\n<span class=\"math inline\">Rm</span> and unit <span\nclass=\"math inline\">\\eta</span>.</p>","q":"<p>Show that the coproduct can be defined by an adjuntion. Start with\nthe definition of the factorizer for a coproduct.</p>"},"sha1":"5339c96121cbeeee75d375d64623fd2d5fda350d","title":"4"},{"attr":{"a":"<p>The book already derived unit <span class=\"math inline\">\\eta</span>\nby replacing <span class=\"math inline\">c</span> with <span\nclass=\"math inline\">Ld</span>. In the same way we can derive <span\nclass=\"math inline\">\\varepsilon</span> by replacing <span\nclass=\"math inline\">d</span> with <span\nclass=\"math inline\">Rc</span>.<br />\nReplacing <span class=\"math inline\">d</span> with <span\nclass=\"math inline\">Rc</span> gives us<br />\n<span class=\"math inline\">C(LRc,c) \\cong D(Rc,Rc)</span><br />\nThere's at least one morphism (<span class=\"math inline\">id</span>) in\n<span class=\"math inline\">D(Rc, Rc)</span> so there must be a\ncorresponding morphism in <span class=\"math inline\">C(LRc,c)</span>\nwhich is the counit.</p>","q":"<p>Derive the counit <span class=\"math inline\">\\varepsilon</span>\nstarting from the hom-sets isomorphism in the second definition of the\nadjunction.</p>"},"sha1":"51720de77323032d8fef3dff7ed6d4759b361c1d","title":"2"}],"parentSha1":"bd467f809ce2a42bd342fce03ff7fd2bd3d8446c","path":"answers-db/books/Category Theory For Programmers/18. Adjunctions"}
+{
+    "item": {
+        "attr": {},
+        "numAnswer": 6,
+        "sha1": "7fe3168e57a9da2b597e912557c872cd0303917e",
+        "title": "18. Adjunctions"
+    },
+    "kids": [
+        {
+            "attr": {
+                "a": "<p>Shown in 4.</p>",
+                "q": "<p>Show that the coproduct is the left adjoint of the diagonal\nfunctor.</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "9587b30430e646e6fefb71e8204ebe94051cf5c6",
+            "title": "5"
+        },
+        {
+            "attr": {
+                "a": "<p>We are asked to define Exponential in Haskell.<br />\nFYI, it's not mentioned in the book but the Exponential that is\ndescribed in the book is basically currying.</p>\n<div class=\"sourceCode\" id=\"cb1\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb1-1\"><a href=\"#cb1-1\" aria-hidden=\"true\" tabindex=\"-1\"></a>unit z a <span class=\"ot\">=</span> (z, a)</span>\n<span id=\"cb1-2\"><a href=\"#cb1-2\" aria-hidden=\"true\" tabindex=\"-1\"></a>counit (f, a) <span class=\"ot\">=</span> f a</span></code></pre></div>",
+                "q": "<p>Define the adjunction between a product and a function object in\nHaskell.</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "5d84908466c4564550ad5440e3c4bd9f58135b2c",
+            "title": "6"
+        },
+        {
+            "attr": {
+                "a": "<p>We are asked to make the red morphisms from given a random morphism\n<span class=\"math inline\">f : a \\rightarrow a&#39;</span></p>\n<p><img\nsrc=\"/answers/books/Category%20Theory%20For%20Programmers/18.%20Adjunctions/1/IMG_05FBAC45DBBD-1.jpeg\" /></p>\n<p>We can make <span class=\"math inline\">m</span> by composing <span\nclass=\"math inline\">\\psi \\cdot g \\cdot Lf</span> where <span\nclass=\"math inline\">g \\in C(La&#39;, b)</span><br />\nand <span class=\"math inline\">n</span> by composing <span\nclass=\"math inline\">\\psi \\cdot f \\cdot h</span> where <span\nclass=\"math inline\">h \\in D(a&#39;,Rb)</span></p>",
+                "q": "<p>Derive the naturality square for <span\nclass=\"math inline\">\\psi</span>, the transformation between the two\n(contravariant) functors:</p>\n<div class=\"sourceCode\" id=\"cb1\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb1-1\"><a href=\"#cb1-1\" aria-hidden=\"true\" tabindex=\"-1\"></a>a <span class=\"ot\">-&gt;</span> <span class=\"dt\">C</span>(<span class=\"dt\">L</span> a, b)</span>\n<span id=\"cb1-2\"><a href=\"#cb1-2\" aria-hidden=\"true\" tabindex=\"-1\"></a>b <span class=\"ot\">-&gt;</span> <span class=\"dt\">D</span>(a, <span class=\"dt\">R</span> b)</span></code></pre></div>"
+            },
+            "numAnswer": 1,
+            "sha1": "a0b4d68585c916b84d810f1231b7b0f4e0d740b5",
+            "title": "1"
+        },
+        {
+            "attr": {
+                "a": "<p>So far we have derived unit and counit from hom-sets isomorphism and\ninjectivity <span class=\"math inline\">C(Ld,c) \\rightarrow D(d,Rc)</span>\nfrom unit and counit. The only thing left to proove the equivalence is\ninjectivity in the other way.<br />\nIn the book we derived injection <span class=\"math inline\">C(Ld,c)\n\\rightarrow D(d,Rc)</span> by lifting <span class=\"math inline\">f:Ld\n\\rightarrow c</span> with <span class=\"math inline\">R</span>. In the\nsame way we can derive the other way injection <span\nclass=\"math inline\">D(d,Rc) \\rightarrow C(Ld,c)</span> by lifting <span\nclass=\"math inline\">g:d \\rightarrow Rc</span> with <span\nclass=\"math inline\">L</span>.<br />\nLifted <span class=\"math inline\">Lg</span> can be composed with unit\n<span class=\"math inline\">\\eta</span> and make a morphism <span\nclass=\"math inline\">Lg \\cdot \\eta: Ld \\rightarrow c</span>.</p>",
+                "q": "<p>Complete the proof of equivalence of the two definitions of the\nadjunction.</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "9120f6abd026909cb9cd565495abbffee7f20bd8",
+            "title": "3"
+        },
+        {
+            "attr": {
+                "a": "<p>Coproduct functor as Left adjoint and square functor as right\nadjoint, we can build an adjunction like this.<br />\n<img\nsrc=\"/answers/books/Category%20Theory%20For%20Programmers/18.%20Adjunctions/4/IMG_4745A389AF18-1.jpeg\" /><br />\nBy definition of coproduct, <span class=\"math inline\">m</span> and pair\nof <span class=\"math inline\">&lt;p,q&gt;</span> must be\nisomorphic.<br />\nWe can define factorizer by composing counit <span\nclass=\"math inline\">\\varepsilon</span> and <span\nclass=\"math inline\">L&lt;p,q&gt;</span> and the inverse by composing\n<span class=\"math inline\">Rm</span> and unit <span\nclass=\"math inline\">\\eta</span>.</p>",
+                "q": "<p>Show that the coproduct can be defined by an adjuntion. Start with\nthe definition of the factorizer for a coproduct.</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "5339c96121cbeeee75d375d64623fd2d5fda350d",
+            "title": "4"
+        },
+        {
+            "attr": {
+                "a": "<p>The book already derived unit <span class=\"math inline\">\\eta</span>\nby replacing <span class=\"math inline\">c</span> with <span\nclass=\"math inline\">Ld</span>. In the same way we can derive <span\nclass=\"math inline\">\\varepsilon</span> by replacing <span\nclass=\"math inline\">d</span> with <span\nclass=\"math inline\">Rc</span>.<br />\nReplacing <span class=\"math inline\">d</span> with <span\nclass=\"math inline\">Rc</span> gives us<br />\n<span class=\"math inline\">C(LRc,c) \\cong D(Rc,Rc)</span><br />\nThere's at least one morphism (<span class=\"math inline\">id</span>) in\n<span class=\"math inline\">D(Rc, Rc)</span> so there must be a\ncorresponding morphism in <span class=\"math inline\">C(LRc,c)</span>\nwhich is the counit.</p>",
+                "q": "<p>Derive the counit <span class=\"math inline\">\\varepsilon</span>\nstarting from the hom-sets isomorphism in the second definition of the\nadjunction.</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "51720de77323032d8fef3dff7ed6d4759b361c1d",
+            "title": "2"
+        }
+    ],
+    "parentSha1": "bd467f809ce2a42bd342fce03ff7fd2bd3d8446c",
+    "path": "answers-db/books/Category Theory For Programmers/18. Adjunctions"
+}

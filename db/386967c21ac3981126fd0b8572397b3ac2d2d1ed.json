@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>Yes. <code>Reader a</code> is <code>Hom(a, -)</code></p>","q":"<p>Is the <code>Reader</code> functor representable?</p>"},"sha1":"386967c21ac3981126fd0b8572397b3ac2d2d1ed","title":"3"},"kids":[],"parentSha1":"fb06b58134f8a660caa1d5683f15857e2b7f20ad","path":"answers-db/books/Category Theory For Programmers/14. Representable Functors/3"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>Yes. <code>Reader a</code> is <code>Hom(a, -)</code></p>",
+            "q": "<p>Is the <code>Reader</code> functor representable?</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "386967c21ac3981126fd0b8572397b3ac2d2d1ed",
+        "title": "3"
+    },
+    "kids": [],
+    "parentSha1": "fb06b58134f8a660caa1d5683f15857e2b7f20ad",
+    "path": "answers-db/books/Category Theory For Programmers/14. Representable Functors/3"
+}

@@ -1,1 +1,20 @@
-{"item":{"attr":{},"sha1":"26d0d9e142b945c6e1b470f3978c516b950372ee","title":"2.3 Basis for a Given Topology"},"kids":[{"attr":{"q":"<p>Let <span class=\"math inline\">C [ 0,1 ]</span> be the set of all\ncontinuous real-valued functions on <span class=\"math inline\">[0,\n1]</span></p>"},"sha1":"e63d9d8d96af7204bebe6060141f5a692f148113","title":"4"}],"parentSha1":"386863b0048a22bdddfb8f8cc28b50926b11ee1d","path":"answers-db/books/Topology Without Tears/2. The Euclidean Topology/2.3 Basis for a Given Topology"}
+{
+    "item": {
+        "attr": {},
+        "numAnswer": 3,
+        "sha1": "26d0d9e142b945c6e1b470f3978c516b950372ee",
+        "title": "2.3 Basis for a Given Topology"
+    },
+    "kids": [
+        {
+            "attr": {
+                "q": "<p>Let <span class=\"math inline\">C [ 0,1 ]</span> be the set of all\ncontinuous real-valued functions on <span class=\"math inline\">[0,\n1]</span></p>"
+            },
+            "numAnswer": 3,
+            "sha1": "e63d9d8d96af7204bebe6060141f5a692f148113",
+            "title": "4"
+        }
+    ],
+    "parentSha1": "386863b0048a22bdddfb8f8cc28b50926b11ee1d",
+    "path": "answers-db/books/Topology Without Tears/2. The Euclidean Topology/2.3 Basis for a Given Topology"
+}

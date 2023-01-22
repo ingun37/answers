@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>When a sequence converges, it must converge from up or down (or\nboth). Pick one and make monotone subsequence from that.</p>\n<p>When a sequence diverges, it's either bounded or not. If it's bounded\nthen it must have converging subsequence and you can construct a\nmonotone subsequence from that. If it's not bounded, then at every point\nthere must be upcoming bigger (or smaller depending it's direction of\ngrowth) point. Keep doing it and you consturct monotone subsequence.</p>\n<p>If a sequence is bounded then it's monotone subsequence must\nconverge.</p>","q":"<p>Show that every sequence contains a monotone subsequence and explain\nhow this furnishes a new proof of the Bolzano-Weierstrass Theorem.</p>"},"sha1":"480e37a78af45e8746525e0a82431b94be693e3a","title":"(b)"},"kids":[],"parentSha1":"a6c284270698c94f40c422b6eebede78f028424e","path":"answers-db/books/Understanding Analysis/2. Sequences and Series/2.5 Subsequences and the Bolzano-Weierstrass Theorem/2.5.8/(b)"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>When a sequence converges, it must converge from up or down (or\nboth). Pick one and make monotone subsequence from that.</p>\n<p>When a sequence diverges, it's either bounded or not. If it's bounded\nthen it must have converging subsequence and you can construct a\nmonotone subsequence from that. If it's not bounded, then at every point\nthere must be upcoming bigger (or smaller depending it's direction of\ngrowth) point. Keep doing it and you consturct monotone subsequence.</p>\n<p>If a sequence is bounded then it's monotone subsequence must\nconverge.</p>",
+            "q": "<p>Show that every sequence contains a monotone subsequence and explain\nhow this furnishes a new proof of the Bolzano-Weierstrass Theorem.</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "480e37a78af45e8746525e0a82431b94be693e3a",
+        "title": "(b)"
+    },
+    "kids": [],
+    "parentSha1": "a6c284270698c94f40c422b6eebede78f028424e",
+    "path": "answers-db/books/Understanding Analysis/2. Sequences and Series/2.5 Subsequences and the Bolzano-Weierstrass Theorem/2.5.8/(b)"
+}

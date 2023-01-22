@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>So far we have derived unit and counit from hom-sets isomorphism and\ninjectivity <span class=\"math inline\">C(Ld,c) \\rightarrow D(d,Rc)</span>\nfrom unit and counit. The only thing left to proove the equivalence is\ninjectivity in the other way.<br />\nIn the book we derived injection <span class=\"math inline\">C(Ld,c)\n\\rightarrow D(d,Rc)</span> by lifting <span class=\"math inline\">f:Ld\n\\rightarrow c</span> with <span class=\"math inline\">R</span>. In the\nsame way we can derive the other way injection <span\nclass=\"math inline\">D(d,Rc) \\rightarrow C(Ld,c)</span> by lifting <span\nclass=\"math inline\">g:d \\rightarrow Rc</span> with <span\nclass=\"math inline\">L</span>.<br />\nLifted <span class=\"math inline\">Lg</span> can be composed with unit\n<span class=\"math inline\">\\eta</span> and make a morphism <span\nclass=\"math inline\">Lg \\cdot \\eta: Ld \\rightarrow c</span>.</p>","q":"<p>Complete the proof of equivalence of the two definitions of the\nadjunction.</p>"},"sha1":"9120f6abd026909cb9cd565495abbffee7f20bd8","title":"3"},"kids":[],"parentSha1":"7fe3168e57a9da2b597e912557c872cd0303917e","path":"answers-db/books/Category Theory For Programmers/18. Adjunctions/3"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>So far we have derived unit and counit from hom-sets isomorphism and\ninjectivity <span class=\"math inline\">C(Ld,c) \\rightarrow D(d,Rc)</span>\nfrom unit and counit. The only thing left to proove the equivalence is\ninjectivity in the other way.<br />\nIn the book we derived injection <span class=\"math inline\">C(Ld,c)\n\\rightarrow D(d,Rc)</span> by lifting <span class=\"math inline\">f:Ld\n\\rightarrow c</span> with <span class=\"math inline\">R</span>. In the\nsame way we can derive the other way injection <span\nclass=\"math inline\">D(d,Rc) \\rightarrow C(Ld,c)</span> by lifting <span\nclass=\"math inline\">g:d \\rightarrow Rc</span> with <span\nclass=\"math inline\">L</span>.<br />\nLifted <span class=\"math inline\">Lg</span> can be composed with unit\n<span class=\"math inline\">\\eta</span> and make a morphism <span\nclass=\"math inline\">Lg \\cdot \\eta: Ld \\rightarrow c</span>.</p>",
+            "q": "<p>Complete the proof of equivalence of the two definitions of the\nadjunction.</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "9120f6abd026909cb9cd565495abbffee7f20bd8",
+        "title": "3"
+    },
+    "kids": [],
+    "parentSha1": "7fe3168e57a9da2b597e912557c872cd0303917e",
+    "path": "answers-db/books/Category Theory For Programmers/18. Adjunctions/3"
+}

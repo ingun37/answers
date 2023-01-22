@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>It is a sum type of <code>Nil</code> and <code>Cons a b</code>.\n<code>Cons a b</code> is no different to <code>Pair a b</code> which we\njust proved to be a bifunctor. So it's algebraic type on a bifunctor\nhence bifunctor.</p>","q":"<p>Let's try another data structure. I call it a <code>PreList</code>\nbecause it's a precursor to a <code>List</code>. It replaces recursion\nwith a type parameter <code>b</code>.</p>\n<div class=\"sourceCode\" id=\"cb1\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb1-1\"><a href=\"#cb1-1\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"kw\">data</span> <span class=\"dt\">PreList</span> a b <span class=\"ot\">=</span> <span class=\"dt\">Nil</span> <span class=\"op\">|</span> <span class=\"dt\">Cons</span> a b</span></code></pre></div>\n<p>You could recover our earlier definition of a <code>List</code> by\nrecursively applying <code>PreList</code> to itself (we'll see how it's\ndone when we talk about fixed points). Show that <code>PreList</code> is\nan instance of Bifunctor.</p>"},"sha1":"b708644d0e1b0472e5e0705d12ef970c43788970","title":"3"},"kids":[],"parentSha1":"e18a03b36be491917b35e3ce842e24b63f14db64","path":"answers-db/books/Category Theory For Programmers/8. Functoriality/3"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>It is a sum type of <code>Nil</code> and <code>Cons a b</code>.\n<code>Cons a b</code> is no different to <code>Pair a b</code> which we\njust proved to be a bifunctor. So it's algebraic type on a bifunctor\nhence bifunctor.</p>",
+            "q": "<p>Let's try another data structure. I call it a <code>PreList</code>\nbecause it's a precursor to a <code>List</code>. It replaces recursion\nwith a type parameter <code>b</code>.</p>\n<div class=\"sourceCode\" id=\"cb1\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb1-1\"><a href=\"#cb1-1\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"kw\">data</span> <span class=\"dt\">PreList</span> a b <span class=\"ot\">=</span> <span class=\"dt\">Nil</span> <span class=\"op\">|</span> <span class=\"dt\">Cons</span> a b</span></code></pre></div>\n<p>You could recover our earlier definition of a <code>List</code> by\nrecursively applying <code>PreList</code> to itself (we'll see how it's\ndone when we talk about fixed points). Show that <code>PreList</code> is\nan instance of Bifunctor.</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "b708644d0e1b0472e5e0705d12ef970c43788970",
+        "title": "3"
+    },
+    "kids": [],
+    "parentSha1": "e18a03b36be491917b35e3ce842e24b63f14db64",
+    "path": "answers-db/books/Category Theory For Programmers/8. Functoriality/3"
+}

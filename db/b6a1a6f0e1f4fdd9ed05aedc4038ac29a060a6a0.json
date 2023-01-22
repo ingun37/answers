@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>They make vertical compositions.\n<code>(b -&gt; a) . (a -&gt; x) = b -&gt; x</code> If you know more,\nplease <a\nhref=\"https://github.com/ingun37/category-theory-for-programmers-answers\">contribute</a>.</p>","q":"<p>Yoneda embedding can be used to embed an arbitrary functor category\n<code>[C, D]</code> in the functor category <code>[[C, D], Set]</code>.\nFigure out how it works on morphisms (which in this case are natural\ntransformations).</p>"},"sha1":"b6a1a6f0e1f4fdd9ed05aedc4038ac29a060a6a0","title":"5"},"kids":[],"parentSha1":"a66800b6db7ae336b8b1d850b23e8702403e9933","path":"answers-db/books/Category Theory For Programmers/16. Yoneda Embedding/5"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>They make vertical compositions.\n<code>(b -&gt; a) . (a -&gt; x) = b -&gt; x</code> If you know more,\nplease <a\nhref=\"https://github.com/ingun37/category-theory-for-programmers-answers\">contribute</a>.</p>",
+            "q": "<p>Yoneda embedding can be used to embed an arbitrary functor category\n<code>[C, D]</code> in the functor category <code>[[C, D], Set]</code>.\nFigure out how it works on morphisms (which in this case are natural\ntransformations).</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "b6a1a6f0e1f4fdd9ed05aedc4038ac29a060a6a0",
+        "title": "5"
+    },
+    "kids": [],
+    "parentSha1": "a66800b6db7ae336b8b1d850b23e8702403e9933",
+    "path": "answers-db/books/Category Theory For Programmers/16. Yoneda Embedding/5"
+}

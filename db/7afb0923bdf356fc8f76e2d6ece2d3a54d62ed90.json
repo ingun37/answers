@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>A reasonable definition for <span class=\"math inline\">\\lim \\inf\na_n</span> would be <span class=\"math inline\">y_n = \\inf {a_k : k \\geq\nn}</span>.</p>\n<p>Limit exists because it's increasing and bounded.</p>","q":"<p>The <em>limit superior</em> of <span\nclass=\"math inline\">(a_n)</span>, or <span class=\"math inline\">\\lim \\sup\na_n</span>, is defined by</p>\n<p><span class=\"math display\">\\lim \\sup a_n = \\lim y_n</span></p>\n<p>where <span class=\"math inline\">y_n</span> is the sequence from part\n(a) of this exercise. Provide a reasonable definition for <span\nclass=\"math inline\">\\lim \\inf a_n</span> and briefly explain why it\nalways exists for any bounded sequence.</p>"},"sha1":"7afb0923bdf356fc8f76e2d6ece2d3a54d62ed90","title":"b"},"kids":[],"parentSha1":"9d2af53619e721870d08a4faaa68e90f4af77568","path":"answers-db/books/Understanding Analysis/2. Sequences and Series/2.4 The Monotone Convergence Theorem and a First Look at Infinite Series/2.4.7/b"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>A reasonable definition for <span class=\"math inline\">\\lim \\inf\na_n</span> would be <span class=\"math inline\">y_n = \\inf {a_k : k \\geq\nn}</span>.</p>\n<p>Limit exists because it's increasing and bounded.</p>",
+            "q": "<p>The <em>limit superior</em> of <span\nclass=\"math inline\">(a_n)</span>, or <span class=\"math inline\">\\lim \\sup\na_n</span>, is defined by</p>\n<p><span class=\"math display\">\\lim \\sup a_n = \\lim y_n</span></p>\n<p>where <span class=\"math inline\">y_n</span> is the sequence from part\n(a) of this exercise. Provide a reasonable definition for <span\nclass=\"math inline\">\\lim \\inf a_n</span> and briefly explain why it\nalways exists for any bounded sequence.</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "7afb0923bdf356fc8f76e2d6ece2d3a54d62ed90",
+        "title": "b"
+    },
+    "kids": [],
+    "parentSha1": "9d2af53619e721870d08a4faaa68e90f4af77568",
+    "path": "answers-db/books/Understanding Analysis/2. Sequences and Series/2.4 The Monotone Convergence Theorem and a First Look at Infinite Series/2.4.7/b"
+}

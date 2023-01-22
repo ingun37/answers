@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>Counter example <span class=\"math inline\">f^{-1}((0,2)) =\n(0,1]</span>, which is not an open set, exists therefore <span\nclass=\"math inline\">f</span> is not continuous.</p>","q":"<p>Let <span class=\"math inline\">f : \\mathbb{R} \\rightarrow\n\\mathbb{R}</span> be given by</p>\n<p><span class=\"math display\">f(x)=\n\\begin{dcases}\n   x, &amp; x \\le 1 \\\\\n   x+2, &amp; x \\gt 1\n\\end{dcases}</span></p>\n<p>is <span class=\"math inline\">f</span> continuous? (Justify your\nanswer.)</p>"},"sha1":"6d2e243348aa43b7ab7064b401f85427ee7337ed","title":"3"},"kids":[],"parentSha1":"23fa51b26c3cbf394df895694152dc491472332f","path":"answers-db/books/Topology Without Tears/5. Continuous Mappings/5.1 Continuous Mappings/3"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>Counter example <span class=\"math inline\">f^{-1}((0,2)) =\n(0,1]</span>, which is not an open set, exists therefore <span\nclass=\"math inline\">f</span> is not continuous.</p>",
+            "q": "<p>Let <span class=\"math inline\">f : \\mathbb{R} \\rightarrow\n\\mathbb{R}</span> be given by</p>\n<p><span class=\"math display\">f(x)=\n\\begin{dcases}\n   x, &amp; x \\le 1 \\\\\n   x+2, &amp; x \\gt 1\n\\end{dcases}</span></p>\n<p>is <span class=\"math inline\">f</span> continuous? (Justify your\nanswer.)</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "6d2e243348aa43b7ab7064b401f85427ee7337ed",
+        "title": "3"
+    },
+    "kids": [],
+    "parentSha1": "23fa51b26c3cbf394df895694152dc491472332f",
+    "path": "answers-db/books/Topology Without Tears/5. Continuous Mappings/5.1 Continuous Mappings/3"
+}

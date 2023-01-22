@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p><span class=\"math display\">\\frac 1 c x = \\frac 1 x \\rightarrow x =\n\\left(1 - \\frac 1 c\\right)\\left(x + \\frac 1 {1 - \\frac 1 c}\\frac 1\nx\\right)</span></p>","q":"<p>Modify the sequence <span class=\"math inline\">(x_n)</span> so that it\nconverges to <span class=\"math inline\">\\sqrt c</span>.</p>"},"sha1":"b0524ee91166f8e5cf96f2fe966b1e89b5899956","title":"b"},"kids":[],"parentSha1":"bba07c5cf65781569d0d30d40b4261c472f489fe","path":"answers-db/books/Understanding Analysis/2. Sequences and Series/2.4 The Monotone Convergence Theorem and a First Look at Infinite Series/2.4.5/b"}
+{
+    "item": {
+        "attr": {
+            "a": "<p><span class=\"math display\">\\frac 1 c x = \\frac 1 x \\rightarrow x =\n\\left(1 - \\frac 1 c\\right)\\left(x + \\frac 1 {1 - \\frac 1 c}\\frac 1\nx\\right)</span></p>",
+            "q": "<p>Modify the sequence <span class=\"math inline\">(x_n)</span> so that it\nconverges to <span class=\"math inline\">\\sqrt c</span>.</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "b0524ee91166f8e5cf96f2fe966b1e89b5899956",
+        "title": "b"
+    },
+    "kids": [],
+    "parentSha1": "bba07c5cf65781569d0d30d40b4261c472f489fe",
+    "path": "answers-db/books/Understanding Analysis/2. Sequences and Series/2.4 The Monotone Convergence Theorem and a First Look at Infinite Series/2.4.5/b"
+}

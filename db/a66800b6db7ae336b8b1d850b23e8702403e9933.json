@@ -1,1 +1,57 @@
-{"item":{"attr":{},"sha1":"a66800b6db7ae336b8b1d850b23e8702403e9933","title":"16. Yoneda Embedding"},"kids":[{"attr":{"a":"<p>They make vertical compositions.\n<code>(b -&gt; a) . (a -&gt; x) = b -&gt; x</code> If you know more,\nplease <a\nhref=\"https://github.com/ingun37/category-theory-for-programmers-answers\">contribute</a>.</p>","q":"<p>Yoneda embedding can be used to embed an arbitrary functor category\n<code>[C, D]</code> in the functor category <code>[[C, D], Set]</code>.\nFigure out how it works on morphisms (which in this case are natural\ntransformations).</p>"},"sha1":"b6a1a6f0e1f4fdd9ed05aedc4038ac29a060a6a0","title":"5"},{"attr":{"a":"<p>It's asking to express following statement.</p>\n<div class=\"sourceCode\" id=\"cb1\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb1-1\"><a href=\"#cb1-1\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"kw\">forall</span> x, (x <span class=\"ot\">-&gt;</span> a) <span class=\"ot\">-&gt;</span> (x <span class=\"ot\">-&gt;</span> b) <span class=\"op\">$</span> \\cong <span class=\"op\">$</span> a <span class=\"ot\">-&gt;</span> b</span></code></pre></div>\n<p>When the book was explaining yoneda embedding, it uncurried only the\nlast <code>b</code>.<br />\nBut this time we will uncurry the whole <code>C(x, b)</code> part, which\nis the last two <code>x -&gt; b</code>. And also we will name the right\nhand side as <code>atob</code></p>\n<div class=\"sourceCode\" id=\"cb2\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb2-1\"><a href=\"#cb2-1\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"ot\">fromY ::</span> (x <span class=\"ot\">-&gt;</span> a) <span class=\"ot\">-&gt;</span> (x <span class=\"ot\">-&gt;</span> b)</span>\n<span id=\"cb2-2\"><a href=\"#cb2-2\" aria-hidden=\"true\" tabindex=\"-1\"></a>fromY f <span class=\"ot\">-&gt;</span> atob <span class=\"op\">.</span> f</span></code></pre></div>\n<p>And the conversion is same.</p>\n<div class=\"sourceCode\" id=\"cb3\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb3-1\"><a href=\"#cb3-1\" aria-hidden=\"true\" tabindex=\"-1\"></a>fromY<span class=\"ot\"> id ::</span> a <span class=\"ot\">-&gt;</span> b</span></code></pre></div>","q":"<p>Express the co-Yoneda embedding in Haskell.</p>"},"sha1":"f0d90dcbf4a78affd0c27870648365e5968df4d6","title":"1"},{"attr":{"a":"<p>Monoid is a category with only one object. So there can be only one\nfunctor <code>C(x, -)</code>. And a natural transformations <span\nclass=\"math inline\">\\alpha</span> that corresponds to a monoid morphism\n<code>m</code> would be just composition of <span class=\"math inline\">f\n\\in C(x, -)</span> with <code>m</code>. I don't know if it means other\nthan just plain definition of monoid as it appears. If you know please\ncontribute.</p>","q":"<p>Work out the Yoneda embedding for a monoid. What functor corresponds\nto the monoid's single object? What natural transformations correspond\nto monoid morphisms?</p>"},"sha1":"6ce08c7157d20230489067d52de8475b17d8b97f","title":"3"},{"attr":{"a":"<p>I think it's just dual version of contravariant Yoneda embedding\nnothing more. If you know, please <a\nhref=\"https://github.com/ingun37/category-theory-for-programmers-answers\">contribute</a>.</p>","q":"<p>What is the application of the covariant Yoneda embedding to\npreorders? (Question suggested by Gershom Bazerman.)</p>"},"sha1":"853f550fef369d49b30fee6f68172f49b7304f58","title":"4"},{"attr":{"a":"<p>Let <code>A</code> be a <code>fromY</code> function to which\n<code>B</code> is mapped. Let <code>B'</code> be the <code>A id</code>\nin other words <code>B'</code> is <code>btoa</code> function to which\n<code>A</code> is mapped. Now let <code>A'</code> be the\n<code>fromY</code> function to which <code>B'</code> is mapped.\n<code>A'</code> must be same to <code>A</code> if it's isomorphic.</p>\n<div class=\"sourceCode\" id=\"cb1\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb1-1\"><a href=\"#cb1-1\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"dt\">A&#39;</span> f b <span class=\"ot\">=</span> f (<span class=\"dt\">B&#39;</span> b)</span>\n<span id=\"cb1-2\"><a href=\"#cb1-2\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"ot\">=</span> f (<span class=\"dt\">A</span> <span class=\"fu\">id</span> b)</span>\n<span id=\"cb1-3\"><a href=\"#cb1-3\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"ot\">=</span> f (<span class=\"fu\">id</span> <span class=\"dt\">B</span> b)</span>\n<span id=\"cb1-4\"><a href=\"#cb1-4\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"ot\">=</span> f (<span class=\"dt\">B</span> b)</span></code></pre></div>\n<p>It says <code>A'</code> is also mapped from <code>B</code> which\nmeans <code>B = B'</code> which means <code>A = A'</code></p>","q":"<p>Show that the bijection we established between <code>fromY</code> and\n<code>btoa</code> is an isomorphism (the two mappings are the inverse of\neach other).</p>"},"sha1":"3f568a20ac38430ddb68908d0a34aa5d7b8677ee","title":"2"}],"parentSha1":"bd467f809ce2a42bd342fce03ff7fd2bd3d8446c","path":"answers-db/books/Category Theory For Programmers/16. Yoneda Embedding"}
+{
+    "item": {
+        "attr": {},
+        "numAnswer": 5,
+        "sha1": "a66800b6db7ae336b8b1d850b23e8702403e9933",
+        "title": "16. Yoneda Embedding"
+    },
+    "kids": [
+        {
+            "attr": {
+                "a": "<p>They make vertical compositions.\n<code>(b -&gt; a) . (a -&gt; x) = b -&gt; x</code> If you know more,\nplease <a\nhref=\"https://github.com/ingun37/category-theory-for-programmers-answers\">contribute</a>.</p>",
+                "q": "<p>Yoneda embedding can be used to embed an arbitrary functor category\n<code>[C, D]</code> in the functor category <code>[[C, D], Set]</code>.\nFigure out how it works on morphisms (which in this case are natural\ntransformations).</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "b6a1a6f0e1f4fdd9ed05aedc4038ac29a060a6a0",
+            "title": "5"
+        },
+        {
+            "attr": {
+                "a": "<p>It's asking to express following statement.</p>\n<div class=\"sourceCode\" id=\"cb1\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb1-1\"><a href=\"#cb1-1\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"kw\">forall</span> x, (x <span class=\"ot\">-&gt;</span> a) <span class=\"ot\">-&gt;</span> (x <span class=\"ot\">-&gt;</span> b) <span class=\"op\">$</span> \\cong <span class=\"op\">$</span> a <span class=\"ot\">-&gt;</span> b</span></code></pre></div>\n<p>When the book was explaining yoneda embedding, it uncurried only the\nlast <code>b</code>.<br />\nBut this time we will uncurry the whole <code>C(x, b)</code> part, which\nis the last two <code>x -&gt; b</code>. And also we will name the right\nhand side as <code>atob</code></p>\n<div class=\"sourceCode\" id=\"cb2\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb2-1\"><a href=\"#cb2-1\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"ot\">fromY ::</span> (x <span class=\"ot\">-&gt;</span> a) <span class=\"ot\">-&gt;</span> (x <span class=\"ot\">-&gt;</span> b)</span>\n<span id=\"cb2-2\"><a href=\"#cb2-2\" aria-hidden=\"true\" tabindex=\"-1\"></a>fromY f <span class=\"ot\">-&gt;</span> atob <span class=\"op\">.</span> f</span></code></pre></div>\n<p>And the conversion is same.</p>\n<div class=\"sourceCode\" id=\"cb3\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb3-1\"><a href=\"#cb3-1\" aria-hidden=\"true\" tabindex=\"-1\"></a>fromY<span class=\"ot\"> id ::</span> a <span class=\"ot\">-&gt;</span> b</span></code></pre></div>",
+                "q": "<p>Express the co-Yoneda embedding in Haskell.</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "f0d90dcbf4a78affd0c27870648365e5968df4d6",
+            "title": "1"
+        },
+        {
+            "attr": {
+                "a": "<p>Monoid is a category with only one object. So there can be only one\nfunctor <code>C(x, -)</code>. And a natural transformations <span\nclass=\"math inline\">\\alpha</span> that corresponds to a monoid morphism\n<code>m</code> would be just composition of <span class=\"math inline\">f\n\\in C(x, -)</span> with <code>m</code>. I don't know if it means other\nthan just plain definition of monoid as it appears. If you know please\ncontribute.</p>",
+                "q": "<p>Work out the Yoneda embedding for a monoid. What functor corresponds\nto the monoid's single object? What natural transformations correspond\nto monoid morphisms?</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "6ce08c7157d20230489067d52de8475b17d8b97f",
+            "title": "3"
+        },
+        {
+            "attr": {
+                "a": "<p>I think it's just dual version of contravariant Yoneda embedding\nnothing more. If you know, please <a\nhref=\"https://github.com/ingun37/category-theory-for-programmers-answers\">contribute</a>.</p>",
+                "q": "<p>What is the application of the covariant Yoneda embedding to\npreorders? (Question suggested by Gershom Bazerman.)</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "853f550fef369d49b30fee6f68172f49b7304f58",
+            "title": "4"
+        },
+        {
+            "attr": {
+                "a": "<p>Let <code>A</code> be a <code>fromY</code> function to which\n<code>B</code> is mapped. Let <code>B'</code> be the <code>A id</code>\nin other words <code>B'</code> is <code>btoa</code> function to which\n<code>A</code> is mapped. Now let <code>A'</code> be the\n<code>fromY</code> function to which <code>B'</code> is mapped.\n<code>A'</code> must be same to <code>A</code> if it's isomorphic.</p>\n<div class=\"sourceCode\" id=\"cb1\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb1-1\"><a href=\"#cb1-1\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"dt\">A&#39;</span> f b <span class=\"ot\">=</span> f (<span class=\"dt\">B&#39;</span> b)</span>\n<span id=\"cb1-2\"><a href=\"#cb1-2\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"ot\">=</span> f (<span class=\"dt\">A</span> <span class=\"fu\">id</span> b)</span>\n<span id=\"cb1-3\"><a href=\"#cb1-3\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"ot\">=</span> f (<span class=\"fu\">id</span> <span class=\"dt\">B</span> b)</span>\n<span id=\"cb1-4\"><a href=\"#cb1-4\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"ot\">=</span> f (<span class=\"dt\">B</span> b)</span></code></pre></div>\n<p>It says <code>A'</code> is also mapped from <code>B</code> which\nmeans <code>B = B'</code> which means <code>A = A'</code></p>",
+                "q": "<p>Show that the bijection we established between <code>fromY</code> and\n<code>btoa</code> is an isomorphism (the two mappings are the inverse of\neach other).</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "3f568a20ac38430ddb68908d0a34aa5d7b8677ee",
+            "title": "2"
+        }
+    ],
+    "parentSha1": "bd467f809ce2a42bd342fce03ff7fd2bd3d8446c",
+    "path": "answers-db/books/Category Theory For Programmers/16. Yoneda Embedding"
+}

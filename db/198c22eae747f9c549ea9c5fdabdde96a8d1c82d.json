@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>Let <span class=\"math inline\">(a,b)</span> be any open set such that\n<span class=\"math inline\">1 \\in (a,b)</span>. There is always <span\nclass=\"math inline\">A_n</span> such that <span class=\"math inline\">a \\in\nA_n</span> because for any <span class=\"math inline\">a&#39;</span> such\nthat <span class=\"math inline\">a \\lt a&#39; \\lt 1</span>, we can make a\n<span class=\"math inline\">A_n = [0,a&#39;)</span> by setting <span\nclass=\"math inline\">n</span> as:</p>\n<p><span class=\"math display\">n = \\frac{1}{1 - a&#39;}</span></p>\n<p>Therefore <span class=\"math inline\">1</span> is a limit point of\n<span class=\"math inline\">A</span>. Therefore <span\nclass=\"math inline\">A = [0,1)</span>.</p>","q":"<p>Let <span class=\"math inline\">A_n=\\left[0,\\frac{n-1}{n}\\right)=\\{x\n\\in \\mathbb{R}|\\quad 0 \\leq x &lt; \\frac{n-1}{n}\\}</span> for <span\nclass=\"math inline\">n=2,3,\\cdots</span>. Define</p>\n<p><span class=\"math display\">A=\\bigcup_{n=1}^{\\infty}A_n= A_1 \\cup A_2\n\\cup A_3 \\cdots</span></p>\n<p>Find <span class=\"math inline\">A</span>.</p>"},"sha1":"198c22eae747f9c549ea9c5fdabdde96a8d1c82d","title":"8"},"kids":[],"parentSha1":"845fbf15d0fb7458c8520721c640c46d45dc2ca8","path":"answers-db/books/Introduction to Probability, Statistics, and Random Processes/1.5.0/8"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>Let <span class=\"math inline\">(a,b)</span> be any open set such that\n<span class=\"math inline\">1 \\in (a,b)</span>. There is always <span\nclass=\"math inline\">A_n</span> such that <span class=\"math inline\">a \\in\nA_n</span> because for any <span class=\"math inline\">a&#39;</span> such\nthat <span class=\"math inline\">a \\lt a&#39; \\lt 1</span>, we can make a\n<span class=\"math inline\">A_n = [0,a&#39;)</span> by setting <span\nclass=\"math inline\">n</span> as:</p>\n<p><span class=\"math display\">n = \\frac{1}{1 - a&#39;}</span></p>\n<p>Therefore <span class=\"math inline\">1</span> is a limit point of\n<span class=\"math inline\">A</span>. Therefore <span\nclass=\"math inline\">A = [0,1)</span>.</p>",
+            "q": "<p>Let <span class=\"math inline\">A_n=\\left[0,\\frac{n-1}{n}\\right)=\\{x\n\\in \\mathbb{R}|\\quad 0 \\leq x &lt; \\frac{n-1}{n}\\}</span> for <span\nclass=\"math inline\">n=2,3,\\cdots</span>. Define</p>\n<p><span class=\"math display\">A=\\bigcup_{n=1}^{\\infty}A_n= A_1 \\cup A_2\n\\cup A_3 \\cdots</span></p>\n<p>Find <span class=\"math inline\">A</span>.</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "198c22eae747f9c549ea9c5fdabdde96a8d1c82d",
+        "title": "8"
+    },
+    "kids": [],
+    "parentSha1": "845fbf15d0fb7458c8520721c640c46d45dc2ca8",
+    "path": "answers-db/books/Introduction to Probability, Statistics, and Random Processes/1.5.0/8"
+}

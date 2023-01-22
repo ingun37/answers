@@ -1,1 +1,20 @@
-{"item":{"attr":{},"sha1":"6677129339116d847c31d1f0b8359e4c17169bec","title":"3.1 Limit Points and Closure"},"kids":[{"attr":{"q":"<p>Let <span class=\"math inline\">S</span> and <span\nclass=\"math inline\">T</span> be non-empty subsets of a topological space\n<span class=\"math inline\">(X, \\tau)</span> with <span\nclass=\"math inline\">S \\subseteq T</span>.</p>"},"sha1":"7e1dfafcc770d59b0570cfab20b563b2e88dd6f4","title":"5"}],"parentSha1":"e353f5b4e594bc7fb84ecd85fd6646bd633b390f","path":"answers-db/books/Topology Without Tears/3. Limit Points/3.1 Limit Points and Closure"}
+{
+    "item": {
+        "attr": {},
+        "numAnswer": 4,
+        "sha1": "6677129339116d847c31d1f0b8359e4c17169bec",
+        "title": "3.1 Limit Points and Closure"
+    },
+    "kids": [
+        {
+            "attr": {
+                "q": "<p>Let <span class=\"math inline\">S</span> and <span\nclass=\"math inline\">T</span> be non-empty subsets of a topological space\n<span class=\"math inline\">(X, \\tau)</span> with <span\nclass=\"math inline\">S \\subseteq T</span>.</p>"
+            },
+            "numAnswer": 4,
+            "sha1": "7e1dfafcc770d59b0570cfab20b563b2e88dd6f4",
+            "title": "5"
+        }
+    ],
+    "parentSha1": "e353f5b4e594bc7fb84ecd85fd6646bd633b390f",
+    "path": "answers-db/books/Topology Without Tears/3. Limit Points/3.1 Limit Points and Closure"
+}

@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>Impossible. Divergent monotone's subsequences are always divergent\nmonotone subsequence.</p>","q":"<p>A divergent monotone sequence with a Cauchy subsequence.</p>"},"sha1":"6f1656cf437c31296be4da33b47d6c821c2a3810","title":"(c)"},"kids":[],"parentSha1":"93fdad2692c5af024a7dcfc79199b1bee98d7ebc","path":"answers-db/books/Understanding Analysis/2. Sequences and Series/2.6 The Cauchy Criterion/2.6.2/(c)"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>Impossible. Divergent monotone's subsequences are always divergent\nmonotone subsequence.</p>",
+            "q": "<p>A divergent monotone sequence with a Cauchy subsequence.</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "6f1656cf437c31296be4da33b47d6c821c2a3810",
+        "title": "(c)"
+    },
+    "kids": [],
+    "parentSha1": "93fdad2692c5af024a7dcfc79199b1bee98d7ebc",
+    "path": "answers-db/books/Understanding Analysis/2. Sequences and Series/2.6 The Cauchy Criterion/2.6.2/(c)"
+}

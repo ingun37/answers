@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>We can get the portion of the area using simple geometry.</p>\n<p><span class=\"math display\">P(A) = \\frac{3}{4} \\\\\nP(B) = \\frac{1}{2}</span></p>","q":"<p>Find <span class=\"math inline\">P(A)</span> and <span\nclass=\"math inline\">P(B)</span>.</p>"},"sha1":"cae303f64ee0cf2fc7947871330748e5ce28e2c3","title":"b"},"kids":[],"parentSha1":"219d230a9d84517c454db50dd29407c573eb350b","path":"answers-db/books/Introduction to Probability, Statistics, and Random Processes/1.5.0/30/b"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>We can get the portion of the area using simple geometry.</p>\n<p><span class=\"math display\">P(A) = \\frac{3}{4} \\\\\nP(B) = \\frac{1}{2}</span></p>",
+            "q": "<p>Find <span class=\"math inline\">P(A)</span> and <span\nclass=\"math inline\">P(B)</span>.</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "cae303f64ee0cf2fc7947871330748e5ce28e2c3",
+        "title": "b"
+    },
+    "kids": [],
+    "parentSha1": "219d230a9d84517c454db50dd29407c573eb350b",
+    "path": "answers-db/books/Introduction to Probability, Statistics, and Random Processes/1.5.0/30/b"
+}

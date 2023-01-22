@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p>Using quadratic formula, it comes down to:</p>\n<p><span class=\"math display\">P(B \\leq \\dfrac{1}{4A})</span></p>\n<p>It will be like getting the area of this:</p>\n<p><img\nsrc=\"/answers/books/Introduction%20to%20Probability,%20Statistics,%20and%20Random%20Processes/1.5.0/19/IMG_8B7297218699-1.jpeg\" /></p>\n<p>So</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;\\dfrac{1}{4} + \\int_{\\frac{1}{4}}^{1} \\dfrac{1}{4x} dx \\\\\n  &amp;=\\dfrac{1}{4} + \\dfrac{1}{4} \\int_{\\frac{1}{4}}^{1} \\dfrac{1}{x}\ndx \\\\\n  &amp;=\\dfrac{1}{4} + \\dfrac{1}{4} \\left(\\ln 1 - \\ln \\frac{1}{4}\n\\right) \\\\\n  &amp;\\approx \\dfrac{1}{4} + \\dfrac{1}{4} \\left(0 - (-1.4) \\right) \\\\\n  &amp;\\approx 0.6\n\\end{aligned}</span></p>","q":"<p>You choose a point <span class=\"math inline\">(A,B)</span> uniformly\nat random in the unit square <span class=\"math inline\">\\{(x,y): x,y \\in\n[0,1] \\}</span></p>\n<p><img\nsrc=\"https://www.probabilitycourse.com/images/chapter1/2.png\" /></p>\n<p>What is the probability that the equation</p>\n<p><span class=\"math display\">AX^2+X+B=0</span></p>\n<p>has real solutions?</p>"},"sha1":"6bb01d716ce4f2c6ca9c9def884e03c73f39d237","title":"19"},"kids":[],"parentSha1":"845fbf15d0fb7458c8520721c640c46d45dc2ca8","path":"answers-db/books/Introduction to Probability, Statistics, and Random Processes/1.5.0/19"}
+{
+    "item": {
+        "attr": {
+            "a": "<p>Using quadratic formula, it comes down to:</p>\n<p><span class=\"math display\">P(B \\leq \\dfrac{1}{4A})</span></p>\n<p>It will be like getting the area of this:</p>\n<p><img\nsrc=\"/answers/books/Introduction%20to%20Probability,%20Statistics,%20and%20Random%20Processes/1.5.0/19/IMG_8B7297218699-1.jpeg\" /></p>\n<p>So</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;\\dfrac{1}{4} + \\int_{\\frac{1}{4}}^{1} \\dfrac{1}{4x} dx \\\\\n  &amp;=\\dfrac{1}{4} + \\dfrac{1}{4} \\int_{\\frac{1}{4}}^{1} \\dfrac{1}{x}\ndx \\\\\n  &amp;=\\dfrac{1}{4} + \\dfrac{1}{4} \\left(\\ln 1 - \\ln \\frac{1}{4}\n\\right) \\\\\n  &amp;\\approx \\dfrac{1}{4} + \\dfrac{1}{4} \\left(0 - (-1.4) \\right) \\\\\n  &amp;\\approx 0.6\n\\end{aligned}</span></p>",
+            "q": "<p>You choose a point <span class=\"math inline\">(A,B)</span> uniformly\nat random in the unit square <span class=\"math inline\">\\{(x,y): x,y \\in\n[0,1] \\}</span></p>\n<p><img\nsrc=\"https://www.probabilitycourse.com/images/chapter1/2.png\" /></p>\n<p>What is the probability that the equation</p>\n<p><span class=\"math display\">AX^2+X+B=0</span></p>\n<p>has real solutions?</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "6bb01d716ce4f2c6ca9c9def884e03c73f39d237",
+        "title": "19"
+    },
+    "kids": [],
+    "parentSha1": "845fbf15d0fb7458c8520721c640c46d45dc2ca8",
+    "path": "answers-db/books/Introduction to Probability, Statistics, and Random Processes/1.5.0/19"
+}

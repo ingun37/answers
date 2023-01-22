@@ -1,1 +1,14 @@
-{"item":{"attr":{"a":"<p><span class=\"math inline\">(y_n)</span> diverges.</p>","q":"<p>Consider the recursively defined sequence <span\nclass=\"math inline\">y_1=1</span>,</p>\n<p><span class=\"math display\">y_{n+1} = 3-y_n,</span></p>\n<p>and set <span class=\"math inline\">y=\\lim y_n</span>. Because <span\nclass=\"math inline\">(y_n)</span> and <span\nclass=\"math inline\">(y_{n+1})</span> have the same limit, taking the\nlimit across the recursive equation gives <span\nclass=\"math inline\">y=3-y</span>. Solving for <span\nclass=\"math inline\">y</span>, we conclude <span class=\"math inline\">\\lim\ny_n = 3/2</span>.</p>\n<p>What is wrong with this argument?</p>"},"sha1":"b3da067431cd29b0017e70e2e9deb347cd391428","title":"a"},"kids":[],"parentSha1":"d27ad20d34309c5858ce898645f1bedb18b26fcc","path":"answers-db/books/Understanding Analysis/2. Sequences and Series/2.4 The Monotone Convergence Theorem and a First Look at Infinite Series/2.4.2/a"}
+{
+    "item": {
+        "attr": {
+            "a": "<p><span class=\"math inline\">(y_n)</span> diverges.</p>",
+            "q": "<p>Consider the recursively defined sequence <span\nclass=\"math inline\">y_1=1</span>,</p>\n<p><span class=\"math display\">y_{n+1} = 3-y_n,</span></p>\n<p>and set <span class=\"math inline\">y=\\lim y_n</span>. Because <span\nclass=\"math inline\">(y_n)</span> and <span\nclass=\"math inline\">(y_{n+1})</span> have the same limit, taking the\nlimit across the recursive equation gives <span\nclass=\"math inline\">y=3-y</span>. Solving for <span\nclass=\"math inline\">y</span>, we conclude <span class=\"math inline\">\\lim\ny_n = 3/2</span>.</p>\n<p>What is wrong with this argument?</p>"
+        },
+        "numAnswer": 1,
+        "sha1": "b3da067431cd29b0017e70e2e9deb347cd391428",
+        "title": "a"
+    },
+    "kids": [],
+    "parentSha1": "d27ad20d34309c5858ce898645f1bedb18b26fcc",
+    "path": "answers-db/books/Understanding Analysis/2. Sequences and Series/2.4 The Monotone Convergence Theorem and a First Look at Infinite Series/2.4.2/a"
+}

@@ -1,1 +1,21 @@
-{"item":{"attr":{"author":"Stephen Abbott","edition":"2"},"sha1":"2730856957310933e421fdf612b27304f70d0ac1","title":"Understanding Analysis"},"kids":[{"attr":{},"sha1":"10eb21a7fc596eae55eb2b7f3b3c0321685d5297","title":"2. Sequences and Series"}],"parentSha1":"dd8f38a85ee36fa036f3e298e265dd4bb35cad21","path":"answers-db/books/Understanding Analysis"}
+{
+    "item": {
+        "attr": {
+            "author": "Stephen Abbott",
+            "edition": "2"
+        },
+        "numAnswer": 41,
+        "sha1": "2730856957310933e421fdf612b27304f70d0ac1",
+        "title": "Understanding Analysis"
+    },
+    "kids": [
+        {
+            "attr": {},
+            "numAnswer": 41,
+            "sha1": "10eb21a7fc596eae55eb2b7f3b3c0321685d5297",
+            "title": "2. Sequences and Series"
+        }
+    ],
+    "parentSha1": "dd8f38a85ee36fa036f3e298e265dd4bb35cad21",
+    "path": "answers-db/books/Understanding Analysis"
+}
