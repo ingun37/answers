@@ -3,18 +3,27 @@
         "attr": {
             "q": "<h1 id=\"dont-panic\">DON'T PANIC</h1>\n<p>Although it has many omissions and contains much that is apocryphal,\nor at least wildly inaccurate, but it scores over the other answers over\nthe internet in few important respects. First, the way it is written is\nvery subjective, and second, it has the words DON'T PANIC inscribed in\nlarge friendly letters on its home.</p>"
         },
-        "numAnswer": 191,
+        "numAnswer": 192,
         "sha1": "dd8f38a85ee36fa036f3e298e265dd4bb35cad21",
         "title": "books"
     },
     "kids": [
         {
             "attr": {
-                "author": "Bartosz Milewski"
+                "author": "Stephen Abbott",
+                "edition": "2"
             },
-            "numAnswer": 47,
-            "sha1": "bd467f809ce2a42bd342fce03ff7fd2bd3d8446c",
-            "title": "Category Theory For Programmers"
+            "numAnswer": 42,
+            "sha1": "2730856957310933e421fdf612b27304f70d0ac1",
+            "title": "Understanding Analysis"
+        },
+        {
+            "attr": {
+                "author": "Hossein Pishro-Nik"
+            },
+            "numAnswer": 37,
+            "sha1": "26c5819869ec7db87d6e662e66f84e6989f7243e",
+            "title": "Introduction to Probability, Statistics, and Random Processes"
         },
         {
             "attr": {
@@ -26,15 +35,6 @@
         },
         {
             "attr": {
-                "author": "Stephen Abbott",
-                "edition": "2"
-            },
-            "numAnswer": 41,
-            "sha1": "2730856957310933e421fdf612b27304f70d0ac1",
-            "title": "Understanding Analysis"
-        },
-        {
-            "attr": {
                 "author": "Paul Renteln"
             },
             "numAnswer": 3,
@@ -43,11 +43,11 @@
         },
         {
             "attr": {
-                "author": "Hossein Pishro-Nik"
+                "author": "Bartosz Milewski"
             },
-            "numAnswer": 37,
-            "sha1": "26c5819869ec7db87d6e662e66f84e6989f7243e",
-            "title": "Introduction to Probability, Statistics, and Random Processes"
+            "numAnswer": 47,
+            "sha1": "bd467f809ce2a42bd342fce03ff7fd2bd3d8446c",
+            "title": "Category Theory For Programmers"
         },
         {
             "attr": {

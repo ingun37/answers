@@ -1,11 +1,17 @@
 {
     "item": {
         "attr": {},
-        "numAnswer": 41,
+        "numAnswer": 42,
         "sha1": "10eb21a7fc596eae55eb2b7f3b3c0321685d5297",
         "title": "2. Sequences and Series"
     },
     "kids": [
+        {
+            "attr": {},
+            "numAnswer": 6,
+            "sha1": "a9c1bd0890cd9f394e84c1960f79a24dc8b16068",
+            "title": "2.7 Properties of Infinite Series"
+        },
         {
             "attr": {},
             "numAnswer": 5,
@@ -17,12 +23,6 @@
             "numAnswer": 19,
             "sha1": "8eb88787394d6a9222966b2d3a35f0eeb144456f",
             "title": "2.4 The Monotone Convergence Theorem and a First Look at Infinite Series"
-        },
-        {
-            "attr": {},
-            "numAnswer": 5,
-            "sha1": "a9c1bd0890cd9f394e84c1960f79a24dc8b16068",
-            "title": "2.7 Properties of Infinite Series"
         },
         {
             "attr": {},

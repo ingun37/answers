@@ -8,21 +8,21 @@
     "kids": [
         {
             "attr": {
-                "a": "<p>Composition between continuous morphisms are continuous.</p>",
-                "q": "<p>Prove that a continuous image of a path-connected space is\npath-connected.</p>"
-            },
-            "numAnswer": 1,
-            "sha1": "96590fb3f667e486682388fecb38886552427959",
-            "title": "1"
-        },
-        {
-            "attr": {
                 "a": "<p>Set of continuous functions <span class=\"math inline\">f : [a,b]\n\\rightarrow [a,b]</span> is bijective to set of continuous functions\n<span class=\"math inline\">g : [0,1] \\rightarrow [0,1]</span> because\nthere's some bijective function:</p>\n<p><span class=\"math display\">m:[0,1] \\rightarrow [a,b]</span></p>\n<p>(One of which would be <span class=\"math inline\">m(x) = x(b-a) +\na</span>)</p>\n<p>therefore <span class=\"math inline\">f</span> and <span\nclass=\"math inline\">g</span> can be defined by each other. That means\nfor any <span class=\"math inline\">f</span> there exists <span\nclass=\"math inline\">g</span> such that:</p>\n<p><span class=\"math display\">f(x) = m \\cdot g \\cdot m^{-1}\n(x)</span></p>\n<p>If <span class=\"math inline\">m^{-1} (x)</span> is the fixed point of\n<span class=\"math inline\">g</span>, for there is always one, then it\nbecomes:</p>\n<p><span class=\"math display\">\\begin{aligned}\n    f(x) &amp;= m \\cdot m^{-1} (x) \\\\\n         &amp;= x\n\\end{aligned}</span></p>\n<p>Therefore if there's a fixed point for <span\nclass=\"math inline\">g</span>, there's one for <span\nclass=\"math inline\">f</span> too.</p>",
                 "q": "<p>Let <span class=\"math inline\">f</span> be a continuous mapping of the\ninterval <span class=\"math inline\">[a,b]</span> into itself, where <span\nclass=\"math inline\">a</span> and <span class=\"math inline\">b \\in\n\\mathbb{R}</span> and <span class=\"math inline\">a &lt; b</span>. Prove\nthat there is a fixed point.</p>"
             },
             "numAnswer": 1,
             "sha1": "768f3e7516d45280bc162ef636082b3138753fba",
             "title": "2"
+        },
+        {
+            "attr": {
+                "a": "<p>Composition between continuous morphisms are continuous.</p>",
+                "q": "<p>Prove that a continuous image of a path-connected space is\npath-connected.</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "96590fb3f667e486682388fecb38886552427959",
+            "title": "1"
         }
     ],
     "parentSha1": "5e46eb44c0c41629ec32d18301ca125e86a08d6a",

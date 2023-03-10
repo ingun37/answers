@@ -1,19 +1,11 @@
 {
     "item": {
         "attr": {},
-        "numAnswer": 5,
+        "numAnswer": 6,
         "sha1": "a9c1bd0890cd9f394e84c1960f79a24dc8b16068",
         "title": "2.7 Properties of Infinite Series"
     },
     "kids": [
-        {
-            "attr": {
-                "q": "<p>Given a series <span class=\"math inline\">\\sum^\\infin_{n=1}a_n</span>\nwith <span class=\"math inline\">a_n \\neq 0</span>, the Ratio Test states\nthat if <span class=\"math inline\">(a_n)</span> satisfies</p>\n<p><span class=\"math display\">\\lim \\left| \\frac {a_{n+1}} {a_n} \\right|\n= r &lt; 1,</span></p>\n<p>then the series converges absolutely.</p>"
-            },
-            "numAnswer": 1,
-            "sha1": "5c1bcfc9e53db74f625f90299732f1a0a6f9ab8c",
-            "title": "2.7.9 (Ratio Test)"
-        },
         {
             "attr": {
                 "q": "<p>Abel's Test for convergence states that if the series <span\nclass=\"math inline\">\\sum_{k=1}^\\infin x_k</span> converges, and if <span\nclass=\"math inline\">(y_k)</span> is a sequence satisfying</p>\n<p><span class=\"math display\">y_1 \\geq y_2 \\geq y_3 \\geq \\cdots \\geq\n0,</span></p>\n<p>then the series <span class=\"math inline\">\\sum_{k=1}^\\infin x_k\ny_k</span> converges.</p>"
@@ -24,11 +16,11 @@
         },
         {
             "attr": {
-                "q": "<p>Give an example of each or explain why the request is impossible\nreferencing the proper theorem(s).</p>"
+                "q": "<p>Proving the Alternating Series Test (Theorem 2.7.7) amounts to\nshowing that the sequence of partial sums <span class=\"math display\">s_n\n= a_1 - a_2 + a_3 - \\cdots \\pm a_n</span> converges. (The opening\nexample in Section 2.1 includes a typical illustration of <span\nclass=\"math inline\">(s_n)</span>.) Different characterizations of\ncompleteness lead to different proofs.</p>"
             },
             "numAnswer": 1,
-            "sha1": "950d8b50a1cb506c6fd7482f5c9828c5dd6fec67",
-            "title": "2.7.4"
+            "sha1": "e660f50e9ffd84d7810a7b0f97f0109baf29e48d",
+            "title": "2.7.1"
         },
         {
             "attr": {
@@ -38,6 +30,22 @@
             "numAnswer": 1,
             "sha1": "22ee4d0ccf819a66fc1fa934aac5059e1cd9cf41",
             "title": "2.7.12 (Summation-by-parts)"
+        },
+        {
+            "attr": {
+                "q": "<p>Given a series <span class=\"math inline\">\\sum^\\infin_{n=1}a_n</span>\nwith <span class=\"math inline\">a_n \\neq 0</span>, the Ratio Test states\nthat if <span class=\"math inline\">(a_n)</span> satisfies</p>\n<p><span class=\"math display\">\\lim \\left| \\frac {a_{n+1}} {a_n} \\right|\n= r &lt; 1,</span></p>\n<p>then the series converges absolutely.</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "5c1bcfc9e53db74f625f90299732f1a0a6f9ab8c",
+            "title": "2.7.9 (Ratio Test)"
+        },
+        {
+            "attr": {
+                "q": "<p>Give an example of each or explain why the request is impossible\nreferencing the proper theorem(s).</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "950d8b50a1cb506c6fd7482f5c9828c5dd6fec67",
+            "title": "2.7.4"
         }
     ],
     "parentSha1": "10eb21a7fc596eae55eb2b7f3b3c0321685d5297",

@@ -8,15 +8,15 @@
     "kids": [
         {
             "attr": {},
-            "numAnswer": 3,
-            "sha1": "26d0d9e142b945c6e1b470f3978c516b950372ee",
-            "title": "2.3 Basis for a Given Topology"
-        },
-        {
-            "attr": {},
             "numAnswer": 7,
             "sha1": "4916ef365c682d91c468aa8142b8f2b48688f8d3",
             "title": "2.2 Basis for a Topology"
+        },
+        {
+            "attr": {},
+            "numAnswer": 3,
+            "sha1": "26d0d9e142b945c6e1b470f3978c516b950372ee",
+            "title": "2.3 Basis for a Given Topology"
         }
     ],
     "parentSha1": "4207f01b267f64572c815ef211fdabe38d3ca400",

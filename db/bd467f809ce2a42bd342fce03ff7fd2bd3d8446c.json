@@ -16,6 +16,12 @@
         },
         {
             "attr": {},
+            "numAnswer": 3,
+            "sha1": "e306412da4442dee3abad0ef751250dd54290da8",
+            "title": "15. The Yoneda Lemma"
+        },
+        {
+            "attr": {},
             "numAnswer": 1,
             "sha1": "67f6efd7065d9064676a04180a21d72d271e80f9",
             "title": "19. Free Forgetful Adjunctions"
@@ -27,22 +33,12 @@
             "title": "13. Free Monoids"
         },
         {
-            "attr": {},
-            "numAnswer": 6,
-            "sha1": "820c27fc79eeec6c65fa4dcf06752f97997bca0a",
-            "title": "10. Natural Transformations"
-        },
-        {
-            "attr": {},
-            "numAnswer": 3,
-            "sha1": "e306412da4442dee3abad0ef751250dd54290da8",
-            "title": "15. The Yoneda Lemma"
-        },
-        {
-            "attr": {},
-            "numAnswer": 6,
-            "sha1": "e18a03b36be491917b35e3ce842e24b63f14db64",
-            "title": "8. Functoriality"
+            "attr": {
+                "q": "<p>Sample project available here <a\nhref=\"https://github.com/ingun37/f-algebra-challenges\">github</a></p>"
+            },
+            "numAnswer": 5,
+            "sha1": "147af4f213c95f39c0f6f25b2995d70b68c39f10",
+            "title": "24. F-Algebras"
         },
         {
             "attr": {},
@@ -52,17 +48,21 @@
         },
         {
             "attr": {},
+            "numAnswer": 6,
+            "sha1": "e18a03b36be491917b35e3ce842e24b63f14db64",
+            "title": "8. Functoriality"
+        },
+        {
+            "attr": {},
             "numAnswer": 5,
             "sha1": "a66800b6db7ae336b8b1d850b23e8702403e9933",
             "title": "16. Yoneda Embedding"
         },
         {
-            "attr": {
-                "q": "<p>Sample project available here <a\nhref=\"https://github.com/ingun37/f-algebra-challenges\">github</a></p>"
-            },
-            "numAnswer": 5,
-            "sha1": "147af4f213c95f39c0f6f25b2995d70b68c39f10",
-            "title": "24. F-Algebras"
+            "attr": {},
+            "numAnswer": 6,
+            "sha1": "820c27fc79eeec6c65fa4dcf06752f97997bca0a",
+            "title": "10. Natural Transformations"
         },
         {
             "attr": {},

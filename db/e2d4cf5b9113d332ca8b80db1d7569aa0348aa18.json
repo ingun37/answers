@@ -10,6 +10,24 @@
     "kids": [
         {
             "attr": {
+                "a": "<p><span class=\"math inline\">\\langle a,b \\rangle \\in D</span><br />\n<span class=\"math inline\">\\rightarrow \\langle a,b \\rangle \\in R_{\\langle\na,b \\rangle}</span><br />\n<span class=\"math inline\">\\rightarrow \\langle a,b \\rangle \\in\n\\cup_{\\langle a,b\\rangle \\in D}R\\langle a,b\\rangle</span></p>\n<h2 id=\"inverse\">Inverse</h2>\n<p><span class=\"math inline\">\\langle a,b \\rangle \\in \\cup_{\\langle\na,b\\rangle \\in D}R\\langle a,b\\rangle</span><br />\n<span class=\"math inline\">\\rightarrow \\langle a,b \\rangle \\in R_{\\langle\na,b \\rangle}</span><br />\nBy (i), <span class=\"math inline\">\\rightarrow \\langle a,b \\rangle \\in\nD</span></p>",
+                "q": "<p>Using (i) show that<br />\n<span class=\"math inline\">D=\\cup_{\\langle a,b\\rangle \\in D}R\\langle\na,b\\rangle</span></p>"
+            },
+            "numAnswer": 1,
+            "sha1": "df2066bf845969f5c4a1460ac08f5aff1a05ad14",
+            "title": "(ii)"
+        },
+        {
+            "attr": {
+                "a": "<p>Because by definition of topology <span class=\"math inline\">D</span>\nis union of open sets (<span class=\"math inline\">R</span>s).</p>",
+                "q": "<p>Deduce from (ii) that <span class=\"math inline\">D</span> is an open\nset in <span class=\"math inline\">\\mathbb{R}^2</span></p>"
+            },
+            "numAnswer": 1,
+            "sha1": "a66d053cbb9c57421392b0c3a2bafabebfa7411e",
+            "title": "(iii)"
+        },
+        {
+            "attr": {
                 "a": "<p>This Affin Transformation<br />\n<span class=\"math inline\">\\begin{pmatrix} 1 &amp; 0 &amp; a \\\\ 0 &amp; 1\n&amp; b \\\\ 0 &amp; 0 &amp; 1 \\end{pmatrix}</span><br />\nis continuous and can move disc's origin.</p>",
                 "q": "<p>Show that every disc <span class=\"math inline\">\\{\\langle x,y \\rangle\n: (x-a)^2 + (y-b)^2 &lt; c^2, a,b,c \\in \\mathbb{R}\\}</span> is open in\n<span class=\"math inline\">\\mathbb{R}^2</span></p>"
             },
@@ -25,24 +43,6 @@
             "numAnswer": 1,
             "sha1": "482d01d06dc0e389f23906de31136227b4884424",
             "title": "(i)"
-        },
-        {
-            "attr": {
-                "a": "<p>Because by definition of topology <span class=\"math inline\">D</span>\nis union of open sets (<span class=\"math inline\">R</span>s).</p>",
-                "q": "<p>Deduce from (ii) that <span class=\"math inline\">D</span> is an open\nset in <span class=\"math inline\">\\mathbb{R}^2</span></p>"
-            },
-            "numAnswer": 1,
-            "sha1": "a66d053cbb9c57421392b0c3a2bafabebfa7411e",
-            "title": "(iii)"
-        },
-        {
-            "attr": {
-                "a": "<p><span class=\"math inline\">\\langle a,b \\rangle \\in D</span><br />\n<span class=\"math inline\">\\rightarrow \\langle a,b \\rangle \\in R_{\\langle\na,b \\rangle}</span><br />\n<span class=\"math inline\">\\rightarrow \\langle a,b \\rangle \\in\n\\cup_{\\langle a,b\\rangle \\in D}R\\langle a,b\\rangle</span></p>\n<h2 id=\"inverse\">Inverse</h2>\n<p><span class=\"math inline\">\\langle a,b \\rangle \\in \\cup_{\\langle\na,b\\rangle \\in D}R\\langle a,b\\rangle</span><br />\n<span class=\"math inline\">\\rightarrow \\langle a,b \\rangle \\in R_{\\langle\na,b \\rangle}</span><br />\nBy (i), <span class=\"math inline\">\\rightarrow \\langle a,b \\rangle \\in\nD</span></p>",
-                "q": "<p>Using (i) show that<br />\n<span class=\"math inline\">D=\\cup_{\\langle a,b\\rangle \\in D}R\\langle\na,b\\rangle</span></p>"
-            },
-            "numAnswer": 1,
-            "sha1": "df2066bf845969f5c4a1460ac08f5aff1a05ad14",
-            "title": "(ii)"
         }
     ],
     "parentSha1": "4916ef365c682d91c468aa8142b8f2b48688f8d3",

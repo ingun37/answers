@@ -8,21 +8,21 @@
     "kids": [
         {
             "attr": {
-                "a": "<p><span\nclass=\"math display\">\\sqrt2,\\sqrt{2\\sqrt2},\\sqrt{2\\sqrt{2\\sqrt2}},\\dots</span></p>\n<p>is equivalent to</p>\n<p><span class=\"math display\">2^{\\frac 1 2}, 2^{\\frac 1 2 + \\frac 1 4},\n2^{\\frac 1 2 + \\frac 1 4 + \\frac 1 8}, \\dots</span></p>\n<p>The exponent part is geometric series that converges to 1. Therefore\nthis sequence converges to 2.</p>",
-                "q": "<p>Does the sequence</p>\n<p><span\nclass=\"math display\">\\sqrt2,\\sqrt{2\\sqrt2},\\sqrt{2\\sqrt{2\\sqrt2}},\\dots</span></p>\n<p>converge? If so, find the limit.</p>"
-            },
-            "numAnswer": 1,
-            "sha1": "c90a9b854229c5dd92b2230923cea087d2695323",
-            "title": "b"
-        },
-        {
-            "attr": {
                 "a": "<h2 id=\"upper-limit-exists\">Upper limit exists</h2>\n<h3 id=\"proof-by-induction\">Proof (by induction)</h3>\n<p>Base case: <span class=\"math inline\">x_0 = \\sqrt 2 &lt; 2</span>.</p>\n<p>Induction step: Let <span class=\"math inline\">x_n &lt; 2</span> then\n<span class=\"math inline\">x_{n+1} = \\sqrt{2+x_n} &lt; \\sqrt 4 =\n2</span>.</p>\n<p>Therefore 2 is an upper bound.</p>\n<h2 id=\"it-converges\">It converges</h2>\n<p>Because it's got upper bound and also increasing.</p>\n<h2 id=\"limit\">Limit</h2>\n<p><span class=\"math display\">\\begin {aligned}\n&amp; X = \\sqrt{2+X} \\\\\n&amp; \\rightarrow X^2 = 2+X \\\\\n&amp; \\rightarrow X = 2\n\\end {aligned}</span></p>",
                 "q": "<p>Show that</p>\n<p><span class=\"math display\">\\sqrt 2, \\sqrt{2+\\sqrt2},\n\\sqrt{2+\\sqrt{2+\\sqrt2}}, \\dots</span></p>\n<p>converges and find the limit.</p>"
             },
             "numAnswer": 1,
             "sha1": "650ffb47e0717d3b1686461a4512b15c3de71174",
             "title": "a"
+        },
+        {
+            "attr": {
+                "a": "<p><span\nclass=\"math display\">\\sqrt2,\\sqrt{2\\sqrt2},\\sqrt{2\\sqrt{2\\sqrt2}},\\dots</span></p>\n<p>is equivalent to</p>\n<p><span class=\"math display\">2^{\\frac 1 2}, 2^{\\frac 1 2 + \\frac 1 4},\n2^{\\frac 1 2 + \\frac 1 4 + \\frac 1 8}, \\dots</span></p>\n<p>The exponent part is geometric series that converges to 1. Therefore\nthis sequence converges to 2.</p>",
+                "q": "<p>Does the sequence</p>\n<p><span\nclass=\"math display\">\\sqrt2,\\sqrt{2\\sqrt2},\\sqrt{2\\sqrt{2\\sqrt2}},\\dots</span></p>\n<p>converge? If so, find the limit.</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "c90a9b854229c5dd92b2230923cea087d2695323",
+            "title": "b"
         }
     ],
     "parentSha1": "8eb88787394d6a9222966b2d3a35f0eeb144456f",

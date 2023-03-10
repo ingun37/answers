@@ -8,15 +8,15 @@
     "kids": [
         {
             "attr": {},
-            "numAnswer": 8,
-            "sha1": "7fe8db837c3238bbb60135b4f6641bd71ac5dbbf",
-            "title": "1.1 Topology"
-        },
-        {
-            "attr": {},
             "numAnswer": 4,
             "sha1": "e65e8a8f38f59bb4ae6a9bfe9d4d2f72aa86d02c",
             "title": "1.2 Open Sets"
+        },
+        {
+            "attr": {},
+            "numAnswer": 8,
+            "sha1": "7fe8db837c3238bbb60135b4f6641bd71ac5dbbf",
+            "title": "1.1 Topology"
         },
         {
             "attr": {},

@@ -8,12 +8,12 @@
     "kids": [
         {
             "attr": {
-                "a": "<p>Let <span class=\"math inline\">T</span> be the set of topologies from\n<span class=\"math inline\">S_n</span>. Let <span\nclass=\"math inline\">T&#39;</span> be the set of topologies from <span\nclass=\"math inline\">S_{n+1}</span>.<br />\nLet's define a trivial function <span class=\"math inline\">f: T\n\\rightarrow T&#39;</span> as <span class=\"math inline\">f(\\tau) = \\tau\n\\cup \\{S_{n+1}\\}</span><br />\n<span class=\"math inline\">f</span> is injective. which implies <span\nclass=\"math inline\">T \\leq T&#39;</span>. Let <span\nclass=\"math inline\">\\tau&#39;</span> be indiscrete (trivial) topology of\n<span class=\"math inline\">S_{n+1}</span>. This one is not in the image\nof <span class=\"math inline\">f</span>. Hence <span class=\"math inline\">T\n&lt; T&#39;</span></p>",
-                "q": "<p>As recorded in <a\nhref=\"https://en.wikipedia.org/wiki/Finite_topological_space\"\nclass=\"uri\">https://en.wikipedia.org/wiki/Finite_topological_space</a>\nthe number of distinct topologies on a set with <span\nclass=\"math inline\">n \\in \\mathbb{N}</span> points can be very large\neven for small n; namely when and <span class=\"math inline\">n =\n2</span>, there are 4 topologies; when <span class=\"math inline\">n =\n3</span> there are 29 topologies; when <span class=\"math inline\">n =\n4</span>, there are 355 topologies; when <span class=\"math inline\">n =\n5</span> there are 6942 topologies etc. Using mathematical induction\nprove that as <span class=\"math inline\">n</span> increase, the number of\ntopologies increases</p>"
+                "a": "<p>Let <span class=\"math inline\">f: T_X \\times X \\rightarrow T_Y</span>\nbe the exact same thing explained from the hint.</p>\n<p><span class=\"math inline\">f</span> is injective. It implies that\n<span class=\"math inline\">T_X * n &lt; T_Y</span>. Since <span\nclass=\"math inline\">T_1</span> must has at least one topology, <span\nclass=\"math inline\">T_Y</span> must be bigger than <span\nclass=\"math inline\">n!</span> when <span class=\"math inline\">Y</span> is\n<span class=\"math inline\">n+1</span> big. Hence <span\nclass=\"math inline\">(n-1)! \\leq T_N</span>.</p>",
+                "q": "<p>Using mathematical induction prove that if a finite set <span\nclass=\"math inline\">X</span> has <span class=\"math inline\">n \\in\n\\mathbb{N}</span> points, then it has at least <span\nclass=\"math inline\">(n-1)!</span> distinct topologies.</p>"
             },
             "numAnswer": 1,
-            "sha1": "a771126eed3393d65d2187692968d870b96b307d",
-            "title": "(i)"
+            "sha1": "db46b95f61e3847cc72b0b19c3966999eb5804e5",
+            "title": "(ii)"
         },
         {
             "attr": {
@@ -26,12 +26,12 @@
         },
         {
             "attr": {
-                "a": "<p>Let <span class=\"math inline\">f: T_X \\times X \\rightarrow T_Y</span>\nbe the exact same thing explained from the hint.</p>\n<p><span class=\"math inline\">f</span> is injective. It implies that\n<span class=\"math inline\">T_X * n &lt; T_Y</span>. Since <span\nclass=\"math inline\">T_1</span> must has at least one topology, <span\nclass=\"math inline\">T_Y</span> must be bigger than <span\nclass=\"math inline\">n!</span> when <span class=\"math inline\">Y</span> is\n<span class=\"math inline\">n+1</span> big. Hence <span\nclass=\"math inline\">(n-1)! \\leq T_N</span>.</p>",
-                "q": "<p>Using mathematical induction prove that if a finite set <span\nclass=\"math inline\">X</span> has <span class=\"math inline\">n \\in\n\\mathbb{N}</span> points, then it has at least <span\nclass=\"math inline\">(n-1)!</span> distinct topologies.</p>"
+                "a": "<p>Let <span class=\"math inline\">T</span> be the set of topologies from\n<span class=\"math inline\">S_n</span>. Let <span\nclass=\"math inline\">T&#39;</span> be the set of topologies from <span\nclass=\"math inline\">S_{n+1}</span>.<br />\nLet's define a trivial function <span class=\"math inline\">f: T\n\\rightarrow T&#39;</span> as <span class=\"math inline\">f(\\tau) = \\tau\n\\cup \\{S_{n+1}\\}</span><br />\n<span class=\"math inline\">f</span> is injective. which implies <span\nclass=\"math inline\">T \\leq T&#39;</span>. Let <span\nclass=\"math inline\">\\tau&#39;</span> be indiscrete (trivial) topology of\n<span class=\"math inline\">S_{n+1}</span>. This one is not in the image\nof <span class=\"math inline\">f</span>. Hence <span class=\"math inline\">T\n&lt; T&#39;</span></p>",
+                "q": "<p>As recorded in <a\nhref=\"https://en.wikipedia.org/wiki/Finite_topological_space\"\nclass=\"uri\">https://en.wikipedia.org/wiki/Finite_topological_space</a>\nthe number of distinct topologies on a set with <span\nclass=\"math inline\">n \\in \\mathbb{N}</span> points can be very large\neven for small n; namely when and <span class=\"math inline\">n =\n2</span>, there are 4 topologies; when <span class=\"math inline\">n =\n3</span> there are 29 topologies; when <span class=\"math inline\">n =\n4</span>, there are 355 topologies; when <span class=\"math inline\">n =\n5</span> there are 6942 topologies etc. Using mathematical induction\nprove that as <span class=\"math inline\">n</span> increase, the number of\ntopologies increases</p>"
             },
             "numAnswer": 1,
-            "sha1": "db46b95f61e3847cc72b0b19c3966999eb5804e5",
-            "title": "(ii)"
+            "sha1": "a771126eed3393d65d2187692968d870b96b307d",
+            "title": "(i)"
         }
     ],
     "parentSha1": "e65e8a8f38f59bb4ae6a9bfe9d4d2f72aa86d02c",

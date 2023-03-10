@@ -10,21 +10,21 @@
     "kids": [
         {
             "attr": {
-                "a": "<p><span class=\"math display\">\\frac 1 c x = \\frac 1 x \\rightarrow x =\n\\left(1 - \\frac 1 c\\right)\\left(x + \\frac 1 {1 - \\frac 1 c}\\frac 1\nx\\right)</span></p>",
-                "q": "<p>Modify the sequence <span class=\"math inline\">(x_n)</span> so that it\nconverges to <span class=\"math inline\">\\sqrt c</span>.</p>"
-            },
-            "numAnswer": 1,
-            "sha1": "b0524ee91166f8e5cf96f2fe966b1e89b5899956",
-            "title": "b"
-        },
-        {
-            "attr": {
                 "a": "<p>Assume <span class=\"math inline\">x &lt; \\frac 1 2 \\left(x + \\frac 2\nx\\right)</span>, then</p>\n<p><span class=\"math display\">\\begin {aligned}\n&amp; x &lt; \\frac 1 2 \\left(x + \\frac 2 x\\right) \\\\\n&amp; \\rightarrow \\frac x 2 &lt; \\frac 1 x \\\\\n&amp; \\rightarrow \\frac {\\frac 1 2 \\left(x + \\frac 2 x\\right)} 2 &lt;\n\\frac 1 {\\frac 1 2 \\left(x + \\frac 2 x\\right)} \\\\\n&amp; \\rightarrow \\frac 1 4 \\left( x + \\frac 2 x \\right) &lt; \\frac {2x}\n{x^2 + 2} \\\\\n&amp; \\rightarrow \\frac 1 4 \\left(x^2 + 2\\right) &lt; \\frac {2x^2} {x^2\n+ 2} \\\\\n&amp; \\rightarrow x^4 +4x + 4 &lt; 8x^2 \\\\\n&amp; \\rightarrow (x^2 - 2)^2 &lt; 0\n\\end {aligned}</span></p>\n<p>It contradicts. Therefore <span class=\"math inline\">x \\geq \\frac 1 2\n\\left(x + \\frac 2 x\\right)</span>, therefore <span\nclass=\"math inline\">X</span> decrease.</p>\n<p>Also, everyterms are positive therefore 0 is a lower bound. Therefore\n<span class=\"math inline\">X</span> converges.</p>\n<p>Limit exists therefore</p>\n<p><span class=\"math display\">\\frac {\\lim x} 2 = \\frac 1 {\\lim x}\n\\rightarrow \\lim x = \\sqrt2</span></p>",
                 "q": "<p>Show that <span class=\"math inline\">x_n^2</span> is always greater\nthan or equal to 2, and then use this to prove that <span\nclass=\"math inline\">x_n - x_{n+1} \\geq 0</span>. Conclude that <span\nclass=\"math inline\">\\lim x_n = \\sqrt 2</span>.</p>"
             },
             "numAnswer": 1,
             "sha1": "bd768a0bc39f33eda5fc416585cc6c71b894fc01",
             "title": "a"
+        },
+        {
+            "attr": {
+                "a": "<p><span class=\"math display\">\\frac 1 c x = \\frac 1 x \\rightarrow x =\n\\left(1 - \\frac 1 c\\right)\\left(x + \\frac 1 {1 - \\frac 1 c}\\frac 1\nx\\right)</span></p>",
+                "q": "<p>Modify the sequence <span class=\"math inline\">(x_n)</span> so that it\nconverges to <span class=\"math inline\">\\sqrt c</span>.</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "b0524ee91166f8e5cf96f2fe966b1e89b5899956",
+            "title": "b"
         }
     ],
     "parentSha1": "8eb88787394d6a9222966b2d3a35f0eeb144456f",

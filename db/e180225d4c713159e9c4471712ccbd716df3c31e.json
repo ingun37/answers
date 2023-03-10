@@ -10,15 +10,6 @@
     "kids": [
         {
             "attr": {
-                "a": "<p>We can just take complementary of the case that every components\nfail.</p>\n<p><span class=\"math display\">1 - (1-P_1)(1-P_2)(1-P_3)</span></p>",
-                "q": "<p><img\nsrc=\"https://www.probabilitycourse.com/images/chapter1/5b.png\" /></p>"
-            },
-            "numAnswer": 1,
-            "sha1": "dc5c1826a8fd435f400ef387c9ee989e311a41d0",
-            "title": "b"
-        },
-        {
-            "attr": {
                 "a": "<p><span class=\"math display\">P_1 * P_2 * P_3</span></p>",
                 "q": "<p><img\nsrc=\"https://www.probabilitycourse.com/images/chapter1/5a.png\" /></p>"
             },
@@ -34,6 +25,15 @@
             "numAnswer": 1,
             "sha1": "1f961f76593554f894b74bfa349c7bf808c3aa0f",
             "title": "c"
+        },
+        {
+            "attr": {
+                "a": "<p>We can just take complementary of the case that every components\nfail.</p>\n<p><span class=\"math display\">1 - (1-P_1)(1-P_2)(1-P_3)</span></p>",
+                "q": "<p><img\nsrc=\"https://www.probabilitycourse.com/images/chapter1/5b.png\" /></p>"
+            },
+            "numAnswer": 1,
+            "sha1": "dc5c1826a8fd435f400ef387c9ee989e311a41d0",
+            "title": "b"
         }
     ],
     "parentSha1": "845fbf15d0fb7458c8520721c640c46d45dc2ca8",

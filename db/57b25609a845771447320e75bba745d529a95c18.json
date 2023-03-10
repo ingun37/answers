@@ -8,21 +8,21 @@
     "kids": [
         {
             "attr": {
-                "a": "<p>Firstly</p>\n<p><span class=\"math display\">\\begin{aligned}\n&amp;kw\\cdot x + kb \\\\\n&amp;= k(w\\cdot x) + kb \\\\\n&amp;= k(w\\cdot x + b)\n\\end{aligned}</span> Therefore</p>\n<p><span class=\"math display\">\\begin{aligned}\n&amp;kw\\cdot x + kb \\leq 0 \\\\\n&amp;\\rightarrow k(w\\cdot x + b) \\leq 0 \\\\\n&amp;\\rightarrow k^{-1}k(w\\cdot x + b) \\leq k^{-1}0 \\\\\n&amp;\\rightarrow w\\cdot x + b \\leq 0 \\\\\n\\end{aligned}</span></p>\n<p>THere's no change in the output of perceptrons therefore the\nbehaviour of the network doesn't change.</p>",
-                "q": "<p>Suppose we take all the weights and biases in a network of\nperceptrons, and multiply them by a positive constant, <span\nclass=\"math inline\">c &gt; 0</span>. Show that the behaviour of the\nnetwork doesn't change.</p>"
-            },
-            "numAnswer": 1,
-            "sha1": "0eb981187babf972b9723c28eee0924498e5d07f",
-            "title": "Sigmoid neurons simulating perceptrons, part I"
-        },
-        {
-            "attr": {
                 "a": "<p>In the previous problem it's proven that multiplying a scalar to\nweight and bias vectors doesn't change the output of perceptrons.</p>\n<p>For sigmoid neurons however,</p>\n<p><span class=\"math display\">\\begin{aligned}\n&amp; \\lim\\limits_{c \\rightarrow \\infin} \\frac{1}{1+\\exp(- c w \\cdot x-\ncb)} \\\\\n&amp;= \\lim\\limits_{c \\rightarrow \\infin} \\frac{1}{1+\\exp(-c(w \\cdot x +\nb))} \\\\\n&amp;= \\lim\\limits_{c \\rightarrow \\infin} \\frac{1}{1+\\exp^{-c}(w \\cdot x\n+ b)} \\\\\n&amp;= \\begin{cases}\n   0 &amp;\\text{if } w \\cdot x + b &lt; 0 \\\\\n   1 &amp;\\text{if } w \\cdot x + b &gt; 0\n\\end{cases}\n\\end{aligned}</span></p>\n<p>which is exactly the definition of perceptron.</p>\n<p>If <span class=\"math inline\">w \\cdot x + b = 0</span> then</p>\n<p><span class=\"math display\">\\frac{1}{1+e^{-0c}} = \\frac{1}{1+1} = {1\n\\over 2}</span></p>\n<p>which is not a possible outcome of perceptron.</p>",
                 "q": "<p>Suppose we have the same setup as the last problem - a network of\nperceptrons. Suppose also that the overall input to the network of\nperceptrons has been chosen. We won't need the actual input value, we\njust need the input to have been fixed. Suppose the weights and biases\nare such that <span class=\"math inline\">w \\cdot x + b \\neq 0</span> for\nthe input <span class=\"math inline\">x</span> to any particular\nperceptron in the network. Now replace all the perceptrons in the\nnetwork by sigmoid neurons, and multiply the weights and biases by a\npositive constant <span class=\"math inline\">c &gt; 0</span>. Show that\nin the limit as <span class=\"math inline\">c \\rightarrow \\infty</span>\nthe behaviour of this network of sigmoid neurons is exactly the same as\nthe network of perceptrons. How can this fail when <span\nclass=\"math inline\">w \\cdot x + b = 0</span> for one of the\nperceptrons?</p>"
             },
             "numAnswer": 1,
             "sha1": "7a320cef1216c5d4a4302e91b4845661b124d2e3",
             "title": "Sigmoid neurons simulating perceptrons, part II"
+        },
+        {
+            "attr": {
+                "a": "<p>Firstly</p>\n<p><span class=\"math display\">\\begin{aligned}\n&amp;kw\\cdot x + kb \\\\\n&amp;= k(w\\cdot x) + kb \\\\\n&amp;= k(w\\cdot x + b)\n\\end{aligned}</span> Therefore</p>\n<p><span class=\"math display\">\\begin{aligned}\n&amp;kw\\cdot x + kb \\leq 0 \\\\\n&amp;\\rightarrow k(w\\cdot x + b) \\leq 0 \\\\\n&amp;\\rightarrow k^{-1}k(w\\cdot x + b) \\leq k^{-1}0 \\\\\n&amp;\\rightarrow w\\cdot x + b \\leq 0 \\\\\n\\end{aligned}</span></p>\n<p>THere's no change in the output of perceptrons therefore the\nbehaviour of the network doesn't change.</p>",
+                "q": "<p>Suppose we take all the weights and biases in a network of\nperceptrons, and multiply them by a positive constant, <span\nclass=\"math inline\">c &gt; 0</span>. Show that the behaviour of the\nnetwork doesn't change.</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "0eb981187babf972b9723c28eee0924498e5d07f",
+            "title": "Sigmoid neurons simulating perceptrons, part I"
         }
     ],
     "parentSha1": "c73690766f702ac0bcd28dd2f0f00e04c1072586",

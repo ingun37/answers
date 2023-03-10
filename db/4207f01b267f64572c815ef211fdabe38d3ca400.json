@@ -10,9 +10,9 @@
     "kids": [
         {
             "attr": {},
-            "numAnswer": 20,
-            "sha1": "fab745034bac5d9853e0b014ca64ffdf5f94c14a",
-            "title": "1. Topological Spaces"
+            "numAnswer": 10,
+            "sha1": "386863b0048a22bdddfb8f8cc28b50926b11ee1d",
+            "title": "2. The Euclidean Topology"
         },
         {
             "attr": {},
@@ -22,15 +22,15 @@
         },
         {
             "attr": {},
-            "numAnswer": 5,
-            "sha1": "e353f5b4e594bc7fb84ecd85fd6646bd633b390f",
-            "title": "3. Limit Points"
-        },
-        {
-            "attr": {},
             "numAnswer": 1,
             "sha1": "3fe69f1482255888d574a2691a2f309588055848",
             "title": "7. Compactness"
+        },
+        {
+            "attr": {},
+            "numAnswer": 20,
+            "sha1": "fab745034bac5d9853e0b014ca64ffdf5f94c14a",
+            "title": "1. Topological Spaces"
         },
         {
             "attr": {},
@@ -40,9 +40,9 @@
         },
         {
             "attr": {},
-            "numAnswer": 10,
-            "sha1": "386863b0048a22bdddfb8f8cc28b50926b11ee1d",
-            "title": "2. The Euclidean Topology"
+            "numAnswer": 5,
+            "sha1": "e353f5b4e594bc7fb84ecd85fd6646bd633b390f",
+            "title": "3. Limit Points"
         }
     ],
     "parentSha1": "dd8f38a85ee36fa036f3e298e265dd4bb35cad21",

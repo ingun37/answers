@@ -10,6 +10,15 @@
     "kids": [
         {
             "attr": {
+                "a": "<p>Its a metric on a function space. Please refer to the example\n6.1.5</p>",
+                "q": "<p>Show that the collection <span\nclass=\"math inline\">\\mathcal{M}</span>, where <span\nclass=\"math inline\">\\mathcal{M}=\\{ M( f,\\varepsilon ) :f\\in C[0,1]\n\\text{and } \\varepsilon \\text{ is a positive real number} \\}</span> and\n<span class=\"math inline\">M( f,\\varepsilon) = \\{ g :g \\in C[ 0,1] \\text{\nand } \\int ^{1}_{0} \\|f-g\\| &lt; \\varepsilon \\}</span> is a basis for a\ntopology <span class=\"math inline\">\\tau_1</span> on <span\nclass=\"math inline\">C[0, 1]</span></p>"
+            },
+            "numAnswer": 1,
+            "sha1": "70a12cc8d769e16eb2595c02073233aa22e058ff",
+            "title": "i"
+        },
+        {
+            "attr": {
                 "a": "<p>Its also a metric on a function space. Please refer to the example\n6.1.6</p>",
                 "q": "<p>Show that the collection <span\nclass=\"math inline\">\\mathcal{U}</span>, where <span\nclass=\"math inline\">\\mathcal{U}=\\{ U( f,\\varepsilon ) :f\\in C[0,1]\n\\text{and } \\varepsilon \\text{ is a positive real number} \\}</span> and\n<span class=\"math inline\">U(f,\\varepsilon) =\\{ g:g\\in C[ 0,1] \\text{ and\n} \\sup _{x\\in [ 0,1] } \\| f(x) -g( x) \\| &lt;\\varepsilon \\}</span> is a\nbasis for a topology <span class=\"math inline\">\\tau_2</span> on <span\nclass=\"math inline\">C[0,1]</span></p>"
             },
@@ -25,15 +34,6 @@
             "numAnswer": 1,
             "sha1": "b97aa80c95e297e65e9faf25427e4f4695d7296a",
             "title": "iii"
-        },
-        {
-            "attr": {
-                "a": "<p>Its a metric on a function space. Please refer to the example\n6.1.5</p>",
-                "q": "<p>Show that the collection <span\nclass=\"math inline\">\\mathcal{M}</span>, where <span\nclass=\"math inline\">\\mathcal{M}=\\{ M( f,\\varepsilon ) :f\\in C[0,1]\n\\text{and } \\varepsilon \\text{ is a positive real number} \\}</span> and\n<span class=\"math inline\">M( f,\\varepsilon) = \\{ g :g \\in C[ 0,1] \\text{\nand } \\int ^{1}_{0} \\|f-g\\| &lt; \\varepsilon \\}</span> is a basis for a\ntopology <span class=\"math inline\">\\tau_1</span> on <span\nclass=\"math inline\">C[0, 1]</span></p>"
-            },
-            "numAnswer": 1,
-            "sha1": "70a12cc8d769e16eb2595c02073233aa22e058ff",
-            "title": "i"
         }
     ],
     "parentSha1": "26d0d9e142b945c6e1b470f3978c516b950372ee",

@@ -9,43 +9,8 @@
         {
             "attr": {},
             "numAnswer": 2,
-            "sha1": "fb37519c6ece460a433bea3eaae3df465b630fc1",
-            "title": "2.4.3"
-        },
-        {
-            "attr": {},
-            "numAnswer": 2,
-            "sha1": "d27ad20d34309c5858ce898645f1bedb18b26fcc",
-            "title": "2.4.2"
-        },
-        {
-            "attr": {},
-            "numAnswer": 2,
             "sha1": "aad0050b7e379d34cb2a66b49dc51a5730b02129",
             "title": "2.4.6"
-        },
-        {
-            "attr": {},
-            "numAnswer": 3,
-            "sha1": "80d9ddafbb6d32535f11661c36da47169794b4e9",
-            "title": "2.4.1"
-        },
-        {
-            "attr": {
-                "q": "<p>Let <span class=\"math inline\">(a_n)</span> be a bounded sequence.</p>"
-            },
-            "numAnswer": 4,
-            "sha1": "9d2af53619e721870d08a4faaa68e90f4af77568",
-            "title": "2.4.7"
-        },
-        {
-            "attr": {
-                "a": "<h2 id=\"a\">(a)</h2>\n<p>Geometric sum formulae is</p>\n<p><span class=\"math display\">S_n = \\frac {a(r^n - 1)} {r -\n1}</span></p>\n<p>Let <span class=\"math inline\">n = \\infin</span> Substitute terms</p>\n<p><span class=\"math display\">S_n = \\frac {{\\frac 1 2}(- 1)} {{\\frac 1\n2} - 1} = 1</span></p>\n<h2 id=\"b\">(b)</h2>\n<p><span class=\"math display\">1 \\over n(n+1)</span></p>\n<p>can be decomposed to</p>\n<p><span class=\"math display\">\\frac 1 n - \\frac 1 {n+1}</span></p>\n<p>therefore</p>\n<p><span class=\"math display\">\\displaystyle\\sum_{n=1}^\\infin \\frac 1\n{n(n+1)} = 1 - \\frac 1 {n+1}</span></p>\n<p>It converges to 1 when <span class=\"math inline\">n =\n\\infin</span>.</p>\n<h2 id=\"c\">(c)</h2>\n<p><span class=\"math display\">\\log a + \\log b = \\log ab</span></p>\n<p>therefore</p>\n<p><span class=\"math display\">\\displaystyle\\sum_{n=1}^k \\log \\left(\n\\frac {n+1} n \\right) = \\log \\left(k+1 \\right)</span></p>\n<p><span class=\"math inline\">\\log</span> is not bounded so it\ndiverges.</p>",
-                "q": "<p>For each series, find an explicit formula for the sequence of partial\nsums and determine if the series converges.</p>\n<p><span class=\"math display\">(a)\n\\displaystyle\\sum_{n=1}^\\infin \\frac 1 {2^n}\n\\quad\n(b)\n\\displaystyle\\sum_{n=1}^\\infin \\frac 1 {n(n+1)}\n\\quad\n(c)\n\\displaystyle\\sum_{n=1}^\\infin \\log \\left( \\frac {n+1} n\n\\right)</span></p>"
-            },
-            "numAnswer": 1,
-            "sha1": "0def9e353f51d773f651137529674a9d02cd67be",
-            "title": "2.4.8"
         },
         {
             "attr": {
@@ -69,6 +34,41 @@
             "numAnswer": 2,
             "sha1": "bba07c5cf65781569d0d30d40b4261c472f489fe",
             "title": "2.4.5"
+        },
+        {
+            "attr": {},
+            "numAnswer": 2,
+            "sha1": "fb37519c6ece460a433bea3eaae3df465b630fc1",
+            "title": "2.4.3"
+        },
+        {
+            "attr": {
+                "a": "<h2 id=\"a\">(a)</h2>\n<p>Geometric sum formulae is</p>\n<p><span class=\"math display\">S_n = \\frac {a(r^n - 1)} {r -\n1}</span></p>\n<p>Let <span class=\"math inline\">n = \\infin</span> Substitute terms</p>\n<p><span class=\"math display\">S_n = \\frac {{\\frac 1 2}(- 1)} {{\\frac 1\n2} - 1} = 1</span></p>\n<h2 id=\"b\">(b)</h2>\n<p><span class=\"math display\">1 \\over n(n+1)</span></p>\n<p>can be decomposed to</p>\n<p><span class=\"math display\">\\frac 1 n - \\frac 1 {n+1}</span></p>\n<p>therefore</p>\n<p><span class=\"math display\">\\displaystyle\\sum_{n=1}^\\infin \\frac 1\n{n(n+1)} = 1 - \\frac 1 {n+1}</span></p>\n<p>It converges to 1 when <span class=\"math inline\">n =\n\\infin</span>.</p>\n<h2 id=\"c\">(c)</h2>\n<p><span class=\"math display\">\\log a + \\log b = \\log ab</span></p>\n<p>therefore</p>\n<p><span class=\"math display\">\\displaystyle\\sum_{n=1}^k \\log \\left(\n\\frac {n+1} n \\right) = \\log \\left(k+1 \\right)</span></p>\n<p><span class=\"math inline\">\\log</span> is not bounded so it\ndiverges.</p>",
+                "q": "<p>For each series, find an explicit formula for the sequence of partial\nsums and determine if the series converges.</p>\n<p><span class=\"math display\">(a)\n\\displaystyle\\sum_{n=1}^\\infin \\frac 1 {2^n}\n\\quad\n(b)\n\\displaystyle\\sum_{n=1}^\\infin \\frac 1 {n(n+1)}\n\\quad\n(c)\n\\displaystyle\\sum_{n=1}^\\infin \\log \\left( \\frac {n+1} n\n\\right)</span></p>"
+            },
+            "numAnswer": 1,
+            "sha1": "0def9e353f51d773f651137529674a9d02cd67be",
+            "title": "2.4.8"
+        },
+        {
+            "attr": {
+                "q": "<p>Let <span class=\"math inline\">(a_n)</span> be a bounded sequence.</p>"
+            },
+            "numAnswer": 4,
+            "sha1": "9d2af53619e721870d08a4faaa68e90f4af77568",
+            "title": "2.4.7"
+        },
+        {
+            "attr": {},
+            "numAnswer": 3,
+            "sha1": "80d9ddafbb6d32535f11661c36da47169794b4e9",
+            "title": "2.4.1"
+        },
+        {
+            "attr": {},
+            "numAnswer": 2,
+            "sha1": "d27ad20d34309c5858ce898645f1bedb18b26fcc",
+            "title": "2.4.2"
         }
     ],
     "parentSha1": "10eb21a7fc596eae55eb2b7f3b3c0321685d5297",

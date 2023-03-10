@@ -1,0 +1,13 @@
+{
+    "item": {
+        "attr": {
+            "q": "<p>Supply another proof for this result using the Nested Interval\nProperty (Theorem 1.4.1).</p>"
+        },
+        "numAnswer": 0,
+        "sha1": "7292dd001519dba87040de6b32b22d38ba87e4cc",
+        "title": "(b)"
+    },
+    "kids": [],
+    "parentSha1": "e660f50e9ffd84d7810a7b0f97f0109baf29e48d",
+    "path": "answers-db/books/Understanding Analysis/2. Sequences and Series/2.7 Properties of Infinite Series/2.7.1/(b)"
+}

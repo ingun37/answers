@@ -15,19 +15,12 @@
             "title": "12"
         },
         {
-            "attr": {},
-            "numAnswer": 2,
-            "sha1": "9ee38a7c4d000b2cf8ba8e2856220afd5ab665c2",
-            "title": "1"
-        },
-        {
             "attr": {
-                "a": "<p>Counter example <span class=\"math inline\">f^{-1}((0,2)) =\n(0,1]</span>, which is not an open set, exists therefore <span\nclass=\"math inline\">f</span> is not continuous.</p>",
-                "q": "<p>Let <span class=\"math inline\">f : \\mathbb{R} \\rightarrow\n\\mathbb{R}</span> be given by</p>\n<p><span class=\"math display\">f(x)=\n\\begin{dcases}\n   x, &amp; x \\le 1 \\\\\n   x+2, &amp; x \\gt 1\n\\end{dcases}</span></p>\n<p>is <span class=\"math inline\">f</span> continuous? (Justify your\nanswer.)</p>"
+                "q": "<p>Let <span class=\"math inline\">f : \\mathbb{R} \\rightarrow\n\\mathbb{R}</span> be given by</p>\n<p><span class=\"math display\">f(x) = \\begin{cases}\n   -1\\text{, } &amp;x \\leq 0 \\\\\n   1\\text{, } &amp;x &gt; 0\n\\end{cases}</span></p>"
             },
-            "numAnswer": 1,
-            "sha1": "6d2e243348aa43b7ab7064b401f85427ee7337ed",
-            "title": "3"
+            "numAnswer": 2,
+            "sha1": "5fdca1a9a14be5ff043ed5df6bf527504713e874",
+            "title": "2"
         },
         {
             "attr": {
@@ -40,29 +33,36 @@
         },
         {
             "attr": {
-                "a": "<p>Let <span class=\"math inline\">U \\subset \\mathbb{R}</span> an open set\nthat contains 0. <span class=\"math inline\">f</span> is continuous\ntherefore <span class=\"math inline\">V = f^{-1}U</span> must be an open\nset. <span class=\"math inline\">V</span> also must contain all the\nrational numbers. The open set that contains all the rational numbers is\n<span class=\"math inline\">\\mathbb{R}</span>. Therefore for every <span\nclass=\"math inline\">x \\in \\mathbb{R}</span>, <span\nclass=\"math inline\">f(x) = 0</span>.</p>",
-                "q": "<p>Let <span class=\"math inline\">f:\\mathbb{R} \\rightarrow\n\\mathbb{R}</span> be a continuous function such that <span\nclass=\"math inline\">f(q)=0</span>for every rational number <span\nclass=\"math inline\">q</span>. Prove that <span\nclass=\"math inline\">f(x)</span> for every <span\nclass=\"math inline\">x\\in\\mathbb{R}</span>.</p>"
-            },
-            "numAnswer": 1,
-            "sha1": "38dc2ab6210ce8180ea1dfbcc57579155b47fc4e",
-            "title": "11"
-        },
-        {
-            "attr": {
-                "q": "<p>Let <span class=\"math inline\">f : \\mathbb{R} \\rightarrow\n\\mathbb{R}</span> be given by</p>\n<p><span class=\"math display\">f(x) = \\begin{cases}\n   -1\\text{, } &amp;x \\leq 0 \\\\\n   1\\text{, } &amp;x &gt; 0\n\\end{cases}</span></p>"
-            },
-            "numAnswer": 2,
-            "sha1": "5fdca1a9a14be5ff043ed5df6bf527504713e874",
-            "title": "2"
-        },
-        {
-            "attr": {
                 "a": "<p>I'll refer <span class=\"math inline\">\\mathcal{T}</span> as <span\nclass=\"math inline\">\\mathcal{T}_X</span>, <span\nclass=\"math inline\">\\mathcal{T}_1</span> as <span\nclass=\"math inline\">\\mathcal{T}_Y</span>, <span\nclass=\"math inline\">\\mathcal{T}_2</span> as <span\nclass=\"math inline\">\\mathcal{T}_A</span>, <span\nclass=\"math inline\">\\mathcal{T}_3</span> as <span\nclass=\"math inline\">\\mathcal{T}_B</span>.</p>\n<p>Let's define <span class=\"math inline\">x \\in X</span> and <span\nclass=\"math inline\">U \\in \\mathcal{T}_Y</span> such that <span\nclass=\"math inline\">f(x) \\in U</span>. By definition of continuous\nmapping, there must exists a <span class=\"math inline\">V</span> such\nthat <span class=\"math inline\">x \\in V \\in \\mathcal{T}_X</span> and\n<span class=\"math inline\">f(x) \\in fV \\subseteq U</span>.</p>\n<p>If for any <span class=\"math inline\">x \\in A</span> and any B-induced\nopen set <span class=\"math inline\">U_B \\in \\mathcal{T}_B</span>, which\nmust imply existance of <span class=\"math inline\">U \\in\n\\mathcal{T}_Y</span>, such that <span class=\"math inline\">g(x) \\in\nU_B</span>,</p>\n<p><img\nsrc=\"/answers/books/Topology%20Without%20Tears/5.%20Continuous%20Mappings/5.1%20Continuous%20Mappings/8/IMG_44AF9D4BED6C-1.jpeg\" /></p>\n<p>...there exists an A-induced open set <span\nclass=\"math inline\">V_A</span>, which must imply existance of <span\nclass=\"math inline\">V \\in \\mathcal{T}_A</span>, such that the image\n<span class=\"math inline\">gV_A</span> satisfies <span\nclass=\"math inline\">g(x) \\in gV_A \\subseteq U_B</span>, then <span\nclass=\"math inline\">g</span> must be continuous. What we have to know is\nthat if the image <span class=\"math inline\">gV_A</span>is subset of\n<span class=\"math inline\">U_B</span>, in other words, every <span\nclass=\"math inline\">x \\in V_A</span> will satisfiy <span\nclass=\"math inline\">g(x) \\in U_B</span>. Let's proove it.</p>\n<p><img\nsrc=\"/answers/books/Topology%20Without%20Tears/5.%20Continuous%20Mappings/5.1%20Continuous%20Mappings/8/IMG_E7FB922B8E70-1.jpeg\" /></p>\n<p><span class=\"math display\">\\begin{aligned}\n    &amp; x \\in V_A \\\\\n    &amp; \\rightarrow x \\in V \\\\\n    &amp; \\rightarrow g(x) \\in gV \\\\\n    &amp; \\rightarrow g(x) \\in \\text{ some } U &amp; \\text{ since } f\n\\text{ is continuous} \\\\\n    &amp; \\rightarrow g(x) \\in U \\cap B &amp; \\text{ since codomain of }\ng \\text{ is } B \\\\\n    &amp; \\rightarrow g(x) \\in U_B\n\\end{aligned}</span></p>",
                 "q": "<p>Let <span class=\"math inline\">(X,\\mathcal{T})</span> and <span\nclass=\"math inline\">(Y,\\mathcal{T}_1)</span> be topological spaces and\n<span class=\"math inline\">f:(X,\\mathcal{T}) \\rightarrow\n(Y,\\mathcal{T}_1)</span> a continuous mapping. Let <span\nclass=\"math inline\">A</span> be a subset of <span\nclass=\"math inline\">X</span>, <span\nclass=\"math inline\">\\mathcal{T}_2</span> the induced topology on <span\nclass=\"math inline\">A</span>, <span class=\"math inline\">B = f(A)</span>,\n<span class=\"math inline\">\\mathcal{T}_3</span> the induced topology on\n<span class=\"math inline\">B</span> and <span\nclass=\"math inline\">g:(A,\\mathcal{T}_2) \\rightarrow\n(B,\\mathcal{T}_3)</span> the restriction of <span\nclass=\"math inline\">f</span> to <span class=\"math inline\">A</span>.\nProve that <span class=\"math inline\">g</span> is continuous.</p>"
             },
             "numAnswer": 1,
             "sha1": "fac737f6b5f00ef4ddb91c1016110fbf43d869cb",
             "title": "8"
+        },
+        {
+            "attr": {
+                "a": "<p>Counter example <span class=\"math inline\">f^{-1}((0,2)) =\n(0,1]</span>, which is not an open set, exists therefore <span\nclass=\"math inline\">f</span> is not continuous.</p>",
+                "q": "<p>Let <span class=\"math inline\">f : \\mathbb{R} \\rightarrow\n\\mathbb{R}</span> be given by</p>\n<p><span class=\"math display\">f(x)=\n\\begin{dcases}\n   x, &amp; x \\le 1 \\\\\n   x+2, &amp; x \\gt 1\n\\end{dcases}</span></p>\n<p>is <span class=\"math inline\">f</span> continuous? (Justify your\nanswer.)</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "6d2e243348aa43b7ab7064b401f85427ee7337ed",
+            "title": "3"
+        },
+        {
+            "attr": {},
+            "numAnswer": 2,
+            "sha1": "9ee38a7c4d000b2cf8ba8e2856220afd5ab665c2",
+            "title": "1"
+        },
+        {
+            "attr": {
+                "a": "<p>Let <span class=\"math inline\">U \\subset \\mathbb{R}</span> an open set\nthat contains 0. <span class=\"math inline\">f</span> is continuous\ntherefore <span class=\"math inline\">V = f^{-1}U</span> must be an open\nset. <span class=\"math inline\">V</span> also must contain all the\nrational numbers. The open set that contains all the rational numbers is\n<span class=\"math inline\">\\mathbb{R}</span>. Therefore for every <span\nclass=\"math inline\">x \\in \\mathbb{R}</span>, <span\nclass=\"math inline\">f(x) = 0</span>.</p>",
+                "q": "<p>Let <span class=\"math inline\">f:\\mathbb{R} \\rightarrow\n\\mathbb{R}</span> be a continuous function such that <span\nclass=\"math inline\">f(q)=0</span>for every rational number <span\nclass=\"math inline\">q</span>. Prove that <span\nclass=\"math inline\">f(x)</span> for every <span\nclass=\"math inline\">x\\in\\mathbb{R}</span>.</p>"
+            },
+            "numAnswer": 1,
+            "sha1": "38dc2ab6210ce8180ea1dfbcc57579155b47fc4e",
+            "title": "11"
         }
     ],
     "parentSha1": "5e46eb44c0c41629ec32d18301ca125e86a08d6a",

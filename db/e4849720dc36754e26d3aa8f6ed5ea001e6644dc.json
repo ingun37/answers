@@ -8,12 +8,11 @@
     "kids": [
         {
             "attr": {
-                "a": "<p>Assume <span class=\"math inline\">(a_n)</span> diverges. According to\nexercise 2.5.2-(c), bounded and diverging sequence must have at least\ntwo limit points. But <span class=\"math inline\">(a_n)</span> is said to\nhave only one limit point which is contradiction. Therefore <span\nclass=\"math inline\">(a_n)</span> converges.</p>\n<p>Subsequence of converging sequence has the same limit point therefore\n<span class=\"math inline\">(a_n)</span> converges to <span\nclass=\"math inline\">a</span>.</p>",
-                "q": "<p>Assume <span class=\"math inline\">(a_n)</span> is a bounded sequence\nwith the property that every convergent subsequence of <span\nclass=\"math inline\">(a_n)</span> converges to the same limit <span\nclass=\"math inline\">a \\in \\mathbf{R}</span>. Show that <span\nclass=\"math inline\">(a_n)</span> must converge to <span\nclass=\"math inline\">a</span>.</p>"
+                "q": "<p>Give an example of each of the following, or argue that such a\nrequest is impossible</p>"
             },
-            "numAnswer": 1,
-            "sha1": "d617bbabcca879c4233cc1dde38ad969b3d0ef06",
-            "title": "2.5.5"
+            "numAnswer": 4,
+            "sha1": "991b54de75494f4bb9c137ffccec1a85d55ce6e2",
+            "title": "2.5.1"
         },
         {
             "attr": {
@@ -40,17 +39,12 @@
         },
         {
             "attr": {
-                "q": "<p>Give an example of each of the following, or argue that such a\nrequest is impossible</p>"
+                "a": "<p>Assume <span class=\"math inline\">(a_n)</span> diverges. According to\nexercise 2.5.2-(c), bounded and diverging sequence must have at least\ntwo limit points. But <span class=\"math inline\">(a_n)</span> is said to\nhave only one limit point which is contradiction. Therefore <span\nclass=\"math inline\">(a_n)</span> converges.</p>\n<p>Subsequence of converging sequence has the same limit point therefore\n<span class=\"math inline\">(a_n)</span> converges to <span\nclass=\"math inline\">a</span>.</p>",
+                "q": "<p>Assume <span class=\"math inline\">(a_n)</span> is a bounded sequence\nwith the property that every convergent subsequence of <span\nclass=\"math inline\">(a_n)</span> converges to the same limit <span\nclass=\"math inline\">a \\in \\mathbf{R}</span>. Show that <span\nclass=\"math inline\">(a_n)</span> must converge to <span\nclass=\"math inline\">a</span>.</p>"
             },
-            "numAnswer": 4,
-            "sha1": "991b54de75494f4bb9c137ffccec1a85d55ce6e2",
-            "title": "2.5.1"
-        },
-        {
-            "attr": {},
-            "numAnswer": 2,
-            "sha1": "cc3b5340e47ccbe4bc70ecb9df46606ed9461da3",
-            "title": "2.5.3"
+            "numAnswer": 1,
+            "sha1": "d617bbabcca879c4233cc1dde38ad969b3d0ef06",
+            "title": "2.5.5"
         },
         {
             "attr": {
@@ -60,6 +54,12 @@
             "numAnswer": 1,
             "sha1": "e2270363cedc7e44e0fd3e8ecb93bab89f5a1d79",
             "title": "2.5.6"
+        },
+        {
+            "attr": {},
+            "numAnswer": 2,
+            "sha1": "cc3b5340e47ccbe4bc70ecb9df46606ed9461da3",
+            "title": "2.5.3"
         }
     ],
     "parentSha1": "10eb21a7fc596eae55eb2b7f3b3c0321685d5297",
