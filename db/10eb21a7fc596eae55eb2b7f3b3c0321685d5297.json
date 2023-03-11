@@ -1,14 +1,14 @@
 {
     "item": {
         "attr": {},
-        "numAnswer": 42,
+        "numAnswer": 43,
         "sha1": "10eb21a7fc596eae55eb2b7f3b3c0321685d5297",
         "title": "2. Sequences and Series"
     },
     "kids": [
         {
             "attr": {},
-            "numAnswer": 6,
+            "numAnswer": 7,
             "sha1": "a9c1bd0890cd9f394e84c1960f79a24dc8b16068",
             "title": "2.7 Properties of Infinite Series"
         },

@@ -1,7 +1,7 @@
 {
     "item": {
         "attr": {},
-        "numAnswer": 6,
+        "numAnswer": 7,
         "sha1": "a9c1bd0890cd9f394e84c1960f79a24dc8b16068",
         "title": "2.7 Properties of Infinite Series"
     },
@@ -18,7 +18,7 @@
             "attr": {
                 "q": "<p>Proving the Alternating Series Test (Theorem 2.7.7) amounts to\nshowing that the sequence of partial sums <span class=\"math display\">s_n\n= a_1 - a_2 + a_3 - \\cdots \\pm a_n</span> converges. (The opening\nexample in Section 2.1 includes a typical illustration of <span\nclass=\"math inline\">(s_n)</span>.) Different characterizations of\ncompleteness lead to different proofs.</p>"
             },
-            "numAnswer": 1,
+            "numAnswer": 2,
             "sha1": "e660f50e9ffd84d7810a7b0f97f0109baf29e48d",
             "title": "2.7.1"
         },
