@@ -4,14 +4,14 @@
             "author": "Stephen Abbott",
             "edition": "2"
         },
-        "numAnswer": 43,
+        "numAnswer": 44,
         "sha1": "2730856957310933e421fdf612b27304f70d0ac1",
         "title": "Understanding Analysis"
     },
     "kids": [
         {
             "attr": {},
-            "numAnswer": 43,
+            "numAnswer": 44,
             "sha1": "10eb21a7fc596eae55eb2b7f3b3c0321685d5297",
             "title": "2. Sequences and Series"
         }
