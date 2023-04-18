@@ -1,10 +1,14 @@
 import { array, number, partial, string, struct, TypeOf } from "io-ts/Decoder";
+const AttributeFile = struct({
+  content: string,
+  posixTime: number,
+});
 export const Item = struct({
   title: string,
   attr: partial({
-    q: string,
-    a: string,
-    author: string,
+    q: AttributeFile,
+    a: AttributeFile,
+    author: AttributeFile,
   }),
   numAnswer: number,
   sha1: string,

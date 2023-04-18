@@ -69,9 +69,19 @@ export default function Recursive(props: { sha1: string | TreeTemT }) {
       );
       return (
         <div>
-          {treeTem.item.attr.q && <MathMD htmlString={treeTem.item.attr.q} />}
+          {treeTem.item.attr.q && (
+            <MathMD
+              htmlString={treeTem.item.attr.q.content}
+              posixTime={treeTem.item.attr.q.posixTime}
+            />
+          )}
           <Divider variant="middle" />
-          {treeTem.item.attr.a && <MathMD htmlString={treeTem.item.attr.a} />}
+          {treeTem.item.attr.a && (
+            <MathMD
+              htmlString={treeTem.item.attr.a.content}
+              posixTime={treeTem.item.attr.a.posixTime}
+            />
+          )}
 
           <Stack direction="row" spacing={2} alignItems="flex-start">
             {books.map((item) => (
@@ -85,7 +95,9 @@ export default function Recursive(props: { sha1: string | TreeTemT }) {
                     <Typography variant="h5" component="div">
                       {snd(item).title}
                     </Typography>
-                    <Typography color="text.secondary">{fst(item)}</Typography>
+                    <Typography color="text.secondary">
+                      {fst(item).content}
+                    </Typography>
                     <Typography color="text.secondary">
                       {snd(item).numAnswer} problems solved
                     </Typography>
