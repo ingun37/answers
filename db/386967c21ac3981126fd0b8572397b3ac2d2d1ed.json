@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Yes. <code>Reader a</code> is <code>Hom(a, -)</code></p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             },
             "q": {
                 "content": "<p>Is the <code>Reader</code> functor representable?</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             }
         },
         "numAnswer": 1,

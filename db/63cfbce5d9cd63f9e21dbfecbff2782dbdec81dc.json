@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>(ii) satisfies second property so we only need to proove that union\nof <span class=\"math inline\">D</span> is <span\nclass=\"math inline\">\\mathbb{R}^2</span></p>\n<p>If we deny the statement and say there is a <span\nclass=\"math inline\">\\langle a,b \\rangle \\in \\mathbb{R}^2</span> that\nisn't contained in union of all <span class=\"math inline\">D</span> then\nit contradicts the exercise-1-(iv) hence union of <span\nclass=\"math inline\">D</span> is <span\nclass=\"math inline\">\\mathbb{R}^2</span>.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1580462943
             },
             "q": {
                 "content": "<p>Using (ii) and Proposition 2.2.8, prove that the collection of all\nopen discs in <span class=\"math inline\">\\mathbb{R}^2</span> is a basis\nfor a topology on <span class=\"math inline\">\\mathbb{R}^2</span>.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1580462943
             }
         },
         "numAnswer": 1,

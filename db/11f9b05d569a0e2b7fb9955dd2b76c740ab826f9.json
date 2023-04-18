@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Its also a metric on a function space. Please refer to the example\n6.1.6</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             },
             "q": {
                 "content": "<p>Show that the collection <span\nclass=\"math inline\">\\mathcal{U}</span>, where <span\nclass=\"math inline\">\\mathcal{U}=\\{ U( f,\\varepsilon ) :f\\in C[0,1]\n\\text{and } \\varepsilon \\text{ is a positive real number} \\}</span> and\n<span class=\"math inline\">U(f,\\varepsilon) =\\{ g:g\\in C[ 0,1] \\text{ and\n} \\sup _{x\\in [ 0,1] } \\| f(x) -g( x) \\| &lt;\\varepsilon \\}</span> is a\nbasis for a topology <span class=\"math inline\">\\tau_2</span> on <span\nclass=\"math inline\">C[0,1]</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             }
         },
         "numAnswer": 1,

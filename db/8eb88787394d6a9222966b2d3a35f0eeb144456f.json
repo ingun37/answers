@@ -10,11 +10,11 @@
             "attr": {
                 "a": {
                     "content": "<h2 id=\"a\">(a)</h2>\n<p>Geometric sum formulae is</p>\n<p><span class=\"math display\">S_n = \\frac {a(r^n - 1)} {r -\n1}</span></p>\n<p>Let <span class=\"math inline\">n = \\infin</span> Substitute terms</p>\n<p><span class=\"math display\">S_n = \\frac {{\\frac 1 2}(- 1)} {{\\frac 1\n2} - 1} = 1</span></p>\n<h2 id=\"b\">(b)</h2>\n<p><span class=\"math display\">1 \\over n(n+1)</span></p>\n<p>can be decomposed to</p>\n<p><span class=\"math display\">\\frac 1 n - \\frac 1 {n+1}</span></p>\n<p>therefore</p>\n<p><span class=\"math display\">\\displaystyle\\sum_{n=1}^\\infin \\frac 1\n{n(n+1)} = 1 - \\frac 1 {n+1}</span></p>\n<p>It converges to 1 when <span class=\"math inline\">n =\n\\infin</span>.</p>\n<h2 id=\"c\">(c)</h2>\n<p><span class=\"math display\">\\log a + \\log b = \\log ab</span></p>\n<p>therefore</p>\n<p><span class=\"math display\">\\displaystyle\\sum_{n=1}^k \\log \\left(\n\\frac {n+1} n \\right) = \\log \\left(k+1 \\right)</span></p>\n<p><span class=\"math inline\">\\log</span> is not bounded so it\ndiverges.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664871887
                 },
                 "q": {
                     "content": "<p>For each series, find an explicit formula for the sequence of partial\nsums and determine if the series converges.</p>\n<p><span class=\"math display\">(a)\n\\displaystyle\\sum_{n=1}^\\infin \\frac 1 {2^n}\n\\quad\n(b)\n\\displaystyle\\sum_{n=1}^\\infin \\frac 1 {n(n+1)}\n\\quad\n(c)\n\\displaystyle\\sum_{n=1}^\\infin \\log \\left( \\frac {n+1} n\n\\right)</span></p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664871887
                 }
             },
             "numAnswer": 1,
@@ -25,7 +25,7 @@
             "attr": {
                 "q": {
                     "content": "<p>Let <span class=\"math inline\">(a_n)</span> be a bounded sequence.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664868754
                 }
             },
             "numAnswer": 4,
@@ -48,7 +48,7 @@
             "attr": {
                 "q": {
                     "content": "<p>(Calculating Square Roots). Let <span class=\"math inline\">x_1 =\n2</span>, and define</p>\n<p><span class=\"math display\">x_{n+1} = \\frac 1 2 \\left(x_n + \\frac 2\n{x_n} \\right)</span></p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664372040
                 }
             },
             "numAnswer": 2,
@@ -59,11 +59,11 @@
             "attr": {
                 "a": {
                     "content": "<p>We can construct another series <span class=\"math inline\">r_k</span>\nby dividing <span class=\"math inline\">t_k - b_1</span> by 2. It will\nlook like</p>\n<p><span class=\"math display\">r_k = {t_k - b_1 \\over 2} = b_2 + 2b_4 +\n4b_8 + \\cdots + 2^{k-1}b_{2^k}</span></p>\n<p>If <span class=\"math inline\">t_k</span> diverses then for every real\nnumber <span class=\"math inline\">M</span> there exists <span\nclass=\"math inline\">k</span> such that <span class=\"math inline\">2M +\nb_1 &lt; t_k</span>, which means <span class=\"math inline\">M &lt; (t_k -\nb_1)/2 = r_k</span> therefore <span class=\"math inline\">r_k</span>\ndiverges.</p>\n<p>Define <span class=\"math inline\">s_m</span></p>\n<p><span class=\"math display\">s_m = b_1 + b_2 + b_3 + \\cdots +\nb_m</span></p>\n<p>Fix <span class=\"math inline\">m</span> and let <span\nclass=\"math inline\">k</span> be small enough to ensure <span\nclass=\"math inline\">2^k - 1 \\leq m</span>. Then, <span\nclass=\"math inline\">s_{2^k - 1} \\leq s_m</span> and</p>\n<p><span class=\"math display\">\\begin{aligned}\nr_k &amp;= b_2 + (b_4 + b_4) + (b_8 + b_8 + b_8 + b_8) + \\cdots +\n(b_{2^k}  + \\cdots + b_{2^k})\n\\\\\n&amp;\\leq b_1 + (b_2 + b_3) + (b_4 + b_5 + b_6 + b_7) + \\cdots +\n(b_{2^{k-1}} + \\cdots + b_{2^k - 1})\n\\\\\n&amp;=s_{2^k-1}\n\\\\\n&amp;\\leq s_m\n\\end{aligned}</span></p>\n<p>Therefore <span class=\"math inline\">s_m</span> diverges.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664875849
                 },
                 "q": {
                     "content": "<p>Complete the proof of Theorem 2.4.6 by showing that if the series\n<span class=\"math inline\">\\sum_{n=0}^\\infin 2^nb_{2^n}</span> diverges,\nthen so does <span class=\"math inline\">\\sum_{n=1}^\\infin b_n</span>.\nExample 2.4.5 may be a useful reference.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664875849
                 }
             },
             "numAnswer": 1,

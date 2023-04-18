@@ -3,7 +3,7 @@
         "attr": {
             "q": {
                 "content": "<p>Another way to prove the Bolzano-Weierstrass Theorem is to show that\nevery sequence contains a monotone subsequence. A useful device in this\nendeavor is the notion of a <em>peak term</em>. Given a sequence <span\nclass=\"math inline\">(x_n)</span>, a particular term <span\nclass=\"math inline\">x_m</span> is a peak term if no later term is the\nsequence exceeds it; ie.e, if <span class=\"math inline\">x_m \\geq\nx_n</span> for all <span class=\"math inline\">n \\geq m</span>.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1665282145
             }
         },
         "numAnswer": 2,
@@ -15,11 +15,11 @@
             "attr": {
                 "a": {
                     "content": "<p>The one that contains zero, one and two peak terms would look\nsomething like this</p>\n<p><img\nsrc=\"/answers/books/Understanding%20Analysis/2.%20Sequences%20and%20Series/2.5%20Subsequences%20and%20the%20Bolzano-Weierstrass%20Theorem/2.5.8/(a)/a.PNG\" /></p>\n<p>The other one that has infinitely many peak terms would look\nsomething like this</p>\n<p><img\nsrc=\"/answers/books/Understanding%20Analysis/2.%20Sequences%20and%20Series/2.5%20Subsequences%20and%20the%20Bolzano-Weierstrass%20Theorem/2.5.8/(a)/b.PNG\" /></p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1665282145
                 },
                 "q": {
                     "content": "<p>Find examples of sequences with zero, one, and two peak terms. Find\nan example of a sequence with infinitely many peak terms that is not\nmonotone.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1665282145
                 }
             },
             "numAnswer": 1,
@@ -30,11 +30,11 @@
             "attr": {
                 "a": {
                     "content": "<p>When a sequence converges, it must converge from up or down (or\nboth). Pick one and make monotone subsequence from that.</p>\n<p>When a sequence diverges, it's either bounded or not. If it's bounded\nthen it must have converging subsequence and you can construct a\nmonotone subsequence from that. If it's not bounded, then at every point\nthere must be upcoming bigger (or smaller depending it's direction of\ngrowth) point. Keep doing it and you consturct monotone subsequence.</p>\n<p>If a sequence is bounded then it's monotone subsequence must\nconverge.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1665282145
                 },
                 "q": {
                     "content": "<p>Show that every sequence contains a monotone subsequence and explain\nhow this furnishes a new proof of the Bolzano-Weierstrass Theorem.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1665282145
                 }
             },
             "numAnswer": 1,

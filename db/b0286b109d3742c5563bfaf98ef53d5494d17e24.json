@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Let <span class=\"math inline\">f(x) = c</span>. Any open set <span\nclass=\"math inline\">S \\in \\tau_1</span> either contains <span\nclass=\"math inline\">c</span> or not.</p>\n<p>If <span class=\"math inline\">c \\in S</span>, then <span\nclass=\"math inline\">f^{-1}(S) = X</span>.<br />\nIf <span class=\"math inline\">c \\notin S</span>, then <span\nclass=\"math inline\">f^{-1}(S) = \\emptyset</span>.</p>\n<p>Hence continuous.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1588089321
             },
             "q": {
                 "content": "<p>Let <span class=\"math inline\">f:(X,\\mathcal{T}) \\rightarrow (Y,\n\\tau_1)</span> be a constant function. Show that <span\nclass=\"math inline\">f</span> is continuous.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1588089321
             }
         },
         "numAnswer": 1,

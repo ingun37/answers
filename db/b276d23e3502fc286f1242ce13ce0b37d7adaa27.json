@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Yes, because we can readily observe that:</p>\n<p><span class=\"math display\">P(A,B) = P(A)P(B) = \\frac{3}{8}</span></p>\n<p>since the overlapping area is visibly the exact half of <span\nclass=\"math inline\">A</span>.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1587185876
             },
             "q": {
                 "content": "<p>Are <span class=\"math inline\">A</span> and <span\nclass=\"math inline\">B</span> independent?</p>",
-                "posixTime": 1678612923
+                "posixTime": 1587185876
             }
         },
         "numAnswer": 1,

@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p><span class=\"math inline\">hom(a, -)</span>'s <code>fmap</code> would\nbe <code>fmap f g = f . g</code>. Therefore <code>fmap id</code> would\nbe <code>g = id . g</code> which is equal to <code>g = g</code>.</p>\n<p><span class=\"math inline\">hom(-, a)</span>'s <code>contramap</code>\nwould be <code>contramap f h = h . f</code>. Therefore\n<code>contramap id</code> would be <code>h = h . id</code> which is\nequal to <code>h = h</code>.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             },
             "q": {
                 "content": "<p>Show that the hom-functors map identity morphisms in <span\nclass=\"math inline\">C</span> to corresponding identity functions in\nSet.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             }
         },
         "numAnswer": 1,

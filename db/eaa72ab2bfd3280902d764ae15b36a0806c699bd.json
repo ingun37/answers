@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p><span class=\"math inline\">(y_n)</span> decreases. It's bounded too.\nHence converges.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1664868754
             },
             "q": {
                 "content": "<p>Prove that the sequence defined by <span class=\"math inline\">y_n =\n\\sup\\{ a_k : k \\geq n \\}</span> converges.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1664868754
             }
         },
         "numAnswer": 1,

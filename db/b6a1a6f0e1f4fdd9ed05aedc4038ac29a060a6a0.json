@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>They make vertical compositions.\n<code>(b -&gt; a) . (a -&gt; x) = b -&gt; x</code> If you know more,\nplease <a\nhref=\"https://github.com/ingun37/category-theory-for-programmers-answers\">contribute</a>.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             },
             "q": {
                 "content": "<p>Yoneda embedding can be used to embed an arbitrary functor category\n<code>[C, D]</code> in the functor category <code>[[C, D], Set]</code>.\nFigure out how it works on morphisms (which in this case are natural\ntransformations).</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             }
         },
         "numAnswer": 1,

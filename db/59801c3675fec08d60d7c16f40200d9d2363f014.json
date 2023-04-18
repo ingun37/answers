@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Let <span class=\"math inline\">x</span> be any element of <span\nclass=\"math inline\">f^{-1}\\left( \\bigcup _{j\\in J}B\n_{j}\\right)</span><br />\nIt implies that <span class=\"math inline\">f(x) \\in B_i</span> for some\n<span class=\"math inline\">i</span> in <span\nclass=\"math inline\">J</span><br />\nIt implies that <span class=\"math inline\">x \\in f^{-1} B_i</span><br />\nHence <span class=\"math inline\">x \\in \\bigcup _{j\\in J}f^{-1}\\left( B\n_{j}\\right)</span></p>\n<p>Now the reverse.<br />\nLet <span class=\"math inline\">x</span> be any element of <span\nclass=\"math inline\">\\bigcup _{j\\in J}f^{-1}\\left( B\n_{j}\\right)</span><br />\nIt implies that <span class=\"math inline\">x \\in f^{-1}\\left( B\n_{j}\\right)</span><br />\nIt implies that <span class=\"math inline\">f(x) \\in B_i</span> for some\n<span class=\"math inline\">i \\in J</span><br />\nIt implies that <span class=\"math inline\">f(x) \\in \\bigcup _{j\\in J}B\n_{j}</span><br />\nHence <span class=\"math inline\">x \\in f^{-1}\\left( \\bigcup _{j\\in J}B\n_{j}\\right)</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             },
             "q": {
                 "content": "<p>Prove that (1) is true.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             }
         },
         "numAnswer": 1,

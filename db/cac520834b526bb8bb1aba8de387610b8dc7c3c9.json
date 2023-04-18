@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p><span class=\"math inline\">f^{-1}(-2,0) = (-\\infin, 0]</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1588089321
             },
             "q": {
                 "content": "<p>Prove that <span class=\"math inline\">f</span> is not continuous using\nthe method of Example 5.1.6.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1588089321
             }
         },
         "numAnswer": 1,

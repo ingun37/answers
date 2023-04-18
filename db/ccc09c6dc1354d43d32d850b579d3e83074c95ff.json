@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Let <span class=\"math inline\">A</span> be the event that a student\ngets an <span class=\"math inline\">A</span>, and <span\nclass=\"math inline\">C</span> the event that lives on campus. This\nstatement is:</p>\n<p><span class=\"math display\">P(A|C) = P(A)</span></p>\n<p>is equivalent to:</p>\n<p><span class=\"math display\">P(A|C^c) = P(A)</span></p>\n<p>Because of the lemma that when <span class=\"math inline\">A</span> and\n<span class=\"math inline\">B</span> are independent events then <span\nclass=\"math inline\">A</span> and <span class=\"math inline\">B^c</span>\nare independent as well.</p>\n<p>Lefthand is:</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;P(A|C^c) \\\\\n  &amp;= \\dfrac{P(A,C^c)}{P(C^c)} \\\\\n  &amp;= \\dfrac{\\dfrac{80}{600}}{\\dfrac{400}{600}} = \\dfrac{1}{5}\n\\end{aligned}</span></p>\n<p>Righthand is:</p>\n<p><span class=\"math display\">P(A) = \\dfrac{120}{600} =\n\\dfrac{1}{5}</span></p>\n<p>Therefore <span class=\"math inline\">A</span> and <span\nclass=\"math inline\">C</span> are independent.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1587138805
             },
             "q": {
                 "content": "<p>A professor thinks students who live on campus are more likely to get\n<span class=\"math inline\">A</span>s in the probability course. To check\nthis theory, the professor combines the data from the past few\nyears:</p>\n<ol>\n<li>600 students have taken the course,</li>\n<li>120 students have gotten <span class=\"math inline\">A</span>s,</li>\n<li>200 students lived on campus,</li>\n<li>80 students lived off campus and got <span\nclass=\"math inline\">A</span>s.</li>\n</ol>\n<p>Does this data suggest that <em>getting an <span\nclass=\"math inline\">A</span></em> and <em>living on campus</em> are\ndependent or independent?</p>",
-                "posixTime": 1678612923
+                "posixTime": 1587138805
             }
         },
         "numAnswer": 1,

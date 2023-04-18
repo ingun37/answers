@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p><span class=\"math inline\">\\overline{S} \\subseteq\n\\overline{T}</span>.<br />\n<span class=\"math inline\">\\rightarrow X \\subseteq\n\\overline{T}</span>.<br />\n<span class=\"math inline\">\\overline{T} \\subseteq X \\rightarrow\n\\overline{T} = X</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1577117619
             },
             "q": {
                 "content": "<p>Hence show that if <span class=\"math inline\">S</span> is dense in\n<span class=\"math inline\">X</span>, then <span\nclass=\"math inline\">T</span> is dense in <span\nclass=\"math inline\">X</span>.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1577117619
             }
         },
         "numAnswer": 1,

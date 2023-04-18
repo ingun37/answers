@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>The <em>spanning property</em> is already given so I'll just prove\nthe <em>linear independence</em> property.</p>\n<p>Let <span class=\"math inline\">\\{\\theta_1, \\theta_2, \\theta_3 ...\n\\}</span> be the dual basis.<br />\nThen <span class=\"math display\">a\\theta_1(v) + b\\theta_2(v) +\nc\\theta_3(v) ... =\n\\begin{cases}\na &amp; \\text{if } v = e_1 \\\\\nb &amp; \\text{if } v = e_2 \\\\\nc &amp; \\text{if } v = e_3 \\\\\n... \\\\\n0 &amp; else\n\\end{cases}</span></p>\n<p>For</p>\n<p><span class=\"math display\">a\\theta_1(v) + b\\theta_2(v) + c\\theta_3(v)\n...</span></p>\n<p>to be 0, all the coefficients <span\nclass=\"math inline\">a,b,c...</span> must be 0 as well.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1598030578
             },
             "q": {
                 "content": "<p>Show that <span class=\"math inline\">\\{\\theta_j\\}</span> is indeed a\nbasis for <span class=\"math inline\">V^*</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1598030578
             }
         },
         "numAnswer": 1,

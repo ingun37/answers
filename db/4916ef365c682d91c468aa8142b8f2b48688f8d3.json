@@ -10,7 +10,7 @@
             "attr": {
                 "q": {
                     "content": "<p>In this exercise you will prove that disc <span\nclass=\"math inline\">\\{\\langle x,y \\rangle :x^2 + y^2 &lt; 1\\}</span> is\nan open subset of <span class=\"math inline\">\\mathbb{R}^2</span>, and\nthen that every open disc in the plane is an open set.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1580398819
                 }
             },
             "numAnswer": 4,
@@ -21,7 +21,7 @@
             "attr": {
                 "q": {
                     "content": "<p>In this exercise you will show that the collection of all open discs\nin <span class=\"math inline\">\\mathbb{R}^2</span> is a basis for a\ntopology on <span class=\"math inline\">\\mathbb{R}^2</span>. [Later we\nshall see that this is the euclidean topology.]</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1580460723
                 }
             },
             "numAnswer": 3,

@@ -10,11 +10,11 @@
             "attr": {
                 "a": {
                     "content": "<p>trivial?</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664113237
                 },
                 "q": {
                     "content": "<p>Now that we know <span class=\"math inline\">\\lim x_n</span> exists,\nexplan why <span class=\"math inline\">\\lim x_{n+1}</span> must also exist\nand equal the same value.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664113237
                 }
             },
             "numAnswer": 1,
@@ -25,11 +25,11 @@
             "attr": {
                 "a": {
                     "content": "<h2 id=\"1-x_n-is-decreasing\">1. <span class=\"math inline\">(x_n)</span>\nis decreasing.</h2>\n<h3 id=\"proof-by-induction\">Proof (by Induction)</h3>\n<p>The base case is that <span class=\"math inline\">x_0 = 3 &gt; x_1 =\n1</span></p>\n<p>The induction step is that</p>\n<p><span class=\"math display\">\\begin{aligned}\n&amp; x_n &gt; x_{n+1} \\\\\n&amp; \\rightarrow -x_n &lt; -x_{n+1} \\\\\n&amp; \\rightarrow 4-x_n &lt; 4-x_{n+1} \\\\\n&amp; \\rightarrow \\frac 1 {4-x_n} &gt; \\frac 1 {4-x_{n+1}}\n\\end{aligned}</span></p>\n<p>... hence decrease (monotonic).</p>\n<h2 id=\"2-x_n-is-bounded\">2. <span class=\"math inline\">(x_n)</span> is\nbounded.</h2>\n<p>Let's express <span class=\"math inline\">x_n</span> in fraction</p>\n<p><span class=\"math display\">x_n = \\frac {a_n} {b_n}</span></p>\n<p>then <span class=\"math inline\">x_{n+1}</span> is</p>\n<p><span class=\"math display\">\\begin{aligned}\n&amp; x_{n+1} \\\\\n&amp; = \\frac 1 {4-x_n} \\\\\n&amp; = \\frac 1 {4 - \\frac {a_n} {b_n}} \\\\\n&amp; = \\frac 1 {\\frac {4b_n - a_n} {b_n}} \\\\\n&amp; = \\frac {b_n} {4b_n - a_n} \\\\\n&amp; = \\frac {4b_n - a_n + a_n} {4(4b_n - a_n)} \\\\\n&amp; = \\frac 1 4 + \\frac {a_n} {4(4b_n - a_n)} \\\\\n\\end{aligned}</span></p>\n<p><span class=\"math inline\">0 \\leq a_n \\leq 4b_n</span> therefore</p>\n<p><span class=\"math display\">0 \\leq \\frac {a_n} {4(4b_n -\na_n)}</span></p>\n<p>It means 1/4 is a lower bound.</p>\n<p>(1) and (2) satisfys the Monotone Convergence Theorem. Therefore\n<span class=\"math inline\">(x_n)</span> converges.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664112843
                 },
                 "q": {
                     "content": "<p>Prove that the sequence defined by <span class=\"math inline\">x_1 =\n3</span> and</p>\n<p><span class=\"math display\">x_{n+1} = {1 \\over 4 - x_n}</span></p>\n<p>converges.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664112843
                 }
             },
             "numAnswer": 1,
@@ -40,11 +40,11 @@
             "attr": {
                 "a": {
                     "content": "<p>Let's say <span class=\"math inline\">\\lim x_n = x</span>, then</p>\n<p><span class=\"math display\">\\begin {aligned}\n&amp; x = \\frac 1 {4-x} \\\\\n&amp; \\rightarrow 4x - x^2 - 1=0\n\\end {aligned}</span></p>\n<p>Solve quadratic equation, you get <span class=\"math inline\">2 \\pm\n\\sqrt3</span>. But it has to be less than 3 so the answer is <span\nclass=\"math inline\">2-\\sqrt3 \\approx 0.2679491924311227</span></p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664114022
                 },
                 "q": {
                     "content": "<p>Take the limit of each side of the recursive equation in part (a) to\nexplicitly compute <span class=\"math inline\">\\lim x_n</span>.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664114022
                 }
             },
             "numAnswer": 1,

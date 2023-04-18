@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<h2 id=\"a\">(a)</h2>\n<p>Geometric sum formulae is</p>\n<p><span class=\"math display\">S_n = \\frac {a(r^n - 1)} {r -\n1}</span></p>\n<p>Let <span class=\"math inline\">n = \\infin</span> Substitute terms</p>\n<p><span class=\"math display\">S_n = \\frac {{\\frac 1 2}(- 1)} {{\\frac 1\n2} - 1} = 1</span></p>\n<h2 id=\"b\">(b)</h2>\n<p><span class=\"math display\">1 \\over n(n+1)</span></p>\n<p>can be decomposed to</p>\n<p><span class=\"math display\">\\frac 1 n - \\frac 1 {n+1}</span></p>\n<p>therefore</p>\n<p><span class=\"math display\">\\displaystyle\\sum_{n=1}^\\infin \\frac 1\n{n(n+1)} = 1 - \\frac 1 {n+1}</span></p>\n<p>It converges to 1 when <span class=\"math inline\">n =\n\\infin</span>.</p>\n<h2 id=\"c\">(c)</h2>\n<p><span class=\"math display\">\\log a + \\log b = \\log ab</span></p>\n<p>therefore</p>\n<p><span class=\"math display\">\\displaystyle\\sum_{n=1}^k \\log \\left(\n\\frac {n+1} n \\right) = \\log \\left(k+1 \\right)</span></p>\n<p><span class=\"math inline\">\\log</span> is not bounded so it\ndiverges.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1664871887
             },
             "q": {
                 "content": "<p>For each series, find an explicit formula for the sequence of partial\nsums and determine if the series converges.</p>\n<p><span class=\"math display\">(a)\n\\displaystyle\\sum_{n=1}^\\infin \\frac 1 {2^n}\n\\quad\n(b)\n\\displaystyle\\sum_{n=1}^\\infin \\frac 1 {n(n+1)}\n\\quad\n(c)\n\\displaystyle\\sum_{n=1}^\\infin \\log \\left( \\frac {n+1} n\n\\right)</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1664871887
             }
         },
         "numAnswer": 1,

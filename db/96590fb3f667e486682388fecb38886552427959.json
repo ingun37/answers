@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Composition between continuous morphisms are continuous.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1586674624
             },
             "q": {
                 "content": "<p>Prove that a continuous image of a path-connected space is\npath-connected.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1586674624
             }
         },
         "numAnswer": 1,

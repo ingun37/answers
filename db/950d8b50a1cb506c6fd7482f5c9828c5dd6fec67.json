@@ -3,7 +3,7 @@
         "attr": {
             "q": {
                 "content": "<p>Give an example of each or explain why the request is impossible\nreferencing the proper theorem(s).</p>",
-                "posixTime": 1678612923
+                "posixTime": 1666750663
             }
         },
         "numAnswer": 1,
@@ -15,11 +15,11 @@
             "attr": {
                 "a": {
                     "content": "<p>Impossible. Let <span class=\"math inline\">Y</span> be the bound of\n<span class=\"math inline\">(y_n)</span>. Then</p>\n<p><span class=\"math display\">\\begin{align}\n|x_ny_n| \\leq |x_nY|\n\\end{align}</span></p>\n<p><span class=\"math inline\">\\sum |x_nY| = Y \\sum |x_n|</span>\nconverges.</p>\n<p>Therefore, By Comparison Test, <span class=\"math inline\">\\sum\n|x_ny_n|</span> converges.</p>\n<p>Therefore, by Absolute Convergence Test, <span\nclass=\"math inline\">\\sum x_ny_n</span> converges.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1666750663
                 },
                 "q": {
                     "content": "<p>A convergent series <span class=\"math inline\">\\sum x_n</span> and a\nbounded sequence <span class=\"math inline\">(y_n)</span> such that <span\nclass=\"math inline\">\\sum x_ny_n</span> diverges.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1666750663
                 }
             },
             "numAnswer": 1,

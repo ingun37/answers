@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Because by definition of topology <span class=\"math inline\">D</span>\nis union of open sets (<span class=\"math inline\">R</span>s).</p>",
-                "posixTime": 1678612923
+                "posixTime": 1580404798
             },
             "q": {
                 "content": "<p>Deduce from (ii) that <span class=\"math inline\">D</span> is an open\nset in <span class=\"math inline\">\\mathbb{R}^2</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1580404798
             }
         },
         "numAnswer": 1,

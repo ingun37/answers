@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>For any open set <span class=\"math inline\">S \\in \\mathcal{T}</span>,\n<span class=\"math inline\">f^{-1}(S) = f(S) = S \\in\n\\mathcal{T}</span>.</p>\n<p>Hence continuous.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1588089321
             },
             "q": {
                 "content": "<p>Let <span class=\"math inline\">f:(X,\\mathcal{T}) \\rightarrow\n(X,\\mathcal{T})</span> be the identity function. Show that <span\nclass=\"math inline\">f</span> is continuous.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1588089321
             }
         },
         "numAnswer": 1,

@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>It is a sum type of <code>Nil</code> and <code>Cons a b</code>.\n<code>Cons a b</code> is no different to <code>Pair a b</code> which we\njust proved to be a bifunctor. So it's algebraic type on a bifunctor\nhence bifunctor.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             },
             "q": {
                 "content": "<p>Let's try another data structure. I call it a <code>PreList</code>\nbecause it's a precursor to a <code>List</code>. It replaces recursion\nwith a type parameter <code>b</code>.</p>\n<div class=\"sourceCode\" id=\"cb1\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb1-1\"><a href=\"#cb1-1\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"kw\">data</span> <span class=\"dt\">PreList</span> a b <span class=\"ot\">=</span> <span class=\"dt\">Nil</span> <span class=\"op\">|</span> <span class=\"dt\">Cons</span> a b</span></code></pre></div>\n<p>You could recover our earlier definition of a <code>List</code> by\nrecursively applying <code>PreList</code> to itself (we'll see how it's\ndone when we talk about fixed points). Show that <code>PreList</code> is\nan instance of Bifunctor.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             }
         },
         "numAnswer": 1,

@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>For (i), (ii), (iii) have covered <span class=\"math inline\">(0,1),\n[0,1], [0,1)</span> which are homeomorphic to every intervals in the\nform of <span class=\"math inline\">[a,b], (a,b), [a,b), (a,b],\n(-\\infin,a), (-\\infin,a], (a,\\infin), [a,\\infin),\n(-\\infin,\\infin)</span>. By Remarks 4.3.4, we only got <span\nclass=\"math inline\">\\{a\\}</span> left to proove. <span\nclass=\"math inline\">X</span> can't have bijective relation with\nsingleton set.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1586621281
             },
             "q": {
                 "content": "<p>Deduce that <span class=\"math inline\">X</span> is not homeomorphic to\nany interval.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1586621281
             }
         },
         "numAnswer": 1,

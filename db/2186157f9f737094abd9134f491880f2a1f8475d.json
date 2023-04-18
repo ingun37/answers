@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p><span class=\"math inline\">\\mathbf{N}</span> is sequence. Suppose\n<span class=\"math inline\">\\mathbf{N}</span> is upper bounded. Then by\nMonotone Convergence Theorem the least upper bound must exist. Let the\nsupermum be <span class=\"math inline\">\\alpha</span>. There exists <span\nclass=\"math inline\">n\\in \\mathbf{N}</span> such that <span\nclass=\"math inline\">\\alpha -1 &lt; n</span>, which means <span\nclass=\"math inline\">\\alpha &lt; n + 1</span> and <span\nclass=\"math inline\">n+1</span> is a natural number bigger than <span\nclass=\"math inline\">\\alpha</span>, the supermum, which is\ncontradiction.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1664357405
             },
             "q": {
                 "content": "<p>In Section 1.4 we used the Axiom of Completeness (AoC) to prove the\nArchimedean Property of <span class=\"math inline\">\\mathbf{R}</span>\n(Theorem 1.4.2). Show that the Monotone Convergence Theorem can also be\nused to prove the Archimedean Property without making any use of\nAoC.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1664357405
             }
         },
         "numAnswer": 1,

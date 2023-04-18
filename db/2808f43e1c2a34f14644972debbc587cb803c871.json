@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>By <a\nhref=\"https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory#7._Axiom_of_infinity\">Axiom\nof Infinity</a></p>\n<p>There is a function from <span class=\"math inline\">\\mathbb{N}</span>\nto <span class=\"math inline\">X</span><br />\nLet <span class=\"math inline\">A</span> be Image from even numbers and\n<span class=\"math inline\">B</span> image from odd numbers.<br />\nThere is no common element between them which means<br />\n<span class=\"math inline\">A\\cap B=\\emptyset</span><br />\nLet <span class=\"math inline\">a</span> be any element from <span\nclass=\"math inline\">A</span> and <span class=\"math inline\">B&#39;</span>\nbe <span class=\"math inline\">B\\cup \\left\\{ a\\right\\}</span><br />\nSince <span class=\"math inline\">B&#39;</span> is still infinite subset,\nis a open set.<br />\nSince <span class=\"math inline\">A</span> is also an open set, <span\nclass=\"math inline\">A \\cap B&#39; = \\{a\\}</span> is also an open\nset.<br />\nEvery singleton is open hence <span class=\"math inline\">(X,\\tau)</span>\nis discrete.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             },
             "q": {
                 "content": "<p>Let <span class=\"math inline\">X</span> be an infinite st ad <span\nclass=\"math inline\">\\tau</span> a topology on <span\nclass=\"math inline\">X</span>. If every infinite subset of <span\nclass=\"math inline\">X</span> is in <span\nclass=\"math inline\">\\tau</span>, prove that <span\nclass=\"math inline\">\\tau</span> is the discrete topology.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             }
         },
         "numAnswer": 1,

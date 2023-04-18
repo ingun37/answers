@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Obviously 0 is lower bound of <span class=\"math inline\">A</span>. Now\nlet's say there exists <span class=\"math inline\">x</span> in <span\nclass=\"math inline\">A</span> other than 0. It is a contradiction since\n<span class=\"math inline\">x \\notin A_n</span> where <span\nclass=\"math display\">n = \\frac{1}{\\lfloor x \\rfloor}</span> Therefore\n<span class=\"math inline\">A = \\{0\\}</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1587092934
             },
             "q": {
                 "content": "<p>Let <span class=\"math inline\">A_n=[0,\\frac{1}{n})=\\{x \\in\n\\mathbb{R}|\\quad 0 \\leq x &lt; \\frac{1}{n}\\}</span> for <span\nclass=\"math inline\">n=1,2,\\cdots</span>. Define</p>\n<p><span class=\"math display\">A=\\bigcap_{n=1}^{\\infty}A_n=A_1 \\cap A_2\n\\cap \\cdots</span></p>\n<p>Find <span class=\"math inline\">A</span>.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1587092934
             }
         },
         "numAnswer": 1,

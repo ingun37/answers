@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Let's say that there's finite number of <span\nclass=\"math inline\">n</span> of open set <span\nclass=\"math inline\">U</span><br />\nLet <span class=\"math inline\">V_1</span> be <span\nclass=\"math inline\">U_{1}\\cap U_{2}</span><br />\n<span class=\"math inline\">V_1 = U_{1}\\cap U_{2}</span><br />\nLet <span class=\"math inline\">V_i</span> be <span\nclass=\"math inline\">U_{i+1}</span><br />\n<span class=\"math inline\">V_i = U_{i+1}</span><br />\nThen we can redefine the intersections using term of <span\nclass=\"math inline\">V</span> with one less operand.<br />\n<span class=\"math inline\">U_{1}\\cap U_{2}\\cap U_{3}\\ldots U_{n} =\nV_{1}\\cap V_{2}\\cap V_{3}\\ldots V_{n-1}</span><br />\nWe can go on and on and number of operands will eventually get to only\n2.<br />\n<span class=\"math inline\">W_1 \\cap W_2</span><br />\nBy definition of topology</p>\n<blockquote>\n<p>the intersection of any two sets in <span\nclass=\"math inline\">\\tau</span> belongs to <span\nclass=\"math inline\">\\tau</span>.</p>\n</blockquote>\n<p>It is indeed a member of <span class=\"math inline\">\\tau</span>.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             },
             "q": {
                 "content": "<p>Let <span class=\"math inline\">(X,\\tau)</span> be any topological\nspace. Verify that the intersection of any finite number of members of\n<span class=\"math inline\">\\tau</span> is a member of <span\nclass=\"math inline\">\\tau</span><br />\n[Hint. To prove this result use \"mathematical induction\".]</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             }
         },
         "numAnswer": 1,

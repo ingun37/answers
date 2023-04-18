@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Coproduct functor as Left adjoint and square functor as right\nadjoint, we can build an adjunction like this.<br />\n<img\nsrc=\"/answers/books/Category%20Theory%20For%20Programmers/18.%20Adjunctions/4/IMG_4745A389AF18-1.jpeg\" /><br />\nBy definition of coproduct, <span class=\"math inline\">m</span> and pair\nof <span class=\"math inline\">&lt;p,q&gt;</span> must be\nisomorphic.<br />\nWe can define factorizer by composing counit <span\nclass=\"math inline\">\\varepsilon</span> and <span\nclass=\"math inline\">L&lt;p,q&gt;</span> and the inverse by composing\n<span class=\"math inline\">Rm</span> and unit <span\nclass=\"math inline\">\\eta</span>.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1579721108
             },
             "q": {
                 "content": "<p>Show that the coproduct can be defined by an adjuntion. Start with\nthe definition of the factorizer for a coproduct.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1579721108
             }
         },
         "numAnswer": 1,

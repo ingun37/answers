@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Let <span class=\"math inline\">I</span> be the image category of the\npushout consisting of <span class=\"math inline\">z \\rightarrow x</span>\nand <span class=\"math inline\">z \\rightarrow y</span></p>\n<p>Let <span class=\"math inline\">a</span> be the colimit of <span\nclass=\"math inline\">I</span>. For any <span class=\"math inline\">b</span>\nthat is a super class of both <span class=\"math inline\">x&#39;</span>\nand <span class=\"math inline\">y&#39;</span>, <span\nclass=\"math inline\">a</span> is deriving <span\nclass=\"math inline\">b</span>. Its the opposite definition of the\npullback described in 12.2-Examples of Limits</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             },
             "q": {
                 "content": "<p>How would you describe a pushout in the category of C++ classes?</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             }
         },
         "numAnswer": 1,

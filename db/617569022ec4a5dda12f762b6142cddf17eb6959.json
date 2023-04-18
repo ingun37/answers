@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Let <span class=\"math inline\">x</span> be any element of <span\nclass=\"math inline\">f^{-1}\\left( B_{1}\\cap B_{2}\\right)</span><br />\nIt implies that <span class=\"math inline\">f(x) \\in B_{1}</span> and\n<span class=\"math inline\">f(x) \\in B_{2}</span><br />\nIt implies that <span class=\"math inline\">x \\in f^{-1}\\left(\nB_{1}\\right)</span> and <span class=\"math inline\">x \\in f^{-1}\\left(\nB_{2}\\right)</span><br />\nHence <span class=\"math inline\">x \\in f^{-1}\\left( B_{1}\\right) \\cap\nf^{-1}\\left( B_{2}\\right)</span></p>\n<p>Now the reverse.<br />\nLet <span class=\"math inline\">x</span> be any element of <span\nclass=\"math inline\">f^{-1}\\left( B_{1}\\right) \\cap f^{-1}\\left(\nB_{2}\\right)</span><br />\nIt implies that <span class=\"math inline\">f(x) \\in B_{1}</span> and\n<span class=\"math inline\">f(x) \\in B_{2}</span><br />\nIt implies that <span class=\"math inline\">f(x) \\in B_{1}\\cap\nB_{2}</span><br />\nHence <span class=\"math inline\">x \\in f^{-1}\\left( B_{1}\\cap\nB_{2}\\right)</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             },
             "q": {
                 "content": "<p>Prove that (2) is true</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             }
         },
         "numAnswer": 1,

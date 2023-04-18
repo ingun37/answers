@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Let <span class=\"math inline\">U \\subset \\mathbb{R}</span> an open set\nthat contains 0. <span class=\"math inline\">f</span> is continuous\ntherefore <span class=\"math inline\">V = f^{-1}U</span> must be an open\nset. <span class=\"math inline\">V</span> also must contain all the\nrational numbers. The open set that contains all the rational numbers is\n<span class=\"math inline\">\\mathbb{R}</span>. Therefore for every <span\nclass=\"math inline\">x \\in \\mathbb{R}</span>, <span\nclass=\"math inline\">f(x) = 0</span>.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1640593217
             },
             "q": {
                 "content": "<p>Let <span class=\"math inline\">f:\\mathbb{R} \\rightarrow\n\\mathbb{R}</span> be a continuous function such that <span\nclass=\"math inline\">f(q)=0</span>for every rational number <span\nclass=\"math inline\">q</span>. Prove that <span\nclass=\"math inline\">f(x)</span> for every <span\nclass=\"math inline\">x\\in\\mathbb{R}</span>.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1640593217
             }
         },
         "numAnswer": 1,

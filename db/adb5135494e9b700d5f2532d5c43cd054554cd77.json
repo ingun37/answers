@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>It can be solved by using the <em>law of total probability</em>.</p>\n<p><span class=\"math display\">P(G \\cap E) + P(G^c \\cap E) =\n0.14</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1587179680
             },
             "q": {
                 "content": "<p>Using the tree find <span class=\"math inline\">P(E)</span>.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1587179680
             }
         },
         "numAnswer": 1,

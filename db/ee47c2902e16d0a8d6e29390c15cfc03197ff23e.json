@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Just substitute the part</p>\n<blockquote>\n<p>The set <span class=\"math inline\">A</span> has every <span\nclass=\"math inline\">b_n</span> as upper bounds therefore, by AoC,\nsupermum exists.</p>\n</blockquote>\n<p>to</p>\n<blockquote>\n<p>The sequence <span class=\"math inline\">A</span> has every <span\nclass=\"math inline\">b_n</span> as upper bounds therefore, by Monotone\nConvergence Theorem, supermum exists.</p>\n</blockquote>",
-                "posixTime": 1678612923
+                "posixTime": 1664357405
             },
             "q": {
                 "content": "<p>Use the Monotone Convergence Theorem to supply a proof for the Nested\nInterval Property (Theorem 1.4.1) that doesn't make use of AoC.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1664357405
             }
         },
         "numAnswer": 1,

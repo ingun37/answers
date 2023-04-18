@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>The closed set <span class=\"math inline\">f^{-1}</span> is <span\nclass=\"math inline\">(0, \\infin)</span> which is open. Hence not\ncontinuous.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1588089321
             },
             "q": {
                 "content": "<p>Find <span class=\"math inline\">f^{-1}\\{1\\}</span> and, using\nProposition 5v1v9, deduce that <span class=\"math inline\">f</span> is not\ncontinuous.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1588089321
             }
         },
         "numAnswer": 1,

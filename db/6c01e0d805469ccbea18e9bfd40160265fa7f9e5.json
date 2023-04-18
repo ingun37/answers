@@ -10,11 +10,11 @@
             "attr": {
                 "a": {
                     "content": "<p>(1.7) is</p>\n<p><span class=\"math display\">0 \\xrightarrow {\\varphi_0} V_1\n\\xrightarrow {\\varphi_1} V_2 \\xrightarrow {\\varphi_2} V_3 \\xrightarrow\n{\\varphi_3} 0</span></p>\n<p>which is a <strong>short exact sequence</strong>.</p>\n<p>The image of <span class=\"math inline\">{\\varphi_0}</span> is <span\nclass=\"math inline\">\\{0\\}</span>.<br />\nTherefore the kernel of <span class=\"math inline\">\\varphi_1</span> is\nalso <span class=\"math inline\">\\{0\\}</span><br />\nTherefore <span class=\"math inline\">\\varphi_1</span> is injective.</p>\n<p>The kernel of <span class=\"math inline\">{\\varphi_3}</span> is <span\nclass=\"math inline\">V_3</span> itself.<br />\nTherefore the image of <span class=\"math inline\">{\\varphi_2}</span> is\n<span class=\"math inline\">V_3</span> itself.<br />\nTherefore <span class=\"math inline\">{\\varphi_2}</span> is\nsurjective.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1596986746
                 },
                 "q": {
                     "content": "<p>Show that the existence of the short exact sequence (1.7) is\nequivalent to the statement \"<span class=\"math inline\">\\varphi_1</span>\nis injective and <span class=\"math inline\">\\varphi_2</span> is\nsurjective.\" In particular, if</p>\n<p><span class=\"math display\">0 \\longrightarrow V \\xrightarrow \\varphi W\n\\longrightarrow 0</span></p>\n<p>is exact, <span class=\"math inline\">V</span> and <span\nclass=\"math inline\">W</span> must be isomorphic.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1596986746
                 }
             },
             "numAnswer": 1,

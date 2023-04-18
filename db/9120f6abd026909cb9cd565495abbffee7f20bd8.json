@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>So far we have derived unit and counit from hom-sets isomorphism and\ninjectivity <span class=\"math inline\">C(Ld,c) \\rightarrow D(d,Rc)</span>\nfrom unit and counit. The only thing left to proove the equivalence is\ninjectivity in the other way.<br />\nIn the book we derived injection <span class=\"math inline\">C(Ld,c)\n\\rightarrow D(d,Rc)</span> by lifting <span class=\"math inline\">f:Ld\n\\rightarrow c</span> with <span class=\"math inline\">R</span>. In the\nsame way we can derive the other way injection <span\nclass=\"math inline\">D(d,Rc) \\rightarrow C(Ld,c)</span> by lifting <span\nclass=\"math inline\">g:d \\rightarrow Rc</span> with <span\nclass=\"math inline\">L</span>.<br />\nLifted <span class=\"math inline\">Lg</span> can be composed with unit\n<span class=\"math inline\">\\eta</span> and make a morphism <span\nclass=\"math inline\">Lg \\cdot \\eta: Ld \\rightarrow c</span>.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1579718609
             },
             "q": {
                 "content": "<p>Complete the proof of equivalence of the two definitions of the\nadjunction.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1579718609
             }
         },
         "numAnswer": 1,

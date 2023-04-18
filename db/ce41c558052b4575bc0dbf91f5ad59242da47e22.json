@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Where<br />\n<span class=\"math inline\">f</span> is <span\nclass=\"math inline\">cos</span>,<br />\n<span class=\"math inline\">A_1</span> is <span\nclass=\"math inline\">\\left(0, \\dfrac{3}{2} \\pi\\right)</span><br />\nand<br />\n<span class=\"math inline\">A_2</span> is <span\nclass=\"math inline\">\\left(\\dfrac{1}{2} \\pi, 2\\pi \\right)</span><br />\nso <span class=\"math inline\">f(A_1 \\cap A_2)</span> which would be <span\nclass=\"math inline\">cos \\left(\\dfrac{1}{2} \\pi, \\dfrac{3}{2}\n\\pi\\right)</span> in this case, will be <span class=\"math inline\">(0,\n-1)</span><br />\nand <span class=\"math inline\">f(A_1) \\cap f(A_2)</span> which would be\n<span class=\"math inline\">cos \\left(0, \\dfrac{3}{2} \\pi\\right) \\cap cos\n\\left(\\dfrac{1}{2} \\pi, 2\\pi \\right)</span> in this case, will be <span\nclass=\"math inline\">(-1, 1)</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             },
             "q": {
                 "content": "<p>Find (concrete) sets <span class=\"math inline\">A_1, A_2, X</span> and\n<span class=\"math inline\">Y</span> and a functiom <span\nclass=\"math inline\">f:X \\rightarrow Y</span> such that <span\nclass=\"math inline\">f(A_1 \\cap A_2) \\neq f(A_1) \\cap f(A_2)</span> where\n<span class=\"math inline\">A_1 \\subseteq X</span> and <span\nclass=\"math inline\">A_2 \\subseteq X</span>.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             }
         },
         "numAnswer": 1,

@@ -10,7 +10,7 @@
             "attr": {
                 "q": {
                     "content": "<p>I've stated the equations of backpropagation (notably (BP1) and\n(BP2)) using the Hadamard product. This presentation may be\ndisconcerting if you're unused to the Hadamard product. There's an\nalternative approach, based on conventional matrix multiplication, which\nsome readers may find enlightening.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1592184435
                 }
             },
             "numAnswer": 3,

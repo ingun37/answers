@@ -3,7 +3,7 @@
         "attr": {
             "author": {
                 "content": "Bartosz Milewski",
-                "posixTime": 1678612923
+                "posixTime": 1664112868
             }
         },
         "numAnswer": 47,
@@ -69,7 +69,7 @@
             "attr": {
                 "q": {
                     "content": "<p>Sample project available here <a\nhref=\"https://github.com/ingun37/f-algebra-challenges\">github</a></p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1580575108
                 }
             },
             "numAnswer": 5,

@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p><span class=\"math inline\">\\langle a,b \\rangle \\in D</span><br />\n<span class=\"math inline\">\\rightarrow \\langle a,b \\rangle \\in R_{\\langle\na,b \\rangle}</span><br />\n<span class=\"math inline\">\\rightarrow \\langle a,b \\rangle \\in\n\\cup_{\\langle a,b\\rangle \\in D}R\\langle a,b\\rangle</span></p>\n<h2 id=\"inverse\">Inverse</h2>\n<p><span class=\"math inline\">\\langle a,b \\rangle \\in \\cup_{\\langle\na,b\\rangle \\in D}R\\langle a,b\\rangle</span><br />\n<span class=\"math inline\">\\rightarrow \\langle a,b \\rangle \\in R_{\\langle\na,b \\rangle}</span><br />\nBy (i), <span class=\"math inline\">\\rightarrow \\langle a,b \\rangle \\in\nD</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1580404798
             },
             "q": {
                 "content": "<p>Using (i) show that<br />\n<span class=\"math inline\">D=\\cup_{\\langle a,b\\rangle \\in D}R\\langle\na,b\\rangle</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1580404798
             }
         },
         "numAnswer": 1,

@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Let <span class=\"math inline\">\\eta</span> be a natural transformation\nfrom <span class=\"math inline\">hom(X, -)</span> to <span\nclass=\"math inline\">F X</span>. <span class=\"math inline\">\\eta_X</span>\nis a function of <span class=\"math inline\">\\eta_X : hom(X,X) \\rightarrow\nF X</span>. Since <span class=\"math inline\">hom(X,X)</span> is a\nsingleton set, there are different <span\nclass=\"math inline\">\\eta_X</span> as many as the cardinality of <span\nclass=\"math inline\">F X</span>. In the mean time there is only one kind\nof <span class=\"math inline\">\\eta_A</span>, the <em>absurd</em> function\n, for any other component than <span class=\"math inline\">X</span>\nbecause <span class=\"math inline\">hom(X, A)</span> is empty. Therefore\nthere are different <span class=\"math inline\">\\eta</span> as many as\n<span class=\"math inline\">F A</span>.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             },
             "q": {
                 "content": "<p>A discrete category is one that has objects but no morphisms other\nthan identity morphisms. How does the Yoneda lemma work for functors\nfrom such a category?</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             }
         },
         "numAnswer": 1,

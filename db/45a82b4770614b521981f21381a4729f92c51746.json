@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>To be representable, for all <code>x</code>, <code>Maybe x</code> and\n<code>Hom(a, x)</code> must have at least 1 bijective function. But\n<code>Maybe x</code> is <span class=\"math inline\">x + 1</span> and\n<code>Hom(a, x)</code> is <span class=\"math inline\">x^a</span>. Hence it\ncan't be representable.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             },
             "q": {
                 "content": "<p>Show that <code>Maybe</code> is not representable.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             }
         },
         "numAnswer": 1,

@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Statement 1</p>\n<p>Let <span class=\"math inline\">p</span> be any limit point of <span\nclass=\"math inline\">S\\cap U</span><br />\nLet <span class=\"math inline\">O</span> be any open set such that <span\nclass=\"math inline\">p \\in O</span><br />\n<span class=\"math inline\">\\rightarrow O\\cap \\left( S\\cap U\\right) \\neq\n\\phi</span><br />\n<span class=\"math inline\">\\rightarrow O\\cap U\\neq \\phi</span><br />\n<span class=\"math inline\">\\rightarrow p</span> is also limit of <span\nclass=\"math inline\">U</span></p>\n<p>Statement 2</p>\n<p>Let <span class=\"math inline\">p</span> be any limit point of <span\nclass=\"math inline\">U</span><br />\nLet <span class=\"math inline\">O</span> be any open set such that <span\nclass=\"math inline\">p \\in O</span><br />\n<span class=\"math inline\">\\rightarrow O\\cap U\\neq \\phi \\wedge O\\cap U\\in\n\\tau</span><br />\n<span class=\"math inline\">\\rightarrow \\left( O\\cap U\\right) \\cap S\\neq\n\\phi</span><br />\n<span class=\"math inline\">\\rightarrow O\\cap \\left( U\\cap S\\right) \\neq\n\\phi</span><br />\n<span class=\"math inline\">\\rightarrow p</span> is limit of <span\nclass=\"math inline\">S\\cap U</span></p>\n<p>By statement 1&amp;2, <span class=\"math inline\">\\overline {S\\cap\nU}=\\overline {U}</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             },
             "q": {
                 "content": "<p>Let <span class=\"math inline\">S</span> be a dense subset of a\ntopological space <span class=\"math inline\">(X, \\tau)</span>. Prove that\nfor every open subset <span class=\"math inline\">U</span> of <span\nclass=\"math inline\">X</span>, <span class=\"math inline\">\\overline {S\\cap\nU}=\\overline {U}</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             }
         },
         "numAnswer": 1,

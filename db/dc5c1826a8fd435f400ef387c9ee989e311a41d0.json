@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>We can just take complementary of the case that every components\nfail.</p>\n<p><span class=\"math display\">1 - (1-P_1)(1-P_2)(1-P_3)</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1587182145
             },
             "q": {
                 "content": "<p><img\nsrc=\"https://www.probabilitycourse.com/images/chapter1/5b.png\" /></p>",
-                "posixTime": 1678612923
+                "posixTime": 1587182145
             }
         },
         "numAnswer": 1,

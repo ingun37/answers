@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>For (a), it's multiplication of choosing 4 out of 20 black phones and\n6 out of 30 white phones.</p>\n<p><span class=\"math display\">\\cfrac{{20 \\choose 4}{30 \\choose 6}}{{50\n\\choose 10}} \\approx 0.2800586031</span></p>\n<p>For (b)</p>\n<p><span class=\"math display\">\\cfrac{{20 \\choose 2}{30 \\choose 8}}{{50\n\\choose 10}} + \\cfrac{{20 \\choose 1}{30 \\choose 9}}{{50 \\choose 10}} +\n\\cfrac{{20 \\choose 0}{30 \\choose 10}}{{50 \\choose 10}} \\approx\n0.13903865738</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1587566705
             },
             "q": {
                 "content": "<p>There are 20 black cell phones and 30 white cell phones in a store.\nAn employee takes 10 phones at random. Find the probability that</p>\n<p>a. there will be exactly 4 black cell phones among the chosen phones;\nb. there will be less than 3 black cell phones among the chosen\nphones.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1587566705
             }
         },
         "numAnswer": 1,

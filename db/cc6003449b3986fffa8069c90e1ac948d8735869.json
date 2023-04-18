@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Because there won't be a sub-monoid in isomorphic relation.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             },
             "q": {
                 "content": "<p>You might think (as I did, originally) that the requirement that a\nhomomorphism of monoids preserve the unit is redundant. After all, we\nknow that for all <code>a</code>\n<code>h a * h e = h (a * e) = h a</code> So <code>h e</code> acts like a\nright unit (and, by analogy, as a left unit). The problem is that\n<code>h a</code>, for all <code>a</code> might only cover a sub-monoid\nof the target monoid. There may be a \"true\" unit outside of the image of\n<code>h</code>. Show that an isomorphism between monoids that preserves\nmultiplication must automatically preserve unit.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             }
         },
         "numAnswer": 1,

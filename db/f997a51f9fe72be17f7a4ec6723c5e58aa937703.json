@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>(a) <span class=\"math inline\">\\tau_{1} = \\{ X, \\emptyset, \\{a\\}, \\{a,\nf\\}, \\{b, f\\}, \\{a,b,f\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{1}</span> is a topology.</p>\n</blockquote>\n<p>(b) <span class=\"math inline\">\\tau_{2} = \\{ X, \\emptyset, \\{a,b,f\\},\n\\{a,b,d\\}, \\{a,b,d,f\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{2}</span> is not a topology. <span\nclass=\"math inline\">\\{a,b,f\\} \\cap \\{a,b,d\\} = \\{a,b\\}</span> doesn't\nexist.</p>\n</blockquote>\n<p>(c) <span class=\"math inline\">\\tau_{3} = \\{ X, \\emptyset, \\{f\\}, \\{e,\nf\\}, \\{a, f\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{3}</span> is not a topology. <span\nclass=\"math inline\">\\{e,f\\} \\cup \\{a,f\\} = \\{a,e,f\\}</span> doesn't\nexist.</p>\n</blockquote>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             },
             "q": {
                 "content": "<p>Let <span class=\"math inline\">X=\\{ a,b,c,d,e,f \\}</span>. Determine\nwhether or not each of the following collections of subsets of X is a\ntopology on <span class=\"math inline\">X</span>:</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             }
         },
         "numAnswer": 1,

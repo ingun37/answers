@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>The <span class=\"math inline\">-s_{0} y_1</span> part is skipped\nbecause <span class=\"math inline\">s_0</span> is 0.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1667093822
             },
             "q": {
                 "content": "<p>Use Exercise 2.7.12 to show that</p>\n<p><span class=\"math display\">\\sum_{k=1}^n x_k y_k = s_n y_{n+1} +\n\\sum_{k=1}^n s_k (y_k - y_{k+1})</span></p>\n<p>where s<em>n = x</em>1 + x<em>2 + \\cdots + x</em>n.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1667093822
             }
         },
         "numAnswer": 1,

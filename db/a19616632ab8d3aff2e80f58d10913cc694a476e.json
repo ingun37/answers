@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Because <span class=\"math inline\">X</span> and <span\nclass=\"math inline\">Y</span> are independent</p>\n<p><span class=\"math display\">P(X &gt;2 | Y &gt; 2) \\\\\n= P(X &gt;2) \\\\\n= P_X(3) + P_X(4) \\\\\n= {1 \\over 8} + {1 \\over 2} \\\\\n= {5 \\over 8} \\\\</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1587566705
             },
             "q": {
                 "content": "<p>Find <span class=\"math inline\">P(X &gt;2 | Y &gt; 2)</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1587566705
             }
         },
         "numAnswer": 1,

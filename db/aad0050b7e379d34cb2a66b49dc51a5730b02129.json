@@ -10,11 +10,11 @@
             "attr": {
                 "a": {
                     "content": "<p><span class=\"math inline\">(x)</span> is increasing and it can be\nprooven by induction.</p>\n<p>The induction step is that if <span class=\"math inline\">x_n &lt;\ny_n</span> then <span class=\"math inline\">x_{n+1} &lt; x_{n+2}</span>\nbecause</p>\n<p><span class=\"math display\">\\begin {aligned}\n&amp; x_{n+2} \\\\\n&amp; = \\sqrt{x_{n+1} y_{n+1}} \\\\\n&amp; = \\sqrt{\\sqrt{x_n y_n} \\frac {x_n + y_n} 2}\n\\end {aligned}</span></p>\n<p>Since it's prooven that arithmetic mean is bigger than geometric\nmean,</p>\n<p><span class=\"math display\">\\sqrt{x_n y_n} &lt; \\sqrt{\\sqrt{x_n y_n}\n\\frac {x_n + y_n} 2} \\rightarrow x_{n+1} &lt; x_{n+2}</span></p>\n<p><span class=\"math inline\">(y)</span> is decreasing and it can be\nprooven in similar fashion.</p>\n<p><span class=\"math inline\">x_n</span> and <span\nclass=\"math inline\">y_n</span> are each other's lower and higher bound\ntherefore both sequence converges.</p>\n<p>At the limit, <span class=\"math inline\">\\sqrt{\\lim x_n \\lim y_n} =\n\\lim x_n</span> must be true therefore <span class=\"math inline\">\\lim\nx_n = \\lim y_n</span>.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664418306
                 },
                 "q": {
                     "content": "<p>Now let <span class=\"math inline\">0 \\leq x_1 \\leq y_1</span> and\ndefine</p>\n<p><span class=\"math display\">x_{n+1} = \\sqrt{x_n y_n} \\quad \\text{and}\n\\quad y_{n+1} = \\frac {x_n + y_n} 2</span></p>\n<p>Show <span class=\"math inline\">\\lim x_n</span> and <span\nclass=\"math inline\">\\lim y_n</span> both exist and are equal.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664418306
                 }
             },
             "numAnswer": 1,
@@ -25,11 +25,11 @@
             "attr": {
                 "a": {
                     "content": "<p><span class=\"math display\">\\begin {aligned}\n&amp; 0 \\leq (x-y)^2 \\\\\n&amp; \\rightarrow 0 \\leq x^2 - 2xy + y^2 \\\\\n&amp; \\rightarrow 4xy \\leq x^2 + 2xy + y^2\\\\\n&amp; \\rightarrow 4xy \\leq (x+y)^2 \\\\\n&amp; \\rightarrow 2\\sqrt{xy} \\leq x+y \\\\\n&amp; \\rightarrow \\sqrt{xy} \\leq \\frac {x+y} {2}\n\\end {aligned}</span></p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664418306
                 },
                 "q": {
                     "content": "<p>Explain why <span class=\"math inline\">\\sqrt{xy} \\leq (x+y)/2</span>\nfor any two positive real numbers <span class=\"math inline\">x</span> and\n<span class=\"math inline\">y</span>. (The geometric mean is always less\nthan the arithmetic mean.)</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664418306
                 }
             },
             "numAnswer": 1,

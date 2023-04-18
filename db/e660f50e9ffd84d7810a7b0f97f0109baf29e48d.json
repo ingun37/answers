@@ -3,7 +3,7 @@
         "attr": {
             "q": {
                 "content": "<p>Proving the Alternating Series Test (Theorem 2.7.7) amounts to\nshowing that the sequence of partial sums <span class=\"math display\">s_n\n= a_1 - a_2 + a_3 - \\cdots \\pm a_n</span> converges. (The opening\nexample in Section 2.1 includes a typical illustration of <span\nclass=\"math inline\">(s_n)</span>.) Different characterizations of\ncompleteness lead to different proofs.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1678457406
             }
         },
         "numAnswer": 3,
@@ -15,11 +15,11 @@
             "attr": {
                 "a": {
                     "content": "<p>By Monotone Convergence Theorem, <span\nclass=\"math inline\">(a_n)</span> converges to 0 therefore for any <span\nclass=\"math inline\">\\varepsilon &gt; 0</span>, <span\nclass=\"math inline\">\\exist n</span> such that <span\nclass=\"math inline\">|a_m| \\le \\varepsilon</span> for all <span\nclass=\"math inline\">m &gt; n</span>.</p>\n<p>I'll proove by induction.</p>\n<h1 id=\"base-case\">Base case</h1>\n<p><span class=\"math inline\">|S_n - S_n| \\le \\varepsilon</span> and\n<span class=\"math inline\">|S_{n+1} - S_n| \\le \\varepsilon</span></p>\n<h2 id=\"proof\">Proof</h2>\n<p><span class=\"math inline\">|S_n - S_n| = 0 \\le \\varepsilon</span></p>\n<p>and</p>\n<p><span class=\"math inline\">|S_{n+1} - S_n| = |a_{n+1}| \\le\n\\varepsilon</span></p>\n<h1 id=\"induction-step\">Induction step</h1>\n<p>If</p>\n<p><span class=\"math display\">\\begin{align}\n&amp; |S_m - S_n| \\le \\varepsilon \\\\\n&amp; |S_{m+1} - S_n| \\le \\varepsilon\n\\end{align}</span></p>\n<p>then</p>\n<p><span class=\"math display\">\\begin{aligned}\n&amp;|S_{m+1} - S_n| \\le \\varepsilon \\\\\n&amp;|S_{m+2} - S_n| \\le \\varepsilon\n\\end{aligned}</span></p>\n<h2 id=\"proof-1\">Proof</h2>\n<p>There are two cases: <span class=\"math inline\">|S_{m+1} - S_n|</span>\nends with either <span class=\"math inline\">+ a_{m+1}</span> or <span\nclass=\"math inline\">- a_{m+1}</span>.</p>\n<h3 id=\"when-s_m1---s_n--pm-a_n1-cdots--a_m1\">When <span\nclass=\"math inline\">|S_{m+1} - S_n| = \\pm a_{n+1} \\cdots +\na_{m+1}</span></h3>\n<p><span class=\"math display\">\\begin{equation}\n\\begin{split}\n|S_{m+2} - S_n|\n&amp;= \\pm a_{n+1} \\cdots + a_{m+1} - a_{m+2} \\\\\n&amp;= |S_{m+1} - S_n| - a_{m+2}\n\\end{split}\n\\end{equation}</span></p>\n<p>(2) and (3) <span class=\"math inline\">\\implies |S_{m+2} - S_n| \\le\n\\varepsilon</span></p>\n<h3 id=\"when-s_m1---s_n--pm-a_n1-cdots---a_m1\">When <span\nclass=\"math inline\">|S_{m+1} - S_n| = \\pm a_{n+1} \\cdots -\na_{m+1}</span></h3>\n<p><span class=\"math display\">\\begin{equation}\n\\begin{split}\n|S_{m+2} - S_n|\n&amp;= \\pm a_{n+1} \\cdots + a_m - a_{m+1} + a_{m+2} \\\\\n&amp;= |S_m - S_n| - a_{m+1} + a_{m+2} \\\\\n\\end{split}\n\\end{equation}</span></p>\n<p><span class=\"math display\">\\begin{align}\n|a_{m}| &lt; |a_{m+1}| \\implies - a_{m+1} + a_{m+2} &lt; 0\n\\end{align}</span></p>\n<p>(1) and (4) and (5) <span class=\"math inline\">\\implies |S_{m+2} -\nS_n| \\le \\varepsilon</span></p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1678457406
                 },
                 "q": {
                     "content": "<p>Prove the Alternating Series Test by showing that <span\nclass=\"math inline\">(s_n)</span> is a Cauchy sequence.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1678457406
                 }
             },
             "numAnswer": 1,
@@ -45,11 +45,11 @@
             "attr": {
                 "a": {
                     "content": "<p>It goes like up-and-down, up-and-down, ... forever. I'll first proove\nthat the Nth up-and-down is a superset of the next up-and-down.</p>\n<p><span class=\"math display\">\\begin{align}\n\\begin{split}\na_{2n+1} &gt; a_{2n+2}\n&amp; \\implies 0 &gt; - a_{2n+1}  + a_{2n+2}  \\\\\n&amp; \\implies S_{2n} &gt; S_{2n} - a_{2n+1}  + a_{2n+2} \\\\\n&amp; \\implies S_{2n} &gt; S_{2n+2}\n\\end{split} \\\\\n\\begin{split}\na_{2n+2} &gt; a_{2n+3}\n&amp; \\implies a_{2n+2} - a_{2n+3} &gt; 0  \\\\\n&amp; \\implies  S_{2n+1} + a_{2n+2}  - a_{2n+3} &gt; S_{2n+1} \\\\\n&amp; \\implies S_{2n+3} &gt; S_{2n+1}\n\\end{split} \\\\\n\\end{align}</span></p>\n<p>Let <span class=\"math inline\">I_n = [S_{2n}, S_{2n+1}]</span>.\nThen</p>\n<p><span class=\"math display\">\\begin{align}\nI_{n+1} = [S_{2n+2}, S_{2n+3}]\n\\end{align}</span></p>\n<p>(1), (2), (3), (4) <span class=\"math inline\">\\implies I_n \\supset\nI_{n+1} \\supset I_{n+2} \\supset \\cdots</span>.</p>\n<p>By NIP, there exists at least one <span class=\"math inline\">x \\in I_n\n\\cap I_{n+1} \\cap I_{n+2} \\cap \\cdots</span>.</p>\n<p>The length of <span class=\"math inline\">I_n</span> is <span\nclass=\"math inline\">a_{n+1}</span> which converges to zero.\\ Therefore\nfor any <span class=\"math inline\">\\varepsilon &gt; 0</span> there exists\n<span class=\"math inline\">N</span> such that <span\nclass=\"math inline\">\\forall n &gt; N</span>, length of <span\nclass=\"math inline\">I_n</span> is less than <span\nclass=\"math inline\">\\varepsilon</span>.\\ Therefore for each <span\nclass=\"math inline\">I_n</span>, <span class=\"math inline\">|S_{2n+1} - x|\n&lt; \\varepsilon</span> and <span class=\"math inline\">I_n</span>, <span\nclass=\"math inline\">|S_{2n} - x| &lt; \\varepsilon</span>.\\ Therefore\nboth subsequence <span class=\"math inline\">(S_{2n+1})</span> and <span\nclass=\"math inline\">(S_{2_n})</span> converges to <span\nclass=\"math inline\">x</span>.\\ Those two subsequences composes the whole\nsequence therefore <span class=\"math inline\">(S_n)</span> converges.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1678526999
                 },
                 "q": {
                     "content": "<p>Supply another proof for this result using the Nested Interval\nProperty (Theorem 1.4.1).</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1678457481
                 }
             },
             "numAnswer": 1,

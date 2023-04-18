@@ -10,11 +10,11 @@
             "attr": {
                 "a": {
                     "content": "<p>For convinience, since free monoid from singleton generator is\nisomorphic to natural numbers, I'll denote 0 as identity element and 1\nas singleton element.</p>\n<p><img\nsrc=\"/answers/books/Category%20Theory%20For%20Programmers/19.%20Free%20Forgetful%20Adjunctions/1/IMG_F92ACCF53977-1.jpeg\" /></p>\n<p>Let's define <span class=\"math inline\">g</span> with <span\nclass=\"math inline\">f</span>.<br />\n<span class=\"math inline\">g(1) = f(1)</span><br />\n<span class=\"math inline\">g</span> is homomorphism so by definition\nbelow statements will automatically be hold.<br />\n<span class=\"math inline\">g(0) = e</span> where <span\nclass=\"math inline\">e</span> is <span class=\"math inline\">m</span>'s\nidentity.<br />\n<span class=\"math inline\">g(1 + 1) = f(1) \\cdot f(1)</span> where <span\nclass=\"math inline\">\\cdot</span> is <span class=\"math inline\">m</span>'s\noperator.</p>\n<p>Now Let's define <span class=\"math inline\">f</span> with <span\nclass=\"math inline\">g</span>.<br />\nSince <span class=\"math inline\">f</span>'s domain has only one element\nbelow would be sufficient.<br />\n<span class=\"math inline\">f(1) = g(1)</span></p>\n<p>Hence <span class=\"math inline\">g</span> and <span\nclass=\"math inline\">f</span> is one-to-one correspondent.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1579753050
                 },
                 "q": {
                     "content": "<p>Consider a free monoid built from a singleton set as its generator.\nShow that there is a one-to-one correspondence between morphisms from\nthis free monoid to any monoid <code>m</code>, and functions from the\nsingleton set to the underlying set of <code>m</code>.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1579753050
                 }
             },
             "numAnswer": 1,

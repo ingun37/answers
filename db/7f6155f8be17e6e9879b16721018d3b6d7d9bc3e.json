@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>(i) a discrete space;</p>\n<blockquote>\n<p>Yes. Every subset is closed in discrete space.</p>\n</blockquote>\n<p>(ii) an indiscrete space with at least two points;</p>\n<blockquote>\n<p>No. Only <span class=\"math inline\">\\emptyset</span> and <span\nclass=\"math inline\">X</span> is closed in indiscrete space.</p>\n</blockquote>\n<p>(iii) an infinite set with the finite-closed topology.</p>\n<blockquote>\n<p>Yes. Every finite subsets are closed in finite-closed topology.</p>\n</blockquote>\n<p>(iv) Example 1.1.2;</p>\n<blockquote>\n<p>No. It has no <span class=\"math inline\">\\{b\\}</span> as open set. (or\nany other element except <span class=\"math inline\">a</span>)</p>\n</blockquote>\n<p>(v) Example 1.1 #5 (i)</p>\n<blockquote>\n<p>No. Every closed sets are infinite.</p>\n</blockquote>\n<p>(vi) Example 1.1 #5 (ii)</p>\n<blockquote>\n<p>No. For the same reason as (v)</p>\n</blockquote>\n<p>(vii) Example 1.1 #5 (iii)</p>\n<blockquote>\n<p>No. For the same reason as (v)</p>\n</blockquote>\n<p>(viii) Example 1.1 #6 (i)</p>\n<blockquote>\n<p>No. Every closed sets are infinite.</p>\n</blockquote>\n<p>(ix) Example 1.1 #6 (ii)</p>\n<blockquote>\n<p>No. Every closed sets must contain 1.</p>\n</blockquote>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             },
             "q": {
                 "content": "<p>A topological space <span class=\"math inline\">(X, \\tau)</span> is\nsaid to be a <span class=\"math inline\">T_1</span>-space if every\nsingleton set <span class=\"math inline\">\\{x\\}</span> is closed in <span\nclass=\"math inline\">(X,\\tau)</span>. Show that precisely two of the\nfollowing nine topological spaces are <span\nclass=\"math inline\">T_1</span>-space.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             }
         },
         "numAnswer": 1,

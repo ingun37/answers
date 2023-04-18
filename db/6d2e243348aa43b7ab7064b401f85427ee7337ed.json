@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>Counter example <span class=\"math inline\">f^{-1}((0,2)) =\n(0,1]</span>, which is not an open set, exists therefore <span\nclass=\"math inline\">f</span> is not continuous.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1640592069
             },
             "q": {
                 "content": "<p>Let <span class=\"math inline\">f : \\mathbb{R} \\rightarrow\n\\mathbb{R}</span> be given by</p>\n<p><span class=\"math display\">f(x)=\n\\begin{dcases}\n   x, &amp; x \\le 1 \\\\\n   x+2, &amp; x \\gt 1\n\\end{dcases}</span></p>\n<p>is <span class=\"math inline\">f</span> continuous? (Justify your\nanswer.)</p>",
-                "posixTime": 1678612923
+                "posixTime": 1640592069
             }
         },
         "numAnswer": 1,

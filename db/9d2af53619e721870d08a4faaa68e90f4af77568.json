@@ -3,7 +3,7 @@
         "attr": {
             "q": {
                 "content": "<p>Let <span class=\"math inline\">(a_n)</span> be a bounded sequence.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1664868754
             }
         },
         "numAnswer": 4,
@@ -15,11 +15,11 @@
             "attr": {
                 "a": {
                     "content": "<p>Every <span class=\"math inline\">a_n</span> is supermum of some\nstarting point <span class=\"math inline\">a_m</span>, e.i, <span\nclass=\"math inline\">\\sup \\{ a_m, a_{m+1}, \\dots, a_n, a_{n+1} \\dots\n\\}</span> such that <span class=\"math inline\">m &lt; n</span>.</p>\n<p>Every supermum <span class=\"math inline\">\\sup \\{ a_m, a_{m+1}, \\dots,\na_n, a_{n+1} \\dots \\}</span> is decided by some value <span\nclass=\"math inline\">a_n</span> such that <span class=\"math inline\">m\n&lt; n</span>.</p>\n<p>These two statements leads to the answer ...</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664870270
                 },
                 "q": {
                     "content": "<p>Show that <span class=\"math inline\">\\lim \\inf a_n \\leq \\lim \\sup\na_n</span> if and only if <span class=\"math inline\">\\lim a_n</span>\nexists. In this case, all three share the same value.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664870270
                 }
             },
             "numAnswer": 1,
@@ -30,11 +30,11 @@
             "attr": {
                 "a": {
                     "content": "<p>A reasonable definition for <span class=\"math inline\">\\lim \\inf\na_n</span> would be <span class=\"math inline\">y_n = \\inf {a_k : k \\geq\nn}</span>.</p>\n<p>Limit exists because it's increasing and bounded.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664868754
                 },
                 "q": {
                     "content": "<p>The <em>limit superior</em> of <span\nclass=\"math inline\">(a_n)</span>, or <span class=\"math inline\">\\lim \\sup\na_n</span>, is defined by</p>\n<p><span class=\"math display\">\\lim \\sup a_n = \\lim y_n</span></p>\n<p>where <span class=\"math inline\">y_n</span> is the sequence from part\n(a) of this exercise. Provide a reasonable definition for <span\nclass=\"math inline\">\\lim \\inf a_n</span> and briefly explain why it\nalways exists for any bounded sequence.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664868754
                 }
             },
             "numAnswer": 1,
@@ -45,11 +45,11 @@
             "attr": {
                 "a": {
                     "content": "<p><span class=\"math inline\">(y_n)</span> decreases. It's bounded too.\nHence converges.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664868754
                 },
                 "q": {
                     "content": "<p>Prove that the sequence defined by <span class=\"math inline\">y_n =\n\\sup\\{ a_k : k \\geq n \\}</span> converges.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664868754
                 }
             },
             "numAnswer": 1,
@@ -60,11 +60,11 @@
             "attr": {
                 "a": {
                     "content": "<p><span class=\"math inline\">\\inf \\{ a_k \\} \\leq \\sup \\{ a_k \\}</span>\nby definition.</p>\n<p><span class=\"math inline\">\\inf \\{ a_k \\} &lt; \\sup \\{ a_k \\}</span>\nholds when <span class=\"math inline\">(a_n)</span> is <span\nclass=\"math display\">1, -1, 1, -1, 1, -1 \\dots</span></p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664868754
                 },
                 "q": {
                     "content": "<p>Prove that <span class=\"math inline\">\\lim \\inf a_n \\leq \\lim \\sup\na_n</span> for every bounded sequence, and give an example of a sequence\nfor which the inequality is strict.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664868754
                 }
             },
             "numAnswer": 1,

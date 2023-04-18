@@ -3,7 +3,7 @@
         "attr": {
             "q": {
                 "content": "<p>(Calculating Square Roots). Let <span class=\"math inline\">x_1 =\n2</span>, and define</p>\n<p><span class=\"math display\">x_{n+1} = \\frac 1 2 \\left(x_n + \\frac 2\n{x_n} \\right)</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1664372040
             }
         },
         "numAnswer": 2,
@@ -15,11 +15,11 @@
             "attr": {
                 "a": {
                     "content": "<p><span class=\"math display\">\\frac 1 c x = \\frac 1 x \\rightarrow x =\n\\left(1 - \\frac 1 c\\right)\\left(x + \\frac 1 {1 - \\frac 1 c}\\frac 1\nx\\right)</span></p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664373691
                 },
                 "q": {
                     "content": "<p>Modify the sequence <span class=\"math inline\">(x_n)</span> so that it\nconverges to <span class=\"math inline\">\\sqrt c</span>.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664373691
                 }
             },
             "numAnswer": 1,
@@ -30,11 +30,11 @@
             "attr": {
                 "a": {
                     "content": "<p>Assume <span class=\"math inline\">x &lt; \\frac 1 2 \\left(x + \\frac 2\nx\\right)</span>, then</p>\n<p><span class=\"math display\">\\begin {aligned}\n&amp; x &lt; \\frac 1 2 \\left(x + \\frac 2 x\\right) \\\\\n&amp; \\rightarrow \\frac x 2 &lt; \\frac 1 x \\\\\n&amp; \\rightarrow \\frac {\\frac 1 2 \\left(x + \\frac 2 x\\right)} 2 &lt;\n\\frac 1 {\\frac 1 2 \\left(x + \\frac 2 x\\right)} \\\\\n&amp; \\rightarrow \\frac 1 4 \\left( x + \\frac 2 x \\right) &lt; \\frac {2x}\n{x^2 + 2} \\\\\n&amp; \\rightarrow \\frac 1 4 \\left(x^2 + 2\\right) &lt; \\frac {2x^2} {x^2\n+ 2} \\\\\n&amp; \\rightarrow x^4 +4x + 4 &lt; 8x^2 \\\\\n&amp; \\rightarrow (x^2 - 2)^2 &lt; 0\n\\end {aligned}</span></p>\n<p>It contradicts. Therefore <span class=\"math inline\">x \\geq \\frac 1 2\n\\left(x + \\frac 2 x\\right)</span>, therefore <span\nclass=\"math inline\">X</span> decrease.</p>\n<p>Also, everyterms are positive therefore 0 is a lower bound. Therefore\n<span class=\"math inline\">X</span> converges.</p>\n<p>Limit exists therefore</p>\n<p><span class=\"math display\">\\frac {\\lim x} 2 = \\frac 1 {\\lim x}\n\\rightarrow \\lim x = \\sqrt2</span></p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664372040
                 },
                 "q": {
                     "content": "<p>Show that <span class=\"math inline\">x_n^2</span> is always greater\nthan or equal to 2, and then use this to prove that <span\nclass=\"math inline\">x_n - x_{n+1} \\geq 0</span>. Conclude that <span\nclass=\"math inline\">\\lim x_n = \\sqrt 2</span>.</p>",
-                    "posixTime": 1678612923
+                    "posixTime": 1664372040
                 }
             },
             "numAnswer": 1,

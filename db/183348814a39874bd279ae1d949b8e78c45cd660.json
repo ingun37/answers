@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>In the context of given example from the book, it's same to\nequalizer. (Of course it's mostly not in outside of the context. Check\nout <a\nhref=\"https://en.wikipedia.org/wiki/Coequalizer\">wikipedia</a>)</p>\n<p>I'll use the same example the book used explaining equalizer.</p>\n<h2 id=\"equalizer\">equalizer</h2>\n<p><span class=\"math inline\">ACx=BCx</span><br />\n<span class=\"math inline\">\\rightarrow \\left( A-B\\right)\nCx=0</span><br />\n<span class=\"math inline\">\\rightarrow \\left( \\left( 1\\enspace 2\\right)\n-\\left( -1\\enspace 1\\right) \\right) C=0</span><br />\n<span class=\"math inline\">\\rightarrow \\left( 2\\enspace 1\\right)\nC=0</span><br />\n<span class=\"math inline\">\\rightarrow C=\\begin{pmatrix}1 \\\\\n-2\\end{pmatrix}</span></p>\n<h2 id=\"coequalizer\">coequalizer</h2>\n<p><span class=\"math inline\">CA\\begin{pmatrix}x\n\\\\y\\end{pmatrix}=CB\\begin{pmatrix}x \\\\ y\\end{pmatrix}</span><br />\n<span class=\"math inline\">\\rightarrow CA-CB=0</span><br />\n<span class=\"math inline\">\\rightarrow C\\left( A-B\\right) =0</span><br />\n<span class=\"math inline\">\\rightarrow C\\left( 2\\enspace 1\\right)\n=0</span><br />\n<span class=\"math inline\">\\rightarrow C=\\begin{pmatrix}1\n\\\\-2\\end{pmatrix}</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             },
             "q": {
                 "content": "<p>Can you guess what a coequalizer is?</p>",
-                "posixTime": 1678612923
+                "posixTime": 1576759868
             }
         },
         "numAnswer": 1,

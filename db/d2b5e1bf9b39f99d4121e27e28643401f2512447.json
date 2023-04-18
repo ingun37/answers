@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>It's easier for an equation with absolute values to express in a\npiecewise function.</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;|x-y| \\leq \\frac{1}{2} \\\\\n  &amp;\\rightarrow \\begin{cases}\n    x - \\frac{1}{2} \\leq y &amp;\\text{if } y \\leq x \\\\\n    y \\leq \\frac{1}{2} + x &amp;\\text{if } x &lt; y\n  \\end{cases}\n\\end{aligned}</span></p>\n<p>Putting <span class=\"math inline\">A</span> onto the x-y plane:</p>\n<p><img\nsrc=\"/answers/books/Introduction%20to%20Probability,%20Statistics,%20and%20Random%20Processes/1.5.0/30/a/IMG_FBA6405D2C50-1.jpeg\" /></p>\n<p>Putting <span class=\"math inline\">B</span> onto the x-y plane:</p>\n<p><img\nsrc=\"/answers/books/Introduction%20to%20Probability,%20Statistics,%20and%20Random%20Processes/1.5.0/30/a/IMG_9E3C3EEA3B9F-1.jpeg\" /></p>",
-                "posixTime": 1678612923
+                "posixTime": 1587185876
             },
             "q": {
                 "content": "<p>Show sets <span class=\"math inline\">A</span> and <span\nclass=\"math inline\">B</span> in the x-y plane.</p>",
-                "posixTime": 1678612923
+                "posixTime": 1587185876
             }
         },
         "numAnswer": 1,

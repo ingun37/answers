@@ -3,11 +3,11 @@
         "attr": {
             "a": {
                 "content": "<p>If <span class=\"math inline\">{\\langle a,b \\rangle} \\in D_1 \\cap\nD_2</span><br />\nthen by (i), there is <span class=\"math inline\">D_{\\langle a,b\n\\rangle}</span><br />\nthen by definition of right hand, <span class=\"math inline\">{\\langle a,b\n\\rangle} \\in \\cup_{{\\langle a,b \\rangle} \\in D_1 \\cap D_2} D_{\\langle\na,b \\rangle}</span></p>\n<h2 id=\"inverse\">Inverse</h2>\n<p>If <span class=\"math inline\">{\\langle a,b \\rangle} \\in \\cup_{{\\langle\na,b \\rangle} \\in D_1 \\cap D_2} D_{\\langle a,b \\rangle}</span><br />\nthen it's like <span class=\"math inline\">{\\langle a,b \\rangle} \\in\nD_{\\langle a,b \\rangle}</span>.<br />\nWe proved <span class=\"math inline\">D_{\\langle a,b \\rangle} \\subset D_1\n\\cap D_2</span> in (i)</p>",
-                "posixTime": 1678612923
+                "posixTime": 1580462943
             },
             "q": {
                 "content": "<p>Show that</p>\n<p><span class=\"math inline\">D_1 \\cap D_2 = \\cup_{{\\langle a,b \\rangle}\n\\in D_1 \\cap D_2} D_{\\langle a,b \\rangle}</span></p>",
-                "posixTime": 1678612923
+                "posixTime": 1580462943
             }
         },
         "numAnswer": 1,
