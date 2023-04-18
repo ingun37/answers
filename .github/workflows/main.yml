@@ -28,6 +28,11 @@ jobs:
         # uses: cachix/install-nix-action@29bd9290ef037a3ecbdafe83cbd2185e9dd0fa0a
         uses: cachix/install-nix-action@v20
 
+      - name: Add Nix Channels
+        run: |
+          nix-channel --add https://nixos.org/channels/nixpkgs-unstable
+          nix-channel --update
+
       - name: Checkout DB
         uses: actions/checkout@v3
         with:
