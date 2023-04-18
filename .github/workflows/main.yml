@@ -38,6 +38,7 @@ jobs:
         with:
           repository: 'ingun37/answers-db'
           path: 'answers-db'
+          fetch-depth: 0
 
       - name: Run answers-script
         run: |
