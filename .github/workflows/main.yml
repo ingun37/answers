@@ -22,35 +22,35 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      
+
       - name: Install Nix
         # You may pin to the exact commit or the version.
         # uses: cachix/install-nix-action@29bd9290ef037a3ecbdafe83cbd2185e9dd0fa0a
         uses: cachix/install-nix-action@v20
-        
+
       - name: Checkout DB
         uses: actions/checkout@v3
         with:
           repository: 'ingun37/answers-db'
           path: 'answers-db'
-          
+
       - name: Install answers-script
         run: |
-          TAR="https://github.com/ingun37/answers-script/archive/refs/tags/1.0.0.tar.gz"
+          TAR="https://github.com/ingun37/answers-script/archive/refs/tags/1.0.1.tar.gz"
           nix-env --install -E "with import <nixpkgs> {}; let f = import (fetchTarball $TAR); in _: (haskellPackages.callPackage f {})"
-          
+
       - name: Run annswers-script
         run: answers-script-exe --prefixpath answers --src answers-db/ --dst static/
-        
+
       - name: setup nodejs
         uses: actions/setup-node@v2
         with:
           node-version: '16'
-          
+
       - run: npm install
-      
+
       - run: npm run build
-      
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
