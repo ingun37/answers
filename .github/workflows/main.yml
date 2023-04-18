@@ -42,7 +42,7 @@ jobs:
       - name: Run answers-script
         run: |
           TAR="https://github.com/ingun37/answers-script/archive/refs/tags/1.0.1.tar.gz"
-          nix-shell -p "with import <nixpkgs> {}; let f = import (fetchTarball $TAR); in haskellPackages.callPackage f {}" --run "answers-script-exe --prefixpath answers --src answers-db/ --dst static/"
+          nix-shell -p "with import <nixpkgs> {}; let f = import (fetchTarball $TAR); in haskellPackages.callPackage f {}" --run "answers-script --prefixpath answers --src answers-db/ --dst static/"
 
       - name: setup nodejs
         uses: actions/setup-node@v2
