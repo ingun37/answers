@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<h3 id=\"advantages\">Advantages</h3>\n<p>Computation speed.</p>\n<h3 id=\"disadvantages\">Disadvantages</h3>\n<p>Poorly estimatied <span class=\"math inline\">C</span>.</p>",
-            "q": "<p>An extreme version of gradient descent is to use a mini-batch size of\njust 1. That is, given a training input, <span\nclass=\"math inline\">x</span>, we update our weights and biases according\nto the rules <span class=\"math inline\">w_k \\rightarrow w_k&#39; = w_k -\n\\eta \\partial C_x / \\partial w_k</span> and <span\nclass=\"math inline\">b_l \\rightarrow b_l&#39; = b_l - \\eta \\partial C_x /\n\\partial b_l</span>. Then we choose another training input, and update\nthe weights and biases again. And so on, repeatedly. This procedure is\nknown as online, on-line, or incremental learning. In online learning, a\nneural network learns from just one training input at a time (just as\nhuman beings do). Name one advantage and one disadvantage of online\nlearning, compared to stochastic gradient descent with a mini-batch size\nof, say, 20.</p>"
+            "a": {
+                "content": "<h3 id=\"advantages\">Advantages</h3>\n<p>Computation speed.</p>\n<h3 id=\"disadvantages\">Disadvantages</h3>\n<p>Poorly estimatied <span class=\"math inline\">C</span>.</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>An extreme version of gradient descent is to use a mini-batch size of\njust 1. That is, given a training input, <span\nclass=\"math inline\">x</span>, we update our weights and biases according\nto the rules <span class=\"math inline\">w_k \\rightarrow w_k&#39; = w_k -\n\\eta \\partial C_x / \\partial w_k</span> and <span\nclass=\"math inline\">b_l \\rightarrow b_l&#39; = b_l - \\eta \\partial C_x /\n\\partial b_l</span>. Then we choose another training input, and update\nthe weights and biases again. And so on, repeatedly. This procedure is\nknown as online, on-line, or incremental learning. In online learning, a\nneural network learns from just one training input at a time (just as\nhuman beings do). Name one advantage and one disadvantage of online\nlearning, compared to stochastic gradient descent with a mini-batch size\nof, say, 20.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "b1578b65a86590191693b8f85e142c7b33013203",

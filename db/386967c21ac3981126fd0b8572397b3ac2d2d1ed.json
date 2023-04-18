@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>Yes. <code>Reader a</code> is <code>Hom(a, -)</code></p>",
-            "q": "<p>Is the <code>Reader</code> functor representable?</p>"
+            "a": {
+                "content": "<p>Yes. <code>Reader a</code> is <code>Hom(a, -)</code></p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Is the <code>Reader</code> functor representable?</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "386967c21ac3981126fd0b8572397b3ac2d2d1ed",

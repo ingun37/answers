@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>Alternating harmonic sequence, e.i.,</p>\n<p><span class=\"math display\">\\frac 1 1, - \\frac 1 2, \\frac 1 3, -\\frac\n1 4, \\cdots</span></p>",
-            "q": "<p>A Cauchy sequence with an unbounded subsequence.</p>"
+            "a": {
+                "content": "<p>Alternating harmonic sequence, e.i.,</p>\n<p><span class=\"math display\">\\frac 1 1, - \\frac 1 2, \\frac 1 3, -\\frac\n1 4, \\cdots</span></p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>A Cauchy sequence with an unbounded subsequence.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "35ea4162061e88a9a536a151fea06508db40f726",

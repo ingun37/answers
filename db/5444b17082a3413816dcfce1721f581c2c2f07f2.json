@@ -8,7 +8,10 @@
     "kids": [
         {
             "attr": {
-                "q": "<p>I've stated the equations of backpropagation (notably (BP1) and\n(BP2)) using the Hadamard product. This presentation may be\ndisconcerting if you're unused to the Hadamard product. There's an\nalternative approach, based on conventional matrix multiplication, which\nsome readers may find enlightening.</p>"
+                "q": {
+                    "content": "<p>I've stated the equations of backpropagation (notably (BP1) and\n(BP2)) using the Hadamard product. This presentation may be\ndisconcerting if you're unused to the Hadamard product. There's an\nalternative approach, based on conventional matrix multiplication, which\nsome readers may find enlightening.</p>",
+                    "posixTime": 1678612923
+                }
             },
             "numAnswer": 3,
             "sha1": "6ed65dadd1a6039b895159d69c1c0d8be2959671",

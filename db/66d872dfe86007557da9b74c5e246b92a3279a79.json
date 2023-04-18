@@ -1,7 +1,10 @@
 {
     "item": {
         "attr": {
-            "q": "<p>Consider a communication system. At any given time, the communication\nchannel is in good condition with probability 0.8, and is in bad\ncondition with probability 0.2. An error occurs in a transmission with\nprobability 0.1 if the channel is in good condition, and with\nprobability 0.3 if the channel is in bad condition. Let <span\nclass=\"math inline\">G</span> be the event that the channel is in good\ncondition and <span class=\"math inline\">E</span> be the event that there\nis an error in transmission.</p>"
+            "q": {
+                "content": "<p>Consider a communication system. At any given time, the communication\nchannel is in good condition with probability 0.8, and is in bad\ncondition with probability 0.2. An error occurs in a transmission with\nprobability 0.1 if the channel is in good condition, and with\nprobability 0.3 if the channel is in bad condition. Let <span\nclass=\"math inline\">G</span> be the event that the channel is in good\ncondition and <span class=\"math inline\">E</span> be the event that there\nis an error in transmission.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 3,
         "sha1": "66d872dfe86007557da9b74c5e246b92a3279a79",
@@ -10,8 +13,29 @@
     "kids": [
         {
             "attr": {
-                "a": "<p><img\nsrc=\"/answers/books/Introduction%20to%20Probability,%20Statistics,%20and%20Random%20Processes/1.5.0/27/a/IMG_0602.jpeg\" /></p>",
-                "q": "<p>Complete the following tree diagram:</p>\n<p><img\nsrc=\"https://www.probabilitycourse.com/images/chapter1/4.png\" /></p>"
+                "a": {
+                    "content": "<p>It can be solved by using the <em>law of total probability</em>.</p>\n<p><span class=\"math display\">P(G \\cap E) + P(G^c \\cap E) =\n0.14</span></p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>Using the tree find <span class=\"math inline\">P(E)</span>.</p>",
+                    "posixTime": 1678612923
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "adb5135494e9b700d5f2532d5c43cd054554cd77",
+            "title": "b"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<p><img\nsrc=\"/answers/books/Introduction%20to%20Probability,%20Statistics,%20and%20Random%20Processes/1.5.0/27/a/IMG_0602.jpeg\" /></p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>Complete the following tree diagram:</p>\n<p><img\nsrc=\"https://www.probabilitycourse.com/images/chapter1/4.png\" /></p>",
+                    "posixTime": 1678612923
+                }
             },
             "numAnswer": 1,
             "sha1": "d4bed71672054e81f625bdd1f5c8fe2a6fc2921c",
@@ -19,21 +43,18 @@
         },
         {
             "attr": {
-                "a": "<p>Use the <em>Bayes' rule</em>.</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;P(G|E^c) \\\\\n  &amp;= \\cfrac{P(E^c|G)P(G)}{P(E^c)} \\\\\n  &amp;= \\cfrac{P(E^c|G)P(G)}{P(G \\cap E^c) + P(G^c \\cap E^c)} \\\\\n  &amp;= \\cfrac{0.72}{0.72 + 0.14} \\\\\n  &amp;\\approx 0.8372 \\\\\n\\end{aligned}</span></p>",
-                "q": "<p>Using the tree find <span class=\"math inline\">P(G|E^c)</span>.</p>"
+                "a": {
+                    "content": "<p>Use the <em>Bayes' rule</em>.</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;P(G|E^c) \\\\\n  &amp;= \\cfrac{P(E^c|G)P(G)}{P(E^c)} \\\\\n  &amp;= \\cfrac{P(E^c|G)P(G)}{P(G \\cap E^c) + P(G^c \\cap E^c)} \\\\\n  &amp;= \\cfrac{0.72}{0.72 + 0.14} \\\\\n  &amp;\\approx 0.8372 \\\\\n\\end{aligned}</span></p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>Using the tree find <span class=\"math inline\">P(G|E^c)</span>.</p>",
+                    "posixTime": 1678612923
+                }
             },
             "numAnswer": 1,
             "sha1": "51b291e8f1ad980e341a74c0a6bec7826ce52bad",
             "title": "c"
-        },
-        {
-            "attr": {
-                "a": "<p>It can be solved by using the <em>law of total probability</em>.</p>\n<p><span class=\"math display\">P(G \\cap E) + P(G^c \\cap E) =\n0.14</span></p>",
-                "q": "<p>Using the tree find <span class=\"math inline\">P(E)</span>.</p>"
-            },
-            "numAnswer": 1,
-            "sha1": "adb5135494e9b700d5f2532d5c43cd054554cd77",
-            "title": "b"
         }
     ],
     "parentSha1": "845fbf15d0fb7458c8520721c640c46d45dc2ca8",

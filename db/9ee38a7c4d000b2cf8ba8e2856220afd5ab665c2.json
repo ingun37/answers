@@ -8,21 +8,33 @@
     "kids": [
         {
             "attr": {
-                "a": "<p>For any open set <span class=\"math inline\">S \\in \\mathcal{T}</span>,\n<span class=\"math inline\">f^{-1}(S) = f(S) = S \\in\n\\mathcal{T}</span>.</p>\n<p>Hence continuous.</p>",
-                "q": "<p>Let <span class=\"math inline\">f:(X,\\mathcal{T}) \\rightarrow\n(X,\\mathcal{T})</span> be the identity function. Show that <span\nclass=\"math inline\">f</span> is continuous.</p>"
-            },
-            "numAnswer": 1,
-            "sha1": "f5f995e07b4f68c807d96589ab29c6e0394fdeae",
-            "title": "(ii)"
-        },
-        {
-            "attr": {
-                "a": "<p>Let <span class=\"math inline\">f(x) = c</span>. Any open set <span\nclass=\"math inline\">S \\in \\tau_1</span> either contains <span\nclass=\"math inline\">c</span> or not.</p>\n<p>If <span class=\"math inline\">c \\in S</span>, then <span\nclass=\"math inline\">f^{-1}(S) = X</span>.<br />\nIf <span class=\"math inline\">c \\notin S</span>, then <span\nclass=\"math inline\">f^{-1}(S) = \\emptyset</span>.</p>\n<p>Hence continuous.</p>",
-                "q": "<p>Let <span class=\"math inline\">f:(X,\\mathcal{T}) \\rightarrow (Y,\n\\tau_1)</span> be a constant function. Show that <span\nclass=\"math inline\">f</span> is continuous.</p>"
+                "a": {
+                    "content": "<p>Let <span class=\"math inline\">f(x) = c</span>. Any open set <span\nclass=\"math inline\">S \\in \\tau_1</span> either contains <span\nclass=\"math inline\">c</span> or not.</p>\n<p>If <span class=\"math inline\">c \\in S</span>, then <span\nclass=\"math inline\">f^{-1}(S) = X</span>.<br />\nIf <span class=\"math inline\">c \\notin S</span>, then <span\nclass=\"math inline\">f^{-1}(S) = \\emptyset</span>.</p>\n<p>Hence continuous.</p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>Let <span class=\"math inline\">f:(X,\\mathcal{T}) \\rightarrow (Y,\n\\tau_1)</span> be a constant function. Show that <span\nclass=\"math inline\">f</span> is continuous.</p>",
+                    "posixTime": 1678612923
+                }
             },
             "numAnswer": 1,
             "sha1": "b0286b109d3742c5563bfaf98ef53d5494d17e24",
             "title": "(i)"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<p>For any open set <span class=\"math inline\">S \\in \\mathcal{T}</span>,\n<span class=\"math inline\">f^{-1}(S) = f(S) = S \\in\n\\mathcal{T}</span>.</p>\n<p>Hence continuous.</p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>Let <span class=\"math inline\">f:(X,\\mathcal{T}) \\rightarrow\n(X,\\mathcal{T})</span> be the identity function. Show that <span\nclass=\"math inline\">f</span> is continuous.</p>",
+                    "posixTime": 1678612923
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "f5f995e07b4f68c807d96589ab29c6e0394fdeae",
+            "title": "(ii)"
         }
     ],
     "parentSha1": "23fa51b26c3cbf394df895694152dc491472332f",

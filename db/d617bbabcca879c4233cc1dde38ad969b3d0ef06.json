@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>Assume <span class=\"math inline\">(a_n)</span> diverges. According to\nexercise 2.5.2-(c), bounded and diverging sequence must have at least\ntwo limit points. But <span class=\"math inline\">(a_n)</span> is said to\nhave only one limit point which is contradiction. Therefore <span\nclass=\"math inline\">(a_n)</span> converges.</p>\n<p>Subsequence of converging sequence has the same limit point therefore\n<span class=\"math inline\">(a_n)</span> converges to <span\nclass=\"math inline\">a</span>.</p>",
-            "q": "<p>Assume <span class=\"math inline\">(a_n)</span> is a bounded sequence\nwith the property that every convergent subsequence of <span\nclass=\"math inline\">(a_n)</span> converges to the same limit <span\nclass=\"math inline\">a \\in \\mathbf{R}</span>. Show that <span\nclass=\"math inline\">(a_n)</span> must converge to <span\nclass=\"math inline\">a</span>.</p>"
+            "a": {
+                "content": "<p>Assume <span class=\"math inline\">(a_n)</span> diverges. According to\nexercise 2.5.2-(c), bounded and diverging sequence must have at least\ntwo limit points. But <span class=\"math inline\">(a_n)</span> is said to\nhave only one limit point which is contradiction. Therefore <span\nclass=\"math inline\">(a_n)</span> converges.</p>\n<p>Subsequence of converging sequence has the same limit point therefore\n<span class=\"math inline\">(a_n)</span> converges to <span\nclass=\"math inline\">a</span>.</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Assume <span class=\"math inline\">(a_n)</span> is a bounded sequence\nwith the property that every convergent subsequence of <span\nclass=\"math inline\">(a_n)</span> converges to the same limit <span\nclass=\"math inline\">a \\in \\mathbf{R}</span>. Show that <span\nclass=\"math inline\">(a_n)</span> must converge to <span\nclass=\"math inline\">a</span>.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "d617bbabcca879c4233cc1dde38ad969b3d0ef06",

@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>For all open set <span class=\"math inline\">U</span> containing <span\nclass=\"math inline\">p</span>, <span class=\"math inline\">U</span>\nintersects with <span class=\"math inline\">S</span>.<br />\n<span class=\"math inline\">S</span> is subset of <span\nclass=\"math inline\">T</span> so <span class=\"math inline\">U</span>\nintersects with <span class=\"math inline\">T</span> as well.<br />\nBy definition, <span class=\"math inline\">p</span> becomes limit point of\n<span class=\"math inline\">T</span>.</p>",
-            "q": "<p>If <span class=\"math inline\">p</span> is a limit point of the set\n<span class=\"math inline\">S</span>, verify that <span\nclass=\"math inline\">p</span> is also a limit point of the set <span\nclass=\"math inline\">T</span>.</p>"
+            "a": {
+                "content": "<p>For all open set <span class=\"math inline\">U</span> containing <span\nclass=\"math inline\">p</span>, <span class=\"math inline\">U</span>\nintersects with <span class=\"math inline\">S</span>.<br />\n<span class=\"math inline\">S</span> is subset of <span\nclass=\"math inline\">T</span> so <span class=\"math inline\">U</span>\nintersects with <span class=\"math inline\">T</span> as well.<br />\nBy definition, <span class=\"math inline\">p</span> becomes limit point of\n<span class=\"math inline\">T</span>.</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>If <span class=\"math inline\">p</span> is a limit point of the set\n<span class=\"math inline\">S</span>, verify that <span\nclass=\"math inline\">p</span> is also a limit point of the set <span\nclass=\"math inline\">T</span>.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "a7865b1395c4230fec5e72b2ce076f450061ec67",

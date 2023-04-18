@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>Let's say <span class=\"math inline\">\\lim x_n = x</span>, then</p>\n<p><span class=\"math display\">\\begin {aligned}\n&amp; x = \\frac 1 {4-x} \\\\\n&amp; \\rightarrow 4x - x^2 - 1=0\n\\end {aligned}</span></p>\n<p>Solve quadratic equation, you get <span class=\"math inline\">2 \\pm\n\\sqrt3</span>. But it has to be less than 3 so the answer is <span\nclass=\"math inline\">2-\\sqrt3 \\approx 0.2679491924311227</span></p>",
-            "q": "<p>Take the limit of each side of the recursive equation in part (a) to\nexplicitly compute <span class=\"math inline\">\\lim x_n</span>.</p>"
+            "a": {
+                "content": "<p>Let's say <span class=\"math inline\">\\lim x_n = x</span>, then</p>\n<p><span class=\"math display\">\\begin {aligned}\n&amp; x = \\frac 1 {4-x} \\\\\n&amp; \\rightarrow 4x - x^2 - 1=0\n\\end {aligned}</span></p>\n<p>Solve quadratic equation, you get <span class=\"math inline\">2 \\pm\n\\sqrt3</span>. But it has to be less than 3 so the answer is <span\nclass=\"math inline\">2-\\sqrt3 \\approx 0.2679491924311227</span></p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Take the limit of each side of the recursive equation in part (a) to\nexplicitly compute <span class=\"math inline\">\\lim x_n</span>.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "df7ca74bcc112807e09ee5b34d32a848af245110",

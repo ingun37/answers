@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>Let's define a function.</p>\n<p><span class=\"math display\">f : (0,1) \\rightarrow X \\backslash \\{\n\\lang 1,0 \\rang \\} \\\\\nf(x) = \\lang \\cos (2 \\pi x), \\sin (2 \\pi x) \\rang \\\\</span></p>\n<ol>\n<li><span class=\"math inline\">f</span> is continuous because both <span\nclass=\"math inline\">\\cos (2 \\pi x)</span> and <span\nclass=\"math inline\">\\sin (2 \\pi x)</span> are continuous.<br />\n</li>\n<li><span class=\"math inline\">f</span> is injective.</li>\n</ol>\n<p>It's inverse can be defined using <span\nclass=\"math inline\">\\text{atan2}</span>.</p>\n<p><span class=\"math display\">f^{-1} : X \\backslash \\{ \\lang 1,0 \\rang\n\\} \\rightarrow (0,1) \\\\\nf^{-1}( \\lang x,y \\rang ) = \\frac{\\text{atan2}(y,x)}{2\\pi}</span></p>\n<ol>\n<li><span class=\"math inline\">f^{-1}</span> is continuous because <span\nclass=\"math inline\">\\text{atan2}</span> is so.</li>\n<li><span class=\"math inline\">f^{-1}</span> is injective.</li>\n</ol>\n<p>By the statements 1,2,3, and 4 <span class=\"math inline\">f</span> is\nhomeomorphic.</p>",
-            "q": "<p>Show that <span class=\"math inline\">X \\backslash \\{ \\lang 1,0 \\rang\n\\}</span> is homeomorphic to the open interval <span\nclass=\"math inline\">(0,1)</span>.</p>"
+            "a": {
+                "content": "<p>Let's define a function.</p>\n<p><span class=\"math display\">f : (0,1) \\rightarrow X \\backslash \\{\n\\lang 1,0 \\rang \\} \\\\\nf(x) = \\lang \\cos (2 \\pi x), \\sin (2 \\pi x) \\rang \\\\</span></p>\n<ol>\n<li><span class=\"math inline\">f</span> is continuous because both <span\nclass=\"math inline\">\\cos (2 \\pi x)</span> and <span\nclass=\"math inline\">\\sin (2 \\pi x)</span> are continuous.<br />\n</li>\n<li><span class=\"math inline\">f</span> is injective.</li>\n</ol>\n<p>It's inverse can be defined using <span\nclass=\"math inline\">\\text{atan2}</span>.</p>\n<p><span class=\"math display\">f^{-1} : X \\backslash \\{ \\lang 1,0 \\rang\n\\} \\rightarrow (0,1) \\\\\nf^{-1}( \\lang x,y \\rang ) = \\frac{\\text{atan2}(y,x)}{2\\pi}</span></p>\n<ol>\n<li><span class=\"math inline\">f^{-1}</span> is continuous because <span\nclass=\"math inline\">\\text{atan2}</span> is so.</li>\n<li><span class=\"math inline\">f^{-1}</span> is injective.</li>\n</ol>\n<p>By the statements 1,2,3, and 4 <span class=\"math inline\">f</span> is\nhomeomorphic.</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Show that <span class=\"math inline\">X \\backslash \\{ \\lang 1,0 \\rang\n\\}</span> is homeomorphic to the open interval <span\nclass=\"math inline\">(0,1)</span>.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "f3e86a40e4f623727dcd65ee658ba630af7ff876",

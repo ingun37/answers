@@ -8,8 +8,14 @@
     "kids": [
         {
             "attr": {
-                "a": "<p>True. In the proof for The Bolzano-Weierstrass Theorem, everytime\nthey bisect an interval if it's only either of A or B that has infinite\nterms then it must mean the whole sequences converges. Therefore there\nmust be more than 1 sub-intervals (subsequence) that contains infinite\nterms.</p>",
-                "q": "<p>If <span class=\"math inline\">(x_n)</span> is bounded and diverges,\nthen there exist two subsequences of <span class=\"math inline\">(\nx_n)</span> that converge to different limits.</p>"
+                "a": {
+                    "content": "<p>True. In the proof for The Bolzano-Weierstrass Theorem, everytime\nthey bisect an interval if it's only either of A or B that has infinite\nterms then it must mean the whole sequences converges. Therefore there\nmust be more than 1 sub-intervals (subsequence) that contains infinite\nterms.</p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>If <span class=\"math inline\">(x_n)</span> is bounded and diverges,\nthen there exist two subsequences of <span class=\"math inline\">(\nx_n)</span> that converge to different limits.</p>",
+                    "posixTime": 1678612923
+                }
             },
             "numAnswer": 1,
             "sha1": "245fac908c1f06b6aae2017fa6ae06998889425b",

@@ -1,7 +1,10 @@
 {
     "item": {
         "attr": {
-            "q": "<p>Let <span class=\"math inline\">(X,\\tau)</span> and <span\nclass=\"math inline\">(Y,\\tau_1)</span> be topological spaces and <span\nclass=\"math inline\">f:(X,\\tau) \\rightarrow (Y,\\tau_1)</span> a\ncontinuous map. If <span class=\"math inline\">f</span> is one-to-one,\nprove that</p>"
+            "q": {
+                "content": "<p>Let <span class=\"math inline\">(X,\\tau)</span> and <span\nclass=\"math inline\">(Y,\\tau_1)</span> be topological spaces and <span\nclass=\"math inline\">f:(X,\\tau) \\rightarrow (Y,\\tau_1)</span> a\ncontinuous map. If <span class=\"math inline\">f</span> is one-to-one,\nprove that</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 2,
         "sha1": "23c8cf2ebb42c94fb052a16cb8269fac96e5602e",
@@ -10,21 +13,33 @@
     "kids": [
         {
             "attr": {
-                "a": "<p>Recall proposition 5.1.9</p>\n<blockquote>\n<p>Let <span class=\"math inline\">(X,\\tau)</span> and <span\nclass=\"math inline\">(Y,\\tau_1)</span> be topological spaces. Then <span\nclass=\"math inline\">f:(X,\\tau) \\rightarrow (Y,\\tau_1)</span> is\ncontinuous if and only if for every closed subset <span\nclass=\"math inline\">S</span> of <span class=\"math inline\">Y</span>,\n<span class=\"math inline\">f^{-1}(S)</span> is a closed subset of <span\nclass=\"math inline\">X</span>.</p>\n</blockquote>\n<p><span class=\"math inline\">(Y,\\tau_1)</span> is T1-space, therefore by\ndefinition every singleton set <span class=\"math inline\">\\{y\\} \\subset\nY</span> is closed.</p>\n<p><span class=\"math inline\">f</span> is injective, therefore every\ninverse image of a singleton set <span class=\"math inline\">X =\nf^{-1}\\{y\\}</span> is a singleton set, e.i <span class=\"math inline\">X =\n\\{x\\}</span>.</p>\n<p><span class=\"math inline\">\\{y\\}</span> is closed and <span\nclass=\"math inline\">f</span> is continuous therefore <span\nclass=\"math inline\">\\{x\\}</span> is also closed. Therefore <span\nclass=\"math inline\">(X,\\tau)</span> is T1-space.</p>",
-                "q": "<p><span class=\"math inline\">(Y,\\tau_1)</span> a T1-space implies <span\nclass=\"math inline\">(X,\\tau)</span> is a T1-space.</p>"
-            },
-            "numAnswer": 1,
-            "sha1": "4b67b937fdbf22f1ed6d3f3796b1039190b36d7a",
-            "title": "(ii)"
-        },
-        {
-            "attr": {
-                "a": "<p><span class=\"math inline\">f</span> is injective. Therefore for all\nthe pairs of points <span class=\"math inline\">y_1, y_2</span> and for\nall the pair of open sets <span class=\"math inline\">Y_1, Y_2</span> that\nare <span class=\"math inline\">y_1 \\in Y_1</span> and <span\nclass=\"math inline\">y_2 \\in Y_2</span> and <span class=\"math inline\">Y_1\n\\cap Y_2 = \\empty</span>,</p>\n<p><span class=\"math inline\">f^{-1}</span> maps <span\nclass=\"math inline\">y_1, y_2</span> to unique <span\nclass=\"math inline\">x_1, x_2</span> and <span class=\"math inline\">Y_1,\nY_2</span> to unique <span class=\"math inline\">X_1, X_2</span> that\npreserves the structure, e.i <span class=\"math inline\">x_1 \\in\nX_1</span>, <span class=\"math inline\">x_2 \\in X_2</span>, <span\nclass=\"math inline\">X_1 \\cap X_2 = \\empty</span>.</p>\n<p><span class=\"math inline\">f</span> is continuous therefore <span\nclass=\"math inline\">X_1, X_2</span> both are open.</p>\n<p>Therefore <span class=\"math inline\">(X,\\tau)</span> is Hausdorff\nspace.</p>",
-                "q": "<p><span class=\"math inline\">(Y,\\tau_1)</span> Housdorff implies <span\nclass=\"math inline\">(X,\\tau)</span> Hausdorff.</p>"
+                "a": {
+                    "content": "<p><span class=\"math inline\">f</span> is injective. Therefore for all\nthe pairs of points <span class=\"math inline\">y_1, y_2</span> and for\nall the pair of open sets <span class=\"math inline\">Y_1, Y_2</span> that\nare <span class=\"math inline\">y_1 \\in Y_1</span> and <span\nclass=\"math inline\">y_2 \\in Y_2</span> and <span class=\"math inline\">Y_1\n\\cap Y_2 = \\empty</span>,</p>\n<p><span class=\"math inline\">f^{-1}</span> maps <span\nclass=\"math inline\">y_1, y_2</span> to unique <span\nclass=\"math inline\">x_1, x_2</span> and <span class=\"math inline\">Y_1,\nY_2</span> to unique <span class=\"math inline\">X_1, X_2</span> that\npreserves the structure, e.i <span class=\"math inline\">x_1 \\in\nX_1</span>, <span class=\"math inline\">x_2 \\in X_2</span>, <span\nclass=\"math inline\">X_1 \\cap X_2 = \\empty</span>.</p>\n<p><span class=\"math inline\">f</span> is continuous therefore <span\nclass=\"math inline\">X_1, X_2</span> both are open.</p>\n<p>Therefore <span class=\"math inline\">(X,\\tau)</span> is Hausdorff\nspace.</p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p><span class=\"math inline\">(Y,\\tau_1)</span> Housdorff implies <span\nclass=\"math inline\">(X,\\tau)</span> Hausdorff.</p>",
+                    "posixTime": 1678612923
+                }
             },
             "numAnswer": 1,
             "sha1": "b85a6e02d8bb965b8a83a58cbad04ec6a501899a",
             "title": "(i)"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<p>Recall proposition 5.1.9</p>\n<blockquote>\n<p>Let <span class=\"math inline\">(X,\\tau)</span> and <span\nclass=\"math inline\">(Y,\\tau_1)</span> be topological spaces. Then <span\nclass=\"math inline\">f:(X,\\tau) \\rightarrow (Y,\\tau_1)</span> is\ncontinuous if and only if for every closed subset <span\nclass=\"math inline\">S</span> of <span class=\"math inline\">Y</span>,\n<span class=\"math inline\">f^{-1}(S)</span> is a closed subset of <span\nclass=\"math inline\">X</span>.</p>\n</blockquote>\n<p><span class=\"math inline\">(Y,\\tau_1)</span> is T1-space, therefore by\ndefinition every singleton set <span class=\"math inline\">\\{y\\} \\subset\nY</span> is closed.</p>\n<p><span class=\"math inline\">f</span> is injective, therefore every\ninverse image of a singleton set <span class=\"math inline\">X =\nf^{-1}\\{y\\}</span> is a singleton set, e.i <span class=\"math inline\">X =\n\\{x\\}</span>.</p>\n<p><span class=\"math inline\">\\{y\\}</span> is closed and <span\nclass=\"math inline\">f</span> is continuous therefore <span\nclass=\"math inline\">\\{x\\}</span> is also closed. Therefore <span\nclass=\"math inline\">(X,\\tau)</span> is T1-space.</p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p><span class=\"math inline\">(Y,\\tau_1)</span> a T1-space implies <span\nclass=\"math inline\">(X,\\tau)</span> is a T1-space.</p>",
+                    "posixTime": 1678612923
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "4b67b937fdbf22f1ed6d3f3796b1039190b36d7a",
+            "title": "(ii)"
         }
     ],
     "parentSha1": "23fa51b26c3cbf394df895694152dc491472332f",

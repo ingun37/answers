@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>For the first bit, from 0 to 9</p>\n<p>0,1,0,1,0,1,0,1,0,1</p>\n<p>For the second bit,</p>\n<p>0,0,1,1,0,0,1,1,0,0</p>\n<p>For the third and forth</p>\n<p>0,0,0,0,1,1,1,1,0,0 0,0,0,0,0,0,0,0,1,1</p>",
-            "q": "<p>There is a way of determining the bitwise representation of a digit\nby adding an extra layer to the three-layer network above. The extra\nlayer converts the output from the previous layer into a binary\nrepresentation, as illustrated in the figure below. Find a set of\nweights and biases for the new output layer. Assume that the first 3\nlayers of neurons are such that the correct output in the third layer\n(i.e., the old output layer) has activation at least 0.99, and incorrect\noutputs have activation less than 0.01</p>"
+            "a": {
+                "content": "<p>For the first bit, from 0 to 9</p>\n<p>0,1,0,1,0,1,0,1,0,1</p>\n<p>For the second bit,</p>\n<p>0,0,1,1,0,0,1,1,0,0</p>\n<p>For the third and forth</p>\n<p>0,0,0,0,1,1,1,1,0,0 0,0,0,0,0,0,0,0,1,1</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>There is a way of determining the bitwise representation of a digit\nby adding an extra layer to the three-layer network above. The extra\nlayer converts the output from the previous layer into a binary\nrepresentation, as illustrated in the figure below. Find a set of\nweights and biases for the new output layer. Assume that the first 3\nlayers of neurons are such that the correct output in the third layer\n(i.e., the old output layer) has activation at least 0.99, and incorrect\noutputs have activation less than 0.01</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "a1e9251d528c003db61b72ad4bbb849bdda381c7",

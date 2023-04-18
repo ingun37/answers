@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>Let's say that <span class=\"math inline\">X</span> is infinite. Since\n<span class=\"math inline\">\\tau</span> is finite-closed, every open sets\nmust be infinite. It can't be a discrete topology. Contradiction.</p>",
-            "q": "<p>Let <span class=\"math inline\">\\tau</span> be the finite-closed\ntopology on a set <span class=\"math inline\">X</span>. If <span\nclass=\"math inline\">\\tau</span> is also the discrete topology, prove\nthat the set <span class=\"math inline\">X</span> is finite.</p>"
+            "a": {
+                "content": "<p>Let's say that <span class=\"math inline\">X</span> is infinite. Since\n<span class=\"math inline\">\\tau</span> is finite-closed, every open sets\nmust be infinite. It can't be a discrete topology. Contradiction.</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Let <span class=\"math inline\">\\tau</span> be the finite-closed\ntopology on a set <span class=\"math inline\">X</span>. If <span\nclass=\"math inline\">\\tau</span> is also the discrete topology, prove\nthat the set <span class=\"math inline\">X</span> is finite.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "18f7cb7aac5309556a9318c949232081c8f5a3fb",

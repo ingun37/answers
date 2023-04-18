@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>trivial?</p>",
-            "q": "<p>Now that we know <span class=\"math inline\">\\lim x_n</span> exists,\nexplan why <span class=\"math inline\">\\lim x_{n+1}</span> must also exist\nand equal the same value.</p>"
+            "a": {
+                "content": "<p>trivial?</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Now that we know <span class=\"math inline\">\\lim x_n</span> exists,\nexplan why <span class=\"math inline\">\\lim x_{n+1}</span> must also exist\nand equal the same value.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "b75cb89b9802c3d6b2fd91026285c607c41575df",

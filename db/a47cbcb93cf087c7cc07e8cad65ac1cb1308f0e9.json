@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>Every <span class=\"math inline\">a_n</span> is supermum of some\nstarting point <span class=\"math inline\">a_m</span>, e.i, <span\nclass=\"math inline\">\\sup \\{ a_m, a_{m+1}, \\dots, a_n, a_{n+1} \\dots\n\\}</span> such that <span class=\"math inline\">m &lt; n</span>.</p>\n<p>Every supermum <span class=\"math inline\">\\sup \\{ a_m, a_{m+1}, \\dots,\na_n, a_{n+1} \\dots \\}</span> is decided by some value <span\nclass=\"math inline\">a_n</span> such that <span class=\"math inline\">m\n&lt; n</span>.</p>\n<p>These two statements leads to the answer ...</p>",
-            "q": "<p>Show that <span class=\"math inline\">\\lim \\inf a_n \\leq \\lim \\sup\na_n</span> if and only if <span class=\"math inline\">\\lim a_n</span>\nexists. In this case, all three share the same value.</p>"
+            "a": {
+                "content": "<p>Every <span class=\"math inline\">a_n</span> is supermum of some\nstarting point <span class=\"math inline\">a_m</span>, e.i, <span\nclass=\"math inline\">\\sup \\{ a_m, a_{m+1}, \\dots, a_n, a_{n+1} \\dots\n\\}</span> such that <span class=\"math inline\">m &lt; n</span>.</p>\n<p>Every supermum <span class=\"math inline\">\\sup \\{ a_m, a_{m+1}, \\dots,\na_n, a_{n+1} \\dots \\}</span> is decided by some value <span\nclass=\"math inline\">a_n</span> such that <span class=\"math inline\">m\n&lt; n</span>.</p>\n<p>These two statements leads to the answer ...</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Show that <span class=\"math inline\">\\lim \\inf a_n \\leq \\lim \\sup\na_n</span> if and only if <span class=\"math inline\">\\lim a_n</span>\nexists. In this case, all three share the same value.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "a47cbcb93cf087c7cc07e8cad65ac1cb1308f0e9",

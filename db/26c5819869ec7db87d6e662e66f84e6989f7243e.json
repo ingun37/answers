@@ -1,7 +1,10 @@
 {
     "item": {
         "attr": {
-            "author": "Hossein Pishro-Nik"
+            "author": {
+                "content": "Hossein Pishro-Nik",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 37,
         "sha1": "26c5819869ec7db87d6e662e66f84e6989f7243e",

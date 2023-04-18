@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<ul>\n<li>Image of [] would be 1. (unit to unit)</li>\n<li>Image of [1, 2, 3, 4] would be 1 * 2 * 3 * 4</li>\n<li>12 would have lists as much as combination of it's factors.</li>\n<li>Product of squares could be another homomorphism. i.e\n<code>f([a,b,c...]) = a^2 * b^2 * c^2...</code></li>\n</ul>",
-            "q": "<p>Consider a monoid homomorphism from lists of integers with\nconcatenation to integers with multiplication. What is the image of the\nempty list <code>[]</code>? Assume that all singleton lists are mapped\nto the integers they contain, that is <code>[3]</code> is mapped to 3,\netc. What's the image of <code>[1, 2, 3, 4]</code>? How many different\nlists map to the integer 12? Is there any other homomorphism between the\ntwo monoids?</p>"
+            "a": {
+                "content": "<ul>\n<li>Image of [] would be 1. (unit to unit)</li>\n<li>Image of [1, 2, 3, 4] would be 1 * 2 * 3 * 4</li>\n<li>12 would have lists as much as combination of it's factors.</li>\n<li>Product of squares could be another homomorphism. i.e\n<code>f([a,b,c...]) = a^2 * b^2 * c^2...</code></li>\n</ul>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Consider a monoid homomorphism from lists of integers with\nconcatenation to integers with multiplication. What is the image of the\nempty list <code>[]</code>? Assume that all singleton lists are mapped\nto the integers they contain, that is <code>[3]</code> is mapped to 3,\netc. What's the image of <code>[1, 2, 3, 4]</code>? How many different\nlists map to the integer 12? Is there any other homomorphism between the\ntwo monoids?</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "d1d252bdfa7dedd28afcda45cf5a78feecfb1ee8",

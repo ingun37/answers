@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>(i) basically means <span class=\"math inline\">\\{\\text{limits of } S\\}\n\\subseteq \\{\\text{limits of } T\\}</span>.<br />\n<span class=\"math inline\">\\rightarrow \\{\\text{limits of } S\\} \\cup S\n\\subseteq \\{\\text{limits of } T\\} \\cup T</span><br />\n<span class=\"math inline\">\\rightarrow \\overline{S} \\subseteq\n\\overline{T}</span>.</p>",
-            "q": "<p>Deduce from (i) that <span class=\"math inline\">\\overline{S} \\subseteq\n\\overline{T}</span>.</p>"
+            "a": {
+                "content": "<p>(i) basically means <span class=\"math inline\">\\{\\text{limits of } S\\}\n\\subseteq \\{\\text{limits of } T\\}</span>.<br />\n<span class=\"math inline\">\\rightarrow \\{\\text{limits of } S\\} \\cup S\n\\subseteq \\{\\text{limits of } T\\} \\cup T</span><br />\n<span class=\"math inline\">\\rightarrow \\overline{S} \\subseteq\n\\overline{T}</span>.</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Deduce from (i) that <span class=\"math inline\">\\overline{S} \\subseteq\n\\overline{T}</span>.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "0b308d0232a762516d9eaf339d3eaeae1ccdf374",

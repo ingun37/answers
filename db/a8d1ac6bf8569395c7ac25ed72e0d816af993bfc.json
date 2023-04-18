@@ -1,7 +1,10 @@
 {
     "item": {
         "attr": {
-            "q": "<p>Let <span class=\"math inline\">X</span> be the unit circle in <span\nclass=\"math inline\">\\mathbb{R}^2</span>; that is, <span\nclass=\"math inline\">X = \\{ \\lang x,y \\rang : x^2 + y^2 = 1 \\}</span> and\nhas the subspace topology.</p>"
+            "q": {
+                "content": "<p>Let <span class=\"math inline\">X</span> be the unit circle in <span\nclass=\"math inline\">\\mathbb{R}^2</span>; that is, <span\nclass=\"math inline\">X = \\{ \\lang x,y \\rang : x^2 + y^2 = 1 \\}</span> and\nhas the subspace topology.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 4,
         "sha1": "a8d1ac6bf8569395c7ac25ed72e0d816af993bfc",
@@ -10,8 +13,29 @@
     "kids": [
         {
             "attr": {
-                "a": "<p>Suppose <span class=\"math inline\">X</span> and <span\nclass=\"math inline\">(1,0)</span> were homeomorphic. Then <span\nclass=\"math inline\">X \\backslash \\{ \\lang 1,0 \\rang \\}</span> is\nhomemomorphic to <span class=\"math inline\">(0,1) \\backslash \\{p\\}</span>\nfor some <span class=\"math inline\">p</span> such that <span\nclass=\"math inline\">f^{-1}(\\lang 1,0 \\rang) = p \\in (0,1)</span>. That\nmeans, by (i), <span class=\"math inline\">X \\backslash \\{ \\lang 1,0 \\rang\n\\}</span>, <span class=\"math inline\">(0,1)</span>, and <span\nclass=\"math inline\">(0,1) \\backslash \\{p\\}</span> are all homeomorphic\nwhich is contradiction.</p>\n<ol>\n<li>For any point <span class=\"math inline\">a \\in X</span>, <span\nclass=\"math inline\">X \\backslash a</span> is homeomorphic to <span\nclass=\"math inline\">X \\backslash \\{ \\lang 1,0 \\rang \\}</span> because a\nlinear rotation matrix can be the homeomorphism between them.</li>\n</ol>\n<p>Suppose <span class=\"math inline\">X</span> and <span\nclass=\"math inline\">[1,0]</span> were homeomorphic. Then by the\nstatement (1) <span class=\"math inline\">[1,0] \\backslash \\{p\\}</span>\nfor any <span class=\"math inline\">p \\in [0,1]</span> is homeomorphic to\n<span class=\"math inline\">X \\backslash a</span> for some <span\nclass=\"math inline\">a \\in X</span>, which means <span\nclass=\"math inline\">[1,0] \\backslash \\{p\\}</span> is homeomorphic to\n<span class=\"math inline\">(0,1)</span> which is contradiction by\ncorollary 4.3.7.</p>",
-                "q": "<p>Deduce that <span class=\"math inline\">X \\ncong (0,1)</span> and <span\nclass=\"math inline\">X \\ncong [0,1]</span>.</p>"
+                "a": {
+                    "content": "<p>Let's define a function.</p>\n<p><span class=\"math display\">f : (0,1) \\rightarrow X \\backslash \\{\n\\lang 1,0 \\rang \\} \\\\\nf(x) = \\lang \\cos (2 \\pi x), \\sin (2 \\pi x) \\rang \\\\</span></p>\n<ol>\n<li><span class=\"math inline\">f</span> is continuous because both <span\nclass=\"math inline\">\\cos (2 \\pi x)</span> and <span\nclass=\"math inline\">\\sin (2 \\pi x)</span> are continuous.<br />\n</li>\n<li><span class=\"math inline\">f</span> is injective.</li>\n</ol>\n<p>It's inverse can be defined using <span\nclass=\"math inline\">\\text{atan2}</span>.</p>\n<p><span class=\"math display\">f^{-1} : X \\backslash \\{ \\lang 1,0 \\rang\n\\} \\rightarrow (0,1) \\\\\nf^{-1}( \\lang x,y \\rang ) = \\frac{\\text{atan2}(y,x)}{2\\pi}</span></p>\n<ol>\n<li><span class=\"math inline\">f^{-1}</span> is continuous because <span\nclass=\"math inline\">\\text{atan2}</span> is so.</li>\n<li><span class=\"math inline\">f^{-1}</span> is injective.</li>\n</ol>\n<p>By the statements 1,2,3, and 4 <span class=\"math inline\">f</span> is\nhomeomorphic.</p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>Show that <span class=\"math inline\">X \\backslash \\{ \\lang 1,0 \\rang\n\\}</span> is homeomorphic to the open interval <span\nclass=\"math inline\">(0,1)</span>.</p>",
+                    "posixTime": 1678612923
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "f3e86a40e4f623727dcd65ee658ba630af7ff876",
+            "title": "(i)"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<p>Suppose <span class=\"math inline\">X</span> and <span\nclass=\"math inline\">(1,0)</span> were homeomorphic. Then <span\nclass=\"math inline\">X \\backslash \\{ \\lang 1,0 \\rang \\}</span> is\nhomemomorphic to <span class=\"math inline\">(0,1) \\backslash \\{p\\}</span>\nfor some <span class=\"math inline\">p</span> such that <span\nclass=\"math inline\">f^{-1}(\\lang 1,0 \\rang) = p \\in (0,1)</span>. That\nmeans, by (i), <span class=\"math inline\">X \\backslash \\{ \\lang 1,0 \\rang\n\\}</span>, <span class=\"math inline\">(0,1)</span>, and <span\nclass=\"math inline\">(0,1) \\backslash \\{p\\}</span> are all homeomorphic\nwhich is contradiction.</p>\n<ol>\n<li>For any point <span class=\"math inline\">a \\in X</span>, <span\nclass=\"math inline\">X \\backslash a</span> is homeomorphic to <span\nclass=\"math inline\">X \\backslash \\{ \\lang 1,0 \\rang \\}</span> because a\nlinear rotation matrix can be the homeomorphism between them.</li>\n</ol>\n<p>Suppose <span class=\"math inline\">X</span> and <span\nclass=\"math inline\">[1,0]</span> were homeomorphic. Then by the\nstatement (1) <span class=\"math inline\">[1,0] \\backslash \\{p\\}</span>\nfor any <span class=\"math inline\">p \\in [0,1]</span> is homeomorphic to\n<span class=\"math inline\">X \\backslash a</span> for some <span\nclass=\"math inline\">a \\in X</span>, which means <span\nclass=\"math inline\">[1,0] \\backslash \\{p\\}</span> is homeomorphic to\n<span class=\"math inline\">(0,1)</span> which is contradiction by\ncorollary 4.3.7.</p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>Deduce that <span class=\"math inline\">X \\ncong (0,1)</span> and <span\nclass=\"math inline\">X \\ncong [0,1]</span>.</p>",
+                    "posixTime": 1678612923
+                }
             },
             "numAnswer": 1,
             "sha1": "dbd05626fbbf7ea1e84a8319ae39646812a295a5",
@@ -19,17 +43,14 @@
         },
         {
             "attr": {
-                "a": "<p>Suppose <span class=\"math inline\">X</span> and <span\nclass=\"math inline\">[0,1)</span> were homeomorphic. Then <span\nclass=\"math inline\">[0,1) \\backslash \\{p\\}</span> for any <span\nclass=\"math inline\">p \\in (0,1)</span>, which is anything except 0, is\nhomeomorphic to <span class=\"math inline\">X \\backslash a</span>. <span\nclass=\"math inline\">[0,1) \\backslash \\{p\\}</span> is not connected which\nis contradiction.</p>",
-                "q": "<p>Observing that for every point <span class=\"math inline\">a \\in\nX</span>, the subspace <span class=\"math inline\">X \\backslash\n\\{a\\}</span> is connected, show that <span class=\"math inline\">X \\ncong\n[0, 1)</span>.</p>"
-            },
-            "numAnswer": 1,
-            "sha1": "1738cc7af1958db1acd457ca3dc12dae06f5a2b1",
-            "title": "(iii)"
-        },
-        {
-            "attr": {
-                "a": "<p>For (i), (ii), (iii) have covered <span class=\"math inline\">(0,1),\n[0,1], [0,1)</span> which are homeomorphic to every intervals in the\nform of <span class=\"math inline\">[a,b], (a,b), [a,b), (a,b],\n(-\\infin,a), (-\\infin,a], (a,\\infin), [a,\\infin),\n(-\\infin,\\infin)</span>. By Remarks 4.3.4, we only got <span\nclass=\"math inline\">\\{a\\}</span> left to proove. <span\nclass=\"math inline\">X</span> can't have bijective relation with\nsingleton set.</p>",
-                "q": "<p>Deduce that <span class=\"math inline\">X</span> is not homeomorphic to\nany interval.</p>"
+                "a": {
+                    "content": "<p>For (i), (ii), (iii) have covered <span class=\"math inline\">(0,1),\n[0,1], [0,1)</span> which are homeomorphic to every intervals in the\nform of <span class=\"math inline\">[a,b], (a,b), [a,b), (a,b],\n(-\\infin,a), (-\\infin,a], (a,\\infin), [a,\\infin),\n(-\\infin,\\infin)</span>. By Remarks 4.3.4, we only got <span\nclass=\"math inline\">\\{a\\}</span> left to proove. <span\nclass=\"math inline\">X</span> can't have bijective relation with\nsingleton set.</p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>Deduce that <span class=\"math inline\">X</span> is not homeomorphic to\nany interval.</p>",
+                    "posixTime": 1678612923
+                }
             },
             "numAnswer": 1,
             "sha1": "360c47f4eb2623fec3f38eb6ccaf7367e180f77a",
@@ -37,12 +58,18 @@
         },
         {
             "attr": {
-                "a": "<p>Let's define a function.</p>\n<p><span class=\"math display\">f : (0,1) \\rightarrow X \\backslash \\{\n\\lang 1,0 \\rang \\} \\\\\nf(x) = \\lang \\cos (2 \\pi x), \\sin (2 \\pi x) \\rang \\\\</span></p>\n<ol>\n<li><span class=\"math inline\">f</span> is continuous because both <span\nclass=\"math inline\">\\cos (2 \\pi x)</span> and <span\nclass=\"math inline\">\\sin (2 \\pi x)</span> are continuous.<br />\n</li>\n<li><span class=\"math inline\">f</span> is injective.</li>\n</ol>\n<p>It's inverse can be defined using <span\nclass=\"math inline\">\\text{atan2}</span>.</p>\n<p><span class=\"math display\">f^{-1} : X \\backslash \\{ \\lang 1,0 \\rang\n\\} \\rightarrow (0,1) \\\\\nf^{-1}( \\lang x,y \\rang ) = \\frac{\\text{atan2}(y,x)}{2\\pi}</span></p>\n<ol>\n<li><span class=\"math inline\">f^{-1}</span> is continuous because <span\nclass=\"math inline\">\\text{atan2}</span> is so.</li>\n<li><span class=\"math inline\">f^{-1}</span> is injective.</li>\n</ol>\n<p>By the statements 1,2,3, and 4 <span class=\"math inline\">f</span> is\nhomeomorphic.</p>",
-                "q": "<p>Show that <span class=\"math inline\">X \\backslash \\{ \\lang 1,0 \\rang\n\\}</span> is homeomorphic to the open interval <span\nclass=\"math inline\">(0,1)</span>.</p>"
+                "a": {
+                    "content": "<p>Suppose <span class=\"math inline\">X</span> and <span\nclass=\"math inline\">[0,1)</span> were homeomorphic. Then <span\nclass=\"math inline\">[0,1) \\backslash \\{p\\}</span> for any <span\nclass=\"math inline\">p \\in (0,1)</span>, which is anything except 0, is\nhomeomorphic to <span class=\"math inline\">X \\backslash a</span>. <span\nclass=\"math inline\">[0,1) \\backslash \\{p\\}</span> is not connected which\nis contradiction.</p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>Observing that for every point <span class=\"math inline\">a \\in\nX</span>, the subspace <span class=\"math inline\">X \\backslash\n\\{a\\}</span> is connected, show that <span class=\"math inline\">X \\ncong\n[0, 1)</span>.</p>",
+                    "posixTime": 1678612923
+                }
             },
             "numAnswer": 1,
-            "sha1": "f3e86a40e4f623727dcd65ee658ba630af7ff876",
-            "title": "(i)"
+            "sha1": "1738cc7af1958db1acd457ca3dc12dae06f5a2b1",
+            "title": "(iii)"
         }
     ],
     "parentSha1": "ec55fe7ef239a77ac6b841ce679133956f86b5b0",

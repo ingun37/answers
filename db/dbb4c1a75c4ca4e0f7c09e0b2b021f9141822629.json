@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>It's given that <span class=\"math inline\">(s_k)</span> is bounded.\nLet's say the bond of <span class=\"math inline\">(s_k)</span> is <span\nclass=\"math inline\">S</span>. Then <span class=\"math display\">|s_k (y_k\n- y_{k+1})| &lt; S (y_k - y_{k+1})</span></p>\n<p>Also</p>\n<p><span class=\"math display\">\\sum_{k=1}^\\infin (y_k - y_{k+1})\n\\rightarrow y_1</span></p>\n<p>The following <em>bigger</em> summation converges.</p>\n<p><span class=\"math display\">\\sum_{k=1}^\\infin S(y_k - y_{k+1})\n=\nS \\sum_{k=1}^\\infin (y_k - y_{k+1})\n\\rightarrow\nSy_1</span></p>\n<p>Therefore, by Comparison Test, <span\nclass=\"math inline\">\\sum_{k=1}^\\infin |s_k (y_k - y_{k+1})|</span>\nconverges. Therefore, by Absolute Convergence Test, <span\nclass=\"math inline\">\\sum_{k=1}^\\infin s_k (y_k - y_{k+1})</span>\nconverges.</p>",
-            "q": "<p>Use the Comparison Test to argue that <span\nclass=\"math inline\">\\sum_{k=1}^\\infin s_k (y_k - y_{k+1})</span>\nconverges absolutely, and show how this leads directly to a proof of\nAbel's Test.</p>"
+            "a": {
+                "content": "<p>It's given that <span class=\"math inline\">(s_k)</span> is bounded.\nLet's say the bond of <span class=\"math inline\">(s_k)</span> is <span\nclass=\"math inline\">S</span>. Then <span class=\"math display\">|s_k (y_k\n- y_{k+1})| &lt; S (y_k - y_{k+1})</span></p>\n<p>Also</p>\n<p><span class=\"math display\">\\sum_{k=1}^\\infin (y_k - y_{k+1})\n\\rightarrow y_1</span></p>\n<p>The following <em>bigger</em> summation converges.</p>\n<p><span class=\"math display\">\\sum_{k=1}^\\infin S(y_k - y_{k+1})\n=\nS \\sum_{k=1}^\\infin (y_k - y_{k+1})\n\\rightarrow\nSy_1</span></p>\n<p>Therefore, by Comparison Test, <span\nclass=\"math inline\">\\sum_{k=1}^\\infin |s_k (y_k - y_{k+1})|</span>\nconverges. Therefore, by Absolute Convergence Test, <span\nclass=\"math inline\">\\sum_{k=1}^\\infin s_k (y_k - y_{k+1})</span>\nconverges.</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Use the Comparison Test to argue that <span\nclass=\"math inline\">\\sum_{k=1}^\\infin s_k (y_k - y_{k+1})</span>\nconverges absolutely, and show how this leads directly to a proof of\nAbel's Test.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "dbb4c1a75c4ca4e0f7c09e0b2b021f9141822629",

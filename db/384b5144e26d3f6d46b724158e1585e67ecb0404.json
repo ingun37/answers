@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>Let <span class=\"math inline\">S</span> be the event that an email is\na spam, <span class=\"math inline\">W</span> that an email contains the\nword. We are asked to calculate <span class=\"math inline\">P(S|W)</span>.\nUsing Bayes' rule we can turn it into:</p>\n<p><span class=\"math display\">\\cfrac{P(W|S)P(S)}{P(W)}</span></p>\n<p>Using the law of total probability, we can further turn it into:</p>\n<p><span class=\"math display\">\\cfrac{P(W|S)P(S)}{P(W|S)P(S) +\nP(W|S^c)P(S^c)}</span></p>\n<p>Substituting what we can with what we are given:</p>\n<p><span class=\"math display\">\\cfrac{0.01*0.5}{0.01*0.5 + 0.00001*0.5}\n\\approx 0.999</span></p>",
-            "q": "<p>One way to design a spam filter is to look at the words in an email.\nIn particular, some words are more frequent in spam emails. Suppose that\nwe have the following information:</p>\n<ul>\n<li>50% of emails are spam;</li>\n<li>1% of spam emails contain the word \"refinance\";</li>\n<li>0.001% of non-spam emails contain the word \"refinance\".</li>\n</ul>\n<p>Suppose that an email is checked and found to contain the word\n\"refinance\". What is the probability that the email is spam?</p>"
+            "a": {
+                "content": "<p>Let <span class=\"math inline\">S</span> be the event that an email is\na spam, <span class=\"math inline\">W</span> that an email contains the\nword. We are asked to calculate <span class=\"math inline\">P(S|W)</span>.\nUsing Bayes' rule we can turn it into:</p>\n<p><span class=\"math display\">\\cfrac{P(W|S)P(S)}{P(W)}</span></p>\n<p>Using the law of total probability, we can further turn it into:</p>\n<p><span class=\"math display\">\\cfrac{P(W|S)P(S)}{P(W|S)P(S) +\nP(W|S^c)P(S^c)}</span></p>\n<p>Substituting what we can with what we are given:</p>\n<p><span class=\"math display\">\\cfrac{0.01*0.5}{0.01*0.5 + 0.00001*0.5}\n\\approx 0.999</span></p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>One way to design a spam filter is to look at the words in an email.\nIn particular, some words are more frequent in spam emails. Suppose that\nwe have the following information:</p>\n<ul>\n<li>50% of emails are spam;</li>\n<li>1% of spam emails contain the word \"refinance\";</li>\n<li>0.001% of non-spam emails contain the word \"refinance\".</li>\n</ul>\n<p>Suppose that an email is checked and found to contain the word\n\"refinance\". What is the probability that the email is spam?</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "384b5144e26d3f6d46b724158e1585e67ecb0404",

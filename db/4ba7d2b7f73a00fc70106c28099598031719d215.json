@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p><span class=\"math inline\">\\mathbb{Q}</span> is countable dense subset\nright?<br />\n<span class=\"math inline\">\\mathbb{I}</span> is uncountable and distinct\nfrom <span class=\"math inline\">\\mathbb{Q}</span> so for each <span\nclass=\"math inline\">i \\in \\mathbb{I}</span> we an make uncountable\nnumber of <span class=\"math inline\">\\mathbb{Q} + i</span> which is\ncountable dense subset.</p>\n<p>Cardinality of <span class=\"math inline\">\\mathbb{I}</span> is <span\nclass=\"math inline\">\\mathfrak{c}</span> which is same as <span\nclass=\"math inline\">\\mathbb{R}</span>.<br />\nCardinality of <span class=\"math inline\">\\mathbb{I}^{+}</span> is also\n<span class=\"math inline\">\\mathfrak{c}</span><br />\nSo <span class=\"math inline\">\\mathcal{P}(\\mathbb{I}^+)</span> has\ncardinality of <span class=\"math inline\">2^\\mathfrak{c}</span>.<br />\nFor all <span class=\"math inline\">s \\in\n\\mathcal{P}(\\mathbb{I}^+)</span>, we can define <span\nclass=\"math inline\">\\mathbb{R}^- \\cap s</span> which is distinct,\nuncountable</p>",
-            "q": "<p>Again using (iii), prove that <span\nclass=\"math inline\">\\mathbb{R}</span> has an uncountable number of\ndistinct countable dense subsets and <span\nclass=\"math inline\">2^\\mathfrak{c}</span> distinct uncountable dense\nsubsets.</p>"
+            "a": {
+                "content": "<p><span class=\"math inline\">\\mathbb{Q}</span> is countable dense subset\nright?<br />\n<span class=\"math inline\">\\mathbb{I}</span> is uncountable and distinct\nfrom <span class=\"math inline\">\\mathbb{Q}</span> so for each <span\nclass=\"math inline\">i \\in \\mathbb{I}</span> we an make uncountable\nnumber of <span class=\"math inline\">\\mathbb{Q} + i</span> which is\ncountable dense subset.</p>\n<p>Cardinality of <span class=\"math inline\">\\mathbb{I}</span> is <span\nclass=\"math inline\">\\mathfrak{c}</span> which is same as <span\nclass=\"math inline\">\\mathbb{R}</span>.<br />\nCardinality of <span class=\"math inline\">\\mathbb{I}^{+}</span> is also\n<span class=\"math inline\">\\mathfrak{c}</span><br />\nSo <span class=\"math inline\">\\mathcal{P}(\\mathbb{I}^+)</span> has\ncardinality of <span class=\"math inline\">2^\\mathfrak{c}</span>.<br />\nFor all <span class=\"math inline\">s \\in\n\\mathcal{P}(\\mathbb{I}^+)</span>, we can define <span\nclass=\"math inline\">\\mathbb{R}^- \\cap s</span> which is distinct,\nuncountable</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Again using (iii), prove that <span\nclass=\"math inline\">\\mathbb{R}</span> has an uncountable number of\ndistinct countable dense subsets and <span\nclass=\"math inline\">2^\\mathfrak{c}</span> distinct uncountable dense\nsubsets.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "4ba7d2b7f73a00fc70106c28099598031719d215",

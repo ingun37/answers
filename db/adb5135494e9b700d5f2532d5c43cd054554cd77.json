@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>It can be solved by using the <em>law of total probability</em>.</p>\n<p><span class=\"math display\">P(G \\cap E) + P(G^c \\cap E) =\n0.14</span></p>",
-            "q": "<p>Using the tree find <span class=\"math inline\">P(E)</span>.</p>"
+            "a": {
+                "content": "<p>It can be solved by using the <em>law of total probability</em>.</p>\n<p><span class=\"math display\">P(G \\cap E) + P(G^c \\cap E) =\n0.14</span></p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Using the tree find <span class=\"math inline\">P(E)</span>.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "adb5135494e9b700d5f2532d5c43cd054554cd77",

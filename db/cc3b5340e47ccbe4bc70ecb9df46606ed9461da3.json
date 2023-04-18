@@ -8,21 +8,33 @@
     "kids": [
         {
             "attr": {
-                "a": "<p>Algebra is not defined on non-limits. The example from section 2.1\nwasn't a limit.</p>",
-                "q": "<p>COmpare this results to the example discussed at the end of Section\n2.1 where infinite addition was shown not to be associative. Why doesn't\nour proof in (a) apply to this example?</p>"
-            },
-            "numAnswer": 1,
-            "sha1": "9384218a3538bdbe14acead660a92e2867946fe5",
-            "title": "(b)"
-        },
-        {
-            "attr": {
-                "a": "<p>Say there's a series <span class=\"math inline\">S</span>.</p>\n<p><span class=\"math display\">S = a + b + c + d + \\cdots</span></p>\n<p>Let's say starting from <span class=\"math inline\">c</span> is <span\nclass=\"math inline\">S&#39;</span>. That means</p>\n<p><span class=\"math display\">S = a + b + S&#39;</span></p>\n<p>If <span class=\"math inline\">S</span> converges to <span\nclass=\"math inline\">L</span> then <span\nclass=\"math inline\">S&#39;</span> converges to <span\nclass=\"math inline\">L - a - b</span>. Therefore associativity holds.</p>\n<p><span class=\"math display\">(a + b) + S&#39; = a + (b +\nS&#39;)</span></p>\n<p>Any regrouping of the terms can be reduced to <span\nclass=\"math inline\">a + b + S&#39;</span>.</p>",
-                "q": "<p>Prove that if an infinite series converges, then the associative\nproperty holds. Assume <span class=\"math inline\">a_1 + a_2 + a_3 + a_4 +\na_5 + \\cdots</span> converges to a limit <span\nclass=\"math inline\">L</span> (e.i., the sequence of partial sums <span\nclass=\"math inline\">(s_n) \\rightarrow L</span>). Show that any\nregrouping of the terms</p>\n<p><span class=\"math display\">(a_1 + a_2 + \\cdots + a_{n_1}) + (a_{n_1 +\n1} + \\cdots + a_{n_2}) + ( a_{n_2+1} + \\cdots | a_{n_3} ) +\n\\cdots</span></p>\n<p>leads to a series that also converges to <span\nclass=\"math inline\">L</span>.</p>"
+                "a": {
+                    "content": "<p>Say there's a series <span class=\"math inline\">S</span>.</p>\n<p><span class=\"math display\">S = a + b + c + d + \\cdots</span></p>\n<p>Let's say starting from <span class=\"math inline\">c</span> is <span\nclass=\"math inline\">S&#39;</span>. That means</p>\n<p><span class=\"math display\">S = a + b + S&#39;</span></p>\n<p>If <span class=\"math inline\">S</span> converges to <span\nclass=\"math inline\">L</span> then <span\nclass=\"math inline\">S&#39;</span> converges to <span\nclass=\"math inline\">L - a - b</span>. Therefore associativity holds.</p>\n<p><span class=\"math display\">(a + b) + S&#39; = a + (b +\nS&#39;)</span></p>\n<p>Any regrouping of the terms can be reduced to <span\nclass=\"math inline\">a + b + S&#39;</span>.</p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>Prove that if an infinite series converges, then the associative\nproperty holds. Assume <span class=\"math inline\">a_1 + a_2 + a_3 + a_4 +\na_5 + \\cdots</span> converges to a limit <span\nclass=\"math inline\">L</span> (e.i., the sequence of partial sums <span\nclass=\"math inline\">(s_n) \\rightarrow L</span>). Show that any\nregrouping of the terms</p>\n<p><span class=\"math display\">(a_1 + a_2 + \\cdots + a_{n_1}) + (a_{n_1 +\n1} + \\cdots + a_{n_2}) + ( a_{n_2+1} + \\cdots | a_{n_3} ) +\n\\cdots</span></p>\n<p>leads to a series that also converges to <span\nclass=\"math inline\">L</span>.</p>",
+                    "posixTime": 1678612923
+                }
             },
             "numAnswer": 1,
             "sha1": "b327f7eed9e386362469c64ea451ac7027fd7fde",
             "title": "(a)"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<p>Algebra is not defined on non-limits. The example from section 2.1\nwasn't a limit.</p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>COmpare this results to the example discussed at the end of Section\n2.1 where infinite addition was shown not to be associative. Why doesn't\nour proof in (a) apply to this example?</p>",
+                    "posixTime": 1678612923
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "9384218a3538bdbe14acead660a92e2867946fe5",
+            "title": "(b)"
         }
     ],
     "parentSha1": "e4849720dc36754e26d3aa8f6ed5ea001e6644dc",

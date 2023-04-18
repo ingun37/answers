@@ -1,7 +1,10 @@
 {
     "item": {
         "attr": {
-            "q": "<p>Let <span class=\"math inline\">f : \\mathbb{R} \\rightarrow\n\\mathbb{R}</span> be given by</p>\n<p><span class=\"math display\">f(x) = \\begin{cases}\n   -1\\text{, } &amp;x \\leq 0 \\\\\n   1\\text{, } &amp;x &gt; 0\n\\end{cases}</span></p>"
+            "q": {
+                "content": "<p>Let <span class=\"math inline\">f : \\mathbb{R} \\rightarrow\n\\mathbb{R}</span> be given by</p>\n<p><span class=\"math display\">f(x) = \\begin{cases}\n   -1\\text{, } &amp;x \\leq 0 \\\\\n   1\\text{, } &amp;x &gt; 0\n\\end{cases}</span></p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 2,
         "sha1": "5fdca1a9a14be5ff043ed5df6bf527504713e874",
@@ -10,21 +13,33 @@
     "kids": [
         {
             "attr": {
-                "a": "<p>The closed set <span class=\"math inline\">f^{-1}</span> is <span\nclass=\"math inline\">(0, \\infin)</span> which is open. Hence not\ncontinuous.</p>",
-                "q": "<p>Find <span class=\"math inline\">f^{-1}\\{1\\}</span> and, using\nProposition 5v1v9, deduce that <span class=\"math inline\">f</span> is not\ncontinuous.</p>"
-            },
-            "numAnswer": 1,
-            "sha1": "ebd8a9c5ad2646a2741bdc1d50a0ada112095bfa",
-            "title": "(ii)"
-        },
-        {
-            "attr": {
-                "a": "<p><span class=\"math inline\">f^{-1}(-2,0) = (-\\infin, 0]</span></p>",
-                "q": "<p>Prove that <span class=\"math inline\">f</span> is not continuous using\nthe method of Example 5.1.6.</p>"
+                "a": {
+                    "content": "<p><span class=\"math inline\">f^{-1}(-2,0) = (-\\infin, 0]</span></p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>Prove that <span class=\"math inline\">f</span> is not continuous using\nthe method of Example 5.1.6.</p>",
+                    "posixTime": 1678612923
+                }
             },
             "numAnswer": 1,
             "sha1": "cac520834b526bb8bb1aba8de387610b8dc7c3c9",
             "title": "(i)"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<p>The closed set <span class=\"math inline\">f^{-1}</span> is <span\nclass=\"math inline\">(0, \\infin)</span> which is open. Hence not\ncontinuous.</p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>Find <span class=\"math inline\">f^{-1}\\{1\\}</span> and, using\nProposition 5v1v9, deduce that <span class=\"math inline\">f</span> is not\ncontinuous.</p>",
+                    "posixTime": 1678612923
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "ebd8a9c5ad2646a2741bdc1d50a0ada112095bfa",
+            "title": "(ii)"
         }
     ],
     "parentSha1": "23fa51b26c3cbf394df895694152dc491472332f",

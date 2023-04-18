@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>By Cauchy-Schwarz inequality, <span class=\"math inline\">\\nabla C\n\\cdot \\Delta v</span>'s least possible value is <span\nclass=\"math inline\">- \\lVert \\nabla C \\rVert \\lVert \\Delta v\n\\rVert</span> and it only happens when <span class=\"math inline\">\\Delta\nv</span> is colinear to <span class=\"math inline\">\\nabla C</span>\ntherefore</p>\n<p><span class=\"math display\">\\text{min}(\\nabla C \\cdot \\Delta v) \\\\\n= - \\lVert \\nabla C \\rVert \\lVert \\eta \\nabla C \\rVert</span></p>\n<p><span class=\"math inline\">\\lVert \\eta \\nabla C \\rVert</span> should\nbe <span class=\"math inline\">\\epsilon</span> therefore</p>\n<p><span class=\"math display\">\\eta = {\\epsilon \\over \\lVert \\nabla C\n\\rVert}</span></p>",
-            "q": "<p>Prove the assertion of the last paragraph. Hint: If you're not\nalready familiar with the Cauchy-Schwarz inequality, you may find it\nhelpful to familiarize yourself with it.</p>"
+            "a": {
+                "content": "<p>By Cauchy-Schwarz inequality, <span class=\"math inline\">\\nabla C\n\\cdot \\Delta v</span>'s least possible value is <span\nclass=\"math inline\">- \\lVert \\nabla C \\rVert \\lVert \\Delta v\n\\rVert</span> and it only happens when <span class=\"math inline\">\\Delta\nv</span> is colinear to <span class=\"math inline\">\\nabla C</span>\ntherefore</p>\n<p><span class=\"math display\">\\text{min}(\\nabla C \\cdot \\Delta v) \\\\\n= - \\lVert \\nabla C \\rVert \\lVert \\eta \\nabla C \\rVert</span></p>\n<p><span class=\"math inline\">\\lVert \\eta \\nabla C \\rVert</span> should\nbe <span class=\"math inline\">\\epsilon</span> therefore</p>\n<p><span class=\"math display\">\\eta = {\\epsilon \\over \\lVert \\nabla C\n\\rVert}</span></p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Prove the assertion of the last paragraph. Hint: If you're not\nalready familiar with the Cauchy-Schwarz inequality, you may find it\nhelpful to familiarize yourself with it.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "00425e3210304345e443430fadd193926ebc3aa7",

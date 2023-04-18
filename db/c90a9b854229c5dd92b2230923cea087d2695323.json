@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p><span\nclass=\"math display\">\\sqrt2,\\sqrt{2\\sqrt2},\\sqrt{2\\sqrt{2\\sqrt2}},\\dots</span></p>\n<p>is equivalent to</p>\n<p><span class=\"math display\">2^{\\frac 1 2}, 2^{\\frac 1 2 + \\frac 1 4},\n2^{\\frac 1 2 + \\frac 1 4 + \\frac 1 8}, \\dots</span></p>\n<p>The exponent part is geometric series that converges to 1. Therefore\nthis sequence converges to 2.</p>",
-            "q": "<p>Does the sequence</p>\n<p><span\nclass=\"math display\">\\sqrt2,\\sqrt{2\\sqrt2},\\sqrt{2\\sqrt{2\\sqrt2}},\\dots</span></p>\n<p>converge? If so, find the limit.</p>"
+            "a": {
+                "content": "<p><span\nclass=\"math display\">\\sqrt2,\\sqrt{2\\sqrt2},\\sqrt{2\\sqrt{2\\sqrt2}},\\dots</span></p>\n<p>is equivalent to</p>\n<p><span class=\"math display\">2^{\\frac 1 2}, 2^{\\frac 1 2 + \\frac 1 4},\n2^{\\frac 1 2 + \\frac 1 4 + \\frac 1 8}, \\dots</span></p>\n<p>The exponent part is geometric series that converges to 1. Therefore\nthis sequence converges to 2.</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Does the sequence</p>\n<p><span\nclass=\"math display\">\\sqrt2,\\sqrt{2\\sqrt2},\\sqrt{2\\sqrt{2\\sqrt2}},\\dots</span></p>\n<p>converge? If so, find the limit.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "c90a9b854229c5dd92b2230923cea087d2695323",

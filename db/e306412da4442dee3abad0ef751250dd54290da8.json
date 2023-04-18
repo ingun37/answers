@@ -8,8 +8,29 @@
     "kids": [
         {
             "attr": {
-                "a": "<p>Let <span class=\"math inline\">\\eta</span> be a natural transformation\nfrom <span class=\"math inline\">hom(X, -)</span> to <span\nclass=\"math inline\">F X</span>. <span class=\"math inline\">\\eta_X</span>\nis a function of <span class=\"math inline\">\\eta_X : hom(X,X) \\rightarrow\nF X</span>. Since <span class=\"math inline\">hom(X,X)</span> is a\nsingleton set, there are different <span\nclass=\"math inline\">\\eta_X</span> as many as the cardinality of <span\nclass=\"math inline\">F X</span>. In the mean time there is only one kind\nof <span class=\"math inline\">\\eta_A</span>, the <em>absurd</em> function\n, for any other component than <span class=\"math inline\">X</span>\nbecause <span class=\"math inline\">hom(X, A)</span> is empty. Therefore\nthere are different <span class=\"math inline\">\\eta</span> as many as\n<span class=\"math inline\">F A</span>.</p>",
-                "q": "<p>A discrete category is one that has objects but no morphisms other\nthan identity morphisms. How does the Yoneda lemma work for functors\nfrom such a category?</p>"
+                "a": {
+                    "content": "<p>let <code>psi' fa = (flip fmap) fa</code> so <code>psi</code> and\n<code>phi</code>'s each input/output type match. (flip swaps the order\nof parameters)</p>\n<div class=\"sourceCode\" id=\"cb1\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb1-1\"><a href=\"#cb1-1\" aria-hidden=\"true\" tabindex=\"-1\"></a>phi (psi&#39; fa)</span>\n<span id=\"cb1-2\"><a href=\"#cb1-2\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"ot\">=</span> (psi&#39; fa) <span class=\"fu\">id</span></span>\n<span id=\"cb1-3\"><a href=\"#cb1-3\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"ot\">=</span> ((<span class=\"fu\">flip</span> <span class=\"fu\">fmap</span>) fa) <span class=\"fu\">id</span></span>\n<span id=\"cb1-4\"><a href=\"#cb1-4\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"ot\">=</span> <span class=\"fu\">fmap</span> <span class=\"fu\">id</span> fa</span>\n<span id=\"cb1-5\"><a href=\"#cb1-5\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"ot\">=</span> fa</span></code></pre></div>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>Show that the two functions <code>phi</code> and <code>psi</code>\nthat form the Yoneda isomorphism in Haskell are inverses of each\nother.</p>\n<div class=\"sourceCode\" id=\"cb1\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb1-1\"><a href=\"#cb1-1\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"ot\">phi ::</span> (<span class=\"kw\">forall</span> x <span class=\"op\">.</span> (a <span class=\"ot\">-&gt;</span> x) <span class=\"ot\">-&gt;</span> <span class=\"dt\">F</span> x) <span class=\"ot\">-&gt;</span> <span class=\"dt\">F</span> a</span>\n<span id=\"cb1-2\"><a href=\"#cb1-2\" aria-hidden=\"true\" tabindex=\"-1\"></a>phi alpha <span class=\"ot\">=</span> alpha <span class=\"fu\">id</span></span></code></pre></div>\n<div class=\"sourceCode\" id=\"cb2\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb2-1\"><a href=\"#cb2-1\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"ot\">psi ::</span> <span class=\"dt\">F</span> a <span class=\"ot\">-&gt;</span> (<span class=\"kw\">forall</span> x <span class=\"op\">.</span> (a <span class=\"ot\">-&gt;</span> x) <span class=\"ot\">-&gt;</span> <span class=\"dt\">F</span> x)</span>\n<span id=\"cb2-2\"><a href=\"#cb2-2\" aria-hidden=\"true\" tabindex=\"-1\"></a>psi fa h <span class=\"ot\">=</span> <span class=\"fu\">fmap</span> h fa</span></code></pre></div>",
+                    "posixTime": 1678612923
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "53ebcf7af5a3c65007a8345f821b133f4be6262e",
+            "title": "1"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<p>Let <span class=\"math inline\">\\eta</span> be a natural transformation\nfrom <span class=\"math inline\">hom(X, -)</span> to <span\nclass=\"math inline\">F X</span>. <span class=\"math inline\">\\eta_X</span>\nis a function of <span class=\"math inline\">\\eta_X : hom(X,X) \\rightarrow\nF X</span>. Since <span class=\"math inline\">hom(X,X)</span> is a\nsingleton set, there are different <span\nclass=\"math inline\">\\eta_X</span> as many as the cardinality of <span\nclass=\"math inline\">F X</span>. In the mean time there is only one kind\nof <span class=\"math inline\">\\eta_A</span>, the <em>absurd</em> function\n, for any other component than <span class=\"math inline\">X</span>\nbecause <span class=\"math inline\">hom(X, A)</span> is empty. Therefore\nthere are different <span class=\"math inline\">\\eta</span> as many as\n<span class=\"math inline\">F A</span>.</p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>A discrete category is one that has objects but no morphisms other\nthan identity morphisms. How does the Yoneda lemma work for functors\nfrom such a category?</p>",
+                    "posixTime": 1678612923
+                }
             },
             "numAnswer": 1,
             "sha1": "023f5bb88122c0c2c2df61b4ed52d0895f925aeb",
@@ -17,21 +38,18 @@
         },
         {
             "attr": {
-                "a": "<p>If you give <code>()</code> as a to Yoneda lemma for the list\nfunctor, you get set of natural transformations from\n<code>C((), -)</code> to List that are isomorphic to <code>[()]</code>.\nSo the data type of the natural transformations\n<code>(()-&gt;x)-&gt;[x]</code> could be another representation.</p>",
-                "q": "<p>A list of units <code>[()]</code> contains no other information but\nits length. So, as a data type, it can be considered an encoding of\nintegers. An empty list encodes zero, a singleton <code>[()]</code> (a\nvalue, not a type) encodes one, and so on. Construct another\nrepresentation of this data type using the Yoneda lemma for the list\nfunctor.</p>"
+                "a": {
+                    "content": "<p>If you give <code>()</code> as a to Yoneda lemma for the list\nfunctor, you get set of natural transformations from\n<code>C((), -)</code> to List that are isomorphic to <code>[()]</code>.\nSo the data type of the natural transformations\n<code>(()-&gt;x)-&gt;[x]</code> could be another representation.</p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>A list of units <code>[()]</code> contains no other information but\nits length. So, as a data type, it can be considered an encoding of\nintegers. An empty list encodes zero, a singleton <code>[()]</code> (a\nvalue, not a type) encodes one, and so on. Construct another\nrepresentation of this data type using the Yoneda lemma for the list\nfunctor.</p>",
+                    "posixTime": 1678612923
+                }
             },
             "numAnswer": 1,
             "sha1": "3f184d69913f8c9147c2fa28b2af86394a135fca",
             "title": "3"
-        },
-        {
-            "attr": {
-                "a": "<p>let <code>psi' fa = (flip fmap) fa</code> so <code>psi</code> and\n<code>phi</code>'s each input/output type match. (flip swaps the order\nof parameters)</p>\n<div class=\"sourceCode\" id=\"cb1\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb1-1\"><a href=\"#cb1-1\" aria-hidden=\"true\" tabindex=\"-1\"></a>phi (psi&#39; fa)</span>\n<span id=\"cb1-2\"><a href=\"#cb1-2\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"ot\">=</span> (psi&#39; fa) <span class=\"fu\">id</span></span>\n<span id=\"cb1-3\"><a href=\"#cb1-3\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"ot\">=</span> ((<span class=\"fu\">flip</span> <span class=\"fu\">fmap</span>) fa) <span class=\"fu\">id</span></span>\n<span id=\"cb1-4\"><a href=\"#cb1-4\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"ot\">=</span> <span class=\"fu\">fmap</span> <span class=\"fu\">id</span> fa</span>\n<span id=\"cb1-5\"><a href=\"#cb1-5\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"ot\">=</span> fa</span></code></pre></div>",
-                "q": "<p>Show that the two functions <code>phi</code> and <code>psi</code>\nthat form the Yoneda isomorphism in Haskell are inverses of each\nother.</p>\n<div class=\"sourceCode\" id=\"cb1\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb1-1\"><a href=\"#cb1-1\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"ot\">phi ::</span> (<span class=\"kw\">forall</span> x <span class=\"op\">.</span> (a <span class=\"ot\">-&gt;</span> x) <span class=\"ot\">-&gt;</span> <span class=\"dt\">F</span> x) <span class=\"ot\">-&gt;</span> <span class=\"dt\">F</span> a</span>\n<span id=\"cb1-2\"><a href=\"#cb1-2\" aria-hidden=\"true\" tabindex=\"-1\"></a>phi alpha <span class=\"ot\">=</span> alpha <span class=\"fu\">id</span></span></code></pre></div>\n<div class=\"sourceCode\" id=\"cb2\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb2-1\"><a href=\"#cb2-1\" aria-hidden=\"true\" tabindex=\"-1\"></a><span class=\"ot\">psi ::</span> <span class=\"dt\">F</span> a <span class=\"ot\">-&gt;</span> (<span class=\"kw\">forall</span> x <span class=\"op\">.</span> (a <span class=\"ot\">-&gt;</span> x) <span class=\"ot\">-&gt;</span> <span class=\"dt\">F</span> x)</span>\n<span id=\"cb2-2\"><a href=\"#cb2-2\" aria-hidden=\"true\" tabindex=\"-1\"></a>psi fa h <span class=\"ot\">=</span> <span class=\"fu\">fmap</span> h fa</span></code></pre></div>"
-            },
-            "numAnswer": 1,
-            "sha1": "53ebcf7af5a3c65007a8345f821b133f4be6262e",
-            "title": "1"
         }
     ],
     "parentSha1": "bd467f809ce2a42bd342fce03ff7fd2bd3d8446c",

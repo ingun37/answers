@@ -8,9 +8,9 @@
     "kids": [
         {
             "attr": {},
-            "numAnswer": 8,
-            "sha1": "a9c1bd0890cd9f394e84c1960f79a24dc8b16068",
-            "title": "2.7 Properties of Infinite Series"
+            "numAnswer": 12,
+            "sha1": "e4849720dc36754e26d3aa8f6ed5ea001e6644dc",
+            "title": "2.5 Subsequences and the Bolzano-Weierstrass Theorem"
         },
         {
             "attr": {},
@@ -26,9 +26,9 @@
         },
         {
             "attr": {},
-            "numAnswer": 12,
-            "sha1": "e4849720dc36754e26d3aa8f6ed5ea001e6644dc",
-            "title": "2.5 Subsequences and the Bolzano-Weierstrass Theorem"
+            "numAnswer": 8,
+            "sha1": "a9c1bd0890cd9f394e84c1960f79a24dc8b16068",
+            "title": "2.7 Properties of Infinite Series"
         }
     ],
     "parentSha1": "2730856957310933e421fdf612b27304f70d0ac1",

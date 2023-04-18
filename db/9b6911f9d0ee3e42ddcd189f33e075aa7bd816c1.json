@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p><span class=\"math display\">\\begin{aligned}\n&amp;P\\left( X &lt;Y\\right) \\\\\n&amp;=P\\left( X=1,Y=2\\right) +P\\left( X=1,Y=3\\right) +P\\left(\nX=1,Y=4\\right) +P\\left( X=2,Y=3\\right) +P\\left( X=2,Y=4\\right) +P\\left(\nX=3,Y=4\\right) \\\\\n&amp;=P_{X}\\left( 1\\right) P_{Y}\\left( 2\\right) +P_X \\left( 1\\right)\nP_{Y}\\left( 3\\right) +P_{X}\\left( 1\\right) P_{Y}\\left( 4\\right)\n+P_{X}\\left( 2\\right) P_{Y}\\left( 3\\right) +P_{X}\\left( 2\\right)\nP_{Y}\\left( 4\\right) +P_{X}\\left( 3\\right) P_{Y}\\left( 4\\right) \\\\\n&amp;=\\dfrac{1}{4}\\ast \\dfrac{1}{6}+\\dfrac{1}{4}\\ast\n\\dfrac{1}{3}+\\dfrac{1}{4}\\ast \\dfrac{1}{3}+\\dfrac{1}{8}\\ast\n\\dfrac{1}{3}+\\dfrac{1}{8}\\ast \\dfrac{1}{3}+\\dfrac{1}{2}\\ast\n\\dfrac{1}{3}\\\\\n&amp;=\\dfrac{1}{24}+\\dfrac{1}{12}+\\dfrac{1}{12}+\\dfrac{1}{24}+\\dfrac{1}{24}+\\dfrac{1}{6}\\\\\n&amp;=\\dfrac{11}{24}\n\\end{aligned}</span></p>",
-            "q": "<p>Find <span class=\"math inline\">P(X &lt; Y)</span>.</p>"
+            "a": {
+                "content": "<p><span class=\"math display\">\\begin{aligned}\n&amp;P\\left( X &lt;Y\\right) \\\\\n&amp;=P\\left( X=1,Y=2\\right) +P\\left( X=1,Y=3\\right) +P\\left(\nX=1,Y=4\\right) +P\\left( X=2,Y=3\\right) +P\\left( X=2,Y=4\\right) +P\\left(\nX=3,Y=4\\right) \\\\\n&amp;=P_{X}\\left( 1\\right) P_{Y}\\left( 2\\right) +P_X \\left( 1\\right)\nP_{Y}\\left( 3\\right) +P_{X}\\left( 1\\right) P_{Y}\\left( 4\\right)\n+P_{X}\\left( 2\\right) P_{Y}\\left( 3\\right) +P_{X}\\left( 2\\right)\nP_{Y}\\left( 4\\right) +P_{X}\\left( 3\\right) P_{Y}\\left( 4\\right) \\\\\n&amp;=\\dfrac{1}{4}\\ast \\dfrac{1}{6}+\\dfrac{1}{4}\\ast\n\\dfrac{1}{3}+\\dfrac{1}{4}\\ast \\dfrac{1}{3}+\\dfrac{1}{8}\\ast\n\\dfrac{1}{3}+\\dfrac{1}{8}\\ast \\dfrac{1}{3}+\\dfrac{1}{2}\\ast\n\\dfrac{1}{3}\\\\\n&amp;=\\dfrac{1}{24}+\\dfrac{1}{12}+\\dfrac{1}{12}+\\dfrac{1}{24}+\\dfrac{1}{24}+\\dfrac{1}{6}\\\\\n&amp;=\\dfrac{11}{24}\n\\end{aligned}</span></p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Find <span class=\"math inline\">P(X &lt; Y)</span>.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "9b6911f9d0ee3e42ddcd189f33e075aa7bd816c1",

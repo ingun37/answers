@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p><span class=\"math inline\">\\inf \\{ a_k \\} \\leq \\sup \\{ a_k \\}</span>\nby definition.</p>\n<p><span class=\"math inline\">\\inf \\{ a_k \\} &lt; \\sup \\{ a_k \\}</span>\nholds when <span class=\"math inline\">(a_n)</span> is <span\nclass=\"math display\">1, -1, 1, -1, 1, -1 \\dots</span></p>",
-            "q": "<p>Prove that <span class=\"math inline\">\\lim \\inf a_n \\leq \\lim \\sup\na_n</span> for every bounded sequence, and give an example of a sequence\nfor which the inequality is strict.</p>"
+            "a": {
+                "content": "<p><span class=\"math inline\">\\inf \\{ a_k \\} \\leq \\sup \\{ a_k \\}</span>\nby definition.</p>\n<p><span class=\"math inline\">\\inf \\{ a_k \\} &lt; \\sup \\{ a_k \\}</span>\nholds when <span class=\"math inline\">(a_n)</span> is <span\nclass=\"math display\">1, -1, 1, -1, 1, -1 \\dots</span></p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Prove that <span class=\"math inline\">\\lim \\inf a_n \\leq \\lim \\sup\na_n</span> for every bounded sequence, and give an example of a sequence\nfor which the inequality is strict.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "2daf2a9552fdcbdb6d58932afd0d1351a2fe1121",

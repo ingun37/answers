@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p><span class=\"math display\">\\begin {aligned}\n&amp; 0 \\leq (x-y)^2 \\\\\n&amp; \\rightarrow 0 \\leq x^2 - 2xy + y^2 \\\\\n&amp; \\rightarrow 4xy \\leq x^2 + 2xy + y^2\\\\\n&amp; \\rightarrow 4xy \\leq (x+y)^2 \\\\\n&amp; \\rightarrow 2\\sqrt{xy} \\leq x+y \\\\\n&amp; \\rightarrow \\sqrt{xy} \\leq \\frac {x+y} {2}\n\\end {aligned}</span></p>",
-            "q": "<p>Explain why <span class=\"math inline\">\\sqrt{xy} \\leq (x+y)/2</span>\nfor any two positive real numbers <span class=\"math inline\">x</span> and\n<span class=\"math inline\">y</span>. (The geometric mean is always less\nthan the arithmetic mean.)</p>"
+            "a": {
+                "content": "<p><span class=\"math display\">\\begin {aligned}\n&amp; 0 \\leq (x-y)^2 \\\\\n&amp; \\rightarrow 0 \\leq x^2 - 2xy + y^2 \\\\\n&amp; \\rightarrow 4xy \\leq x^2 + 2xy + y^2\\\\\n&amp; \\rightarrow 4xy \\leq (x+y)^2 \\\\\n&amp; \\rightarrow 2\\sqrt{xy} \\leq x+y \\\\\n&amp; \\rightarrow \\sqrt{xy} \\leq \\frac {x+y} {2}\n\\end {aligned}</span></p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Explain why <span class=\"math inline\">\\sqrt{xy} \\leq (x+y)/2</span>\nfor any two positive real numbers <span class=\"math inline\">x</span> and\n<span class=\"math inline\">y</span>. (The geometric mean is always less\nthan the arithmetic mean.)</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "cb7271cc0008b0edf9fa8032d37b7d10fec47b8e",

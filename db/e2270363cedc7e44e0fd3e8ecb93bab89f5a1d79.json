@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p><span class=\"math display\">\\begin {aligned}\n&amp; \\lim b^{1/n} = l\\\\\n&amp; \\Rightarrow \\lim \\sqrt{b^{1/n}} = \\sqrt{\\lim b^{1/n}} = \\sqrt l\n\\end {aligned}</span></p>\n<p>Square root preserves equality. Proof is here 👉 <a\nhref=\"https://math.stackexchange.com/questions/695290/proof-that-the-limit-of-the-square-root-is-the-square-root-of-the-limit\">StackExchange\n- Mathematics</a></p>\n<p><span class=\"math inline\">\\sqrt {b^{1/n}} = b^{1/2n}</span> and this\nis a subsequence therefore the limit must be the same to the original\nsequence.</p>\n<p><span class=\"math display\">\\sqrt l = l = 1</span></p>",
-            "q": "<p>Use a similar strategy to the one in Example 2.5.3 to show <span\nclass=\"math inline\">\\lim b^{1/n}</span> exists for all <span\nclass=\"math inline\">b \\geq 0</span> and find the value of the limit.\n(The results in Exercise 2.3.1 may be assumed.)</p>"
+            "a": {
+                "content": "<p><span class=\"math display\">\\begin {aligned}\n&amp; \\lim b^{1/n} = l\\\\\n&amp; \\Rightarrow \\lim \\sqrt{b^{1/n}} = \\sqrt{\\lim b^{1/n}} = \\sqrt l\n\\end {aligned}</span></p>\n<p>Square root preserves equality. Proof is here 👉 <a\nhref=\"https://math.stackexchange.com/questions/695290/proof-that-the-limit-of-the-square-root-is-the-square-root-of-the-limit\">StackExchange\n- Mathematics</a></p>\n<p><span class=\"math inline\">\\sqrt {b^{1/n}} = b^{1/2n}</span> and this\nis a subsequence therefore the limit must be the same to the original\nsequence.</p>\n<p><span class=\"math display\">\\sqrt l = l = 1</span></p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Use a similar strategy to the one in Example 2.5.3 to show <span\nclass=\"math inline\">\\lim b^{1/n}</span> exists for all <span\nclass=\"math inline\">b \\geq 0</span> and find the value of the limit.\n(The results in Exercise 2.3.1 may be assumed.)</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "e2270363cedc7e44e0fd3e8ecb93bab89f5a1d79",

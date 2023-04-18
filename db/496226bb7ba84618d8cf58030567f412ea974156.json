@@ -8,21 +8,33 @@
     "kids": [
         {
             "attr": {
-                "a": "<p><span class=\"math inline\">\\mathbf{N}</span> is sequence. Suppose\n<span class=\"math inline\">\\mathbf{N}</span> is upper bounded. Then by\nMonotone Convergence Theorem the least upper bound must exist. Let the\nsupermum be <span class=\"math inline\">\\alpha</span>. There exists <span\nclass=\"math inline\">n\\in \\mathbf{N}</span> such that <span\nclass=\"math inline\">\\alpha -1 &lt; n</span>, which means <span\nclass=\"math inline\">\\alpha &lt; n + 1</span> and <span\nclass=\"math inline\">n+1</span> is a natural number bigger than <span\nclass=\"math inline\">\\alpha</span>, the supermum, which is\ncontradiction.</p>",
-                "q": "<p>In Section 1.4 we used the Axiom of Completeness (AoC) to prove the\nArchimedean Property of <span class=\"math inline\">\\mathbf{R}</span>\n(Theorem 1.4.2). Show that the Monotone Convergence Theorem can also be\nused to prove the Archimedean Property without making any use of\nAoC.</p>"
-            },
-            "numAnswer": 1,
-            "sha1": "2186157f9f737094abd9134f491880f2a1f8475d",
-            "title": "a"
-        },
-        {
-            "attr": {
-                "a": "<p>Just substitute the part</p>\n<blockquote>\n<p>The set <span class=\"math inline\">A</span> has every <span\nclass=\"math inline\">b_n</span> as upper bounds therefore, by AoC,\nsupermum exists.</p>\n</blockquote>\n<p>to</p>\n<blockquote>\n<p>The sequence <span class=\"math inline\">A</span> has every <span\nclass=\"math inline\">b_n</span> as upper bounds therefore, by Monotone\nConvergence Theorem, supermum exists.</p>\n</blockquote>",
-                "q": "<p>Use the Monotone Convergence Theorem to supply a proof for the Nested\nInterval Property (Theorem 1.4.1) that doesn't make use of AoC.</p>"
+                "a": {
+                    "content": "<p>Just substitute the part</p>\n<blockquote>\n<p>The set <span class=\"math inline\">A</span> has every <span\nclass=\"math inline\">b_n</span> as upper bounds therefore, by AoC,\nsupermum exists.</p>\n</blockquote>\n<p>to</p>\n<blockquote>\n<p>The sequence <span class=\"math inline\">A</span> has every <span\nclass=\"math inline\">b_n</span> as upper bounds therefore, by Monotone\nConvergence Theorem, supermum exists.</p>\n</blockquote>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>Use the Monotone Convergence Theorem to supply a proof for the Nested\nInterval Property (Theorem 1.4.1) that doesn't make use of AoC.</p>",
+                    "posixTime": 1678612923
+                }
             },
             "numAnswer": 1,
             "sha1": "ee47c2902e16d0a8d6e29390c15cfc03197ff23e",
             "title": "b"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<p><span class=\"math inline\">\\mathbf{N}</span> is sequence. Suppose\n<span class=\"math inline\">\\mathbf{N}</span> is upper bounded. Then by\nMonotone Convergence Theorem the least upper bound must exist. Let the\nsupermum be <span class=\"math inline\">\\alpha</span>. There exists <span\nclass=\"math inline\">n\\in \\mathbf{N}</span> such that <span\nclass=\"math inline\">\\alpha -1 &lt; n</span>, which means <span\nclass=\"math inline\">\\alpha &lt; n + 1</span> and <span\nclass=\"math inline\">n+1</span> is a natural number bigger than <span\nclass=\"math inline\">\\alpha</span>, the supermum, which is\ncontradiction.</p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>In Section 1.4 we used the Axiom of Completeness (AoC) to prove the\nArchimedean Property of <span class=\"math inline\">\\mathbf{R}</span>\n(Theorem 1.4.2). Show that the Monotone Convergence Theorem can also be\nused to prove the Archimedean Property without making any use of\nAoC.</p>",
+                    "posixTime": 1678612923
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "2186157f9f737094abd9134f491880f2a1f8475d",
+            "title": "a"
         }
     ],
     "parentSha1": "8eb88787394d6a9222966b2d3a35f0eeb144456f",

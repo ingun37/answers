@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>Since <span class=\"math inline\">(x_n) \\rightarrow x</span>, by\ndefinition of convergence, for all <span\nclass=\"math inline\">\\epsilon</span> there exists <span\nclass=\"math inline\">N</span> such that <span class=\"math inline\">N &lt;\nn \\Rightarrow |x_n - x | &lt; \\epsilon</span>.</p>\n<p>Let's say there's also <span class=\"math inline\">m</span> that is\nbigger than <span class=\"math inline\">N</span>. That means</p>\n<p><span class=\"math display\">\\begin {aligned}\n&amp; |x_m - x| &lt; \\epsilon \\\\\n&amp; \\Rightarrow |x - x_m| &lt; \\epsilon \\\\\n&amp; \\Rightarrow |x - x_m| + |x_n - x| &lt; 2\\epsilon\n\\end {aligned}</span></p>\n<p>And because of triangle equality</p>\n<p><span class=\"math display\">\\begin {aligned}\n&amp; \\Rightarrow |x - x_m + x_n - x| = |x_n - x_m| &lt; |x - x_m| +\n|x_n - x| &lt; 2\\epsilon\n\\end {aligned}</span></p>",
-            "q": "<p>Supply a proof for Theorem 2.6.2.</p>"
+            "a": {
+                "content": "<p>Since <span class=\"math inline\">(x_n) \\rightarrow x</span>, by\ndefinition of convergence, for all <span\nclass=\"math inline\">\\epsilon</span> there exists <span\nclass=\"math inline\">N</span> such that <span class=\"math inline\">N &lt;\nn \\Rightarrow |x_n - x | &lt; \\epsilon</span>.</p>\n<p>Let's say there's also <span class=\"math inline\">m</span> that is\nbigger than <span class=\"math inline\">N</span>. That means</p>\n<p><span class=\"math display\">\\begin {aligned}\n&amp; |x_m - x| &lt; \\epsilon \\\\\n&amp; \\Rightarrow |x - x_m| &lt; \\epsilon \\\\\n&amp; \\Rightarrow |x - x_m| + |x_n - x| &lt; 2\\epsilon\n\\end {aligned}</span></p>\n<p>And because of triangle equality</p>\n<p><span class=\"math display\">\\begin {aligned}\n&amp; \\Rightarrow |x - x_m + x_n - x| = |x_n - x_m| &lt; |x - x_m| +\n|x_n - x| &lt; 2\\epsilon\n\\end {aligned}</span></p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Supply a proof for Theorem 2.6.2.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "3dac59afed83c90654d8a7b26a559ccbab9200fc",

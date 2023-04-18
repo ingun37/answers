@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>Impossible. Cauchy sequence is convergent sequence, and convergent\nsequence can't have unbounded subsequence.</p>",
-            "q": "<p>A Cauchy sequence with an unbounded subsequence</p>"
+            "a": {
+                "content": "<p>Impossible. Cauchy sequence is convergent sequence, and convergent\nsequence can't have unbounded subsequence.</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>A Cauchy sequence with an unbounded subsequence</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "6e61b59444fb0e1021a1696dcb66e24edab3c2a8",

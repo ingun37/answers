@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>Monoid is a category with only one object. So there can be only one\nfunctor <code>C(x, -)</code>. And a natural transformations <span\nclass=\"math inline\">\\alpha</span> that corresponds to a monoid morphism\n<code>m</code> would be just composition of <span class=\"math inline\">f\n\\in C(x, -)</span> with <code>m</code>. I don't know if it means other\nthan just plain definition of monoid as it appears. If you know please\ncontribute.</p>",
-            "q": "<p>Work out the Yoneda embedding for a monoid. What functor corresponds\nto the monoid's single object? What natural transformations correspond\nto monoid morphisms?</p>"
+            "a": {
+                "content": "<p>Monoid is a category with only one object. So there can be only one\nfunctor <code>C(x, -)</code>. And a natural transformations <span\nclass=\"math inline\">\\alpha</span> that corresponds to a monoid morphism\n<code>m</code> would be just composition of <span class=\"math inline\">f\n\\in C(x, -)</span> with <code>m</code>. I don't know if it means other\nthan just plain definition of monoid as it appears. If you know please\ncontribute.</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Work out the Yoneda embedding for a monoid. What functor corresponds\nto the monoid's single object? What natural transformations correspond\nto monoid morphisms?</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "6ce08c7157d20230489067d52de8475b17d8b97f",

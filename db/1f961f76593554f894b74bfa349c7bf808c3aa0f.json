@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p><span class=\"math display\">(1 - (1 - P_1)(1 - P_2))*P_3</span></p>",
-            "q": "<p><img\nsrc=\"https://www.probabilitycourse.com/images/chapter1/5c.png\" /></p>"
+            "a": {
+                "content": "<p><span class=\"math display\">(1 - (1 - P_1)(1 - P_2))*P_3</span></p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p><img\nsrc=\"https://www.probabilitycourse.com/images/chapter1/5c.png\" /></p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "1f961f76593554f894b74bfa349c7bf808c3aa0f",

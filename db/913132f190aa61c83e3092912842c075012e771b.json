@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>The one that contains zero, one and two peak terms would look\nsomething like this</p>\n<p><img\nsrc=\"/answers/books/Understanding%20Analysis/2.%20Sequences%20and%20Series/2.5%20Subsequences%20and%20the%20Bolzano-Weierstrass%20Theorem/2.5.8/(a)/a.PNG\" /></p>\n<p>The other one that has infinitely many peak terms would look\nsomething like this</p>\n<p><img\nsrc=\"/answers/books/Understanding%20Analysis/2.%20Sequences%20and%20Series/2.5%20Subsequences%20and%20the%20Bolzano-Weierstrass%20Theorem/2.5.8/(a)/b.PNG\" /></p>",
-            "q": "<p>Find examples of sequences with zero, one, and two peak terms. Find\nan example of a sequence with infinitely many peak terms that is not\nmonotone.</p>"
+            "a": {
+                "content": "<p>The one that contains zero, one and two peak terms would look\nsomething like this</p>\n<p><img\nsrc=\"/answers/books/Understanding%20Analysis/2.%20Sequences%20and%20Series/2.5%20Subsequences%20and%20the%20Bolzano-Weierstrass%20Theorem/2.5.8/(a)/a.PNG\" /></p>\n<p>The other one that has infinitely many peak terms would look\nsomething like this</p>\n<p><img\nsrc=\"/answers/books/Understanding%20Analysis/2.%20Sequences%20and%20Series/2.5%20Subsequences%20and%20the%20Bolzano-Weierstrass%20Theorem/2.5.8/(a)/b.PNG\" /></p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Find examples of sequences with zero, one, and two peak terms. Find\nan example of a sequence with infinitely many peak terms that is not\nmonotone.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "913132f190aa61c83e3092912842c075012e771b",

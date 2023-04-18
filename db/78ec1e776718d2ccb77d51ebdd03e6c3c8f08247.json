@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p><span class=\"math inline\">(y_n)</span> converges because <span\nclass=\"math inline\">y_n</span> increses and there's upper bound.\nTherefore limit exists therefore the algebraic manipulation works.</p>",
-            "q": "<p>This time set <span class=\"math inline\">y_1 = 1</span> and <span\nclass=\"math inline\">y_{n+1} = 3 - \\frac 1 {y_n}</span>. Can the strategy\nin <span class=\"math inline\">(a)</span> be applied to compute the limit\nof this sequence?</p>"
+            "a": {
+                "content": "<p><span class=\"math inline\">(y_n)</span> converges because <span\nclass=\"math inline\">y_n</span> increses and there's upper bound.\nTherefore limit exists therefore the algebraic manipulation works.</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>This time set <span class=\"math inline\">y_1 = 1</span> and <span\nclass=\"math inline\">y_{n+1} = 3 - \\frac 1 {y_n}</span>. Can the strategy\nin <span class=\"math inline\">(a)</span> be applied to compute the limit\nof this sequence?</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "78ec1e776718d2ccb77d51ebdd03e6c3c8f08247",

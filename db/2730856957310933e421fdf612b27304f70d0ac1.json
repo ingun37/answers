@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "author": "Stephen Abbott",
-            "edition": "2"
+            "author": {
+                "content": "Stephen Abbott",
+                "posixTime": 1678612923
+            },
+            "edition": {
+                "content": "2",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 44,
         "sha1": "2730856957310933e421fdf612b27304f70d0ac1",

@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>Number of powerset of <span class=\"math inline\">\\aleph</span> is\n<span class=\"math inline\">2^{\\aleph}</span>. For any set <span\nclass=\"math inline\">x</span> from the powerset can make a unique\ntopology namely <span class=\"math inline\">\\{\\emptyset, x, X\\}</span>.\nHence there are at least <span class=\"math inline\">2^{\\aleph}</span>\ntopologies. <span class=\"math inline\">2^{\\aleph}</span>. Powerset of\ninfinite set is uncountable.(Proven in Appendix). Hence every infinite\nset has an uncountable number of distinct topologies on it.</p>",
-            "q": "<p>If <span class=\"math inline\">X</span> is any infinite set of\ncardinality <span class=\"math inline\">\\aleph</span>, prove that there\nare at least <span class=\"math inline\">2^{\\aleph}</span> distinct\ntopologies on <span class=\"math inline\">X</span>. Deduce that every\ninfinite set has an uncountable number of distinct topologies on it.</p>"
+            "a": {
+                "content": "<p>Number of powerset of <span class=\"math inline\">\\aleph</span> is\n<span class=\"math inline\">2^{\\aleph}</span>. For any set <span\nclass=\"math inline\">x</span> from the powerset can make a unique\ntopology namely <span class=\"math inline\">\\{\\emptyset, x, X\\}</span>.\nHence there are at least <span class=\"math inline\">2^{\\aleph}</span>\ntopologies. <span class=\"math inline\">2^{\\aleph}</span>. Powerset of\ninfinite set is uncountable.(Proven in Appendix). Hence every infinite\nset has an uncountable number of distinct topologies on it.</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>If <span class=\"math inline\">X</span> is any infinite set of\ncardinality <span class=\"math inline\">\\aleph</span>, prove that there\nare at least <span class=\"math inline\">2^{\\aleph}</span> distinct\ntopologies on <span class=\"math inline\">X</span>. Deduce that every\ninfinite set has an uncountable number of distinct topologies on it.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "d579e339ba6278e6fb00fbc7060a368b32bcef8b",

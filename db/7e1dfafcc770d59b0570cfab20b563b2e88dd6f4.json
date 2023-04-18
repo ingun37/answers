@@ -1,7 +1,10 @@
 {
     "item": {
         "attr": {
-            "q": "<p>Let <span class=\"math inline\">S</span> and <span\nclass=\"math inline\">T</span> be non-empty subsets of a topological space\n<span class=\"math inline\">(X, \\tau)</span> with <span\nclass=\"math inline\">S \\subseteq T</span>.</p>"
+            "q": {
+                "content": "<p>Let <span class=\"math inline\">S</span> and <span\nclass=\"math inline\">T</span> be non-empty subsets of a topological space\n<span class=\"math inline\">(X, \\tau)</span> with <span\nclass=\"math inline\">S \\subseteq T</span>.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 4,
         "sha1": "7e1dfafcc770d59b0570cfab20b563b2e88dd6f4",
@@ -10,26 +13,14 @@
     "kids": [
         {
             "attr": {
-                "a": "<p>(i) basically means <span class=\"math inline\">\\{\\text{limits of } S\\}\n\\subseteq \\{\\text{limits of } T\\}</span>.<br />\n<span class=\"math inline\">\\rightarrow \\{\\text{limits of } S\\} \\cup S\n\\subseteq \\{\\text{limits of } T\\} \\cup T</span><br />\n<span class=\"math inline\">\\rightarrow \\overline{S} \\subseteq\n\\overline{T}</span>.</p>",
-                "q": "<p>Deduce from (i) that <span class=\"math inline\">\\overline{S} \\subseteq\n\\overline{T}</span>.</p>"
-            },
-            "numAnswer": 1,
-            "sha1": "0b308d0232a762516d9eaf339d3eaeae1ccdf374",
-            "title": "(ii)"
-        },
-        {
-            "attr": {
-                "a": "<p><span class=\"math inline\">\\overline{S} \\subseteq\n\\overline{T}</span>.<br />\n<span class=\"math inline\">\\rightarrow X \\subseteq\n\\overline{T}</span>.<br />\n<span class=\"math inline\">\\overline{T} \\subseteq X \\rightarrow\n\\overline{T} = X</span></p>",
-                "q": "<p>Hence show that if <span class=\"math inline\">S</span> is dense in\n<span class=\"math inline\">X</span>, then <span\nclass=\"math inline\">T</span> is dense in <span\nclass=\"math inline\">X</span>.</p>"
-            },
-            "numAnswer": 1,
-            "sha1": "a22361b63d2033398d6e85a280526127eee2fe08",
-            "title": "(iii)"
-        },
-        {
-            "attr": {
-                "a": "<p><span class=\"math inline\">\\mathbb{Q}</span> is countable dense subset\nright?<br />\n<span class=\"math inline\">\\mathbb{I}</span> is uncountable and distinct\nfrom <span class=\"math inline\">\\mathbb{Q}</span> so for each <span\nclass=\"math inline\">i \\in \\mathbb{I}</span> we an make uncountable\nnumber of <span class=\"math inline\">\\mathbb{Q} + i</span> which is\ncountable dense subset.</p>\n<p>Cardinality of <span class=\"math inline\">\\mathbb{I}</span> is <span\nclass=\"math inline\">\\mathfrak{c}</span> which is same as <span\nclass=\"math inline\">\\mathbb{R}</span>.<br />\nCardinality of <span class=\"math inline\">\\mathbb{I}^{+}</span> is also\n<span class=\"math inline\">\\mathfrak{c}</span><br />\nSo <span class=\"math inline\">\\mathcal{P}(\\mathbb{I}^+)</span> has\ncardinality of <span class=\"math inline\">2^\\mathfrak{c}</span>.<br />\nFor all <span class=\"math inline\">s \\in\n\\mathcal{P}(\\mathbb{I}^+)</span>, we can define <span\nclass=\"math inline\">\\mathbb{R}^- \\cap s</span> which is distinct,\nuncountable</p>",
-                "q": "<p>Again using (iii), prove that <span\nclass=\"math inline\">\\mathbb{R}</span> has an uncountable number of\ndistinct countable dense subsets and <span\nclass=\"math inline\">2^\\mathfrak{c}</span> distinct uncountable dense\nsubsets.</p>"
+                "a": {
+                    "content": "<p><span class=\"math inline\">\\mathbb{Q}</span> is countable dense subset\nright?<br />\n<span class=\"math inline\">\\mathbb{I}</span> is uncountable and distinct\nfrom <span class=\"math inline\">\\mathbb{Q}</span> so for each <span\nclass=\"math inline\">i \\in \\mathbb{I}</span> we an make uncountable\nnumber of <span class=\"math inline\">\\mathbb{Q} + i</span> which is\ncountable dense subset.</p>\n<p>Cardinality of <span class=\"math inline\">\\mathbb{I}</span> is <span\nclass=\"math inline\">\\mathfrak{c}</span> which is same as <span\nclass=\"math inline\">\\mathbb{R}</span>.<br />\nCardinality of <span class=\"math inline\">\\mathbb{I}^{+}</span> is also\n<span class=\"math inline\">\\mathfrak{c}</span><br />\nSo <span class=\"math inline\">\\mathcal{P}(\\mathbb{I}^+)</span> has\ncardinality of <span class=\"math inline\">2^\\mathfrak{c}</span>.<br />\nFor all <span class=\"math inline\">s \\in\n\\mathcal{P}(\\mathbb{I}^+)</span>, we can define <span\nclass=\"math inline\">\\mathbb{R}^- \\cap s</span> which is distinct,\nuncountable</p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>Again using (iii), prove that <span\nclass=\"math inline\">\\mathbb{R}</span> has an uncountable number of\ndistinct countable dense subsets and <span\nclass=\"math inline\">2^\\mathfrak{c}</span> distinct uncountable dense\nsubsets.</p>",
+                    "posixTime": 1678612923
+                }
             },
             "numAnswer": 1,
             "sha1": "4ba7d2b7f73a00fc70106c28099598031719d215",
@@ -37,12 +28,48 @@
         },
         {
             "attr": {
-                "a": "<p>For all open set <span class=\"math inline\">U</span> containing <span\nclass=\"math inline\">p</span>, <span class=\"math inline\">U</span>\nintersects with <span class=\"math inline\">S</span>.<br />\n<span class=\"math inline\">S</span> is subset of <span\nclass=\"math inline\">T</span> so <span class=\"math inline\">U</span>\nintersects with <span class=\"math inline\">T</span> as well.<br />\nBy definition, <span class=\"math inline\">p</span> becomes limit point of\n<span class=\"math inline\">T</span>.</p>",
-                "q": "<p>If <span class=\"math inline\">p</span> is a limit point of the set\n<span class=\"math inline\">S</span>, verify that <span\nclass=\"math inline\">p</span> is also a limit point of the set <span\nclass=\"math inline\">T</span>.</p>"
+                "a": {
+                    "content": "<p>For all open set <span class=\"math inline\">U</span> containing <span\nclass=\"math inline\">p</span>, <span class=\"math inline\">U</span>\nintersects with <span class=\"math inline\">S</span>.<br />\n<span class=\"math inline\">S</span> is subset of <span\nclass=\"math inline\">T</span> so <span class=\"math inline\">U</span>\nintersects with <span class=\"math inline\">T</span> as well.<br />\nBy definition, <span class=\"math inline\">p</span> becomes limit point of\n<span class=\"math inline\">T</span>.</p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>If <span class=\"math inline\">p</span> is a limit point of the set\n<span class=\"math inline\">S</span>, verify that <span\nclass=\"math inline\">p</span> is also a limit point of the set <span\nclass=\"math inline\">T</span>.</p>",
+                    "posixTime": 1678612923
+                }
             },
             "numAnswer": 1,
             "sha1": "a7865b1395c4230fec5e72b2ce076f450061ec67",
             "title": "(i)"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<p>(i) basically means <span class=\"math inline\">\\{\\text{limits of } S\\}\n\\subseteq \\{\\text{limits of } T\\}</span>.<br />\n<span class=\"math inline\">\\rightarrow \\{\\text{limits of } S\\} \\cup S\n\\subseteq \\{\\text{limits of } T\\} \\cup T</span><br />\n<span class=\"math inline\">\\rightarrow \\overline{S} \\subseteq\n\\overline{T}</span>.</p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>Deduce from (i) that <span class=\"math inline\">\\overline{S} \\subseteq\n\\overline{T}</span>.</p>",
+                    "posixTime": 1678612923
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "0b308d0232a762516d9eaf339d3eaeae1ccdf374",
+            "title": "(ii)"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<p><span class=\"math inline\">\\overline{S} \\subseteq\n\\overline{T}</span>.<br />\n<span class=\"math inline\">\\rightarrow X \\subseteq\n\\overline{T}</span>.<br />\n<span class=\"math inline\">\\overline{T} \\subseteq X \\rightarrow\n\\overline{T} = X</span></p>",
+                    "posixTime": 1678612923
+                },
+                "q": {
+                    "content": "<p>Hence show that if <span class=\"math inline\">S</span> is dense in\n<span class=\"math inline\">X</span>, then <span\nclass=\"math inline\">T</span> is dense in <span\nclass=\"math inline\">X</span>.</p>",
+                    "posixTime": 1678612923
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "a22361b63d2033398d6e85a280526127eee2fe08",
+            "title": "(iii)"
         }
     ],
     "parentSha1": "6677129339116d847c31d1f0b8359e4c17169bec",

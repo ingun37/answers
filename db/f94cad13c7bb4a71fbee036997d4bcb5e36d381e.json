@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>We've already proved that Hadamard productinng <span\nclass=\"math inline\">\\sigma &#39; (z_l)</span> is equal to multiplying\n<span class=\"math inline\">\\Sigma &#39; (z_l)</span>, and <span\nclass=\"math inline\">\\Sigma &#39; (z_l)</span> can move it's\nmultiplicative position. Rearranging the result of (2) we get</p>\n<p><span class=\"math display\">\\delta_l = W^\\intercal \\delta_{l+1} \\odot\n\\sigma &#39; (z_l) = W^\\intercal \\Sigma &#39; (z_l)\n\\delta_{l+1}</span></p>\n<p>which is recursive expression with the initial value of <span\nclass=\"math inline\">\\delta^L = \\Sigma&#39;(z^L) \\nabla_a C</span>. We\nget the expression from the question when we serialize this recursive\nexpression.</p>",
-            "q": "<p>By combining observations (1) and (2) show that</p>\n<p><span class=\"math display\">\\delta^l = \\Sigma&#39;(z^l) (w^{l+1})^T\n\\ldots \\Sigma&#39;(z^{L-1}) (w^L)^T\n    \\Sigma&#39;(z^L) \\nabla_a C\n  \\tag{35}</span></p>"
+            "a": {
+                "content": "<p>We've already proved that Hadamard productinng <span\nclass=\"math inline\">\\sigma &#39; (z_l)</span> is equal to multiplying\n<span class=\"math inline\">\\Sigma &#39; (z_l)</span>, and <span\nclass=\"math inline\">\\Sigma &#39; (z_l)</span> can move it's\nmultiplicative position. Rearranging the result of (2) we get</p>\n<p><span class=\"math display\">\\delta_l = W^\\intercal \\delta_{l+1} \\odot\n\\sigma &#39; (z_l) = W^\\intercal \\Sigma &#39; (z_l)\n\\delta_{l+1}</span></p>\n<p>which is recursive expression with the initial value of <span\nclass=\"math inline\">\\delta^L = \\Sigma&#39;(z^L) \\nabla_a C</span>. We\nget the expression from the question when we serialize this recursive\nexpression.</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>By combining observations (1) and (2) show that</p>\n<p><span class=\"math display\">\\delta^l = \\Sigma&#39;(z^l) (w^{l+1})^T\n\\ldots \\Sigma&#39;(z^{L-1}) (w^L)^T\n    \\Sigma&#39;(z^L) \\nabla_a C\n  \\tag{35}</span></p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "f94cad13c7bb4a71fbee036997d4bcb5e36d381e",

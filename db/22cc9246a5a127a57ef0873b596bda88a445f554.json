@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>Let <span class=\"math inline\">X \\sim Binomial(50,0.5)</span> and\n<span class=\"math inline\">F_X</span> the CDF of <span\nclass=\"math inline\">X</span> then the answer is <span\nclass=\"math inline\">1 - \\text{F}_X(30)</span>. I think it needs\ncomputation.</p>",
-            "q": "<p>50 students live in a dormitory. The parking lot has the capacity for\n30 cars. If each student has a car with probability <span\nclass=\"math inline\">1 \\over 2</span> (independently from other\nstudents), what is the probability that there won't be enough parking\nspaces for all the cars?</p>"
+            "a": {
+                "content": "<p>Let <span class=\"math inline\">X \\sim Binomial(50,0.5)</span> and\n<span class=\"math inline\">F_X</span> the CDF of <span\nclass=\"math inline\">X</span> then the answer is <span\nclass=\"math inline\">1 - \\text{F}_X(30)</span>. I think it needs\ncomputation.</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>50 students live in a dormitory. The parking lot has the capacity for\n30 cars. If each student has a car with probability <span\nclass=\"math inline\">1 \\over 2</span> (independently from other\nstudents), what is the probability that there won't be enough parking\nspaces for all the cars?</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "22cc9246a5a127a57ef0873b596bda88a445f554",

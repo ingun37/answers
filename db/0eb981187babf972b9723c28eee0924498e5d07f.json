@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>Firstly</p>\n<p><span class=\"math display\">\\begin{aligned}\n&amp;kw\\cdot x + kb \\\\\n&amp;= k(w\\cdot x) + kb \\\\\n&amp;= k(w\\cdot x + b)\n\\end{aligned}</span> Therefore</p>\n<p><span class=\"math display\">\\begin{aligned}\n&amp;kw\\cdot x + kb \\leq 0 \\\\\n&amp;\\rightarrow k(w\\cdot x + b) \\leq 0 \\\\\n&amp;\\rightarrow k^{-1}k(w\\cdot x + b) \\leq k^{-1}0 \\\\\n&amp;\\rightarrow w\\cdot x + b \\leq 0 \\\\\n\\end{aligned}</span></p>\n<p>THere's no change in the output of perceptrons therefore the\nbehaviour of the network doesn't change.</p>",
-            "q": "<p>Suppose we take all the weights and biases in a network of\nperceptrons, and multiply them by a positive constant, <span\nclass=\"math inline\">c &gt; 0</span>. Show that the behaviour of the\nnetwork doesn't change.</p>"
+            "a": {
+                "content": "<p>Firstly</p>\n<p><span class=\"math display\">\\begin{aligned}\n&amp;kw\\cdot x + kb \\\\\n&amp;= k(w\\cdot x) + kb \\\\\n&amp;= k(w\\cdot x + b)\n\\end{aligned}</span> Therefore</p>\n<p><span class=\"math display\">\\begin{aligned}\n&amp;kw\\cdot x + kb \\leq 0 \\\\\n&amp;\\rightarrow k(w\\cdot x + b) \\leq 0 \\\\\n&amp;\\rightarrow k^{-1}k(w\\cdot x + b) \\leq k^{-1}0 \\\\\n&amp;\\rightarrow w\\cdot x + b \\leq 0 \\\\\n\\end{aligned}</span></p>\n<p>THere's no change in the output of perceptrons therefore the\nbehaviour of the network doesn't change.</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Suppose we take all the weights and biases in a network of\nperceptrons, and multiply them by a positive constant, <span\nclass=\"math inline\">c &gt; 0</span>. Show that the behaviour of the\nnetwork doesn't change.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "0eb981187babf972b9723c28eee0924498e5d07f",

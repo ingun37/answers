@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>(a) <span class=\"math inline\">\\tau_{1} = \\{ X, \\emptyset, \\{c\\},\n\\{b,d,e\\}, \\{b,c,d,e\\}, \\{b\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{1}</span> is not the answer. <span\nclass=\"math inline\">\\{c\\} \\cup \\{b\\} = \\{c,b\\}</span> doesn't exist.</p>\n</blockquote>\n<p>(b) <span class=\"math inline\">\\tau_{2} = \\{ X, \\emptyset, \\{a\\},\n\\{b,d,e\\}, \\{a,b,d\\}, \\{a,b,d,e\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{2}</span> is not the answer. <span\nclass=\"math inline\">\\{b,d,e\\} \\cap \\{a,b,d\\} = \\{b,d\\}</span> doesn't\nexist.</p>\n</blockquote>\n<p>(c) <span class=\"math inline\">\\tau_{3} = \\{ X, \\emptyset, \\{b\\},\n\\{a,b,c\\}, \\{d,c,f\\}, \\{b,d,e,f\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{3}</span> is the answer.</p>\n</blockquote>",
-            "q": "<p>Let <span class=\"math inline\">X=\\{ a,b,c,d,e,f \\}</span>. Which of\nthe following collections of subset of <span\nclass=\"math inline\">X</span> is a topology on <span\nclass=\"math inline\">X</span>? (Justify your answers)</p>"
+            "a": {
+                "content": "<p>(a) <span class=\"math inline\">\\tau_{1} = \\{ X, \\emptyset, \\{c\\},\n\\{b,d,e\\}, \\{b,c,d,e\\}, \\{b\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{1}</span> is not the answer. <span\nclass=\"math inline\">\\{c\\} \\cup \\{b\\} = \\{c,b\\}</span> doesn't exist.</p>\n</blockquote>\n<p>(b) <span class=\"math inline\">\\tau_{2} = \\{ X, \\emptyset, \\{a\\},\n\\{b,d,e\\}, \\{a,b,d\\}, \\{a,b,d,e\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{2}</span> is not the answer. <span\nclass=\"math inline\">\\{b,d,e\\} \\cap \\{a,b,d\\} = \\{b,d\\}</span> doesn't\nexist.</p>\n</blockquote>\n<p>(c) <span class=\"math inline\">\\tau_{3} = \\{ X, \\emptyset, \\{b\\},\n\\{a,b,c\\}, \\{d,c,f\\}, \\{b,d,e,f\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{3}</span> is the answer.</p>\n</blockquote>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Let <span class=\"math inline\">X=\\{ a,b,c,d,e,f \\}</span>. Which of\nthe following collections of subset of <span\nclass=\"math inline\">X</span> is a topology on <span\nclass=\"math inline\">X</span>? (Justify your answers)</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "9a9d55bd0c80d70b9921dbfefef6c18cb738725a",

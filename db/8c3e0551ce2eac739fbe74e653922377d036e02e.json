@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>a. Domain is <span class=\"math inline\">\\{H,T\\}^3</span> and codomain\nis <span class=\"math inline\">\\mathbb{N} \\cup \\{0\\}</span>.</p>\n<p>b. <span class=\"math inline\">\\{ 0,1,2,3 \\}</span></p>\n<p>c. Possible outcomes are:</p>\n<pre><code>THH\nHTH\nHHT</code></pre>",
-            "q": "<p>Recall that</p>\n<p><span class=\"math display\">= \\{H,T\\} \\times \\{H,T\\} \\times\n\\{H,T\\}</span></p>\n<p>Consider the following function</p>\n<p><span class=\"math display\">f: \\{H,T\\}^3 \\longrightarrow \\mathbb{N}\n\\cup \\{0\\},</span></p>\n<p>defined as</p>\n<p><span class=\"math display\">f(x)=\\text{the number of H&#39;s in\n$x$}.</span></p>\n<p>For example,</p>\n<p><span class=\"math display\">f(HTH)=2.</span></p>\n<p>a. Determine the domain and co-domain for <span\nclass=\"math inline\">f</span>.<br />\nb. Find range of <span class=\"math inline\">f</span>: Range(<span\nclass=\"math inline\">f</span>).<br />\nc. If we know <span class=\"math inline\">f(x)=2</span> what can we say\nabout <span class=\"math inline\">x</span>?</p>"
+            "a": {
+                "content": "<p>a. Domain is <span class=\"math inline\">\\{H,T\\}^3</span> and codomain\nis <span class=\"math inline\">\\mathbb{N} \\cup \\{0\\}</span>.</p>\n<p>b. <span class=\"math inline\">\\{ 0,1,2,3 \\}</span></p>\n<p>c. Possible outcomes are:</p>\n<pre><code>THH\nHTH\nHHT</code></pre>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Recall that</p>\n<p><span class=\"math display\">= \\{H,T\\} \\times \\{H,T\\} \\times\n\\{H,T\\}</span></p>\n<p>Consider the following function</p>\n<p><span class=\"math display\">f: \\{H,T\\}^3 \\longrightarrow \\mathbb{N}\n\\cup \\{0\\},</span></p>\n<p>defined as</p>\n<p><span class=\"math display\">f(x)=\\text{the number of H&#39;s in\n$x$}.</span></p>\n<p>For example,</p>\n<p><span class=\"math display\">f(HTH)=2.</span></p>\n<p>a. Determine the domain and co-domain for <span\nclass=\"math inline\">f</span>.<br />\nb. Find range of <span class=\"math inline\">f</span>: Range(<span\nclass=\"math inline\">f</span>).<br />\nc. If we know <span class=\"math inline\">f(x)=2</span> what can we say\nabout <span class=\"math inline\">x</span>?</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "8c3e0551ce2eac739fbe74e653922377d036e02e",

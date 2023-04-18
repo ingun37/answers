@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>Suppose <span class=\"math inline\">X</span> and <span\nclass=\"math inline\">[0,1)</span> were homeomorphic. Then <span\nclass=\"math inline\">[0,1) \\backslash \\{p\\}</span> for any <span\nclass=\"math inline\">p \\in (0,1)</span>, which is anything except 0, is\nhomeomorphic to <span class=\"math inline\">X \\backslash a</span>. <span\nclass=\"math inline\">[0,1) \\backslash \\{p\\}</span> is not connected which\nis contradiction.</p>",
-            "q": "<p>Observing that for every point <span class=\"math inline\">a \\in\nX</span>, the subspace <span class=\"math inline\">X \\backslash\n\\{a\\}</span> is connected, show that <span class=\"math inline\">X \\ncong\n[0, 1)</span>.</p>"
+            "a": {
+                "content": "<p>Suppose <span class=\"math inline\">X</span> and <span\nclass=\"math inline\">[0,1)</span> were homeomorphic. Then <span\nclass=\"math inline\">[0,1) \\backslash \\{p\\}</span> for any <span\nclass=\"math inline\">p \\in (0,1)</span>, which is anything except 0, is\nhomeomorphic to <span class=\"math inline\">X \\backslash a</span>. <span\nclass=\"math inline\">[0,1) \\backslash \\{p\\}</span> is not connected which\nis contradiction.</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Observing that for every point <span class=\"math inline\">a \\in\nX</span>, the subspace <span class=\"math inline\">X \\backslash\n\\{a\\}</span> is connected, show that <span class=\"math inline\">X \\ncong\n[0, 1)</span>.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "1738cc7af1958db1acd457ca3dc12dae06f5a2b1",

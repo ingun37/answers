@@ -1,31 +1,16 @@
 {
     "item": {
         "attr": {
-            "author": "Sidney A. Morris"
+            "author": {
+                "content": "Sidney A. Morris",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 53,
         "sha1": "4207f01b267f64572c815ef211fdabe38d3ca400",
         "title": "Topology Without Tears"
     },
     "kids": [
-        {
-            "attr": {},
-            "numAnswer": 10,
-            "sha1": "386863b0048a22bdddfb8f8cc28b50926b11ee1d",
-            "title": "2. The Euclidean Topology"
-        },
-        {
-            "attr": {},
-            "numAnswer": 12,
-            "sha1": "5e46eb44c0c41629ec32d18301ca125e86a08d6a",
-            "title": "5. Continuous Mappings"
-        },
-        {
-            "attr": {},
-            "numAnswer": 1,
-            "sha1": "3fe69f1482255888d574a2691a2f309588055848",
-            "title": "7. Compactness"
-        },
         {
             "attr": {},
             "numAnswer": 20,
@@ -37,6 +22,24 @@
             "numAnswer": 5,
             "sha1": "f8d0b665f1cf1dd32f41dc6b7bed9fb2cb6acdb1",
             "title": "4. Homeomorphisms"
+        },
+        {
+            "attr": {},
+            "numAnswer": 12,
+            "sha1": "5e46eb44c0c41629ec32d18301ca125e86a08d6a",
+            "title": "5. Continuous Mappings"
+        },
+        {
+            "attr": {},
+            "numAnswer": 10,
+            "sha1": "386863b0048a22bdddfb8f8cc28b50926b11ee1d",
+            "title": "2. The Euclidean Topology"
+        },
+        {
+            "attr": {},
+            "numAnswer": 1,
+            "sha1": "3fe69f1482255888d574a2691a2f309588055848",
+            "title": "7. Compactness"
         },
         {
             "attr": {},

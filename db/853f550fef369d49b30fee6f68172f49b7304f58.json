@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p>I think it's just dual version of contravariant Yoneda embedding\nnothing more. If you know, please <a\nhref=\"https://github.com/ingun37/category-theory-for-programmers-answers\">contribute</a>.</p>",
-            "q": "<p>What is the application of the covariant Yoneda embedding to\npreorders? (Question suggested by Gershom Bazerman.)</p>"
+            "a": {
+                "content": "<p>I think it's just dual version of contravariant Yoneda embedding\nnothing more. If you know, please <a\nhref=\"https://github.com/ingun37/category-theory-for-programmers-answers\">contribute</a>.</p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>What is the application of the covariant Yoneda embedding to\npreorders? (Question suggested by Gershom Bazerman.)</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "853f550fef369d49b30fee6f68172f49b7304f58",

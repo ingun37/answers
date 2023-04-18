@@ -1,8 +1,14 @@
 {
     "item": {
         "attr": {
-            "a": "<p><span class=\"math display\">\\frac 1 c x = \\frac 1 x \\rightarrow x =\n\\left(1 - \\frac 1 c\\right)\\left(x + \\frac 1 {1 - \\frac 1 c}\\frac 1\nx\\right)</span></p>",
-            "q": "<p>Modify the sequence <span class=\"math inline\">(x_n)</span> so that it\nconverges to <span class=\"math inline\">\\sqrt c</span>.</p>"
+            "a": {
+                "content": "<p><span class=\"math display\">\\frac 1 c x = \\frac 1 x \\rightarrow x =\n\\left(1 - \\frac 1 c\\right)\\left(x + \\frac 1 {1 - \\frac 1 c}\\frac 1\nx\\right)</span></p>",
+                "posixTime": 1678612923
+            },
+            "q": {
+                "content": "<p>Modify the sequence <span class=\"math inline\">(x_n)</span> so that it\nconverges to <span class=\"math inline\">\\sqrt c</span>.</p>",
+                "posixTime": 1678612923
+            }
         },
         "numAnswer": 1,
         "sha1": "b0524ee91166f8e5cf96f2fe966b1e89b5899956",
