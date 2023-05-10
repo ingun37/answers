@@ -24,6 +24,21 @@
         {
             "attr": {
                 "a": {
+                    "content": "<p>We are asked to define Exponential in Haskell.<br />\nFYI, it's not mentioned in the book but the Exponential that is\ndescribed in the book is basically currying.</p>\n<div class=\"sourceCode\" id=\"cb1\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb1-1\"><a href=\"#cb1-1\" aria-hidden=\"true\" tabindex=\"-1\"></a>unit z a <span class=\"ot\">=</span> (z, a)</span>\n<span id=\"cb1-2\"><a href=\"#cb1-2\" aria-hidden=\"true\" tabindex=\"-1\"></a>counit (f, a) <span class=\"ot\">=</span> f a</span></code></pre></div>",
+                    "posixTime": 1579746458
+                },
+                "q": {
+                    "content": "<p>Define the adjunction between a product and a function object in\nHaskell.</p>",
+                    "posixTime": 1579746458
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "5d84908466c4564550ad5440e3c4bd9f58135b2c",
+            "title": "6"
+        },
+        {
+            "attr": {
+                "a": {
                     "content": "<p>Coproduct functor as Left adjoint and square functor as right\nadjoint, we can build an adjunction like this.<br />\n<img\nsrc=\"/answers/books/Category%20Theory%20For%20Programmers/18.%20Adjunctions/4/IMG_4745A389AF18-1.jpeg\" /><br />\nBy definition of coproduct, <span class=\"math inline\">m</span> and pair\nof <span class=\"math inline\">&lt;p,q&gt;</span> must be\nisomorphic.<br />\nWe can define factorizer by composing counit <span\nclass=\"math inline\">\\varepsilon</span> and <span\nclass=\"math inline\">L&lt;p,q&gt;</span> and the inverse by composing\n<span class=\"math inline\">Rm</span> and unit <span\nclass=\"math inline\">\\eta</span>.</p>",
                     "posixTime": 1579721108
                 },
@@ -35,21 +50,6 @@
             "numAnswer": 1,
             "sha1": "5339c96121cbeeee75d375d64623fd2d5fda350d",
             "title": "4"
-        },
-        {
-            "attr": {
-                "a": {
-                    "content": "<p>The book already derived unit <span class=\"math inline\">\\eta</span>\nby replacing <span class=\"math inline\">c</span> with <span\nclass=\"math inline\">Ld</span>. In the same way we can derive <span\nclass=\"math inline\">\\varepsilon</span> by replacing <span\nclass=\"math inline\">d</span> with <span\nclass=\"math inline\">Rc</span>.<br />\nReplacing <span class=\"math inline\">d</span> with <span\nclass=\"math inline\">Rc</span> gives us<br />\n<span class=\"math inline\">C(LRc,c) \\cong D(Rc,Rc)</span><br />\nThere's at least one morphism (<span class=\"math inline\">id</span>) in\n<span class=\"math inline\">D(Rc, Rc)</span> so there must be a\ncorresponding morphism in <span class=\"math inline\">C(LRc,c)</span>\nwhich is the counit.</p>",
-                    "posixTime": 1579717687
-                },
-                "q": {
-                    "content": "<p>Derive the counit <span class=\"math inline\">\\varepsilon</span>\nstarting from the hom-sets isomorphism in the second definition of the\nadjunction.</p>",
-                    "posixTime": 1579717687
-                }
-            },
-            "numAnswer": 1,
-            "sha1": "51720de77323032d8fef3dff7ed6d4759b361c1d",
-            "title": "2"
         },
         {
             "attr": {
@@ -84,17 +84,17 @@
         {
             "attr": {
                 "a": {
-                    "content": "<p>We are asked to define Exponential in Haskell.<br />\nFYI, it's not mentioned in the book but the Exponential that is\ndescribed in the book is basically currying.</p>\n<div class=\"sourceCode\" id=\"cb1\"><pre\nclass=\"sourceCode haskell\"><code class=\"sourceCode haskell\"><span id=\"cb1-1\"><a href=\"#cb1-1\" aria-hidden=\"true\" tabindex=\"-1\"></a>unit z a <span class=\"ot\">=</span> (z, a)</span>\n<span id=\"cb1-2\"><a href=\"#cb1-2\" aria-hidden=\"true\" tabindex=\"-1\"></a>counit (f, a) <span class=\"ot\">=</span> f a</span></code></pre></div>",
-                    "posixTime": 1579746458
+                    "content": "<p>The book already derived unit <span class=\"math inline\">\\eta</span>\nby replacing <span class=\"math inline\">c</span> with <span\nclass=\"math inline\">Ld</span>. In the same way we can derive <span\nclass=\"math inline\">\\varepsilon</span> by replacing <span\nclass=\"math inline\">d</span> with <span\nclass=\"math inline\">Rc</span>.<br />\nReplacing <span class=\"math inline\">d</span> with <span\nclass=\"math inline\">Rc</span> gives us<br />\n<span class=\"math inline\">C(LRc,c) \\cong D(Rc,Rc)</span><br />\nThere's at least one morphism (<span class=\"math inline\">id</span>) in\n<span class=\"math inline\">D(Rc, Rc)</span> so there must be a\ncorresponding morphism in <span class=\"math inline\">C(LRc,c)</span>\nwhich is the counit.</p>",
+                    "posixTime": 1579717687
                 },
                 "q": {
-                    "content": "<p>Define the adjunction between a product and a function object in\nHaskell.</p>",
-                    "posixTime": 1579746458
+                    "content": "<p>Derive the counit <span class=\"math inline\">\\varepsilon</span>\nstarting from the hom-sets isomorphism in the second definition of the\nadjunction.</p>",
+                    "posixTime": 1579717687
                 }
             },
             "numAnswer": 1,
-            "sha1": "5d84908466c4564550ad5440e3c4bd9f58135b2c",
-            "title": "6"
+            "sha1": "51720de77323032d8fef3dff7ed6d4759b361c1d",
+            "title": "2"
         }
     ],
     "parentSha1": "bd467f809ce2a42bd342fce03ff7fd2bd3d8446c",

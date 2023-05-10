@@ -1,0 +1,20 @@
+{
+    "item": {
+        "attr": {
+            "a": {
+                "content": "<p>Say <span class=\"math inline\">(h_n) = 1/n^p</span>.</p>\n<p>I'm using Cauchy Condensation Test.</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp; h_1 + 2h_2 + 4h_4 + \\cdots + 2^k b_{2^k} \\\\\n= &amp; \\frac 1 {1^p} + \\frac 2 {2^p} + \\frac 4 {4^p} + \\cdots + \\frac\n{2^k} {2^{kp}}\\\\\n= &amp; \\frac 1 {1^p} + \\frac 2 {2^p} + \\frac {2^2} {2^{2p}} + \\cdots +\n\\frac {2^k} {2^{kp}} \\\\\n= &amp; \\frac 1 {1^p} + \\frac 1 {2^{p-1}} + \\frac {1} {2^{2p-2}} +\n\\cdots + \\frac {1} {2^{kp - k}} \\\\\n= &amp; \\frac 1 {1^p} + \\frac 1 {2^{p-1}} + \\frac {1} {(2^{p-1})^2} +\n\\cdots + \\frac {1} {(2^{p-1})^k} \\\\\n\\end{aligned}</span></p>\n<p>This is geometric series of <span class=\"math inline\">\\frac {1}\n{2^{p-1}}</span>.</p>\n<p>Therefore if <span class=\"math inline\">1 &lt; p</span> then it\nconverges, otherwise it diverges.</p>",
+                "posixTime": 1683713504
+            },
+            "q": {
+                "content": "<p>Now that we have proved the basic facts about geometric series,\nsupply a proof for Corollary 2.4.7.</p>",
+                "posixTime": 1683713504
+            }
+        },
+        "numAnswer": 1,
+        "sha1": "e29036055d17c62346b2f731ca414445276d616e",
+        "title": "2.7.5"
+    },
+    "kids": [],
+    "parentSha1": "a9c1bd0890cd9f394e84c1960f79a24dc8b16068",
+    "path": "answers-db/books/Understanding Analysis/2. Sequences and Series/2.7 Properties of Infinite Series/2.7.5"
+}

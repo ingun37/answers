@@ -14,6 +14,21 @@
         {
             "attr": {
                 "a": {
+                    "content": "<p><span class=\"math inline\">\\overline{S} \\subseteq\n\\overline{T}</span>.<br />\n<span class=\"math inline\">\\rightarrow X \\subseteq\n\\overline{T}</span>.<br />\n<span class=\"math inline\">\\overline{T} \\subseteq X \\rightarrow\n\\overline{T} = X</span></p>",
+                    "posixTime": 1577117619
+                },
+                "q": {
+                    "content": "<p>Hence show that if <span class=\"math inline\">S</span> is dense in\n<span class=\"math inline\">X</span>, then <span\nclass=\"math inline\">T</span> is dense in <span\nclass=\"math inline\">X</span>.</p>",
+                    "posixTime": 1577117619
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "a22361b63d2033398d6e85a280526127eee2fe08",
+            "title": "(iii)"
+        },
+        {
+            "attr": {
+                "a": {
                     "content": "<p><span class=\"math inline\">\\mathbb{Q}</span> is countable dense subset\nright?<br />\n<span class=\"math inline\">\\mathbb{I}</span> is uncountable and distinct\nfrom <span class=\"math inline\">\\mathbb{Q}</span> so for each <span\nclass=\"math inline\">i \\in \\mathbb{I}</span> we an make uncountable\nnumber of <span class=\"math inline\">\\mathbb{Q} + i</span> which is\ncountable dense subset.</p>\n<p>Cardinality of <span class=\"math inline\">\\mathbb{I}</span> is <span\nclass=\"math inline\">\\mathfrak{c}</span> which is same as <span\nclass=\"math inline\">\\mathbb{R}</span>.<br />\nCardinality of <span class=\"math inline\">\\mathbb{I}^{+}</span> is also\n<span class=\"math inline\">\\mathfrak{c}</span><br />\nSo <span class=\"math inline\">\\mathcal{P}(\\mathbb{I}^+)</span> has\ncardinality of <span class=\"math inline\">2^\\mathfrak{c}</span>.<br />\nFor all <span class=\"math inline\">s \\in\n\\mathcal{P}(\\mathbb{I}^+)</span>, we can define <span\nclass=\"math inline\">\\mathbb{R}^- \\cap s</span> which is distinct,\nuncountable</p>",
                     "posixTime": 1577117619
                 },
@@ -55,21 +70,6 @@
             "numAnswer": 1,
             "sha1": "0b308d0232a762516d9eaf339d3eaeae1ccdf374",
             "title": "(ii)"
-        },
-        {
-            "attr": {
-                "a": {
-                    "content": "<p><span class=\"math inline\">\\overline{S} \\subseteq\n\\overline{T}</span>.<br />\n<span class=\"math inline\">\\rightarrow X \\subseteq\n\\overline{T}</span>.<br />\n<span class=\"math inline\">\\overline{T} \\subseteq X \\rightarrow\n\\overline{T} = X</span></p>",
-                    "posixTime": 1577117619
-                },
-                "q": {
-                    "content": "<p>Hence show that if <span class=\"math inline\">S</span> is dense in\n<span class=\"math inline\">X</span>, then <span\nclass=\"math inline\">T</span> is dense in <span\nclass=\"math inline\">X</span>.</p>",
-                    "posixTime": 1577117619
-                }
-            },
-            "numAnswer": 1,
-            "sha1": "a22361b63d2033398d6e85a280526127eee2fe08",
-            "title": "(iii)"
         }
     ],
     "parentSha1": "6677129339116d847c31d1f0b8359e4c17169bec",

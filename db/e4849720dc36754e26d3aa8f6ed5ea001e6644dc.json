@@ -8,40 +8,6 @@
     "kids": [
         {
             "attr": {
-                "q": {
-                    "content": "<p>Give an example of each of the following, or argue that such a\nrequest is impossible</p>",
-                    "posixTime": 1664949821
-                }
-            },
-            "numAnswer": 4,
-            "sha1": "991b54de75494f4bb9c137ffccec1a85d55ce6e2",
-            "title": "2.5.1"
-        },
-        {
-            "attr": {},
-            "numAnswer": 1,
-            "sha1": "524c67f6912dc2e643f7db5315ba3c472a2f4e67",
-            "title": "2.5.2"
-        },
-        {
-            "attr": {},
-            "numAnswer": 2,
-            "sha1": "cc3b5340e47ccbe4bc70ecb9df46606ed9461da3",
-            "title": "2.5.3"
-        },
-        {
-            "attr": {
-                "q": {
-                    "content": "<p>Another way to prove the Bolzano-Weierstrass Theorem is to show that\nevery sequence contains a monotone subsequence. A useful device in this\nendeavor is the notion of a <em>peak term</em>. Given a sequence <span\nclass=\"math inline\">(x_n)</span>, a particular term <span\nclass=\"math inline\">x_m</span> is a peak term if no later term is the\nsequence exceeds it; ie.e, if <span class=\"math inline\">x_m \\geq\nx_n</span> for all <span class=\"math inline\">n \\geq m</span>.</p>",
-                    "posixTime": 1665282145
-                }
-            },
-            "numAnswer": 2,
-            "sha1": "a6c284270698c94f40c422b6eebede78f028424e",
-            "title": "2.5.8"
-        },
-        {
-            "attr": {
                 "a": {
                     "content": "<p>Say a set of real numbers <span class=\"math inline\">S</span> is\nupper-bounded.</p>\n<h2 id=\"when-s-is-finite\">When <span class=\"math inline\">S</span> is\nfinite</h2>\n<p><span class=\"math inline\">S</span> must have a maximum value. That's\nS's supermum.</p>\n<h2 id=\"when-s-is-infinite\">When <span class=\"math inline\">S</span> is\ninfinite</h2>\n<p>Choose one <span class=\"math inline\">s \\in S</span> and one upper\nbound <span class=\"math inline\">B</span> of <span\nclass=\"math inline\">S</span>. Define <span class=\"math inline\">b = B -\ns</span>. Define an interval <span class=\"math inline\">I_n = [s,\ns+b]</span>. Now recursively construct the next interval</p>\n<p><span class=\"math display\">I_{n+1} = \\begin{cases}\n   [s&#39;, s&#39; + b/2] &amp;\\text{if } \\exist s&#39; \\in S\\text{ such\nthat } s+b/2 &lt; s&#39;\\\\\n   [s, s+b/2] &amp;\\text{else}\n\\end{cases}</span></p>\n<p>By <em>NIP</em>, there exists <span class=\"math inline\">x</span> such\nthat <span class=\"math inline\">s &lt; x &lt; s + (1/2)^\\infin</span>\nwhere <span class=\"math inline\">s \\in S</span> and <span\nclass=\"math inline\">s+(1/2)^\\infin</span> is an upper bound. We already\nassumed that <span class=\"math inline\">(1/2)^\\infin \\rightarrow\n0</span>, therefore for any upper-bound <span class=\"math inline\">B =\ns+r</span>, <span class=\"math inline\">x &lt; s+(1/2)^\\infin &lt; s+r =\nB</span>, therefore <span class=\"math inline\">x</span> is the\nsupermum.</p>\n<h2\nid=\"why-precisely-is-this-last-assumption-needed-to-avoid-circularity\">Why\nprecisely is this last assumption needed to avoid circularity?</h2>\n<p>AoC implies Archimedean Property. Archimediean Property implies\nDensity of Q in R. Density of Q in R implies <span\nclass=\"math inline\">\\exist n</span> such that <span\nclass=\"math inline\">0 &lt; (1/2)^n &lt; r</span> for any <span\nclass=\"math inline\">r \\in \\mathbb{R}</span>.</p>",
                     "posixTime": 1674353218
@@ -54,6 +20,12 @@
             "numAnswer": 1,
             "sha1": "c6dfb4f0482c84ea5bd7a843bc1b9b9a251985a8",
             "title": "2.5.4"
+        },
+        {
+            "attr": {},
+            "numAnswer": 2,
+            "sha1": "cc3b5340e47ccbe4bc70ecb9df46606ed9461da3",
+            "title": "2.5.3"
         },
         {
             "attr": {
@@ -71,6 +43,12 @@
             "title": "2.5.5"
         },
         {
+            "attr": {},
+            "numAnswer": 1,
+            "sha1": "524c67f6912dc2e643f7db5315ba3c472a2f4e67",
+            "title": "2.5.2"
+        },
+        {
             "attr": {
                 "a": {
                     "content": "<p><span class=\"math display\">\\begin {aligned}\n&amp; \\lim b^{1/n} = l\\\\\n&amp; \\Rightarrow \\lim \\sqrt{b^{1/n}} = \\sqrt{\\lim b^{1/n}} = \\sqrt l\n\\end {aligned}</span></p>\n<p>Square root preserves equality. Proof is here 👉 <a\nhref=\"https://math.stackexchange.com/questions/695290/proof-that-the-limit-of-the-square-root-is-the-square-root-of-the-limit\">StackExchange\n- Mathematics</a></p>\n<p><span class=\"math inline\">\\sqrt {b^{1/n}} = b^{1/2n}</span> and this\nis a subsequence therefore the limit must be the same to the original\nsequence.</p>\n<p><span class=\"math display\">\\sqrt l = l = 1</span></p>",
@@ -84,6 +62,28 @@
             "numAnswer": 1,
             "sha1": "e2270363cedc7e44e0fd3e8ecb93bab89f5a1d79",
             "title": "2.5.6"
+        },
+        {
+            "attr": {
+                "q": {
+                    "content": "<p>Give an example of each of the following, or argue that such a\nrequest is impossible</p>",
+                    "posixTime": 1664949821
+                }
+            },
+            "numAnswer": 4,
+            "sha1": "991b54de75494f4bb9c137ffccec1a85d55ce6e2",
+            "title": "2.5.1"
+        },
+        {
+            "attr": {
+                "q": {
+                    "content": "<p>Another way to prove the Bolzano-Weierstrass Theorem is to show that\nevery sequence contains a monotone subsequence. A useful device in this\nendeavor is the notion of a <em>peak term</em>. Given a sequence <span\nclass=\"math inline\">(x_n)</span>, a particular term <span\nclass=\"math inline\">x_m</span> is a peak term if no later term is the\nsequence exceeds it; ie.e, if <span class=\"math inline\">x_m \\geq\nx_n</span> for all <span class=\"math inline\">n \\geq m</span>.</p>",
+                    "posixTime": 1665282145
+                }
+            },
+            "numAnswer": 2,
+            "sha1": "a6c284270698c94f40c422b6eebede78f028424e",
+            "title": "2.5.8"
         }
     ],
     "parentSha1": "10eb21a7fc596eae55eb2b7f3b3c0321685d5297",

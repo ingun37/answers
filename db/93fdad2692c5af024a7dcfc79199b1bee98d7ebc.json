@@ -14,21 +14,6 @@
         {
             "attr": {
                 "a": {
-                    "content": "<p>Alternating harmonic sequence, e.i.,</p>\n<p><span class=\"math display\">\\frac 1 1, - \\frac 1 2, \\frac 1 3, -\\frac\n1 4, \\cdots</span></p>",
-                    "posixTime": 1665756485
-                },
-                "q": {
-                    "content": "<p>A Cauchy sequence with an unbounded subsequence.</p>",
-                    "posixTime": 1665756485
-                }
-            },
-            "numAnswer": 1,
-            "sha1": "35ea4162061e88a9a536a151fea06508db40f726",
-            "title": "(a)"
-        },
-        {
-            "attr": {
-                "a": {
                     "content": "<p>Impossible. Divergent monotone's subsequences are always divergent\nmonotone subsequence.</p>",
                     "posixTime": 1665756485
                 },
@@ -40,6 +25,21 @@
             "numAnswer": 1,
             "sha1": "6f1656cf437c31296be4da33b47d6c821c2a3810",
             "title": "(c)"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<p>Alternating harmonic sequence, e.i.,</p>\n<p><span class=\"math display\">\\frac 1 1, - \\frac 1 2, \\frac 1 3, -\\frac\n1 4, \\cdots</span></p>",
+                    "posixTime": 1665756485
+                },
+                "q": {
+                    "content": "<p>A Cauchy sequence with an unbounded subsequence.</p>",
+                    "posixTime": 1665756485
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "35ea4162061e88a9a536a151fea06508db40f726",
+            "title": "(a)"
         },
         {
             "attr": {

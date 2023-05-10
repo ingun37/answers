@@ -13,6 +13,12 @@
             "title": "Sigmoid neurons"
         },
         {
+            "attr": {},
+            "numAnswer": 3,
+            "sha1": "f2063b90a4aef8602640129e2df8a69f2cb98fc8",
+            "title": "Learning with gradient descent"
+        },
+        {
             "attr": {
                 "a": {
                     "content": "<p>For the first bit, from 0 to 9</p>\n<p>0,1,0,1,0,1,0,1,0,1</p>\n<p>For the second bit,</p>\n<p>0,0,1,1,0,0,1,1,0,0</p>\n<p>For the third and forth</p>\n<p>0,0,0,0,1,1,1,1,0,0 0,0,0,0,0,0,0,0,1,1</p>",
@@ -26,12 +32,6 @@
             "numAnswer": 1,
             "sha1": "a1e9251d528c003db61b72ad4bbb849bdda381c7",
             "title": "A simple network to classify handwritten digits"
-        },
-        {
-            "attr": {},
-            "numAnswer": 3,
-            "sha1": "f2063b90a4aef8602640129e2df8a69f2cb98fc8",
-            "title": "Learning with gradient descent"
         }
     ],
     "parentSha1": "fb11fc9c1170c1dbed2da4cdb0c7e5a7283eb79a",

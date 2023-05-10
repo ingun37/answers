@@ -9,6 +9,66 @@
         {
             "attr": {
                 "a": {
+                    "content": "<p>Obviously 0 is lower bound of <span class=\"math inline\">A</span>. Now\nlet's say there exists <span class=\"math inline\">x</span> in <span\nclass=\"math inline\">A</span> other than 0. It is a contradiction since\n<span class=\"math inline\">x \\notin A_n</span> where <span\nclass=\"math display\">n = \\frac{1}{\\lfloor x \\rfloor}</span> Therefore\n<span class=\"math inline\">A = \\{0\\}</span></p>",
+                    "posixTime": 1587092934
+                },
+                "q": {
+                    "content": "<p>Let <span class=\"math inline\">A_n=[0,\\frac{1}{n})=\\{x \\in\n\\mathbb{R}|\\quad 0 \\leq x &lt; \\frac{1}{n}\\}</span> for <span\nclass=\"math inline\">n=1,2,\\cdots</span>. Define</p>\n<p><span class=\"math display\">A=\\bigcap_{n=1}^{\\infty}A_n=A_1 \\cap A_2\n\\cap \\cdots</span></p>\n<p>Find <span class=\"math inline\">A</span>.</p>",
+                    "posixTime": 1587092934
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "5d4b4e0bd87c9c4e4068cd057681feeb2d955704",
+            "title": "9"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<p>a. Countable. Subset of countable set is countable. This is subset of\n<span class=\"math inline\">\\mathbb{N}</span>.</p>\n<p>b. Countable. Product of countable sets is countable.</p>\n<p>c. Uncountable. Open set of Uclidean space is uncountable.</p>",
+                    "posixTime": 1587089245
+                },
+                "q": {
+                    "content": "<p>Determine whether each of the following sets is countable or\nuncountable.</p>\n<p>a. <span class=\"math inline\">A = \\{ 1,2,\\cdots ,10^{10}\n\\}</span><br />\nb. <span class=\"math inline\">B=\\{a+b\\sqrt{2}|\\quad a,b \\in\n\\mathbb{Q}\\}</span><br />\nc. <span class=\"math inline\">C=\\{(X,Y) \\in \\mathbb{R}^2 |\\quad x^2+y^2\n\\leq 1\\}</span></p>",
+                    "posixTime": 1587089245
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "1d635af9b521bc31661591b55cedec9182a0843b",
+            "title": "7"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<p>Using quadratic formula, it comes down to:</p>\n<p><span class=\"math display\">P(B \\leq \\dfrac{1}{4A})</span></p>\n<p>It will be like getting the area of this:</p>\n<p><img\nsrc=\"/answers/books/Introduction%20to%20Probability,%20Statistics,%20and%20Random%20Processes/1.5.0/19/IMG_8B7297218699-1.jpeg\" /></p>\n<p>So</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;\\dfrac{1}{4} + \\int_{\\frac{1}{4}}^{1} \\dfrac{1}{4x} dx \\\\\n  &amp;=\\dfrac{1}{4} + \\dfrac{1}{4} \\int_{\\frac{1}{4}}^{1} \\dfrac{1}{x}\ndx \\\\\n  &amp;=\\dfrac{1}{4} + \\dfrac{1}{4} \\left(\\ln 1 - \\ln \\frac{1}{4}\n\\right) \\\\\n  &amp;\\approx \\dfrac{1}{4} + \\dfrac{1}{4} \\left(0 - (-1.4) \\right) \\\\\n  &amp;\\approx 0.6\n\\end{aligned}</span></p>",
+                    "posixTime": 1587133288
+                },
+                "q": {
+                    "content": "<p>You choose a point <span class=\"math inline\">(A,B)</span> uniformly\nat random in the unit square <span class=\"math inline\">\\{(x,y): x,y \\in\n[0,1] \\}</span></p>\n<p><img\nsrc=\"https://www.probabilitycourse.com/images/chapter1/2.png\" /></p>\n<p>What is the probability that the equation</p>\n<p><span class=\"math display\">AX^2+X+B=0</span></p>\n<p>has real solutions?</p>",
+                    "posixTime": 1587133288
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "6bb01d716ce4f2c6ca9c9def884e03c73f39d237",
+            "title": "19"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<p>Let <span class=\"math inline\">(a,b)</span> be any open set such that\n<span class=\"math inline\">1 \\in (a,b)</span>. There is always <span\nclass=\"math inline\">A_n</span> such that <span class=\"math inline\">a \\in\nA_n</span> because for any <span class=\"math inline\">a&#39;</span> such\nthat <span class=\"math inline\">a \\lt a&#39; \\lt 1</span>, we can make a\n<span class=\"math inline\">A_n = [0,a&#39;)</span> by setting <span\nclass=\"math inline\">n</span> as:</p>\n<p><span class=\"math display\">n = \\frac{1}{1 - a&#39;}</span></p>\n<p>Therefore <span class=\"math inline\">1</span> is a limit point of\n<span class=\"math inline\">A</span>. Therefore <span\nclass=\"math inline\">A = [0,1)</span>.</p>",
+                    "posixTime": 1587091608
+                },
+                "q": {
+                    "content": "<p>Let <span class=\"math inline\">A_n=\\left[0,\\frac{n-1}{n}\\right)=\\{x\n\\in \\mathbb{R}|\\quad 0 \\leq x &lt; \\frac{n-1}{n}\\}</span> for <span\nclass=\"math inline\">n=2,3,\\cdots</span>. Define</p>\n<p><span class=\"math display\">A=\\bigcup_{n=1}^{\\infty}A_n= A_1 \\cup A_2\n\\cup A_3 \\cdots</span></p>\n<p>Find <span class=\"math inline\">A</span>.</p>",
+                    "posixTime": 1587091608
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "198c22eae747f9c549ea9c5fdabdde96a8d1c82d",
+            "title": "8"
+        },
+        {
+            "attr": {
+                "a": {
                     "content": "<p>The game starts with either <em>H</em> or <em>T</em>. Therefore there\nare only two patterns for the game to end with <em>HH</em>.</p>\n<table>\n<thead>\n<tr class=\"header\">\n<th>Start with <em>H</em></th>\n<th>Start with <em>T</em></th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"odd\">\n<td>HH</td>\n<td>THH</td>\n</tr>\n<tr class=\"even\">\n<td>HT HH</td>\n<td>TH THH</td>\n</tr>\n<tr class=\"odd\">\n<td>HT HT HH</td>\n<td>TH TH THH</td>\n</tr>\n<tr class=\"even\">\n<td>...</td>\n<td>...</td>\n</tr>\n</tbody>\n</table>\n<p>The probability for each can be calculated by using geometric sum.\nLet <span class=\"math inline\">P_h</span> be the probability of starting\nwith <em>H</em>, <span class=\"math inline\">P_t</span> the\n<em>T</em>.</p>\n<p><span class=\"math display\">P_h = \\dfrac{pp}{1-pq} \\\\\n\\text{ } \\\\\nP_t = \\dfrac{qpp}{1-qp}</span></p>\n<p>Therefore the answer is</p>\n<p><span class=\"math display\">\\cfrac{\\cfrac{pp}{1-pq}}{\\cfrac{pp}{1-pq}\n+ \\cfrac{qpp}{1-qp}} = \\cfrac{pp}{pp + qpp}</span></p>",
                     "posixTime": 1587297306
                 },
@@ -20,6 +80,47 @@
             "numAnswer": 1,
             "sha1": "7363871497f99976391704b0df66c3109422db76",
             "title": "35"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<p>Let <span class=\"math inline\">H</span> be the event that (n+1)th flip\nis head, <span class=\"math inline\">H_n</span> the first <span\nclass=\"math inline\">n</span> flips are head, <span\nclass=\"math inline\">F</span> the picking the fake coin, <span\nclass=\"math inline\">R</span> the picking the real coin.</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;P(H|H_n) \\\\\n  &amp;= P((H \\cap F) \\cup (H \\cap R) |H_n)\n\\end{aligned}</span></p>\n<p>Since <span class=\"math inline\">H \\cap F</span> and <span\nclass=\"math inline\">H \\cap R</span> are disjoint,</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;= P(H \\cap F|H_n) + P(H \\cap R|H_n) \\\\\n  &amp;= P(H |F,H_n)P(F|H_n) + P(H|R,H_n)P(R|H_n) &amp;(1)\n\\end{aligned}</span></p>\n<p>For the <span class=\"math inline\">P(H |F,H_n)</span></p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;P(H |F,H_n) \\\\\n  &amp;= \\cfrac{P(H \\cap F \\cap H_n)}{P(F \\cap H_n)} \\\\\n  &amp;= \\cfrac{P((H \\cap F) \\cap (H_n \\cap F))}{P(F \\cap H_n)} \\\\\n\\end{aligned}</span></p>\n<p>Since <span class=\"math inline\">H \\cap F</span>, the fake coin\nlanding <em>n+1</em>th flip head, and <span class=\"math inline\">H_n \\cap\nF</span>, the fake coin landing first all <em>n</em> flips head, are\nindependent</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;= \\cfrac{P(H \\cap F)P(H_n \\cap F)}{P(F \\cap H_n)} \\\\\n  &amp;= P(H \\cap F) \\\\\n  &amp;= 1\n\\end{aligned}</span></p>\n<p>For the same reason, <span class=\"math inline\">P(H|R,H_n)</span> is\n0.5. Now substitute them in <em>(1)</em>.</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;P(H|H_n) \\\\\n  &amp;= 1*P(F|H_n) + 0.5*P(R|H_n) &amp;(2)\n\\end{aligned}</span></p>\n<p>For the <span class=\"math inline\">P(F|H_n)</span>, use Bayes'\nrule.</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;P(F|H_n) \\\\\n  &amp;=\\cfrac{P(H_n | F)P(F)}{P(H_n | F)P(F)+P(H_n|R)P(R)} \\\\\n  &amp;=\\cfrac{1*0.5}{1*0.5+{0.5}^n*0.5} \\\\\n  &amp;=\\cfrac{1}{1 + {0.5}^n} \\\\\n\\end{aligned}</span></p>\n<p>For the same reason, <span class=\"math inline\">P(R|H_n)</span> is\n<span class=\"math inline\">\\cfrac{{0.5}^n}{{0.5}^n+1}</span>. Therefore\nthe answer is</p>\n<p><span class=\"math display\">\\cfrac{1}{1 + {0.5}^n} +\n\\cfrac{{0.5}^{n+1}}{{0.5}^n+1} = \\cfrac{{0.5}^{n+1} +\n1}{{0.5}^n+1}</span></p>",
+                    "posixTime": 1587300736
+                },
+                "q": {
+                    "content": "<p>A box contains two coins: a regular coin and one fake two-headed coin\n(P(H)=1). I choose a coin at random and toss it <span\nclass=\"math inline\">n</span> times. If the first <span\nclass=\"math inline\">n</span> coin tosses result in heads, what is the\nprobability that the <span class=\"math inline\">(n+1)^{th}</span> coin\ntoss will also result in heads?</p>",
+                    "posixTime": 1587300736
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "3b1e13a8e3643441e621f4c41a8b99feaaa4fa50",
+            "title": "36"
+        },
+        {
+            "attr": {
+                "q": {
+                    "content": "<p>Real-life systems often are composed of several components. For\nexample, a system may consist of two components that are connected in\nparallel as shown in Figure 1.28. When the system's components are\nconnected in parallel, the system works if at least one of the\ncomponents is functional. The components might also be connected in\nseries as shown in Figure 1.28. When the system's components are\nconnected in series, the system works if all of the components are\nfunctional.</p>\n<p><img\nsrc=\"https://www.probabilitycourse.com/images/chapter1/5-1.png\" /></p>\n<p>For each of the following systems, find the probability that the\nsystem is functional. Assume that component <span\nclass=\"math inline\">k</span> is functional with probability <span\nclass=\"math inline\">P_k</span> independent of other components.</p>",
+                    "posixTime": 1587182145
+                }
+            },
+            "numAnswer": 3,
+            "sha1": "e180225d4c713159e9c4471712ccbd716df3c31e",
+            "title": "29"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<p>Let <span class=\"math inline\">\\bold{1}</span> be the event that at\nleast one 1 is observed, and <span class=\"math inline\">\\bold{6}</span>\nthat at least one 6 is observed.</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;1 - P(\\bold{1}^c) - P(\\bold{6}^c) + P(\\bold{1}^c , \\bold{6}^c) \\\\\n  &amp;= 1 - \\left(\\frac{5}{6} \\right)^n - \\left(\\frac{5}{6} \\right)^n +\n\\left(\\frac{4}{6} \\right)^n\n\\end{aligned}</span></p>",
+                    "posixTime": 1587176775
+                },
+                "q": {
+                    "content": "<p>I roll a die <span class=\"math inline\">n</span> times, <span\nclass=\"math inline\">n \\in \\mathbb{N}</span>. Find the probability that\nnumbers 1 and 6 are are both observed at least once.</p>",
+                    "posixTime": 1587176775
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "b7f7d398561d7eda2dc01c346f546ddeef7663d3",
+            "title": "26"
         },
         {
             "attr": {
@@ -54,159 +155,6 @@
         {
             "attr": {
                 "a": {
-                    "content": "<p>Using quadratic formula, it comes down to:</p>\n<p><span class=\"math display\">P(B \\leq \\dfrac{1}{4A})</span></p>\n<p>It will be like getting the area of this:</p>\n<p><img\nsrc=\"/answers/books/Introduction%20to%20Probability,%20Statistics,%20and%20Random%20Processes/1.5.0/19/IMG_8B7297218699-1.jpeg\" /></p>\n<p>So</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;\\dfrac{1}{4} + \\int_{\\frac{1}{4}}^{1} \\dfrac{1}{4x} dx \\\\\n  &amp;=\\dfrac{1}{4} + \\dfrac{1}{4} \\int_{\\frac{1}{4}}^{1} \\dfrac{1}{x}\ndx \\\\\n  &amp;=\\dfrac{1}{4} + \\dfrac{1}{4} \\left(\\ln 1 - \\ln \\frac{1}{4}\n\\right) \\\\\n  &amp;\\approx \\dfrac{1}{4} + \\dfrac{1}{4} \\left(0 - (-1.4) \\right) \\\\\n  &amp;\\approx 0.6\n\\end{aligned}</span></p>",
-                    "posixTime": 1587133288
-                },
-                "q": {
-                    "content": "<p>You choose a point <span class=\"math inline\">(A,B)</span> uniformly\nat random in the unit square <span class=\"math inline\">\\{(x,y): x,y \\in\n[0,1] \\}</span></p>\n<p><img\nsrc=\"https://www.probabilitycourse.com/images/chapter1/2.png\" /></p>\n<p>What is the probability that the equation</p>\n<p><span class=\"math display\">AX^2+X+B=0</span></p>\n<p>has real solutions?</p>",
-                    "posixTime": 1587133288
-                }
-            },
-            "numAnswer": 1,
-            "sha1": "6bb01d716ce4f2c6ca9c9def884e03c73f39d237",
-            "title": "19"
-        },
-        {
-            "attr": {
-                "a": {
-                    "content": "<p>a. Countable. Subset of countable set is countable. This is subset of\n<span class=\"math inline\">\\mathbb{N}</span>.</p>\n<p>b. Countable. Product of countable sets is countable.</p>\n<p>c. Uncountable. Open set of Uclidean space is uncountable.</p>",
-                    "posixTime": 1587089245
-                },
-                "q": {
-                    "content": "<p>Determine whether each of the following sets is countable or\nuncountable.</p>\n<p>a. <span class=\"math inline\">A = \\{ 1,2,\\cdots ,10^{10}\n\\}</span><br />\nb. <span class=\"math inline\">B=\\{a+b\\sqrt{2}|\\quad a,b \\in\n\\mathbb{Q}\\}</span><br />\nc. <span class=\"math inline\">C=\\{(X,Y) \\in \\mathbb{R}^2 |\\quad x^2+y^2\n\\leq 1\\}</span></p>",
-                    "posixTime": 1587089245
-                }
-            },
-            "numAnswer": 1,
-            "sha1": "1d635af9b521bc31661591b55cedec9182a0843b",
-            "title": "7"
-        },
-        {
-            "attr": {
-                "q": {
-                    "content": "<p>Real-life systems often are composed of several components. For\nexample, a system may consist of two components that are connected in\nparallel as shown in Figure 1.28. When the system's components are\nconnected in parallel, the system works if at least one of the\ncomponents is functional. The components might also be connected in\nseries as shown in Figure 1.28. When the system's components are\nconnected in series, the system works if all of the components are\nfunctional.</p>\n<p><img\nsrc=\"https://www.probabilitycourse.com/images/chapter1/5-1.png\" /></p>\n<p>For each of the following systems, find the probability that the\nsystem is functional. Assume that component <span\nclass=\"math inline\">k</span> is functional with probability <span\nclass=\"math inline\">P_k</span> independent of other components.</p>",
-                    "posixTime": 1587182145
-                }
-            },
-            "numAnswer": 3,
-            "sha1": "e180225d4c713159e9c4471712ccbd716df3c31e",
-            "title": "29"
-        },
-        {
-            "attr": {
-                "a": {
-                    "content": "<p>a. Domain is <span class=\"math inline\">\\{H,T\\}^3</span> and codomain\nis <span class=\"math inline\">\\mathbb{N} \\cup \\{0\\}</span>.</p>\n<p>b. <span class=\"math inline\">\\{ 0,1,2,3 \\}</span></p>\n<p>c. Possible outcomes are:</p>\n<pre><code>THH\nHTH\nHHT</code></pre>",
-                    "posixTime": 1587124755
-                },
-                "q": {
-                    "content": "<p>Recall that</p>\n<p><span class=\"math display\">= \\{H,T\\} \\times \\{H,T\\} \\times\n\\{H,T\\}</span></p>\n<p>Consider the following function</p>\n<p><span class=\"math display\">f: \\{H,T\\}^3 \\longrightarrow \\mathbb{N}\n\\cup \\{0\\},</span></p>\n<p>defined as</p>\n<p><span class=\"math display\">f(x)=\\text{the number of H&#39;s in\n$x$}.</span></p>\n<p>For example,</p>\n<p><span class=\"math display\">f(HTH)=2.</span></p>\n<p>a. Determine the domain and co-domain for <span\nclass=\"math inline\">f</span>.<br />\nb. Find range of <span class=\"math inline\">f</span>: Range(<span\nclass=\"math inline\">f</span>).<br />\nc. If we know <span class=\"math inline\">f(x)=2</span> what can we say\nabout <span class=\"math inline\">x</span>?</p>",
-                    "posixTime": 1587124755
-                }
-            },
-            "numAnswer": 1,
-            "sha1": "8c3e0551ce2eac739fbe74e653922377d036e02e",
-            "title": "12"
-        },
-        {
-            "attr": {
-                "a": {
-                    "content": "<p>Let <span class=\"math inline\">\\bold{1}</span> be the event that at\nleast one 1 is observed, and <span class=\"math inline\">\\bold{6}</span>\nthat at least one 6 is observed.</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;1 - P(\\bold{1}^c) - P(\\bold{6}^c) + P(\\bold{1}^c , \\bold{6}^c) \\\\\n  &amp;= 1 - \\left(\\frac{5}{6} \\right)^n - \\left(\\frac{5}{6} \\right)^n +\n\\left(\\frac{4}{6} \\right)^n\n\\end{aligned}</span></p>",
-                    "posixTime": 1587176775
-                },
-                "q": {
-                    "content": "<p>I roll a die <span class=\"math inline\">n</span> times, <span\nclass=\"math inline\">n \\in \\mathbb{N}</span>. Find the probability that\nnumbers 1 and 6 are are both observed at least once.</p>",
-                    "posixTime": 1587176775
-                }
-            },
-            "numAnswer": 1,
-            "sha1": "b7f7d398561d7eda2dc01c346f546ddeef7663d3",
-            "title": "26"
-        },
-        {
-            "attr": {
-                "q": {
-                    "content": "<p>You choose a point <span class=\"math inline\">(X, Y)</span> uniformly\nat random in the unit square</p>\n<p><span class=\"math display\">S=\\{(x,y) \\in \\mathbb{R}^2: 0 \\leq x \\leq\n1, 0 \\leq y \\leq 1\\}.</span></p>\n<p>Let <span class=\"math inline\">A</span> be the event <span\nclass=\"math inline\">\\{(x,y) \\in S:|x-y| \\leq \\frac{1}{2}\\}</span> and\n<span class=\"math inline\">B</span> be the event <span\nclass=\"math inline\">\\{(x,y) \\in S: y\\geq x\\}</span></p>",
-                    "posixTime": 1587185876
-                }
-            },
-            "numAnswer": 3,
-            "sha1": "219d230a9d84517c454db50dd29407c573eb350b",
-            "title": "30"
-        },
-        {
-            "attr": {
-                "a": {
-                    "content": "<p>Obviously 0 is lower bound of <span class=\"math inline\">A</span>. Now\nlet's say there exists <span class=\"math inline\">x</span> in <span\nclass=\"math inline\">A</span> other than 0. It is a contradiction since\n<span class=\"math inline\">x \\notin A_n</span> where <span\nclass=\"math display\">n = \\frac{1}{\\lfloor x \\rfloor}</span> Therefore\n<span class=\"math inline\">A = \\{0\\}</span></p>",
-                    "posixTime": 1587092934
-                },
-                "q": {
-                    "content": "<p>Let <span class=\"math inline\">A_n=[0,\\frac{1}{n})=\\{x \\in\n\\mathbb{R}|\\quad 0 \\leq x &lt; \\frac{1}{n}\\}</span> for <span\nclass=\"math inline\">n=1,2,\\cdots</span>. Define</p>\n<p><span class=\"math display\">A=\\bigcap_{n=1}^{\\infty}A_n=A_1 \\cap A_2\n\\cap \\cdots</span></p>\n<p>Find <span class=\"math inline\">A</span>.</p>",
-                    "posixTime": 1587092934
-                }
-            },
-            "numAnswer": 1,
-            "sha1": "5d4b4e0bd87c9c4e4068cd057681feeb2d955704",
-            "title": "9"
-        },
-        {
-            "attr": {
-                "a": {
-                    "content": "<p>Let <span class=\"math inline\">(a,b)</span> be any open set such that\n<span class=\"math inline\">1 \\in (a,b)</span>. There is always <span\nclass=\"math inline\">A_n</span> such that <span class=\"math inline\">a \\in\nA_n</span> because for any <span class=\"math inline\">a&#39;</span> such\nthat <span class=\"math inline\">a \\lt a&#39; \\lt 1</span>, we can make a\n<span class=\"math inline\">A_n = [0,a&#39;)</span> by setting <span\nclass=\"math inline\">n</span> as:</p>\n<p><span class=\"math display\">n = \\frac{1}{1 - a&#39;}</span></p>\n<p>Therefore <span class=\"math inline\">1</span> is a limit point of\n<span class=\"math inline\">A</span>. Therefore <span\nclass=\"math inline\">A = [0,1)</span>.</p>",
-                    "posixTime": 1587091608
-                },
-                "q": {
-                    "content": "<p>Let <span class=\"math inline\">A_n=\\left[0,\\frac{n-1}{n}\\right)=\\{x\n\\in \\mathbb{R}|\\quad 0 \\leq x &lt; \\frac{n-1}{n}\\}</span> for <span\nclass=\"math inline\">n=2,3,\\cdots</span>. Define</p>\n<p><span class=\"math display\">A=\\bigcup_{n=1}^{\\infty}A_n= A_1 \\cup A_2\n\\cup A_3 \\cdots</span></p>\n<p>Find <span class=\"math inline\">A</span>.</p>",
-                    "posixTime": 1587091608
-                }
-            },
-            "numAnswer": 1,
-            "sha1": "198c22eae747f9c549ea9c5fdabdde96a8d1c82d",
-            "title": "8"
-        },
-        {
-            "attr": {
-                "a": {
-                    "content": "<h3 id=\"1\">1</h3>\n<p>Using geometric sum, following must hold</p>\n<p><span class=\"math display\">\\cfrac{\\cfrac{c}{3}}{1 - \\cfrac{c}{3}} =\n1</span></p>\n<p>Therefore <span class=\"math inline\">c</span> is 1.</p>\n<h3 id=\"2\">2</h3>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;P(\\{2,4,6\\}) \\\\\n  &amp;=P(2) + P(4) + P(6) \\\\\n  &amp;=\\dfrac{2}{3^2} + \\dfrac{2}{3^4} + \\dfrac{2}{3^6} \\\\\n  &amp;=\\dfrac{182}{729}\n\\end{aligned}</span></p>\n<h3 id=\"3\">3</h3>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;P(\\{3,4,5,\\cdots \\}) \\\\\n  &amp;=1 - P(1) - P(2) \\\\\n  &amp;=1 - \\dfrac{2}{3} - \\dfrac{2}{9} \\\\\n  &amp;=\\dfrac{1}{9}\n\\end{aligned}</span></p>",
-                    "posixTime": 1587129240
-                },
-                "q": {
-                    "content": "<p>Consider a random experiment with a sample space</p>\n<p><span class=\"math display\">S=\\{1,2,3,\\cdots\\}.</span> Suppose that we\nknow:</p>\n<p><span class=\"math display\">P(k)=P(\\{k\\})=\\frac{c}{3^k}, \\quad\n\\textrm{for} \\quad k=1,2,\\cdots,</span></p>\n<p>where <span class=\"math inline\">c</span> is a constant number.</p>\n<ol>\n<li>Find <span class=\"math inline\">c</span></li>\n<li>Find <span class=\"math inline\">P(\\{2,4,6\\})</span></li>\n<li>Find <span class=\"math inline\">P(\\{3,4,5,\\cdots\\})</span></li>\n</ol>",
-                    "posixTime": 1587129240
-                }
-            },
-            "numAnswer": 1,
-            "sha1": "d4a089ec1ab1bcfb40038a47f0c05dc5335947c6",
-            "title": "16"
-        },
-        {
-            "attr": {
-                "a": {
-                    "content": "<p>Let <span class=\"math inline\">H</span> be the event that (n+1)th flip\nis head, <span class=\"math inline\">H_n</span> the first <span\nclass=\"math inline\">n</span> flips are head, <span\nclass=\"math inline\">F</span> the picking the fake coin, <span\nclass=\"math inline\">R</span> the picking the real coin.</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;P(H|H_n) \\\\\n  &amp;= P((H \\cap F) \\cup (H \\cap R) |H_n)\n\\end{aligned}</span></p>\n<p>Since <span class=\"math inline\">H \\cap F</span> and <span\nclass=\"math inline\">H \\cap R</span> are disjoint,</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;= P(H \\cap F|H_n) + P(H \\cap R|H_n) \\\\\n  &amp;= P(H |F,H_n)P(F|H_n) + P(H|R,H_n)P(R|H_n) &amp;(1)\n\\end{aligned}</span></p>\n<p>For the <span class=\"math inline\">P(H |F,H_n)</span></p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;P(H |F,H_n) \\\\\n  &amp;= \\cfrac{P(H \\cap F \\cap H_n)}{P(F \\cap H_n)} \\\\\n  &amp;= \\cfrac{P((H \\cap F) \\cap (H_n \\cap F))}{P(F \\cap H_n)} \\\\\n\\end{aligned}</span></p>\n<p>Since <span class=\"math inline\">H \\cap F</span>, the fake coin\nlanding <em>n+1</em>th flip head, and <span class=\"math inline\">H_n \\cap\nF</span>, the fake coin landing first all <em>n</em> flips head, are\nindependent</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;= \\cfrac{P(H \\cap F)P(H_n \\cap F)}{P(F \\cap H_n)} \\\\\n  &amp;= P(H \\cap F) \\\\\n  &amp;= 1\n\\end{aligned}</span></p>\n<p>For the same reason, <span class=\"math inline\">P(H|R,H_n)</span> is\n0.5. Now substitute them in <em>(1)</em>.</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;P(H|H_n) \\\\\n  &amp;= 1*P(F|H_n) + 0.5*P(R|H_n) &amp;(2)\n\\end{aligned}</span></p>\n<p>For the <span class=\"math inline\">P(F|H_n)</span>, use Bayes'\nrule.</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;P(F|H_n) \\\\\n  &amp;=\\cfrac{P(H_n | F)P(F)}{P(H_n | F)P(F)+P(H_n|R)P(R)} \\\\\n  &amp;=\\cfrac{1*0.5}{1*0.5+{0.5}^n*0.5} \\\\\n  &amp;=\\cfrac{1}{1 + {0.5}^n} \\\\\n\\end{aligned}</span></p>\n<p>For the same reason, <span class=\"math inline\">P(R|H_n)</span> is\n<span class=\"math inline\">\\cfrac{{0.5}^n}{{0.5}^n+1}</span>. Therefore\nthe answer is</p>\n<p><span class=\"math display\">\\cfrac{1}{1 + {0.5}^n} +\n\\cfrac{{0.5}^{n+1}}{{0.5}^n+1} = \\cfrac{{0.5}^{n+1} +\n1}{{0.5}^n+1}</span></p>",
-                    "posixTime": 1587300736
-                },
-                "q": {
-                    "content": "<p>A box contains two coins: a regular coin and one fake two-headed coin\n(P(H)=1). I choose a coin at random and toss it <span\nclass=\"math inline\">n</span> times. If the first <span\nclass=\"math inline\">n</span> coin tosses result in heads, what is the\nprobability that the <span class=\"math inline\">(n+1)^{th}</span> coin\ntoss will also result in heads?</p>",
-                    "posixTime": 1587300736
-                }
-            },
-            "numAnswer": 1,
-            "sha1": "3b1e13a8e3643441e621f4c41a8b99feaaa4fa50",
-            "title": "36"
-        },
-        {
-            "attr": {
-                "q": {
-                    "content": "<p>You would like to go from point <span class=\"math inline\">A</span> to\npoint <span class=\"math inline\">B</span> in Figure 1.28. There are 5\nbridges on different branches of the river as shown in Figure 1.29.</p>\n<p><img\nsrc=\"https://www.probabilitycourse.com/images/chapter1/6.png\" /></p>\n<p>Bridge <span class=\"math inline\">i</span> is open with probability\n<span class=\"math inline\">i=1,2,3,4,5</span>. Let <span\nclass=\"math inline\">A</span> be the event that there is a path from\n<span class=\"math inline\">A</span> to <span class=\"math inline\">B</span>\nand let <span class=\"math inline\">B_k</span> be the event that <span\nclass=\"math inline\">k^{th}</span> bridge is open.</p>",
-                    "posixTime": 1587272296
-                }
-            },
-            "numAnswer": 2,
-            "sha1": "b987ec98a433549e7dd803764489ea651b9ea9be",
-            "title": "32"
-        },
-        {
-            "attr": {
-                "a": {
                     "content": "<p><span class=\"math display\">|A_2| = 50 \\\\\n|A_3| = 33 \\\\\n|A_4| = 25 \\\\\n|A_5| = 20</span></p>\n<p>Following Inclusion-exclusion principle, i.e <span\nclass=\"math inline\">|A \\cup B \\cup C| = |A| + |B| + |C| - |A \\cap B| -\n|A \\cap C| - |B \\cap C| + |A \\cap B \\cap C|</span></p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;|A_2 \\cup A_3 \\cup A_5| \\\\\n  &amp;= |A_2| + |A_3| + |A_5| - |A_2 \\cap A_3| - |A_2 \\cap A_5| - |A_3\n\\cap A_5| + |A_2 \\cap A_3 \\cap A_5| \\\\\n  &amp;= |A_2| + |A_3| + |A_5| - |A_6| - |A_{10}| - |A_{15}| + |A_{30}|\n\\\\\n  &amp;= 50 + 33 + 20 - 16 - 10 - 6 + 3| \\\\\n  &amp;= 74\n\\end{aligned}</span></p>",
                     "posixTime": 1587051313
                 },
@@ -236,6 +184,28 @@
         },
         {
             "attr": {
+                "q": {
+                    "content": "<p>You choose a point <span class=\"math inline\">(X, Y)</span> uniformly\nat random in the unit square</p>\n<p><span class=\"math display\">S=\\{(x,y) \\in \\mathbb{R}^2: 0 \\leq x \\leq\n1, 0 \\leq y \\leq 1\\}.</span></p>\n<p>Let <span class=\"math inline\">A</span> be the event <span\nclass=\"math inline\">\\{(x,y) \\in S:|x-y| \\leq \\frac{1}{2}\\}</span> and\n<span class=\"math inline\">B</span> be the event <span\nclass=\"math inline\">\\{(x,y) \\in S: y\\geq x\\}</span></p>",
+                    "posixTime": 1587185876
+                }
+            },
+            "numAnswer": 3,
+            "sha1": "219d230a9d84517c454db50dd29407c573eb350b",
+            "title": "30"
+        },
+        {
+            "attr": {
+                "q": {
+                    "content": "<p>Consider a communication system. At any given time, the communication\nchannel is in good condition with probability 0.8, and is in bad\ncondition with probability 0.2. An error occurs in a transmission with\nprobability 0.1 if the channel is in good condition, and with\nprobability 0.3 if the channel is in bad condition. Let <span\nclass=\"math inline\">G</span> be the event that the channel is in good\ncondition and <span class=\"math inline\">E</span> be the event that there\nis an error in transmission.</p>",
+                    "posixTime": 1587179680
+                }
+            },
+            "numAnswer": 3,
+            "sha1": "66d872dfe86007557da9b74c5e246b92a3279a79",
+            "title": "27"
+        },
+        {
+            "attr": {
                 "a": {
                     "content": "<p>Let <span class=\"math inline\">F</span> be the event that the customer\nbuys a cup of coffee, <span class=\"math inline\">K</span> a piece of\ncake.</p>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;P(F, K) = 0.2 \\\\\n  &amp;\\rightarrow P(F|K)P(K) = 0.2 \\\\\n  &amp;\\rightarrow P(F|K) * 0.7 = 0.2 \\\\\n  &amp;\\rightarrow P(F|K) = \\frac{2}{7} \\\\\n\\end{aligned}</span></p>",
                     "posixTime": 1587135047
@@ -251,14 +221,44 @@
         },
         {
             "attr": {
+                "a": {
+                    "content": "<p>a. Domain is <span class=\"math inline\">\\{H,T\\}^3</span> and codomain\nis <span class=\"math inline\">\\mathbb{N} \\cup \\{0\\}</span>.</p>\n<p>b. <span class=\"math inline\">\\{ 0,1,2,3 \\}</span></p>\n<p>c. Possible outcomes are:</p>\n<pre><code>THH\nHTH\nHHT</code></pre>",
+                    "posixTime": 1587124755
+                },
                 "q": {
-                    "content": "<p>Consider a communication system. At any given time, the communication\nchannel is in good condition with probability 0.8, and is in bad\ncondition with probability 0.2. An error occurs in a transmission with\nprobability 0.1 if the channel is in good condition, and with\nprobability 0.3 if the channel is in bad condition. Let <span\nclass=\"math inline\">G</span> be the event that the channel is in good\ncondition and <span class=\"math inline\">E</span> be the event that there\nis an error in transmission.</p>",
-                    "posixTime": 1587179680
+                    "content": "<p>Recall that</p>\n<p><span class=\"math display\">= \\{H,T\\} \\times \\{H,T\\} \\times\n\\{H,T\\}</span></p>\n<p>Consider the following function</p>\n<p><span class=\"math display\">f: \\{H,T\\}^3 \\longrightarrow \\mathbb{N}\n\\cup \\{0\\},</span></p>\n<p>defined as</p>\n<p><span class=\"math display\">f(x)=\\text{the number of H&#39;s in\n$x$}.</span></p>\n<p>For example,</p>\n<p><span class=\"math display\">f(HTH)=2.</span></p>\n<p>a. Determine the domain and co-domain for <span\nclass=\"math inline\">f</span>.<br />\nb. Find range of <span class=\"math inline\">f</span>: Range(<span\nclass=\"math inline\">f</span>).<br />\nc. If we know <span class=\"math inline\">f(x)=2</span> what can we say\nabout <span class=\"math inline\">x</span>?</p>",
+                    "posixTime": 1587124755
                 }
             },
-            "numAnswer": 3,
-            "sha1": "66d872dfe86007557da9b74c5e246b92a3279a79",
-            "title": "27"
+            "numAnswer": 1,
+            "sha1": "8c3e0551ce2eac739fbe74e653922377d036e02e",
+            "title": "12"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<h3 id=\"1\">1</h3>\n<p>Using geometric sum, following must hold</p>\n<p><span class=\"math display\">\\cfrac{\\cfrac{c}{3}}{1 - \\cfrac{c}{3}} =\n1</span></p>\n<p>Therefore <span class=\"math inline\">c</span> is 1.</p>\n<h3 id=\"2\">2</h3>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;P(\\{2,4,6\\}) \\\\\n  &amp;=P(2) + P(4) + P(6) \\\\\n  &amp;=\\dfrac{2}{3^2} + \\dfrac{2}{3^4} + \\dfrac{2}{3^6} \\\\\n  &amp;=\\dfrac{182}{729}\n\\end{aligned}</span></p>\n<h3 id=\"3\">3</h3>\n<p><span class=\"math display\">\\begin{aligned}\n  &amp;P(\\{3,4,5,\\cdots \\}) \\\\\n  &amp;=1 - P(1) - P(2) \\\\\n  &amp;=1 - \\dfrac{2}{3} - \\dfrac{2}{9} \\\\\n  &amp;=\\dfrac{1}{9}\n\\end{aligned}</span></p>",
+                    "posixTime": 1587129240
+                },
+                "q": {
+                    "content": "<p>Consider a random experiment with a sample space</p>\n<p><span class=\"math display\">S=\\{1,2,3,\\cdots\\}.</span> Suppose that we\nknow:</p>\n<p><span class=\"math display\">P(k)=P(\\{k\\})=\\frac{c}{3^k}, \\quad\n\\textrm{for} \\quad k=1,2,\\cdots,</span></p>\n<p>where <span class=\"math inline\">c</span> is a constant number.</p>\n<ol>\n<li>Find <span class=\"math inline\">c</span></li>\n<li>Find <span class=\"math inline\">P(\\{2,4,6\\})</span></li>\n<li>Find <span class=\"math inline\">P(\\{3,4,5,\\cdots\\})</span></li>\n</ol>",
+                    "posixTime": 1587129240
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "d4a089ec1ab1bcfb40038a47f0c05dc5335947c6",
+            "title": "16"
+        },
+        {
+            "attr": {
+                "q": {
+                    "content": "<p>You would like to go from point <span class=\"math inline\">A</span> to\npoint <span class=\"math inline\">B</span> in Figure 1.28. There are 5\nbridges on different branches of the river as shown in Figure 1.29.</p>\n<p><img\nsrc=\"https://www.probabilitycourse.com/images/chapter1/6.png\" /></p>\n<p>Bridge <span class=\"math inline\">i</span> is open with probability\n<span class=\"math inline\">i=1,2,3,4,5</span>. Let <span\nclass=\"math inline\">A</span> be the event that there is a path from\n<span class=\"math inline\">A</span> to <span class=\"math inline\">B</span>\nand let <span class=\"math inline\">B_k</span> be the event that <span\nclass=\"math inline\">k^{th}</span> bridge is open.</p>",
+                    "posixTime": 1587272296
+                }
+            },
+            "numAnswer": 2,
+            "sha1": "b987ec98a433549e7dd803764489ea651b9ea9be",
+            "title": "32"
         }
     ],
     "parentSha1": "26c5819869ec7db87d6e662e66f84e6989f7243e",

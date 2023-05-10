@@ -6,22 +6,11 @@
                 "posixTime": 1664112868
             }
         },
-        "numAnswer": 194,
+        "numAnswer": 195,
         "sha1": "dd8f38a85ee36fa036f3e298e265dd4bb35cad21",
         "title": "books"
     },
     "kids": [
-        {
-            "attr": {
-                "author": {
-                    "content": "Paul Renteln",
-                    "posixTime": 1664112868
-                }
-            },
-            "numAnswer": 3,
-            "sha1": "b96ffdb808d050532cccd065fb8276d571de0a2b",
-            "title": "Manifolds, Tensors, and Forms An Introduction for Mathematicians and Physicists"
-        },
         {
             "attr": {
                 "author": {
@@ -33,7 +22,7 @@
                     "posixTime": 1666750741
                 }
             },
-            "numAnswer": 44,
+            "numAnswer": 45,
             "sha1": "2730856957310933e421fdf612b27304f70d0ac1",
             "title": "Understanding Analysis"
         },
@@ -51,13 +40,13 @@
         {
             "attr": {
                 "author": {
-                    "content": "Michael Nielsen",
+                    "content": "Paul Renteln",
                     "posixTime": 1664112868
                 }
             },
-            "numAnswer": 10,
-            "sha1": "fb11fc9c1170c1dbed2da4cdb0c7e5a7283eb79a",
-            "title": "Neural Networks and Deep Learning"
+            "numAnswer": 3,
+            "sha1": "b96ffdb808d050532cccd065fb8276d571de0a2b",
+            "title": "Manifolds, Tensors, and Forms An Introduction for Mathematicians and Physicists"
         },
         {
             "attr": {
@@ -80,6 +69,17 @@
             "numAnswer": 37,
             "sha1": "26c5819869ec7db87d6e662e66f84e6989f7243e",
             "title": "Introduction to Probability, Statistics, and Random Processes"
+        },
+        {
+            "attr": {
+                "author": {
+                    "content": "Michael Nielsen",
+                    "posixTime": 1664112868
+                }
+            },
+            "numAnswer": 10,
+            "sha1": "fb11fc9c1170c1dbed2da4cdb0c7e5a7283eb79a",
+            "title": "Neural Networks and Deep Learning"
         }
     ],
     "parentSha1": "96d719cd412e4a8d03ac3d84cb0e8858f68ec008",

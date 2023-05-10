@@ -13,12 +13,6 @@
     "kids": [
         {
             "attr": {},
-            "numAnswer": 25,
-            "sha1": "845fbf15d0fb7458c8520721c640c46d45dc2ca8",
-            "title": "1.5.0"
-        },
-        {
-            "attr": {},
             "numAnswer": 6,
             "sha1": "02eb340c5eb912c392c7f474bad54dc827bbfd87",
             "title": "2.2.0"
@@ -28,6 +22,12 @@
             "numAnswer": 6,
             "sha1": "9941ceb79c24e8959312cd6eef9a053291cbd552",
             "title": "3.3.0"
+        },
+        {
+            "attr": {},
+            "numAnswer": 25,
+            "sha1": "845fbf15d0fb7458c8520721c640c46d45dc2ca8",
+            "title": "1.5.0"
         }
     ],
     "parentSha1": "dd8f38a85ee36fa036f3e298e265dd4bb35cad21",

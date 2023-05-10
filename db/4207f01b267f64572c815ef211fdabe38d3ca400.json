@@ -13,24 +13,6 @@
     "kids": [
         {
             "attr": {},
-            "numAnswer": 20,
-            "sha1": "fab745034bac5d9853e0b014ca64ffdf5f94c14a",
-            "title": "1. Topological Spaces"
-        },
-        {
-            "attr": {},
-            "numAnswer": 5,
-            "sha1": "f8d0b665f1cf1dd32f41dc6b7bed9fb2cb6acdb1",
-            "title": "4. Homeomorphisms"
-        },
-        {
-            "attr": {},
-            "numAnswer": 12,
-            "sha1": "5e46eb44c0c41629ec32d18301ca125e86a08d6a",
-            "title": "5. Continuous Mappings"
-        },
-        {
-            "attr": {},
             "numAnswer": 10,
             "sha1": "386863b0048a22bdddfb8f8cc28b50926b11ee1d",
             "title": "2. The Euclidean Topology"
@@ -46,6 +28,24 @@
             "numAnswer": 5,
             "sha1": "e353f5b4e594bc7fb84ecd85fd6646bd633b390f",
             "title": "3. Limit Points"
+        },
+        {
+            "attr": {},
+            "numAnswer": 12,
+            "sha1": "5e46eb44c0c41629ec32d18301ca125e86a08d6a",
+            "title": "5. Continuous Mappings"
+        },
+        {
+            "attr": {},
+            "numAnswer": 20,
+            "sha1": "fab745034bac5d9853e0b014ca64ffdf5f94c14a",
+            "title": "1. Topological Spaces"
+        },
+        {
+            "attr": {},
+            "numAnswer": 5,
+            "sha1": "f8d0b665f1cf1dd32f41dc6b7bed9fb2cb6acdb1",
+            "title": "4. Homeomorphisms"
         }
     ],
     "parentSha1": "dd8f38a85ee36fa036f3e298e265dd4bb35cad21",

@@ -24,21 +24,6 @@
         {
             "attr": {
                 "a": {
-                    "content": "<ul>\n<li>Image of [] would be 1. (unit to unit)</li>\n<li>Image of [1, 2, 3, 4] would be 1 * 2 * 3 * 4</li>\n<li>12 would have lists as much as combination of it's factors.</li>\n<li>Product of squares could be another homomorphism. i.e\n<code>f([a,b,c...]) = a^2 * b^2 * c^2...</code></li>\n</ul>",
-                    "posixTime": 1576759868
-                },
-                "q": {
-                    "content": "<p>Consider a monoid homomorphism from lists of integers with\nconcatenation to integers with multiplication. What is the image of the\nempty list <code>[]</code>? Assume that all singleton lists are mapped\nto the integers they contain, that is <code>[3]</code> is mapped to 3,\netc. What's the image of <code>[1, 2, 3, 4]</code>? How many different\nlists map to the integer 12? Is there any other homomorphism between the\ntwo monoids?</p>",
-                    "posixTime": 1576759868
-                }
-            },
-            "numAnswer": 1,
-            "sha1": "d1d252bdfa7dedd28afcda45cf5a78feecfb1ee8",
-            "title": "2"
-        },
-        {
-            "attr": {
-                "a": {
                     "content": "<p>In haskell, <code>List ()</code></p>\n<p>It's a representation of natural numbers</p>",
                     "posixTime": 1576759868
                 },
@@ -50,6 +35,21 @@
             "numAnswer": 1,
             "sha1": "b974177df9ef734b640754ffa2bc2be92dc11652",
             "title": "3"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<ul>\n<li>Image of [] would be 1. (unit to unit)</li>\n<li>Image of [1, 2, 3, 4] would be 1 * 2 * 3 * 4</li>\n<li>12 would have lists as much as combination of it's factors.</li>\n<li>Product of squares could be another homomorphism. i.e\n<code>f([a,b,c...]) = a^2 * b^2 * c^2...</code></li>\n</ul>",
+                    "posixTime": 1576759868
+                },
+                "q": {
+                    "content": "<p>Consider a monoid homomorphism from lists of integers with\nconcatenation to integers with multiplication. What is the image of the\nempty list <code>[]</code>? Assume that all singleton lists are mapped\nto the integers they contain, that is <code>[3]</code> is mapped to 3,\netc. What's the image of <code>[1, 2, 3, 4]</code>? How many different\nlists map to the integer 12? Is there any other homomorphism between the\ntwo monoids?</p>",
+                    "posixTime": 1576759868
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "d1d252bdfa7dedd28afcda45cf5a78feecfb1ee8",
+            "title": "2"
         }
     ],
     "parentSha1": "bd467f809ce2a42bd342fce03ff7fd2bd3d8446c",

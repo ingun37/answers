@@ -9,51 +9,6 @@
         {
             "attr": {
                 "a": {
-                    "content": "<p>(a) <span class=\"math inline\">\\tau_{1} = \\{ X, \\emptyset, \\{a\\}, \\{a,\nf\\}, \\{b, f\\}, \\{a,b,f\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{1}</span> is a topology.</p>\n</blockquote>\n<p>(b) <span class=\"math inline\">\\tau_{2} = \\{ X, \\emptyset, \\{a,b,f\\},\n\\{a,b,d\\}, \\{a,b,d,f\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{2}</span> is not a topology. <span\nclass=\"math inline\">\\{a,b,f\\} \\cap \\{a,b,d\\} = \\{a,b\\}</span> doesn't\nexist.</p>\n</blockquote>\n<p>(c) <span class=\"math inline\">\\tau_{3} = \\{ X, \\emptyset, \\{f\\}, \\{e,\nf\\}, \\{a, f\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{3}</span> is not a topology. <span\nclass=\"math inline\">\\{e,f\\} \\cup \\{a,f\\} = \\{a,e,f\\}</span> doesn't\nexist.</p>\n</blockquote>",
-                    "posixTime": 1576759868
-                },
-                "q": {
-                    "content": "<p>Let <span class=\"math inline\">X=\\{ a,b,c,d,e,f \\}</span>. Determine\nwhether or not each of the following collections of subsets of X is a\ntopology on <span class=\"math inline\">X</span>:</p>",
-                    "posixTime": 1576759868
-                }
-            },
-            "numAnswer": 1,
-            "sha1": "f997a51f9fe72be17f7a4ec6723c5e58aa937703",
-            "title": "1"
-        },
-        {
-            "attr": {
-                "a": {
-                    "content": "<p>Let's say that there's finite number of <span\nclass=\"math inline\">n</span> of open set <span\nclass=\"math inline\">U</span><br />\nLet <span class=\"math inline\">V_1</span> be <span\nclass=\"math inline\">U_{1}\\cap U_{2}</span><br />\n<span class=\"math inline\">V_1 = U_{1}\\cap U_{2}</span><br />\nLet <span class=\"math inline\">V_i</span> be <span\nclass=\"math inline\">U_{i+1}</span><br />\n<span class=\"math inline\">V_i = U_{i+1}</span><br />\nThen we can redefine the intersections using term of <span\nclass=\"math inline\">V</span> with one less operand.<br />\n<span class=\"math inline\">U_{1}\\cap U_{2}\\cap U_{3}\\ldots U_{n} =\nV_{1}\\cap V_{2}\\cap V_{3}\\ldots V_{n-1}</span><br />\nWe can go on and on and number of operands will eventually get to only\n2.<br />\n<span class=\"math inline\">W_1 \\cap W_2</span><br />\nBy definition of topology</p>\n<blockquote>\n<p>the intersection of any two sets in <span\nclass=\"math inline\">\\tau</span> belongs to <span\nclass=\"math inline\">\\tau</span>.</p>\n</blockquote>\n<p>It is indeed a member of <span class=\"math inline\">\\tau</span>.</p>",
-                    "posixTime": 1576759868
-                },
-                "q": {
-                    "content": "<p>Let <span class=\"math inline\">(X,\\tau)</span> be any topological\nspace. Verify that the intersection of any finite number of members of\n<span class=\"math inline\">\\tau</span> is a member of <span\nclass=\"math inline\">\\tau</span><br />\n[Hint. To prove this result use \"mathematical induction\".]</p>",
-                    "posixTime": 1576759868
-                }
-            },
-            "numAnswer": 1,
-            "sha1": "9dcf07b7118e7ea3b1f0647d0c82a010451922a6",
-            "title": "4"
-        },
-        {
-            "attr": {
-                "a": {
-                    "content": "<p>(a) <span class=\"math inline\">\\tau_{1} = \\{ X, \\emptyset, \\{c\\},\n\\{b,d,e\\}, \\{b,c,d,e\\}, \\{b\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{1}</span> is not the answer. <span\nclass=\"math inline\">\\{c\\} \\cup \\{b\\} = \\{c,b\\}</span> doesn't exist.</p>\n</blockquote>\n<p>(b) <span class=\"math inline\">\\tau_{2} = \\{ X, \\emptyset, \\{a\\},\n\\{b,d,e\\}, \\{a,b,d\\}, \\{a,b,d,e\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{2}</span> is not the answer. <span\nclass=\"math inline\">\\{b,d,e\\} \\cap \\{a,b,d\\} = \\{b,d\\}</span> doesn't\nexist.</p>\n</blockquote>\n<p>(c) <span class=\"math inline\">\\tau_{3} = \\{ X, \\emptyset, \\{b\\},\n\\{a,b,c\\}, \\{d,c,f\\}, \\{b,d,e,f\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{3}</span> is the answer.</p>\n</blockquote>",
-                    "posixTime": 1576759868
-                },
-                "q": {
-                    "content": "<p>Let <span class=\"math inline\">X=\\{ a,b,c,d,e,f \\}</span>. Which of\nthe following collections of subset of <span\nclass=\"math inline\">X</span> is a topology on <span\nclass=\"math inline\">X</span>? (Justify your answers)</p>",
-                    "posixTime": 1576759868
-                }
-            },
-            "numAnswer": 1,
-            "sha1": "9a9d55bd0c80d70b9921dbfefef6c18cb738725a",
-            "title": "2"
-        },
-        {
-            "attr": {
-                "a": {
                     "content": "<p>(i) <span class=\"math inline\">\\tau_1</span> consists of <span\nclass=\"math inline\">\\mathbb{R}</span>, <span\nclass=\"math inline\">\\phi</span>, and every interval <span\nclass=\"math inline\">(a,b)</span>, for <span class=\"math inline\">a</span>\nand <span class=\"math inline\">b</span> any real numbers with <span\nclass=\"math inline\">a &lt; b</span> ;</p>\n<blockquote>\n<p>Not a topology. <span class=\"math inline\">(1,2) \\cup (4, 5)</span>\nshould be open but it's not.</p>\n</blockquote>\n<p>(ii) <span class=\"math inline\">\\tau_2</span> consists of <span\nclass=\"math inline\">\\mathbb{R}</span>, <span\nclass=\"math inline\">\\phi</span>, and every interval <span\nclass=\"math inline\">(-r,r)</span>, for <span\nclass=\"math inline\">r</span> any positive real number;</p>\n<blockquote>\n<p>Topology. Trivial</p>\n</blockquote>\n<p>(iii) <span class=\"math inline\">\\tau_3</span> consists of <span\nclass=\"math inline\">\\mathbb{R}</span>, <span\nclass=\"math inline\">\\phi</span>, and every interval <span\nclass=\"math inline\">(-r,r)</span>, for <span\nclass=\"math inline\">r</span> any positive rational number;</p>\n<blockquote>\n<p>Not a topology. Let <span class=\"math inline\">i</span> be an\nirrational number. Union of all rational numbers <span\nclass=\"math inline\">r</span> that is <span class=\"math inline\">r\\lt\ni</span> becomes <span class=\"math inline\">(-i, i)</span>. <span\nclass=\"math inline\">(-i, i)</span> is not open by definition but is open\nsince it's union of open sets.</p>\n</blockquote>\n<p>(iv) <span class=\"math inline\">\\tau_4</span> consists of <span\nclass=\"math inline\">\\mathbb{R}</span>, <span\nclass=\"math inline\">\\phi</span> and every interval <span\nclass=\"math inline\">[-r,r]</span>, for <span\nclass=\"math inline\">r</span> any positive rational number;</p>\n<blockquote>\n<p>Not a topology for the same reason as (iii).</p>\n</blockquote>\n<p>(v) <span class=\"math inline\">\\tau_5</span> consists of <span\nclass=\"math inline\">\\mathbb{R}</span>, <span\nclass=\"math inline\">\\phi</span> and every interval <span\nclass=\"math inline\">(-r,r)</span>, for <span\nclass=\"math inline\">r</span> any positive irrational number;</p>\n<blockquote>\n<p>Not a topology for the same reason as (iii).</p>\n</blockquote>\n<p>(vi) <span class=\"math inline\">\\tau_6</span> consists of <span\nclass=\"math inline\">\\mathbb{R}</span>, <span\nclass=\"math inline\">\\phi</span> and every interval <span\nclass=\"math inline\">[-r,r]</span>, for <span\nclass=\"math inline\">r</span> any positive irrational number;</p>\n<blockquote>\n<p>Not a topology for the same reason as (iii).</p>\n</blockquote>\n<p>(vii) <span class=\"math inline\">\\tau_7</span> consists of <span\nclass=\"math inline\">\\mathbb{R}</span>, <span\nclass=\"math inline\">\\phi</span> and every interval <span\nclass=\"math inline\">[-r,r)</span>, for <span\nclass=\"math inline\">r</span> any positive real number;</p>\n<blockquote>\n<p>Not a topology for the same reason as (iii).</p>\n</blockquote>\n<p>(viii) <span class=\"math inline\">\\tau_8</span> consists of <span\nclass=\"math inline\">\\mathbb{R}</span>, <span\nclass=\"math inline\">\\phi</span> and every interval <span\nclass=\"math inline\">(-r,r]</span>, for <span\nclass=\"math inline\">r</span> any positive real number;</p>\n<blockquote>\n<p>Not a topology for the same reason as (iii).</p>\n</blockquote>\n<p>(ix) <span class=\"math inline\">\\tau_9</span> consists of <span\nclass=\"math inline\">\\mathbb{R}</span>, <span\nclass=\"math inline\">\\phi</span>, every interval <span\nclass=\"math inline\">[-r, r]</span>, and every interval <span\nclass=\"math inline\">(-r, r)</span>, for <span\nclass=\"math inline\">r</span> any positive real number;</p>\n<blockquote>\n<p>Topology. Trivial</p>\n</blockquote>\n<p>(x) <span class=\"math inline\">\\tau_10</span> consists of <span\nclass=\"math inline\">\\mathbb{R}</span>, <span\nclass=\"math inline\">\\phi</span>, every interval <span\nclass=\"math inline\">[-n,n]</span>, and every interval <span\nclass=\"math inline\">(-r,r)</span>, for <span\nclass=\"math inline\">n</span> any positive integer and <span\nclass=\"math inline\">r</span> any positive real number.</p>\n<blockquote>\n<p>Topology. Trivial</p>\n</blockquote>",
                     "posixTime": 1576759868
                 },
@@ -69,6 +24,21 @@
         {
             "attr": {
                 "a": {
+                    "content": "<p>(a) <span class=\"math inline\">\\tau_{1} = \\{ X, \\emptyset, \\{a\\}, \\{a,\nf\\}, \\{b, f\\}, \\{a,b,f\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{1}</span> is a topology.</p>\n</blockquote>\n<p>(b) <span class=\"math inline\">\\tau_{2} = \\{ X, \\emptyset, \\{a,b,f\\},\n\\{a,b,d\\}, \\{a,b,d,f\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{2}</span> is not a topology. <span\nclass=\"math inline\">\\{a,b,f\\} \\cap \\{a,b,d\\} = \\{a,b\\}</span> doesn't\nexist.</p>\n</blockquote>\n<p>(c) <span class=\"math inline\">\\tau_{3} = \\{ X, \\emptyset, \\{f\\}, \\{e,\nf\\}, \\{a, f\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{3}</span> is not a topology. <span\nclass=\"math inline\">\\{e,f\\} \\cup \\{a,f\\} = \\{a,e,f\\}</span> doesn't\nexist.</p>\n</blockquote>",
+                    "posixTime": 1576759868
+                },
+                "q": {
+                    "content": "<p>Let <span class=\"math inline\">X=\\{ a,b,c,d,e,f \\}</span>. Determine\nwhether or not each of the following collections of subsets of X is a\ntopology on <span class=\"math inline\">X</span>:</p>",
+                    "posixTime": 1576759868
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "f997a51f9fe72be17f7a4ec6723c5e58aa937703",
+            "title": "1"
+        },
+        {
+            "attr": {
+                "a": {
                     "content": "<p>By <a\nhref=\"https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory#7._Axiom_of_infinity\">Axiom\nof Infinity</a></p>\n<p>There is a function from <span class=\"math inline\">\\mathbb{N}</span>\nto <span class=\"math inline\">X</span><br />\nLet <span class=\"math inline\">A</span> be Image from even numbers and\n<span class=\"math inline\">B</span> image from odd numbers.<br />\nThere is no common element between them which means<br />\n<span class=\"math inline\">A\\cap B=\\emptyset</span><br />\nLet <span class=\"math inline\">a</span> be any element from <span\nclass=\"math inline\">A</span> and <span class=\"math inline\">B&#39;</span>\nbe <span class=\"math inline\">B\\cup \\left\\{ a\\right\\}</span><br />\nSince <span class=\"math inline\">B&#39;</span> is still infinite subset,\nis a open set.<br />\nSince <span class=\"math inline\">A</span> is also an open set, <span\nclass=\"math inline\">A \\cap B&#39; = \\{a\\}</span> is also an open\nset.<br />\nEvery singleton is open hence <span class=\"math inline\">(X,\\tau)</span>\nis discrete.</p>",
                     "posixTime": 1576759868
                 },
@@ -80,6 +50,36 @@
             "numAnswer": 1,
             "sha1": "2808f43e1c2a34f14644972debbc587cb803c871",
             "title": "8"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<p>(i) <span class=\"math inline\">\\tau_{1}</span> consists of <span\nclass=\"math inline\">\\mathbb{N}</span>, <span\nclass=\"math inline\">\\emptyset</span>, and every set <span\nclass=\"math inline\">\\{1,2,...,n\\}</span>, for <span\nclass=\"math inline\">n</span> any positive integer.</p>\n<blockquote>\n<p>Let <span class=\"math inline\">A</span> be a union of finite or\ninfinite number of set.<br />\nIf there is an upper bound <span class=\"math inline\">u</span>, then\n<span class=\"math inline\">A</span> will be <span\nclass=\"math inline\">\\{1,2,...,u\\}</span><br />\nIf there is not an upper bound, then <span class=\"math inline\">A</span>\nwill be <span class=\"math inline\">\\mathbb{N}</span><br />\nLet <span class=\"math inline\">B</span> be intersection of any two set\n<span class=\"math inline\">\\{1,2,...,a\\}</span> and <span\nclass=\"math inline\">\\{1,2,...,b\\}</span> and without loss of generality\nlet's say <span class=\"math inline\">a</span> is smaller than <span\nclass=\"math inline\">b</span>. Then <span class=\"math inline\">B</span>\nwill be <span class=\"math inline\">\\{1,2,...,a\\}</span>.</p>\n</blockquote>\n<p>(ii) <span class=\"math inline\">\\tau_{2}</span> consists of <span\nclass=\"math inline\">\\mathbb{N}</span>, <span\nclass=\"math inline\">\\emptyset</span>, and every set <span\nclass=\"math inline\">\\{n, n+1, ...\\}</span>, for <span\nclass=\"math inline\">n</span> any positive integer.</p>\n<blockquote>\n<p>Let <span class=\"math inline\">A</span> be a union of finite or\ninfinite number of set.<br />\nSince it's natural numbers, there must be a lower bound <span\nclass=\"math inline\">l</span> that is <span class=\"math inline\">0 \\leq\n1</span><br />\n<span class=\"math inline\">A</span> will be <span\nclass=\"math inline\">\\{l, l+1, ...\\}</span><br />\nLet <span class=\"math inline\">B</span> be intersection of any two set\n<span class=\"math inline\">\\{a, a+1, ...\\}</span> and <span\nclass=\"math inline\">\\{b, b+1, ...\\}</span> and without loss of\ngenerality let's say <span class=\"math inline\">a \\leq b</span>. Then\n<span class=\"math inline\">B</span> will be <span\nclass=\"math inline\">\\{b, b+1, ...\\}</span>.</p>\n</blockquote>",
+                    "posixTime": 1576759868
+                },
+                "q": {
+                    "content": "<p>Let <span class=\"math inline\">\\mathbb{N}</span> be the set of\npositive integers. Prove that each of the following collections of\nsubsets of <span class=\"math inline\">\\mathbb{N}</span> is a topology</p>",
+                    "posixTime": 1576759868
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "acc3dd9e4b05260be5e212f48d60dfbbf973bf6c",
+            "title": "6"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<p>Let's say that there's finite number of <span\nclass=\"math inline\">n</span> of open set <span\nclass=\"math inline\">U</span><br />\nLet <span class=\"math inline\">V_1</span> be <span\nclass=\"math inline\">U_{1}\\cap U_{2}</span><br />\n<span class=\"math inline\">V_1 = U_{1}\\cap U_{2}</span><br />\nLet <span class=\"math inline\">V_i</span> be <span\nclass=\"math inline\">U_{i+1}</span><br />\n<span class=\"math inline\">V_i = U_{i+1}</span><br />\nThen we can redefine the intersections using term of <span\nclass=\"math inline\">V</span> with one less operand.<br />\n<span class=\"math inline\">U_{1}\\cap U_{2}\\cap U_{3}\\ldots U_{n} =\nV_{1}\\cap V_{2}\\cap V_{3}\\ldots V_{n-1}</span><br />\nWe can go on and on and number of operands will eventually get to only\n2.<br />\n<span class=\"math inline\">W_1 \\cap W_2</span><br />\nBy definition of topology</p>\n<blockquote>\n<p>the intersection of any two sets in <span\nclass=\"math inline\">\\tau</span> belongs to <span\nclass=\"math inline\">\\tau</span>.</p>\n</blockquote>\n<p>It is indeed a member of <span class=\"math inline\">\\tau</span>.</p>",
+                    "posixTime": 1576759868
+                },
+                "q": {
+                    "content": "<p>Let <span class=\"math inline\">(X,\\tau)</span> be any topological\nspace. Verify that the intersection of any finite number of members of\n<span class=\"math inline\">\\tau</span> is a member of <span\nclass=\"math inline\">\\tau</span><br />\n[Hint. To prove this result use \"mathematical induction\".]</p>",
+                    "posixTime": 1576759868
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "9dcf07b7118e7ea3b1f0647d0c82a010451922a6",
+            "title": "4"
         },
         {
             "attr": {
@@ -114,17 +114,17 @@
         {
             "attr": {
                 "a": {
-                    "content": "<p>(i) <span class=\"math inline\">\\tau_{1}</span> consists of <span\nclass=\"math inline\">\\mathbb{N}</span>, <span\nclass=\"math inline\">\\emptyset</span>, and every set <span\nclass=\"math inline\">\\{1,2,...,n\\}</span>, for <span\nclass=\"math inline\">n</span> any positive integer.</p>\n<blockquote>\n<p>Let <span class=\"math inline\">A</span> be a union of finite or\ninfinite number of set.<br />\nIf there is an upper bound <span class=\"math inline\">u</span>, then\n<span class=\"math inline\">A</span> will be <span\nclass=\"math inline\">\\{1,2,...,u\\}</span><br />\nIf there is not an upper bound, then <span class=\"math inline\">A</span>\nwill be <span class=\"math inline\">\\mathbb{N}</span><br />\nLet <span class=\"math inline\">B</span> be intersection of any two set\n<span class=\"math inline\">\\{1,2,...,a\\}</span> and <span\nclass=\"math inline\">\\{1,2,...,b\\}</span> and without loss of generality\nlet's say <span class=\"math inline\">a</span> is smaller than <span\nclass=\"math inline\">b</span>. Then <span class=\"math inline\">B</span>\nwill be <span class=\"math inline\">\\{1,2,...,a\\}</span>.</p>\n</blockquote>\n<p>(ii) <span class=\"math inline\">\\tau_{2}</span> consists of <span\nclass=\"math inline\">\\mathbb{N}</span>, <span\nclass=\"math inline\">\\emptyset</span>, and every set <span\nclass=\"math inline\">\\{n, n+1, ...\\}</span>, for <span\nclass=\"math inline\">n</span> any positive integer.</p>\n<blockquote>\n<p>Let <span class=\"math inline\">A</span> be a union of finite or\ninfinite number of set.<br />\nSince it's natural numbers, there must be a lower bound <span\nclass=\"math inline\">l</span> that is <span class=\"math inline\">0 \\leq\n1</span><br />\n<span class=\"math inline\">A</span> will be <span\nclass=\"math inline\">\\{l, l+1, ...\\}</span><br />\nLet <span class=\"math inline\">B</span> be intersection of any two set\n<span class=\"math inline\">\\{a, a+1, ...\\}</span> and <span\nclass=\"math inline\">\\{b, b+1, ...\\}</span> and without loss of\ngenerality let's say <span class=\"math inline\">a \\leq b</span>. Then\n<span class=\"math inline\">B</span> will be <span\nclass=\"math inline\">\\{b, b+1, ...\\}</span>.</p>\n</blockquote>",
+                    "content": "<p>(a) <span class=\"math inline\">\\tau_{1} = \\{ X, \\emptyset, \\{c\\},\n\\{b,d,e\\}, \\{b,c,d,e\\}, \\{b\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{1}</span> is not the answer. <span\nclass=\"math inline\">\\{c\\} \\cup \\{b\\} = \\{c,b\\}</span> doesn't exist.</p>\n</blockquote>\n<p>(b) <span class=\"math inline\">\\tau_{2} = \\{ X, \\emptyset, \\{a\\},\n\\{b,d,e\\}, \\{a,b,d\\}, \\{a,b,d,e\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{2}</span> is not the answer. <span\nclass=\"math inline\">\\{b,d,e\\} \\cap \\{a,b,d\\} = \\{b,d\\}</span> doesn't\nexist.</p>\n</blockquote>\n<p>(c) <span class=\"math inline\">\\tau_{3} = \\{ X, \\emptyset, \\{b\\},\n\\{a,b,c\\}, \\{d,c,f\\}, \\{b,d,e,f\\} \\};</span></p>\n<blockquote>\n<p><span class=\"math inline\">\\tau_{3}</span> is the answer.</p>\n</blockquote>",
                     "posixTime": 1576759868
                 },
                 "q": {
-                    "content": "<p>Let <span class=\"math inline\">\\mathbb{N}</span> be the set of\npositive integers. Prove that each of the following collections of\nsubsets of <span class=\"math inline\">\\mathbb{N}</span> is a topology</p>",
+                    "content": "<p>Let <span class=\"math inline\">X=\\{ a,b,c,d,e,f \\}</span>. Which of\nthe following collections of subset of <span\nclass=\"math inline\">X</span> is a topology on <span\nclass=\"math inline\">X</span>? (Justify your answers)</p>",
                     "posixTime": 1576759868
                 }
             },
             "numAnswer": 1,
-            "sha1": "acc3dd9e4b05260be5e212f48d60dfbbf973bf6c",
-            "title": "6"
+            "sha1": "9a9d55bd0c80d70b9921dbfefef6c18cb738725a",
+            "title": "2"
         }
     ],
     "parentSha1": "fab745034bac5d9853e0b014ca64ffdf5f94c14a",

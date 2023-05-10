@@ -14,21 +14,6 @@
         {
             "attr": {
                 "a": {
-                    "content": "<p>Let <span class=\"math inline\">x</span> be any element of <span\nclass=\"math inline\">f^{-1}\\left( \\bigcup _{j\\in J}B\n_{j}\\right)</span><br />\nIt implies that <span class=\"math inline\">f(x) \\in B_i</span> for some\n<span class=\"math inline\">i</span> in <span\nclass=\"math inline\">J</span><br />\nIt implies that <span class=\"math inline\">x \\in f^{-1} B_i</span><br />\nHence <span class=\"math inline\">x \\in \\bigcup _{j\\in J}f^{-1}\\left( B\n_{j}\\right)</span></p>\n<p>Now the reverse.<br />\nLet <span class=\"math inline\">x</span> be any element of <span\nclass=\"math inline\">\\bigcup _{j\\in J}f^{-1}\\left( B\n_{j}\\right)</span><br />\nIt implies that <span class=\"math inline\">x \\in f^{-1}\\left( B\n_{j}\\right)</span><br />\nIt implies that <span class=\"math inline\">f(x) \\in B_i</span> for some\n<span class=\"math inline\">i \\in J</span><br />\nIt implies that <span class=\"math inline\">f(x) \\in \\bigcup _{j\\in J}B\n_{j}</span><br />\nHence <span class=\"math inline\">x \\in f^{-1}\\left( \\bigcup _{j\\in J}B\n_{j}\\right)</span></p>",
-                    "posixTime": 1576759868
-                },
-                "q": {
-                    "content": "<p>Prove that (1) is true.</p>",
-                    "posixTime": 1576759868
-                }
-            },
-            "numAnswer": 1,
-            "sha1": "59801c3675fec08d60d7c16f40200d9d2363f014",
-            "title": "(a)"
-        },
-        {
-            "attr": {
-                "a": {
                     "content": "<p>Where<br />\n<span class=\"math inline\">f</span> is <span\nclass=\"math inline\">cos</span>,<br />\n<span class=\"math inline\">A_1</span> is <span\nclass=\"math inline\">\\left(0, \\dfrac{3}{2} \\pi\\right)</span><br />\nand<br />\n<span class=\"math inline\">A_2</span> is <span\nclass=\"math inline\">\\left(\\dfrac{1}{2} \\pi, 2\\pi \\right)</span><br />\nso <span class=\"math inline\">f(A_1 \\cap A_2)</span> which would be <span\nclass=\"math inline\">cos \\left(\\dfrac{1}{2} \\pi, \\dfrac{3}{2}\n\\pi\\right)</span> in this case, will be <span class=\"math inline\">(0,\n-1)</span><br />\nand <span class=\"math inline\">f(A_1) \\cap f(A_2)</span> which would be\n<span class=\"math inline\">cos \\left(0, \\dfrac{3}{2} \\pi\\right) \\cap cos\n\\left(\\dfrac{1}{2} \\pi, 2\\pi \\right)</span> in this case, will be <span\nclass=\"math inline\">(-1, 1)</span></p>",
                     "posixTime": 1576759868
                 },
@@ -40,6 +25,21 @@
             "numAnswer": 1,
             "sha1": "ce41c558052b4575bc0dbf91f5ad59242da47e22",
             "title": "(c)"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<p>Let <span class=\"math inline\">x</span> be any element of <span\nclass=\"math inline\">f^{-1}\\left( \\bigcup _{j\\in J}B\n_{j}\\right)</span><br />\nIt implies that <span class=\"math inline\">f(x) \\in B_i</span> for some\n<span class=\"math inline\">i</span> in <span\nclass=\"math inline\">J</span><br />\nIt implies that <span class=\"math inline\">x \\in f^{-1} B_i</span><br />\nHence <span class=\"math inline\">x \\in \\bigcup _{j\\in J}f^{-1}\\left( B\n_{j}\\right)</span></p>\n<p>Now the reverse.<br />\nLet <span class=\"math inline\">x</span> be any element of <span\nclass=\"math inline\">\\bigcup _{j\\in J}f^{-1}\\left( B\n_{j}\\right)</span><br />\nIt implies that <span class=\"math inline\">x \\in f^{-1}\\left( B\n_{j}\\right)</span><br />\nIt implies that <span class=\"math inline\">f(x) \\in B_i</span> for some\n<span class=\"math inline\">i \\in J</span><br />\nIt implies that <span class=\"math inline\">f(x) \\in \\bigcup _{j\\in J}B\n_{j}</span><br />\nHence <span class=\"math inline\">x \\in f^{-1}\\left( \\bigcup _{j\\in J}B\n_{j}\\right)</span></p>",
+                    "posixTime": 1576759868
+                },
+                "q": {
+                    "content": "<p>Prove that (1) is true.</p>",
+                    "posixTime": 1576759868
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "59801c3675fec08d60d7c16f40200d9d2363f014",
+            "title": "(a)"
         },
         {
             "attr": {

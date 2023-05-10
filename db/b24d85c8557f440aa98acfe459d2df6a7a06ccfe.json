@@ -7,6 +7,12 @@
     },
     "kids": [
         {
+            "attr": {},
+            "numAnswer": 3,
+            "sha1": "5444b17082a3413816dcfce1721f581c2c2f07f2",
+            "title": "The four fundamental equations behind backpropagation"
+        },
+        {
             "attr": {
                 "a": {
                     "content": "<h3 id=\"bp3\">BP3</h3>\n<p>BP3 is</p>\n<p><span class=\"math display\">\\frac{\\partial C}{\\partial b^l_j} =\n\\delta^l_j</span></p>\n<p>By chain rule</p>\n<p><span class=\"math display\">\\frac{\\partial C}{\\partial b^l_j} =\n\\frac{\\partial z_j}{\\partial b^l_j} \\frac{\\partial C}{\\partial\nz_j}</span></p>\n<p>Definition of <span class=\"math inline\">z_j</span> is</p>\n<p><span class=\"math display\">z_j = b_j + w_j a</span></p>\n<p>where <span class=\"math inline\">w_j</span> is weight matix's jth row.\nWe can easily see that</p>\n<p><span class=\"math display\">\\frac{\\partial z_j}{\\partial b^l_j} = 1 \\\\\n\\rightarrow \\frac{\\partial C}{\\partial b^l_j} = \\frac{\\partial\nC}{\\partial z_j} = \\delta^l_j</span></p>\n<h3 id=\"bp4\">BP4</h3>\n<p>BP4 is</p>\n<p><span class=\"math display\">\\frac{\\partial C}{\\partial w^l_{jk}} =\na^{l-1}_k \\delta^l_j</span></p>\n<p>By chain rule</p>\n<p><span class=\"math display\">\\frac{\\partial C}{\\partial ^l_j} =\n\\frac{\\partial z_j}{\\partial w^jk} \\frac{\\partial C}{\\partial\nz_j}</span></p>\n<p>Definition of $`z_j'$ is</p>\n<p><span class=\"math display\">\\begin{aligned}\nz_j &amp;= b_j + w_j \\cdot a \\\\\n    &amp;= b_j + \\sum w_{jk} a_k\n\\end{aligned}</span></p>\n<p>Derivative of <span class=\"math inline\">z_j</span> in terms of <span\nclass=\"math inline\">w_{jk}</span> is easily</p>\n<p><span class=\"math display\">\\begin{aligned}\n&amp;\\frac{\\partial z_j}{\\partial w^jk} = a_k \\\\\n&amp;\\rightarrow \\frac{\\partial z_j}{\\partial w^jk} \\frac{\\partial\nC}{\\partial z_j} \\\\\n&amp;= a_k \\delta^l_j\n\\end{aligned}</span></p>",
@@ -20,12 +26,6 @@
             "numAnswer": 1,
             "sha1": "ee09c4b9109c9c316ff389ec766e43684a90e4b9",
             "title": "Proof of the four fundamental equations (optional)"
-        },
-        {
-            "attr": {},
-            "numAnswer": 3,
-            "sha1": "5444b17082a3413816dcfce1721f581c2c2f07f2",
-            "title": "The four fundamental equations behind backpropagation"
         }
     ],
     "parentSha1": "fb11fc9c1170c1dbed2da4cdb0c7e5a7283eb79a",

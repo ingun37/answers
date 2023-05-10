@@ -8,15 +8,15 @@
     "kids": [
         {
             "attr": {},
-            "numAnswer": 4,
-            "sha1": "ec55fe7ef239a77ac6b841ce679133956f86b5b0",
-            "title": "4.3 Non-Homeomorphic Spaces"
-        },
-        {
-            "attr": {},
             "numAnswer": 1,
             "sha1": "36eb5b686edbbe1ba52e05059defa61f6fd1b7e7",
             "title": "4.1 Subspaces"
+        },
+        {
+            "attr": {},
+            "numAnswer": 4,
+            "sha1": "ec55fe7ef239a77ac6b841ce679133956f86b5b0",
+            "title": "4.3 Non-Homeomorphic Spaces"
         }
     ],
     "parentSha1": "4207f01b267f64572c815ef211fdabe38d3ca400",

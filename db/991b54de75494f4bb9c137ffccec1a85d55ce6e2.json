@@ -14,21 +14,6 @@
         {
             "attr": {
                 "a": {
-                    "content": "<p>Impossible. Subsequence that is bounded must have a sub-subsequence\nthat converges.</p>",
-                    "posixTime": 1664949821
-                },
-                "q": {
-                    "content": "<p>A sequence that has a subsequence that is bounded but contains no\nsubsequence that converges.</p>",
-                    "posixTime": 1664949821
-                }
-            },
-            "numAnswer": 1,
-            "sha1": "5faccd4dd48b7f66b2467944a576c5e1742388d0",
-            "title": "(a)"
-        },
-        {
-            "attr": {
-                "a": {
                     "content": "<p>Same answer as (c)</p>",
                     "posixTime": 1664949821
                 },
@@ -55,6 +40,21 @@
             "numAnswer": 1,
             "sha1": "95098a095dbd8f4155a233171bef5c0ef64ea9bf",
             "title": "(c)"
+        },
+        {
+            "attr": {
+                "a": {
+                    "content": "<p>Impossible. Subsequence that is bounded must have a sub-subsequence\nthat converges.</p>",
+                    "posixTime": 1664949821
+                },
+                "q": {
+                    "content": "<p>A sequence that has a subsequence that is bounded but contains no\nsubsequence that converges.</p>",
+                    "posixTime": 1664949821
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "5faccd4dd48b7f66b2467944a576c5e1742388d0",
+            "title": "(a)"
         },
         {
             "attr": {

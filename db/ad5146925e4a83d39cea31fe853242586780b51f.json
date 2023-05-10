@@ -14,6 +14,21 @@
         {
             "attr": {
                 "a": {
+                    "content": "<p>(ii) satisfies second property so we only need to proove that union\nof <span class=\"math inline\">D</span> is <span\nclass=\"math inline\">\\mathbb{R}^2</span></p>\n<p>If we deny the statement and say there is a <span\nclass=\"math inline\">\\langle a,b \\rangle \\in \\mathbb{R}^2</span> that\nisn't contained in union of all <span class=\"math inline\">D</span> then\nit contradicts the exercise-1-(iv) hence union of <span\nclass=\"math inline\">D</span> is <span\nclass=\"math inline\">\\mathbb{R}^2</span>.</p>",
+                    "posixTime": 1580462943
+                },
+                "q": {
+                    "content": "<p>Using (ii) and Proposition 2.2.8, prove that the collection of all\nopen discs in <span class=\"math inline\">\\mathbb{R}^2</span> is a basis\nfor a topology on <span class=\"math inline\">\\mathbb{R}^2</span>.</p>",
+                    "posixTime": 1580462943
+                }
+            },
+            "numAnswer": 1,
+            "sha1": "63cfbce5d9cd63f9e21dbfecbff2782dbdec81dc",
+            "title": "(iii)"
+        },
+        {
+            "attr": {
+                "a": {
                     "content": "<p>The basic idea is using triangle inequality just like exercise\n#1-(I).</p>\n<p>Let <span class=\"math inline\">r_n</span> <span\nclass=\"math inline\">c_n</span> be <span class=\"math inline\">D_n</span>'s\nradius and center.<br />\nLet's define <span class=\"math inline\">r</span> as</p>\n<p><span class=\"math inline\">r=\\min \\left( r_{1}-\\left| c_{1}-c\\right|\n,r_{2}-\\left| c_{2}-c\\right| \\right)</span></p>\n<p>But for simplicity and without lose of generality, let's just say</p>\n<p><span class=\"math inline\">r=r_{1}-\\left| c_{1}-c\\right|</span></p>\n<p>Let <span class=\"math inline\">p</span> be any point in the small disc\n<span class=\"math inline\">D_{\\langle a,b \\rangle}</span>.<br />\nCheckout the visual representation so far.</p>\n<p><img\nsrc=\"/answers/books/Topology%20Without%20Tears/2.%20The%20Euclidean%20Topology/2.2%20Basis%20for%20a%20Topology/2/(i)/IMG_CE178B00DC15-1.jpeg\" /></p>\n<p>First let's proove that <span class=\"math inline\">p</span> is inside\nof <span class=\"math inline\">D_1</span>.<br />\nTriangle inequality of <span class=\"math inline\">c1, p, c</span>\nsays</p>\n<p><span class=\"math inline\">\\left| c_{1}-p\\right| &lt;\\left| c-p\\right|\n+\\left| c_{1}-c\\right|</span></p>\n<p><span class=\"math inline\">\\left| c-p\\right|</span> is smaller than\n<span class=\"math inline\">r</span> so we can just substitute it and get\nthe definition of <span class=\"math inline\">D_1</span>. Hence <span\nclass=\"math inline\">p</span> is inside of <span\nclass=\"math inline\">D_1</span>.</p>\n<p><span class=\"math inline\">\\left| c_{1}-p\\right| &lt;\\left(\nr_{1}-\\left| c_{1}-c\\right| \\right) +\\left| c_{1}-c\\right|\n=r_{1}</span></p>\n<p>Now let's proove that <span class=\"math inline\">p</span> is inside of\n<span class=\"math inline\">D_2</span>.<br />\nTriangle inequality of <span class=\"math inline\">c2, p, c</span>\nsays</p>\n<p><span class=\"math inline\">\\left| c_{2}-p\\right| &lt;\\left| c-p\\right|\n+\\left| c_{2}-c\\right|</span></p>\n<p>Now we substitute the <span class=\"math inline\">\\left|\nc-p\\right|</span> just like what we just did to <span\nclass=\"math inline\">D_1</span></p>\n<p><span class=\"math inline\">\\left| c_{2}-p\\right| &lt;\\left(\nr_{1}-\\left| c_{1}-c\\right| \\right) +\\left| c_{2}-c\\right|</span></p>\n<p>But we already have this in our bag.</p>\n<p><span class=\"math inline\">r_{1}-\\left| c_{1}-c\\right|\n&lt;r_{2}-\\left| c_{2}-c\\right|</span></p>\n<p>We can just substitute and the relation won't change.</p>\n<p><span class=\"math inline\">\\left| c_{2}-p\\right| &lt;\\left(\nr_{2}-\\left| c_{2}-c\\right| \\right) +\\left| c_{2}-c\\right|\n=r_{2}</span></p>\n<p>We've got the <span class=\"math inline\">D_2</span> definition. Hence\n<span class=\"math inline\">p</span> is in <span\nclass=\"math inline\">D_2</span>. Hence <span class=\"math inline\">p \\in\nD_1 \\cap D_2</span></p>",
                     "posixTime": 1580460723
                 },
@@ -40,21 +55,6 @@
             "numAnswer": 1,
             "sha1": "1de74fe0bdb206bfa3679ec93a421e1c0be5767c",
             "title": "(ii)"
-        },
-        {
-            "attr": {
-                "a": {
-                    "content": "<p>(ii) satisfies second property so we only need to proove that union\nof <span class=\"math inline\">D</span> is <span\nclass=\"math inline\">\\mathbb{R}^2</span></p>\n<p>If we deny the statement and say there is a <span\nclass=\"math inline\">\\langle a,b \\rangle \\in \\mathbb{R}^2</span> that\nisn't contained in union of all <span class=\"math inline\">D</span> then\nit contradicts the exercise-1-(iv) hence union of <span\nclass=\"math inline\">D</span> is <span\nclass=\"math inline\">\\mathbb{R}^2</span>.</p>",
-                    "posixTime": 1580462943
-                },
-                "q": {
-                    "content": "<p>Using (ii) and Proposition 2.2.8, prove that the collection of all\nopen discs in <span class=\"math inline\">\\mathbb{R}^2</span> is a basis\nfor a topology on <span class=\"math inline\">\\mathbb{R}^2</span>.</p>",
-                    "posixTime": 1580462943
-                }
-            },
-            "numAnswer": 1,
-            "sha1": "63cfbce5d9cd63f9e21dbfecbff2782dbdec81dc",
-            "title": "(iii)"
         }
     ],
     "parentSha1": "4916ef365c682d91c468aa8142b8f2b48688f8d3",

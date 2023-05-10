@@ -22,38 +22,16 @@
             "title": "2.4.8"
         },
         {
-            "attr": {
-                "q": {
-                    "content": "<p>Let <span class=\"math inline\">(a_n)</span> be a bounded sequence.</p>",
-                    "posixTime": 1664868754
-                }
-            },
-            "numAnswer": 4,
-            "sha1": "9d2af53619e721870d08a4faaa68e90f4af77568",
-            "title": "2.4.7"
-        },
-        {
             "attr": {},
             "numAnswer": 2,
-            "sha1": "fb37519c6ece460a433bea3eaae3df465b630fc1",
-            "title": "2.4.3"
+            "sha1": "d27ad20d34309c5858ce898645f1bedb18b26fcc",
+            "title": "2.4.2"
         },
         {
             "attr": {},
             "numAnswer": 3,
             "sha1": "80d9ddafbb6d32535f11661c36da47169794b4e9",
             "title": "2.4.1"
-        },
-        {
-            "attr": {
-                "q": {
-                    "content": "<p>(Calculating Square Roots). Let <span class=\"math inline\">x_1 =\n2</span>, and define</p>\n<p><span class=\"math display\">x_{n+1} = \\frac 1 2 \\left(x_n + \\frac 2\n{x_n} \\right)</span></p>",
-                    "posixTime": 1664372040
-                }
-            },
-            "numAnswer": 2,
-            "sha1": "bba07c5cf65781569d0d30d40b4261c472f489fe",
-            "title": "2.4.5"
         },
         {
             "attr": {
@@ -73,8 +51,19 @@
         {
             "attr": {},
             "numAnswer": 2,
-            "sha1": "d27ad20d34309c5858ce898645f1bedb18b26fcc",
-            "title": "2.4.2"
+            "sha1": "aad0050b7e379d34cb2a66b49dc51a5730b02129",
+            "title": "2.4.6"
+        },
+        {
+            "attr": {
+                "q": {
+                    "content": "<p>Let <span class=\"math inline\">(a_n)</span> be a bounded sequence.</p>",
+                    "posixTime": 1664868754
+                }
+            },
+            "numAnswer": 4,
+            "sha1": "9d2af53619e721870d08a4faaa68e90f4af77568",
+            "title": "2.4.7"
         },
         {
             "attr": {},
@@ -85,8 +74,19 @@
         {
             "attr": {},
             "numAnswer": 2,
-            "sha1": "aad0050b7e379d34cb2a66b49dc51a5730b02129",
-            "title": "2.4.6"
+            "sha1": "fb37519c6ece460a433bea3eaae3df465b630fc1",
+            "title": "2.4.3"
+        },
+        {
+            "attr": {
+                "q": {
+                    "content": "<p>(Calculating Square Roots). Let <span class=\"math inline\">x_1 =\n2</span>, and define</p>\n<p><span class=\"math display\">x_{n+1} = \\frac 1 2 \\left(x_n + \\frac 2\n{x_n} \\right)</span></p>",
+                    "posixTime": 1664372040
+                }
+            },
+            "numAnswer": 2,
+            "sha1": "bba07c5cf65781569d0d30d40b4261c472f489fe",
+            "title": "2.4.5"
         }
     ],
     "parentSha1": "10eb21a7fc596eae55eb2b7f3b3c0321685d5297",
