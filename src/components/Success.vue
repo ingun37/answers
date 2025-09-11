@@ -41,7 +41,12 @@ type SubHtmlAttr = { key: string; time: string };
 const subHtmlAttrs = computed<SubHtmlAttr[]>(() =>
   entries.value
     .filter(([k]) => k.endsWith(".md"))
-    .map(([key, v]) => ({ key, time: v._time })),
+    .map(([key, v]) => ({ key, time: v._time }))
+    .sort((a, b) => {
+      if (a.key === "q.md") return -1;
+      else if (b.key === "a.md") return 1;
+      else return 0;
+    }),
 );
 </script>
 
