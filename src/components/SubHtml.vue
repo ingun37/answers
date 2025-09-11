@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { nextTick, onMounted, ref, watch } from "vue";
+import { nextTick, ref, watch } from "vue";
 
 import renderMathInElement from "katex/contrib/auto-render";
 
@@ -26,9 +26,6 @@ watch(
   },
 );
 const rootEl = ref<HTMLElement | null>(null);
-onMounted(() => {
-  console.log("mounted");
-});
 </script>
 
 <template>

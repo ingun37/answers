@@ -48,8 +48,21 @@ const subHtmlAttrs = computed<SubHtmlAttr[]>(() =>
     .sort((a, b) => {
       if (a.key === "q.md") return -1;
       else if (b.key === "a.md") return 1;
-      else return 0;
+      else return a.key.localeCompare(b.key);
     }),
+);
+function comparePages(a: PageContent, b: PageContent) {
+  const aT = a._pageTitle;
+  const bT = b._pageTitle;
+  const aN = /^(\d+)/.exec(aT)?.[1] ?? null;
+  const bN = /^(\d+)/.exec(bT)?.[1] ?? null;
+  if (aN && bN) {
+    return Number.parseInt(aN) - Number.parseInt(bN);
+  }
+  return aT.localeCompare(bT);
+}
+const children = computed(() =>
+  [...props.page._childPageContents].sort(comparePages),
 );
 </script>
 
@@ -82,7 +95,7 @@ const subHtmlAttrs = computed<SubHtmlAttr[]>(() =>
 
     <v-expansion-panels v-model="panels" multiple>
       <v-expansion-panel
-        v-for="child in page._childPageContents"
+        v-for="child in children"
         :key="child._hash"
         :value="child._hash"
       >

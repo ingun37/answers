@@ -16,12 +16,12 @@ export const PageContent = Schema.Struct({
   }),
 });
 export type PageContent = Schema.Schema.Type<typeof PageContent>;
-export const Page = Schema.Struct({
+const Page_ = Schema.Struct({
   _parentHash: Schema.String,
   _pageContent: PageContent,
   _childPageContents: Schema.Array(PageContent),
 });
 
-export type Page = Schema.Schema.Type<typeof Page>;
+export type Page = Schema.Schema.Type<typeof Page_>;
 
-export const decodePage = Schema.decodeSync(Page);
+export const decodePage = Schema.decodeSync(Page_);
