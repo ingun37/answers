@@ -7,11 +7,15 @@
         @click="goBack"
         aria-label="Go back"
       />
-      <v-toolbar-title>App</v-toolbar-title>
+      <v-toolbar-title>{{ title }}</v-toolbar-title>
     </v-app-bar>
 
     <v-main>
-      <Root :sha1="sha1"></Root>
+      <Root
+        :sha1="sha1"
+        @expand-child="(child) => updateSha(child._hash)"
+        @loaded="loaded"
+      ></Root>
     </v-main>
   </v-app>
 </template>
@@ -19,19 +23,23 @@
 <script lang="ts" setup>
 import { watch, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
-import { decodePage } from "@/types.ts";
-
+import { decodePage, type Page } from "@/types.ts";
+const title = ref("");
+function loaded(page: Page) {
+  title.value = page._pageContent._pageTitle;
+}
+function updateSha(sha: string) {
+  sha1.value = sha;
+  return router.replace({
+    query: { ...route.query, sha1: sha },
+  });
+}
 async function goBack() {
   if (sha1.value === DEFAULT_SHA1) return;
   fetch(`/pages/${sha1.value || DEFAULT_SHA1}.json`)
     .then((x) => x.json())
     .then(decodePage)
-    .then((page) => {
-      sha1.value = page._parentHash;
-      return router.replace({
-        query: { ...route.query, sha1: page._parentHash },
-      });
-    });
+    .then((page) => updateSha(page._parentHash));
 }
 
 const DEFAULT_SHA1 = "2aed5404c83f7a46aa249e0a6328af756b19d513";

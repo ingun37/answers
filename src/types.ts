@@ -15,6 +15,7 @@ export const PageContent = Schema.Struct({
     value: PageAttributeContent,
   }),
 });
+export type PageContent = Schema.Schema.Type<typeof PageContent>;
 export const Page = Schema.Struct({
   _parentHash: Schema.String,
   _pageContent: PageContent,

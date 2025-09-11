@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
 import Recursive from "./Recursive.vue";
-import type { Page } from "@/types.ts";
+import type { Page, PageContent } from "@/types.ts";
 import SubHtml from "@/components/SubHtml.vue";
 
 const props = defineProps<{
@@ -36,6 +36,9 @@ const normalAttrs = computed<AttrItem[]>(() =>
       content: v._attributeFile._content,
     })),
 );
+const emit = defineEmits<{
+  (e: "expand-child", child: PageContent): void;
+}>();
 
 type SubHtmlAttr = { key: string; time: string };
 const subHtmlAttrs = computed<SubHtmlAttr[]>(() =>
@@ -87,9 +90,23 @@ const subHtmlAttrs = computed<SubHtmlAttr[]>(() =>
           <span class="panel-title">
             <strong>{{ child._pageTitle }}</strong></span
           >
+          <template #actions>
+            <v-btn
+              icon="mdi-arrow-expand"
+              variant="text"
+              density="comfortable"
+              @click.stop="emit('expand-child', child)"
+              aria-label="Expand"
+            />
+          </template>
         </v-expansion-panel-title>
+
         <v-expansion-panel-text>
-          <Recursive v-if="isExpanded(child._hash)" :sha1="child._hash" />
+          <Recursive
+            v-if="isExpanded(child._hash)"
+            :sha1="child._hash"
+            @expand-child="(e) => emit('expand-child', e)"
+          />
         </v-expansion-panel-text>
       </v-expansion-panel>
     </v-expansion-panels>
