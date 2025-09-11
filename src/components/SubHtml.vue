@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { nextTick, onMounted, ref, shallowRef, watch } from "vue";
+import { nextTick, onMounted, ref, watch } from "vue";
 
 import renderMathInElement from "katex/contrib/auto-render";
 
@@ -8,9 +8,7 @@ const props = defineProps<{
 }>();
 watch(
   () => props.html,
-  async (html) => {
-    nonReactiveHtml.value = { html };
-
+  async () => {
     await nextTick();
     await nextTick();
     await nextTick();
@@ -20,14 +18,13 @@ watch(
       // • auto-render specific keys, e.g.:
       delimiters: [
         { left: "$`", right: "`$", display: false },
-        { left: "\\(", right: "\\)", display: true },
+        { left: "\\\\(", right: ")\\\\", display: true },
       ],
       // • rendering keys, e.g.:
       throwOnError: true,
     });
   },
 );
-const nonReactiveHtml = shallowRef({ html: props.html });
 const rootEl = ref<HTMLElement | null>(null);
 onMounted(() => {
   console.log("mounted");
@@ -38,7 +35,7 @@ onMounted(() => {
   <div
     ref="rootEl"
     class="subhtml-content"
-    v-html="nonReactiveHtml.html"
+    v-html="html"
     style="
       width: 100%;
       border: 1px solid rgba(0, 0, 0, 0.12);
