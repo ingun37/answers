@@ -40,7 +40,8 @@ async function goBack() {
   fetch(`/pages/${sha1.value || DEFAULT_SHA1}.json`)
     .then((x) => x.json())
     .then(decodePage)
-    .then((page) => updateSha(page._parentHash));
+    .then((page) => updateSha(page._parentHash))
+    .catch(() => updateSha(DEFAULT_SHA1));
 }
 
 const DEFAULT_SHA1 = "2aed5404c83f7a46aa249e0a6328af756b19d513";
