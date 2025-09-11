@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from "vue";
+import { watch, ref } from "vue";
 import { useRoute } from "vue-router";
 
 function goBack() {}
@@ -28,8 +28,10 @@ function goBack() {}
 const DEFAULT_SHA1 = "2aed5404c83f7a46aa249e0a6328af756b19d513";
 
 const route = useRoute();
-const sha1 = computed<string>(() => {
-  const q = route.query.sha1;
+
+const sha1 = ref<string>(DEFAULT_SHA1);
+
+function normalizeSha1(q: unknown): string {
   if (Array.isArray(q)) {
     const v = q[0]?.trim() ?? "";
     return v ? v : DEFAULT_SHA1;
@@ -37,5 +39,14 @@ const sha1 = computed<string>(() => {
     const v = typeof q === "string" ? q.trim() : "";
     return v ? v : DEFAULT_SHA1;
   }
-});
+}
+
+// Keep sha1 in sync with the route, initialize immediately
+watch(
+  () => route.query.sha1,
+  (q) => {
+    sha1.value = normalizeSha1(q);
+  },
+  { immediate: true },
+);
 </script>
