@@ -13,6 +13,7 @@ declare module 'vue' {
     Root: typeof import('./components/Root.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SubHtml: typeof import('./components/SubHtml.vue')['default']
     Success: typeof import('./components/Success.vue')['default']
   }
 }

@@ -2,6 +2,7 @@
 import { computed, ref } from "vue";
 import Recursive from "./Recursive.vue";
 import type { Page } from "@/types.ts";
+import SubHtml from "@/components/SubHtml.vue";
 
 const props = defineProps<{
   page: Page;
@@ -37,7 +38,7 @@ const normalAttrs = computed<AttrItem[]>(() =>
 );
 
 type SubHtmlAttr = { key: string; time: string };
-const mdAttrs = computed<SubHtmlAttr[]>(() =>
+const subHtmlAttrs = computed<SubHtmlAttr[]>(() =>
   entries.value
     .filter(([k]) => k.endsWith(".md"))
     .map(([key, v]) => ({ key, time: v._time })),
@@ -59,6 +60,17 @@ const mdAttrs = computed<SubHtmlAttr[]>(() =>
           <strong>{{ item.key }}:</strong>&nbsp;{{ item.content }}
         </v-chip>
       </v-chip-group>
+    </div>
+
+    <!-- Render SubHtml blocks for *.md attributes (now mapped to .html files) -->
+    <div v-if="subHtmlAttrs.length" style="margin-bottom: 16px">
+      <SubHtml
+        v-for="attr in subHtmlAttrs"
+        :key="attr.key"
+        :attr-key="attr.key"
+        :src="`/resources/${page._pageContent._hash}/${attr.key}.html`"
+        :time="attr.time"
+      />
     </div>
 
     <v-expansion-panels v-model="panels" multiple>
