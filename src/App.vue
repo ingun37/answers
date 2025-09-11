@@ -11,23 +11,33 @@
     </v-app-bar>
 
     <v-main>
-      <!-- Pass sha1 as a prop to the routed component -->
-      <router-view v-slot="{ Component }">
-        <component :is="Component" :sha1="sha1" />
-      </router-view>
+      <Root :sha1="sha1"></Root>
     </v-main>
   </v-app>
 </template>
 
 <script lang="ts" setup>
 import { watch, ref } from "vue";
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
+import { decodePage } from "@/types.ts";
 
-function goBack() {}
+async function goBack() {
+  if (sha1.value === DEFAULT_SHA1) return;
+  fetch(`/pages/${sha1.value || DEFAULT_SHA1}.json`)
+    .then((x) => x.json())
+    .then(decodePage)
+    .then((page) => {
+      sha1.value = page._parentHash;
+      return router.replace({
+        query: { ...route.query, sha1: page._parentHash },
+      });
+    });
+}
 
 const DEFAULT_SHA1 = "2aed5404c83f7a46aa249e0a6328af756b19d513";
 
 const route = useRoute();
+const router = useRouter();
 
 const sha1 = ref<string>(DEFAULT_SHA1);
 
@@ -41,7 +51,6 @@ function normalizeSha1(q: unknown): string {
   }
 }
 
-// Keep sha1 in sync with the route, initialize immediately
 watch(
   () => route.query.sha1,
   (q) => {
