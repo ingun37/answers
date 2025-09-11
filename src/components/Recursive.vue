@@ -42,7 +42,7 @@ watch(
 </script>
 
 <template>
-  <Success v-if="value !== null" :value="value" />
+  <Success v-if="value !== null" :page="value" />
   <p v-else-if="failed">Failed to load page.</p>
 </template>
 
