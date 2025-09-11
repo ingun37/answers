@@ -14,6 +14,7 @@
   "dependencies": {
     "@fontsource/roboto": "5.2.6",
     "@mdi/font": "7.4.47",
+    "@types/katex": "^0.16.7",
     "effect": "^3.17.13",
     "katex": "^0.16.22",
     "prettier": "^3.6.2",
