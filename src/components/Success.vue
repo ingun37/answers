@@ -52,7 +52,6 @@ const subHtmlAttrs = computed<SubHtmlAttr[]>(() =>
 
 <template>
   <div>
-    <h1>{{ page._pageContent._pageTitle }}</h1>
     <div class="text-caption" style="margin-bottom: 12px">
       <v-chip-group column>
         <v-chip
@@ -85,7 +84,9 @@ const subHtmlAttrs = computed<SubHtmlAttr[]>(() =>
         :value="child._hash"
       >
         <v-expansion-panel-title>
-          {{ child._pageTitle }}
+          <span class="panel-title">
+            <strong>{{ child._pageTitle }}</strong></span
+          >
         </v-expansion-panel-title>
         <v-expansion-panel-text>
           <Recursive v-if="isExpanded(child._hash)" :sha1="child._hash" />
@@ -95,4 +96,8 @@ const subHtmlAttrs = computed<SubHtmlAttr[]>(() =>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.panel-title {
+  font-size: 1.05rem; /* slightly bigger */
+}
+</style>
