@@ -2,7 +2,7 @@
 import { computed, ref } from "vue";
 import Recursive from "./Recursive.vue";
 import type { Page, PageContent } from "@/types.ts";
-import SubHtml from "@/components/SubHtml.vue";
+import Attribute from "@/components/Attribute.vue";
 
 const props = defineProps<{
   page: Page;
@@ -71,7 +71,7 @@ const subHtmlAttrs = computed<SubHtmlAttr[]>(() =>
 
     <!-- Render SubHtml blocks for *.md attributes (now mapped to .html files) -->
     <div v-if="subHtmlAttrs.length" style="margin-bottom: 16px">
-      <SubHtml
+      <Attribute
         v-for="attr in subHtmlAttrs"
         :key="attr.key"
         :attr-key="attr.key"

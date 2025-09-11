@@ -24,6 +24,7 @@
 import { watch, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { decodePage, type Page } from "@/types.ts";
+
 const title = ref("");
 function loaded(page: Page) {
   title.value = page._pageContent._pageTitle;
