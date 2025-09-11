@@ -12,6 +12,7 @@
 
     <v-main>
       <Root
+        class="ml-1 mr-1"
         :sha1="sha1"
         @expand-child="(child) => updateSha(child._hash)"
         @loaded="loaded"
