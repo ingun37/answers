@@ -13,7 +13,7 @@
 
   outputs = { self, nixpkgs, answers_script }: {
     apps.x86_64-linux.default = { type = "app"; program = "${self.packages.x86_64-linux.answers_script}/bin/answers-script"; };
-    
+    packages.x86_64-linux.default = self.packages.x86_64-linux.answers_script;
     # packages.x86_64-linux.hello = nixpkgs.legacyPackages.x86_64-linux.hello;
 
     # packages.x86_64-linux.default = self.packages.x86_64-linux.hello;
