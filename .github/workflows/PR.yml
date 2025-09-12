@@ -30,10 +30,17 @@ jobs:
 
     - run: |
         nix run --no-write-lock-file "github:ingun37/answers-script#answers-script:exe:answers-script" -- --src answers-db --dst public --prefix answers
+    - uses: pnpm/action-setup@v4
+      name: Install pnpm
+      with:
+        version: 10
+        run_install: false
     - name: Use Node.js
       uses: actions/setup-node@v4
       with:
         node-version: 22.x
         cache: 'pnpm'
-    - run: pnpm ci
-    - run: pnpm run build
+
+    - name: Install dependencies
+      run: pnpm install
+    - run: pnpm build
