@@ -1,61 +1,72 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
-
-# Controls when the workflow will run
+name: Build & cache
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ main ]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+    branches:
+      - main
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-
-      - name: Install Nix
-        # You may pin to the exact commit or the version.
-        # uses: cachix/install-nix-action@29bd9290ef037a3ecbdafe83cbd2185e9dd0fa0a
-        uses: cachix/install-nix-action@v20
-
-      - name: Add Nix Channels
-        run: |
-          nix-channel --add https://nixos.org/channels/nixpkgs-unstable
-          nix-channel --update
-
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: |
+            trusted-public-keys = hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
+            substituters = https://cache.iog.io/ https://cache.nixos.org/
+            allow-import-from-derivation = true
+            accept-flake-config = true
+            download-buffer-size = 524288000
+          nix_path: nixpkgs=channel:nixos-unstable
+      - uses: cachix/cachix-action@v15
+        with:
+          name: inguncache
+          # authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
       - name: Checkout DB
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
         with:
           repository: 'ingun37/answers-db'
           path: 'answers-db'
           fetch-depth: 0
 
-      - name: Run answers-script
-        run: |
-          TAR="https://github.com/ingun37/answers-script/archive/refs/tags/1.0.1.tar.gz"
-          nix-shell -p "with import <nixpkgs> {}; let f = import (fetchTarball $TAR); in haskellPackages.callPackage f {}" --run "answers-script --prefixpath answers --src answers-db/ --dst static/"
-
-      - name: setup nodejs
-        uses: actions/setup-node@v2
+      - run: |
+          nix run --no-write-lock-file "github:ingun37/answers-script#answers-script:exe:answers-script" -- --src answers-db --dst public --prefix answers
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
         with:
-          node-version: '16'
-
-      - run: npm install
-
-      - run: npm run build
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+          version: 10
+          run_install: false
+      - name: Use Node.js
+        uses: actions/setup-node@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          node-version: 22.x
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+      - run: pnpm build
+      - name: Upload static files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
+        with:
+          path: dist/
+    # Deploy job
+  deploy:
+    # Add a dependency to the build job
+    needs: build
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
