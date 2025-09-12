@@ -88,7 +88,7 @@ const children = computed(() =>
         v-for="attr in subHtmlAttrs"
         :key="attr.key"
         :attr-key="attr.key"
-        :src="`/resources/${page._pageContent._hash}/${attr.key}.html`"
+        :src="`resources/${page._pageContent._hash}/${attr.key}.html`"
         :time="attr.time"
       />
     </div>
