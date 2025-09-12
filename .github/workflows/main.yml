@@ -22,4 +22,4 @@ jobs:
         name: inguncache
         # authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
     - run: |
-        nix run --no-write-lock-file "github:ingun37/answers-script/renewal"
+        nix run --no-write-lock-file "github:ingun37/answers-script#answers-script:exe:answers-script"
