@@ -57,15 +57,33 @@ const subHtmlAttrs = computed<SubHtmlAttr[]>(() =>
       else return a.key.localeCompare(b.key);
     }),
 );
-function comparePages(a: PageContent, b: PageContent) {
-  const aT = a._pageTitle;
-  const bT = b._pageTitle;
-  const aN = /^(\d+)/.exec(aT)?.[1] ?? null;
-  const bN = /^(\d+)/.exec(bT)?.[1] ?? null;
-  if (aN && bN) {
-    return Number.parseInt(aN) - Number.parseInt(bN);
+function findCommonPrefixLength(a: string, b: string): number {
+  const minLength = Math.min(a.length, b.length);
+  for (let i = 0; i < minLength; i++) {
+    if (a[i] !== b[i]) return i;
+  }
+  return minLength;
+}
+
+function removeCommonPrefix(a: string, b: string): [string, string] {
+  const prefixLength = findCommonPrefixLength(a, b);
+  return [a.slice(prefixLength), b.slice(prefixLength)];
+}
+
+function compareTitles(aT: string, bT: string) {
+  const [a, b] = removeCommonPrefix(aT, bT);
+  const aM = /^(\d+)(.*)/.exec(a);
+  const bM = /^(\d+)(.*)/.exec(b);
+  if (aM && bM) {
+    const aN = aM[1];
+    const bN = bM[1];
+    if (aN === bN) return compareTitles(aM[2], bM[2]);
+    else return Number.parseInt(aN) - Number.parseInt(bN);
   }
   return aT.localeCompare(bT);
+}
+function comparePages(a: PageContent, b: PageContent) {
+  return compareTitles(a._pageTitle, b._pageTitle);
 }
 const children = computed(() =>
   [...props.page._childPageContents].sort(comparePages),
