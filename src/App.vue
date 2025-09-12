@@ -38,7 +38,8 @@ function updateSha(sha: string) {
 }
 async function goBack() {
   if (sha1.value === DEFAULT_SHA1) return;
-  fetch(`/pages/${sha1.value || DEFAULT_SHA1}.json`)
+  const base = import.meta.env.BASE_URL;
+  fetch(`${base}pages/${sha1.value || DEFAULT_SHA1}.json`)
     .then((x) => x.json())
     .then(decodePage)
     .then((page) => updateSha(page._parentHash))

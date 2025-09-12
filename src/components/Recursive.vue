@@ -13,7 +13,8 @@ const failed = ref(false);
 async function load(sha1: string) {
   value.value = null;
   failed.value = false;
-  return fetch(`/pages/${encodeURIComponent(sha1)}.json`, {
+  const base = import.meta.env.BASE_URL;
+  return fetch(`${base}pages/${encodeURIComponent(sha1)}.json`, {
     headers: { Accept: "application/json" },
   })
     .then((x) => x.json())

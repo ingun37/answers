@@ -18,7 +18,8 @@ const loading = ref(false);
 const error = ref<string | null>(null);
 
 async function loadHtml(src: string) {
-  fetch(src)
+  const base = import.meta.env.BASE_URL;
+  fetch(base + src)
     .then((x) => x.text())
     .then((x) => (html.value = x))
     .catch((e) => {
