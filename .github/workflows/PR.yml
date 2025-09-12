@@ -30,8 +30,8 @@ jobs:
 
     - run: |
         nix run --no-write-lock-file "github:ingun37/answers-script#answers-script:exe:answers-script" -- --src answers-db --dst public --prefix answers
-        - name: Use Node.js ${{ matrix.node-version }}
-    - uses: actions/setup-node@v4
+    - name: Use Node.js
+      uses: actions/setup-node@v4
       with:
         node-version: 22.x
         cache: 'pnpm'
