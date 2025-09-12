@@ -34,7 +34,13 @@ const normalAttrs = computed<AttrItem[]>(() =>
     .map(([key, v]) => ({
       key: removeExt(key),
       content: v._attributeFile._content,
-    })),
+    }))
+    .concat([
+      {
+        key: "number of answers",
+        content: props.page._pageContent._answers.toString(),
+      },
+    ]),
 );
 const emit = defineEmits<{
   (e: "expand-child", child: PageContent): void;
