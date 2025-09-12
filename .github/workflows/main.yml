@@ -20,7 +20,7 @@ jobs:
     - uses: cachix/cachix-action@v15
       with:
         name: inguncache
-        # authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
+        authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
     - name: Checkout DB
       uses: actions/checkout@v5
       with:
