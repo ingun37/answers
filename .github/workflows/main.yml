@@ -24,5 +24,12 @@ jobs:
       with:
         name: inguncache
         # authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
+    - name: Checkout DB
+      uses: actions/checkout@v5
+      with:
+        repository: 'ingun37/answers-db'
+        path: 'answers-db'
+        fetch-depth: 0
+
     - run: |
-        nix run --no-write-lock-file "github:ingun37/answers-script#answers-script:exe:answers-script"
+        nix run --no-write-lock-file "github:ingun37/answers-script#answers-script:exe:answers-script" -- --src answers-db --dst public --prefix answers
