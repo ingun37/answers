@@ -20,18 +20,27 @@ jobs:
     - uses: cachix/cachix-action@v15
       with:
         name: inguncache
-        authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
+        # authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
     - name: Checkout DB
       uses: actions/checkout@v5
       with:
         repository: 'ingun37/answers-db'
         path: 'answers-db'
         fetch-depth: 0
+
     - run: |
         nix run --no-write-lock-file "github:ingun37/answers-script#answers-script:exe:answers-script" -- --src answers-db --dst public --prefix answers
-    - uses: actions/setup-node@v4
+    - uses: pnpm/action-setup@v4
+      name: Install pnpm
+      with:
+        version: 10
+        run_install: false
+    - name: Use Node.js
+      uses: actions/setup-node@v4
       with:
         node-version: 22.x
         cache: 'pnpm'
-    - run: pnpm ci
-    - run: pnpm run build
+
+    - name: Install dependencies
+      run: pnpm install
+    - run: pnpm build
