@@ -19,10 +19,4 @@ jobs:
         name: inguncache
         # authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
     - run: |
-        # nix run "github:input-output-hk/haskell.nix#hix" -- init
-        # echo "------ Content of flake.nix ------"
-        # cat flake.nix
-        # echo "----- Content of nix/hix.nix -----"
-        # cat nix/hix.nix
-        # nix build .#answers-script:exe:answers-script
-        nix run
+        nix run "github:ingun37/answers-script/renewal"
