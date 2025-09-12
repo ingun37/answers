@@ -1,10 +1,27 @@
 <script setup lang="ts">
 // This component is shown inside a v-dialog from the app bar "About" button.
 // Keep it presentational so the parent controls opening/closing.
+
+const emit = defineEmits<{
+  (e: "close"): void;
+}>();
+
+function handleSwipeDown() {
+  emit("close");
+}
+function handleSwipeRight() {
+  emit("close");
+}
 </script>
 
 <template>
-  <v-card elevation="2">
+  <v-card
+    elevation="2"
+    v-touch="{
+      down: handleSwipeDown,
+      right: handleSwipeRight,
+    }"
+  >
     <v-card-title class="text-h5">About this site</v-card-title>
 
     <v-card-text class="pt-4">
@@ -31,7 +48,7 @@
         <v-btn
           prepend-icon="mdi-github"
           variant="tonal"
-          color="secondary"
+          color="primary"
           href="https://github.com/ingun37"
           target="_blank"
           rel="noopener noreferrer"
@@ -41,7 +58,7 @@
         <v-btn
           prepend-icon="mdi-web"
           variant="tonal"
-          color="secondary"
+          color="primary"
           href="https://ingun37.github.io/portfolio/"
           target="_blank"
           rel="noopener noreferrer"
@@ -51,7 +68,7 @@
         <v-btn
           prepend-icon="mdi-instagram"
           variant="tonal"
-          color="secondary"
+          color="primary"
           href="https://instagram.com/ingun37"
           target="_blank"
           rel="noopener noreferrer"
@@ -60,11 +77,6 @@
         </v-btn>
       </div>
     </v-card-text>
-
-    <v-card-actions>
-      <v-spacer />
-      <v-btn variant="text" @click.stop="$emit('close')">Close</v-btn>
-    </v-card-actions>
   </v-card>
 </template>
 

@@ -23,7 +23,7 @@
       ></Root>
     </v-main>
     <v-dialog v-model="aboutOpen" max-width="640">
-      <About />
+      <About @close="aboutOpen = false" />
     </v-dialog>
   </v-app>
 </template>
