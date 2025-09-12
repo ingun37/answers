@@ -8,6 +8,10 @@
         aria-label="Go back"
       />
       <v-toolbar-title>{{ title }}</v-toolbar-title>
+      <v-spacer />
+      <v-btn variant="text" @click="aboutOpen = true" aria-label="About">
+        About
+      </v-btn>
     </v-app-bar>
 
     <v-main>
@@ -18,6 +22,9 @@
         @loaded="loaded"
       ></Root>
     </v-main>
+    <v-dialog v-model="aboutOpen" max-width="640">
+      <About />
+    </v-dialog>
   </v-app>
 </template>
 
@@ -25,6 +32,7 @@
 import { watch, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { decodePage, type Page } from "@/types.ts";
+import About from "@/components/About.vue";
 
 const title = ref("");
 function loaded(page: Page) {
@@ -70,4 +78,5 @@ watch(
   },
   { immediate: true },
 );
+const aboutOpen = ref(false);
 </script>

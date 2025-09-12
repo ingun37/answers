@@ -8,6 +8,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    About: typeof import('./components/About.vue')['default']
     Attribute: typeof import('./components/Attribute.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     Recursive: typeof import('./components/Recursive.vue')['default']
