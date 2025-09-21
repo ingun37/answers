@@ -12,7 +12,6 @@ function handleSwipeDown() {
 function handleSwipeRight() {
   emit("close");
 }
-import profileImg from "@/assets/profile.JPG";
 </script>
 
 <template>
@@ -26,7 +25,7 @@ import profileImg from "@/assets/profile.JPG";
     <v-card-text class="pt-4">
       <div class="d-flex justify-center mb-4">
         <v-avatar size="96">
-          <v-img :src="profileImg" alt="Profile picture" cover />
+          <v-img src="@/assets/profile.JPG" alt="Profile picture" cover />
         </v-avatar>
       </div>
 
