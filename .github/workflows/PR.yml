@@ -29,7 +29,7 @@ jobs:
         fetch-depth: 0
 
     - run: |
-        nix run --no-write-lock-file "github:ingun37/answers-script#answers-script:exe:answers-script" -- --src answers-db --dst public --prefix answers
+        nix run --no-write-lock-file "github:ingun37/answers-script#answers-script:exe:answers-script" -- generate --src answers-db --dst public --prefix answers
     - uses: pnpm/action-setup@v4
       name: Install pnpm
       with:
