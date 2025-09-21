@@ -12,6 +12,7 @@ function handleSwipeDown() {
 function handleSwipeRight() {
   emit("close");
 }
+import profileImg from "@/assets/profile.JPG";
 </script>
 
 <template>
@@ -22,9 +23,13 @@ function handleSwipeRight() {
       right: handleSwipeRight,
     }"
   >
-    <v-card-title class="text-h5">About this site</v-card-title>
-
     <v-card-text class="pt-4">
+      <div class="d-flex justify-center mb-4">
+        <v-avatar size="96">
+          <v-img :src="profileImg" alt="Profile picture" cover />
+        </v-avatar>
+      </div>
+
       <p>
         My name is Ingun, and this is where I share my solutions to math and
         science problems from various textbooks.
